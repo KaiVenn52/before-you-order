@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Before You Order",
+    "slug": "before-you-order",
+    "version": "1.7.0",
+    "orientation": "portrait",
+    "icon": "./assets/before-you-order-icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.kaivenn.beforeyouorder",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFF8EA",
+        "foregroundImage": "./assets/before-you-order-foreground.png",
+        "monochromeImage": "./assets/before-you-order-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/before-you-order-favicon.png"
+    },
+    "plugins": [
+      "expo-image",
+      "expo-sqlite",
+      "expo-localization",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableMinifyInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "868ccf5b-a93a-4dd5-83d4-ba006b89a85d"
+      }
+    },
+    "owner": "kaivenns-team"
+  }
+}

@@ -1,0 +1,26 @@
+# Dependencies and local build output
+node_modules/
+.expo/
+dist/
+dist-android/
+.eas-archive/
+artifacts/
+android/
+ios/
+
+# Local configuration and development-only context
+.env
+.env*.local
+.claude/
+AGENTS.md
+CLAUDE.md
+*.log
+*.tsbuildinfo
+
+# Platform and credential files that must never be uploaded
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.mobileprovision

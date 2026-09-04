@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Before You Order V1.6 Release Review</title>
+  <style>
+    body{font-family:system-ui,sans-serif;max-width:920px;margin:40px auto;padding:0 20px;color:#20241f;background:#fffefa;line-height:1.55}h1,h2{color:#123c2a}table{width:100%;border-collapse:collapse}th,td{padding:10px;border-bottom:1px solid #e7dcc9;text-align:left}.pass{color:#17623b;font-weight:700}.note{background:#fff8ea;padding:14px;border-left:4px solid #e99a14}code{background:#f0e8da;padding:2px 5px;border-radius:4px}
+  </style>
+</head>
+<body>
+  <h1>Before You Order V1.6 Release Review</h1>
+  <p><strong>Verdict:</strong> ready for Google Play internal testing after two stale preference-related guidance strings were corrected and covered by a regression test.</p>
+  <h2>Verification evidence</h2>
+  <ul>
+    <li class="pass">TypeScript passed.</li>
+    <li class="pass">15/15 domain and catalogue tests passed.</li>
+    <li class="pass">Expo Doctor passed 21/21 checks; Expo dependency versions are aligned.</li>
+    <li class="pass">Android Hermes export completed with all 100 meal assets.</li>
+    <li class="pass">100 meals, 100 image mappings, and 100 direct credits match one-to-one with no duplicate IDs or source URLs.</li>
+    <li class="pass">All 100 WebP files decode successfully and meet the minimum checked dimensions.</li>
+    <li class="pass">EAS production build completed as <code>1.6.0 (11)</code>.</li>
+  </ul>
+  <h2>Product scorecard</h2>
+  <table><tr><th>Dimension</th><th>Score</th><th>Evidence</th></tr>
+    <tr><td>Onboarding</td><td>8/10</td><td>Core decision flow is visible immediately without account creation.</td></tr>
+    <tr><td>Core experience</td><td>8/10</td><td>Dish and venue paths, randomization, feedback memory, blacklist, and Maps handoff form a complete loop.</td></tr>
+    <tr><td>Error handling</td><td>7/10</td><td>Empty results recover through filter reset and Maps failures show guidance; external credit links have no custom failure message.</td></tr>
+    <tr><td>Information architecture</td><td>8/10</td><td>Cuisine and food-form filters are separate; venue selection is a distinct mode.</td></tr>
+    <tr><td>Visual polish</td><td>8/10</td><td>Consistent card system, bilingual labels, local imagery, and contextual controls.</td></tr>
+    <tr><td>Performance</td><td>8/10</td><td>Local database and bundled optimized images avoid API latency in the recommendation path.</td></tr>
+    <tr><td>Accessibility</td><td>7/10</td><td>Readable layout and key selected states are present; a future pass should add explicit labels to every icon-only control.</td></tr>
+    <tr><td>Feature completeness</td><td>8/10</td><td>Complete for the meal-choice MVP; real-device and broader Malaysian user feedback remain ongoing work.</td></tr>
+  </table>
+  <h2>Findings</h2>
+  <p><strong>Fixed:</strong> empty-state and blacklist guidance still referred to removed dietary and budget controls. English and Chinese copy now points to active cuisine/food filters and the contextual hidden-food manager.</p>
+  <p class="note"><strong>Accepted toolchain note:</strong> <code>npm audit</code> reports moderate issues in Expo's transitive iOS build parser path (<code>xcode → uuid 7.0.3</code>). The offered forced fix would downgrade Expo to SDK 46, so it was not applied to this SDK 57 Android build.</p>
+  <p><strong>Remaining boundary:</strong> this review does not replace hands-on testing across a representative set of Android screen sizes and Google Maps app/browser combinations.</p>
+</body>
+</html>
