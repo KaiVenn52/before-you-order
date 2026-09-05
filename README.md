@@ -8,7 +8,7 @@ An Android-first food decision app built for Malaysia. It can recommend either o
 - Offers two clear paths: decide a specific dish, or decide what type of place to visit.
 - Randomly chooses a different cuisine on demand while preserving manual cuisine and food-form filters.
 - Covers 10 Malaysian dining formats, including kopitiam, cafe/brunch, zi char/dai chow, mamak, hawker centres, Malay warung, banana leaf restaurants, steamboat/BBQ, bakeries/dessert shops, and vegetarian restaurants.
-- Includes 100 representative meals across Malay, Chinese, Indian/Mamak, Western, Japanese, Korean, and Southeast Asian cuisines.
+- Includes 244 dishes across 12 cuisine groups, with a majority drawn from Malay, Malaysian Chinese, Indian/Mamak, Nyonya, Sabah, and Sarawak food.
 - Learns locally from “I chose this” and “Not today” feedback without requiring an account.
 - Builds long-term favourites from repeated choices while cooling down meals chosen in the last 20 hours.
 - Treats “Not today” as a 72-hour signal and supports a separate permanent blacklist with restore controls.
@@ -37,6 +37,7 @@ npm.cmd start
 
 ```powershell
 npm.cmd run validate
+npm.cmd run validate:catalog
 npx.cmd expo-doctor
 ```
 

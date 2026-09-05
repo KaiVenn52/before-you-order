@@ -1,14 +1,25 @@
 export type EatingMode = 'dine-out' | 'takeaway' | 'delivery';
 export type DecisionMode = 'dish' | 'venue';
 export type Language = 'en' | 'zh';
-export type CuisineId =
-  | 'malay'
-  | 'chinese'
-  | 'indian'
-  | 'western'
-  | 'japanese'
-  | 'korean'
-  | 'southeast-asian';
+export const cuisineIds = [
+  'malay',
+  'chinese',
+  'indian',
+  'nyonya',
+  'east-malaysian',
+  'japanese',
+  'korean',
+  'thai',
+  'indonesian',
+  'vietnamese',
+  'western',
+  'middle-eastern',
+] as const;
+export type CuisineId = typeof cuisineIds[number];
+
+export function isCuisineId(value: unknown): value is CuisineId {
+  return typeof value === 'string' && (cuisineIds as readonly string[]).includes(value);
+}
 export type Budget = 'value' | 'standard' | 'flexible';
 export type Diet = 'all' | 'vegetarian';
 export type SpiceLevel = 'none' | 'mild' | 'hot';

@@ -1,11 +1,15 @@
 import type { Budget, CuisineId, FoodType, Meal, SpiceLevel } from '../domain/types';
+import { expandedMeals } from './expandedMeals';
+import { legacyFoodTypes } from './legacyFoodTypes';
 import { mealZh } from './mealZh';
 
 export const cuisineLabels: Record<CuisineId, { en: string; zh: string }> = {
-  malay: { en: 'Malay', zh: '马来餐' }, chinese: { en: 'Chinese', zh: '中餐' },
-  indian: { en: 'Indian & Mamak', zh: '印度餐与嘛嘛档' }, western: { en: 'Western', zh: '西餐' },
+  malay: { en: 'Malay', zh: '马来餐' }, chinese: { en: 'Malaysian Chinese', zh: '马来西亚中餐' },
+  indian: { en: 'Indian & Mamak', zh: '印度餐与嘛嘛档' }, nyonya: { en: 'Nyonya', zh: '娘惹餐' },
+  'east-malaysian': { en: 'East Malaysian', zh: '东马餐' }, western: { en: 'Western & Cafe', zh: '西餐与咖啡馆' },
   japanese: { en: 'Japanese', zh: '日本餐' }, korean: { en: 'Korean', zh: '韩国餐' },
-  'southeast-asian': { en: 'Southeast Asian', zh: '东南亚餐' },
+  thai: { en: 'Thai', zh: '泰国餐' }, indonesian: { en: 'Indonesian', zh: '印尼餐' },
+  vietnamese: { en: 'Vietnamese', zh: '越南餐' }, 'middle-eastern': { en: 'Middle Eastern', zh: '中东餐' },
 };
 export const foodTypeLabels: Record<FoodType, { en: string; zh: string }> = {
   rice: { en: 'Rice', zh: '饭' }, noodles: { en: 'Noodles', zh: '面' },
@@ -24,17 +28,6 @@ const suitableModes = (id: string): Meal['modes'] => [
   ...(!takeawayExceptions.has(id) ? ['takeaway' as const] : []),
   ...(!deliveryExceptions.has(id) ? ['delivery' as const] : []),
 ];
-const foodTypesFor = (id: string, name: string): FoodType[] => {
-  const value = `${id} ${name}`.toLowerCase();
-  const types: FoodType[] = [];
-  if (/nasi|rice|biryani|donburi|katsudon|bibimbap|onigiri|gimbap|lei-cha|bubur|congee/.test(value)) types.push('rice');
-  if (/mee|noodle|ramen|udon|soba|spaghetti|pad-thai|japchae|pho|laksa|chee-cheong-fun|aglio-olio|jjajangmyeon|carbonara|lasagna|bun-cha/.test(value)) types.push('noodles');
-  if (/roti|thosai|chapati|sandwich|burger|banh-mi|toast|appam|pizza|naan|murtabak/.test(value)) types.push('bread');
-  if (/soup|soto|bak-kut-teh|tom-yum|kimchi-jjigae|sundubu|yong-tau-foo|mee-rebus|curry-mee|pan-mee|ramen|udon|pho|laksa|lontong|bubur|congee/.test(value)) types.push('soup');
-  if (/salad|sushi|onigiri|som-tam|acai|spring-rolls|gimbap|falafel|vadai|chee-cheong-fun|dim-sum|takoyaki|mango-sticky-rice/.test(value)) types.push('light');
-  if (types.length === 0) types.push('plate');
-  return types;
-};
 const seed = (...row: Seed): Meal => {
   const [id, name, cuisine, description, tags, flags, budget, priceLabel, spice = 'mild'] = row;
   const translation = mealZh[id];
@@ -42,7 +35,7 @@ const seed = (...row: Seed): Meal => {
   return {
     id, name, localName, cuisine, description, descriptionZh: translation?.description ?? description,
     searchQuery: [name, localName, 'Malaysia', 'restaurant'].filter(Boolean).join(' '),
-    foodTypes: foodTypesFor(id, name),
+    foodTypes: legacyFoodTypes[id] ?? (() => { throw new Error(`Missing explicit food types for ${id}`); })(),
     modes: suitableModes(id),
     tags: tags.split('|'), vegetarian: flags.includes('v'), vegetarianAvailable: flags.includes('V'), containsEgg: flags.includes('e'),
     containsPork: flags.includes('p'), containsBeef: flags.includes('b'), containsSeafood: flags.includes('s'),
@@ -50,7 +43,7 @@ const seed = (...row: Seed): Meal => {
   };
 };
 
-export const meals: Meal[] = [
+const legacyMeals: Meal[] = [
   seed('nasi-lemak', 'Nasi lemak', 'malay', 'Coconut rice with sambal and classic sides—the Malaysian default when nothing else wins.', 'iconic|rice', 'es', 'value', 'Usually RM4–12', 'hot'),
   seed('beef-rendang', 'Beef rendang', 'malay', 'Slow-cooked, deeply spiced beef for a richer, more substantial meal.', 'slow-cooked|rich', 'b', 'standard', 'Usually RM12–25', 'hot'),
   seed('nasi-kerabu', 'Nasi kerabu', 'malay', 'Herbed blue rice with vegetables and a protein; fresh, aromatic and full of texture.', 'herby|rice', 's', 'standard', 'Usually RM8–18', 'hot'),
@@ -70,8 +63,8 @@ export const meals: Meal[] = [
   seed('chicken-rice', 'Hainanese chicken rice', 'chinese', 'Tender chicken and fragrant rice: quick, familiar and easy to find almost anywhere.', 'quick|rice', '', 'value', 'Usually RM6–14', 'none'),
   seed('char-kway-teow', 'Char kway teow', 'chinese', 'Smoky flat noodles with wok hei when you want something indulgent and fast.', 'wok-fried|noodles', 'esV', 'standard', 'Usually RM8–16', 'mild'),
   seed('bak-kut-teh', 'Bak kut teh', 'chinese', 'Peppery herbal pork rib soup, best when you have time for a sit-down meal.', 'herbal|soup', 'p', 'flexible', 'Usually RM18–40', 'none'),
-  seed('wonton-noodles', 'Wonton noodles', 'chinese', 'Springy noodles with dumplings; available dry or in soup for an easy lunch.', 'dumplings|noodles', 'epsV', 'value', 'Usually RM7–15', 'none'),
-  seed('hokkien-mee', 'Hokkien mee', 'chinese', 'Dark, savoury braised noodles built for a hearty dinner.', 'braised|noodles', 'psV', 'standard', 'Usually RM10–20', 'mild'),
+  seed('wonton-noodles', 'Wantan noodles (dry)', 'chinese', 'Springy dry-tossed noodles with char siu, greens and dumplings.', 'dumplings|noodles', 'epsV', 'value', 'Usually RM7–15', 'none'),
+  seed('hokkien-mee', 'KL Hokkien mee', 'chinese', 'Dark, savoury braised noodles built for a hearty dinner.', 'braised|noodles', 'psV', 'standard', 'Usually RM10–20', 'mild'),
   seed('curry-mee', 'Curry mee', 'chinese', 'Creamy curry noodles with tofu puffs and toppings for a bold, warming bowl.', 'curry|noodles', 'epsV', 'standard', 'Usually RM8–17', 'hot'),
   seed('pan-mee', 'Pan mee', 'chinese', 'Hand-torn noodles with greens; choose soup for comfort or dry for stronger flavour.', 'handmade|noodles', 'espV', 'value', 'Usually RM7–15', 'mild'),
   seed('yong-tau-foo', 'Yong tau foo', 'chinese', 'Pick your own tofu and vegetables, then choose clear soup or dry sauce.', 'customisable|soup', 'sV', 'standard', 'Usually RM8–20', 'none'),
@@ -137,25 +130,27 @@ export const meals: Meal[] = [
   seed('sundubu-jjigae', 'Sundubu jjigae', 'korean', 'Bubbling soft-tofu stew with egg and your choice of seafood or meat.', 'stew|tofu', 'esV', 'standard', 'Usually RM18–35', 'hot'),
   seed('dak-galbi', 'Dak-galbi', 'korean', 'Spicy stir-fried chicken with cabbage and rice cakes, made for sharing.', 'stir-fried|chicken', '', 'flexible', 'Usually RM22–50', 'hot'),
 
-  seed('pad-thai', 'Pad Thai', 'southeast-asian', 'Sweet-sour stir-fried rice noodles with peanuts and a choice of protein.', 'thai|noodles', 'esV', 'standard', 'Usually RM12–25', 'mild'),
-  seed('tom-yum', 'Tom yum', 'southeast-asian', 'Hot and sour Thai soup with seafood or chicken when you want a sharp flavour reset.', 'thai|soup', 's', 'standard', 'Usually RM14–30', 'hot'),
-  seed('thai-green-curry', 'Thai green curry', 'southeast-asian', 'Fragrant coconut curry with herbs, vegetables and your choice of protein.', 'thai|curry', 'sV', 'standard', 'Usually RM15–30', 'hot'),
-  seed('pineapple-fried-rice', 'Pineapple fried rice', 'southeast-asian', 'Sweet-savoury fried rice with fruit, nuts and often seafood.', 'thai|rice', 'esV', 'standard', 'Usually RM13–26', 'mild'),
-  seed('pho', 'Pho', 'southeast-asian', 'Vietnamese rice noodles in aromatic broth with herbs; restorative and not too heavy.', 'vietnamese|soup', 'bV', 'standard', 'Usually RM15–30', 'none'),
-  seed('banh-mi', 'Banh mi', 'southeast-asian', 'Crisp Vietnamese baguette with pickles and savoury fillings; ideal for takeaway.', 'vietnamese|sandwich', 'epV', 'standard', 'Usually RM10–22', 'mild'),
-  seed('pad-kra-pao', 'Pad kra pao', 'southeast-asian', 'Thai basil stir-fry over rice, usually topped with a fried egg.', 'thai|rice', 'epV', 'standard', 'Usually RM13–27', 'hot'),
-  seed('som-tam', 'Som tam', 'southeast-asian', 'Crunchy green papaya salad with lime and chilli; fresh, fiery and best with a side.', 'thai|salad', 'sV', 'standard', 'Usually RM10–20', 'hot'),
-  seed('ayam-penyet', 'Ayam penyet', 'southeast-asian', 'Indonesian smashed fried chicken with sambal, tofu and tempeh for a bold rice meal.', 'indonesian|chicken', '', 'standard', 'Usually RM10–22', 'hot'),
-  seed('nasi-padang', 'Nasi Padang', 'southeast-asian', 'Steamed rice with a choose-your-own spread of Indonesian curries, vegetables and proteins.', 'indonesian|customisable', 'esbV', 'flexible', 'Usually RM12–30', 'hot'),
-  seed('bun-cha', 'Bún chả', 'southeast-asian', 'Vietnamese grilled pork with rice noodles, herbs and a bright dipping broth.', 'vietnamese|grilled', 'p', 'standard', 'Usually RM15–30', 'mild'),
-  seed('mango-sticky-rice', 'Mango sticky rice', 'southeast-asian', 'Sweet coconut sticky rice with ripe mango for a light meal or dessert-sized choice.', 'thai|sweet', 'v', 'standard', 'Usually RM10–20', 'none'),
+  seed('pad-thai', 'Pad Thai', 'thai', 'Sweet-sour stir-fried rice noodles with peanuts and a choice of protein.', 'thai|noodles', 'esV', 'standard', 'Usually RM12–25', 'mild'),
+  seed('tom-yum', 'Tom yum soup', 'thai', 'Hot and sour Thai soup with seafood or chicken when you want a sharp flavour reset.', 'thai|soup', 's', 'standard', 'Usually RM14–30', 'hot'),
+  seed('thai-green-curry', 'Thai green curry', 'thai', 'Fragrant coconut curry with herbs, vegetables and your choice of protein.', 'thai|curry', 'sV', 'standard', 'Usually RM15–30', 'hot'),
+  seed('pineapple-fried-rice', 'Pineapple fried rice', 'thai', 'Sweet-savoury fried rice with fruit, nuts and often seafood.', 'thai|rice', 'esV', 'standard', 'Usually RM13–26', 'mild'),
+  seed('pho', 'Pho', 'vietnamese', 'Vietnamese rice noodles in aromatic broth with herbs; restorative and not too heavy.', 'vietnamese|soup', 'bV', 'standard', 'Usually RM15–30', 'none'),
+  seed('banh-mi', 'Banh mi', 'vietnamese', 'Crisp Vietnamese baguette with pickles and savoury fillings; ideal for takeaway.', 'vietnamese|sandwich', 'epV', 'standard', 'Usually RM10–22', 'mild'),
+  seed('pad-kra-pao', 'Pad kra pao', 'thai', 'Thai basil stir-fry over rice, usually topped with a fried egg.', 'thai|rice', 'epV', 'standard', 'Usually RM13–27', 'hot'),
+  seed('som-tam', 'Som tam', 'thai', 'Crunchy green papaya salad with lime and chilli; fresh, fiery and best with a side.', 'thai|salad', 'sV', 'standard', 'Usually RM10–20', 'hot'),
+  seed('ayam-penyet', 'Ayam penyet', 'indonesian', 'Indonesian smashed fried chicken with sambal, tofu and tempeh for a bold rice meal.', 'indonesian|chicken', '', 'standard', 'Usually RM10–22', 'hot'),
+  seed('nasi-padang', 'Nasi Padang', 'indonesian', 'Steamed rice with a choose-your-own spread of Indonesian curries, vegetables and proteins.', 'indonesian|customisable', 'esbV', 'flexible', 'Usually RM12–30', 'hot'),
+  seed('bun-cha', 'Bún chả', 'vietnamese', 'Vietnamese grilled pork with rice noodles, herbs and a bright dipping broth.', 'vietnamese|grilled', 'p', 'standard', 'Usually RM15–30', 'mild'),
+  seed('mango-sticky-rice', 'Mango sticky rice', 'thai', 'Sweet coconut sticky rice with ripe mango for a light meal or dessert-sized choice.', 'thai|sweet', 'v', 'standard', 'Usually RM10–20', 'none'),
 
   seed('buddhas-delight', "Buddha's delight", 'chinese', 'A mixed vegetable and tofu stir-fry that is substantial enough to pair with rice.', 'tofu|vegetables', 'v', 'standard', 'Usually RM12–25', 'none'),
   seed('caprese-salad', 'Caprese salad', 'western', 'Tomato, mozzarella and basil for a fresh, simple café meal.', 'salad|fresh', 'v', 'flexible', 'Usually RM16–32', 'none'),
   seed('greek-salad', 'Greek salad', 'western', 'Crisp vegetables, olives and feta—refreshing when a cooked meal feels too heavy.', 'salad|fresh', 'v', 'standard', 'Usually RM14–28', 'none'),
-  seed('falafel-bowl', 'Falafel bowl', 'western', 'Chickpea patties, grains and vegetables with sauce for a complete meat-free bowl.', 'chickpeas|bowl', 'v', 'standard', 'Usually RM15–30', 'mild'),
-  seed('tempeh-bowl', 'Tempeh rice plate', 'southeast-asian', 'Nutty tempeh with rice and vegetable sides: filling, local-friendly plant protein.', 'tempeh|rice-plate', 'v', 'standard', 'Usually RM12–26', 'mild'),
+  seed('falafel-bowl', 'Falafel bowl', 'middle-eastern', 'Chickpea patties, grains and vegetables with sauce for a complete meat-free bowl.', 'chickpeas|bowl', 'v', 'standard', 'Usually RM15–30', 'mild'),
+  seed('tempeh-bowl', 'Tempeh rice plate', 'indonesian', 'Nutty tempeh with rice and vegetable sides: filling, local-friendly plant protein.', 'tempeh|rice-plate', 'v', 'standard', 'Usually RM12–26', 'mild'),
   seed('acai-bowl', 'Açaí bowl', 'western', 'Cold fruit puree with toppings; suited to breakfast or a light meal, not every appetite.', 'fruit|cold', 'v', 'flexible', 'Usually RM18–35', 'none'),
   seed('avocado-toast', 'Avocado toast', 'western', 'Creamy avocado on toast, often with egg; a familiar café breakfast or brunch.', 'toast|brunch', 've', 'flexible', 'Usually RM16–32', 'none'),
-  seed('fresh-spring-rolls', 'Fresh spring rolls', 'southeast-asian', 'Rice-paper rolls packed with herbs, vegetables and tofu for a light, portable meal.', 'fresh|portable', 'v', 'standard', 'Usually RM10–22', 'none'),
+  seed('fresh-spring-rolls', 'Fresh spring rolls', 'vietnamese', 'Rice-paper rolls packed with herbs, vegetables and tofu for a light, portable meal.', 'fresh|portable', 'v', 'standard', 'Usually RM10–22', 'none'),
 ];
+
+export const meals: Meal[] = [...legacyMeals, ...expandedMeals];

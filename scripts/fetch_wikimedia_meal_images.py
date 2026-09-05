@@ -3,6 +3,7 @@ from __future__ import annotations
 import html
 import json
 import os
+import re
 import time
 import urllib.parse
 import urllib.request
@@ -16,6 +17,7 @@ MANIFEST = ROOT / "scripts" / "meal_image_manifest.json"
 OUT_DIR = ROOT / "assets" / "meals"
 CREDITS_JSON = ROOT / "src" / "data" / "imageCredits.json"
 CONTACT_SHEET = ROOT / "artifacts" / "meal-image-contact-sheet.jpg"
+CONTACT_SHEET_DIR = ROOT / "artifacts" / "meal-image-contact-sheets"
 USER_AGENT = "BeforeYouOrder/1.0 (food image curation; contact: project owner via expo.dev)"
 
 
@@ -36,6 +38,18 @@ def request_json(base: str, params: dict[str, str]) -> dict:
 def chunks(items: list, size: int):
     for index in range(0, len(items), size):
         yield items[index:index + size]
+
+
+def plain_text(value: str) -> str:
+    cleaned = re.sub(r"<[^>]+>", " ", html.unescape(value or ""))
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    return cleaned if len(cleaned) <= 180 else "Wikimedia Commons contributor (see source page)"
+
+
+def accepted_license(info: dict) -> bool:
+    metadata = info.get("extmetadata", {})
+    name = plain_text(metadata.get("LicenseShortName", {}).get("value", ""))
+    return bool(re.match(r"^(CC0|CC BY(?:-SA)?|Public domain)", name, re.IGNORECASE))
 
 
 def article_images(meals: list[dict]) -> dict[str, tuple[str, dict]]:
@@ -82,7 +96,7 @@ def article_images(meals: list[dict]) -> dict[str, tuple[str, dict]]:
     resolved = {}
     for meal_id, filename in meal_files.items():
         info = file_info.get(filename)
-        if info:
+        if info and accepted_license(info):
             resolved[meal_id] = (info.get("thumburl") or info["url"], info)
     return resolved
 
@@ -175,14 +189,14 @@ def commons_image(query: str) -> tuple[str, dict]:
             info = page.get("imageinfo", [None])[0]
             media_url = (info or {}).get("thumburl") or (info or {}).get("url") or ""
             media_type = (info or {}).get("mime", "")
-            if info and (info.get("thumburl") or info.get("url")) and media_type.startswith("image/") and not media_url.lower().split("?", 1)[0].endswith((".pdf", ".djvu")):
+            if info and accepted_license(info) and (info.get("thumburl") or info.get("url")) and media_type.startswith("image/") and not media_url.lower().split("?", 1)[0].endswith((".pdf", ".djvu")):
                 return info.get("thumburl") or info["url"], info
     raise RuntimeError(f"No Commons image found for {query}")
 
 
 def clean_metadata(info: dict, meal: dict) -> dict:
     metadata = info.get("extmetadata", {})
-    value = lambda key, fallback="": html.unescape(metadata.get(key, {}).get("value", fallback))
+    value = lambda key, fallback="": plain_text(metadata.get(key, {}).get("value", fallback))
     return {
         "mealId": meal["id"],
         "sourceTitle": meal["title"],
@@ -191,6 +205,17 @@ def clean_metadata(info: dict, meal: dict) -> dict:
         "licenseUrl": value("LicenseUrl"),
         "sourceUrl": info.get("descriptionurl") or info.get("descriptionshorturl") or info.get("url"),
     }
+
+
+def make_placeholder(destination: Path, meal: dict) -> dict:
+    image = Image.new("RGB", (900, 600), "#fff7e8")
+    draw = ImageDraw.Draw(image)
+    draw.rounded_rectangle((70, 70, 830, 530), radius=48, fill="#f4ead7", outline="#176b45", width=6)
+    draw.ellipse((340, 135, 560, 355), fill="#176b45")
+    draw.text((450, 245), "?", anchor="mm", fill="white", font=ImageFont.load_default(size=112))
+    draw.text((450, 430), meal["title"][:48], anchor="mm", fill="#103f29", font=ImageFont.load_default(size=30))
+    image.save(destination, "WEBP", quality=86, method=6)
+    return {"mealId": meal["id"], "sourceTitle": meal["title"], "artist": "Before You Order", "license": "Original artwork", "licenseUrl": "", "sourceUrl": "", "isPlaceholder": True}
 
 
 def download_and_fit(url: str, destination: Path) -> None:
@@ -228,6 +253,20 @@ def make_contact_sheet(meals: list[dict]) -> None:
         sheet.paste(image, (x, y))
         draw.text((x + 8, y + 195), meal["title"], fill="#103f29", font=font)
     sheet.save(CONTACT_SHEET, "JPEG", quality=88, optimize=True)
+    CONTACT_SHEET_DIR.mkdir(parents=True, exist_ok=True)
+    for cuisine in sorted({meal["cuisine"] for meal in meals}):
+        cuisine_meals = [meal for meal in meals if meal["cuisine"] == cuisine]
+        cuisine_rows = (len(cuisine_meals) + columns - 1) // columns
+        cuisine_sheet = Image.new("RGB", (columns * tile_width, cuisine_rows * tile_height), "#fffaf0")
+        cuisine_draw = ImageDraw.Draw(cuisine_sheet)
+        for index, meal in enumerate(cuisine_meals):
+            image = Image.open(OUT_DIR / f"{meal['id']}.webp").convert("RGB")
+            image.thumbnail((tile_width, 190), Image.Resampling.LANCZOS)
+            x = (index % columns) * tile_width
+            y = (index // columns) * tile_height
+            cuisine_sheet.paste(image, (x, y))
+            cuisine_draw.text((x + 8, y + 195), meal["title"], fill="#103f29", font=font)
+        cuisine_sheet.save(CONTACT_SHEET_DIR / f"{cuisine}.jpg", "JPEG", quality=88, optimize=True)
 
 
 def main() -> None:
@@ -235,7 +274,9 @@ def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     existing_credits = {}
     if CREDITS_JSON.exists():
-        existing_credits = {item["mealId"]: item for item in json.loads(CREDITS_JSON.read_text(encoding="utf-8"))}
+        raw_credits = json.loads(CREDITS_JSON.read_text(encoding="utf-8"))
+        existing_credits = {item["mealId"]: {**item, "artist": plain_text(item.get("artist", "Wikimedia Commons contributor"))} for item in raw_credits}
+        existing_credits = {meal_id: credit for meal_id, credit in existing_credits.items() if not credit.get("isPlaceholder") and re.match(r"^(CC0|CC BY(?:-SA)?|Public domain|Original artwork)", credit.get("license", ""), re.IGNORECASE)}
     # Avoid re-querying Wikipedia for the many assets whose credits are
     # already pinned. This also keeps a small recovery run well below the
     # public API rate limit when only one or two images need replacing.
@@ -258,21 +299,24 @@ def main() -> None:
                 continue
             result = resolved.get(meal["id"]) or commons_image(meal["title"])
             url, info = result
-            if destination.exists():
-                destination.unlink()
-            download_and_fit(url, destination)
+            if not destination.exists():
+                download_and_fit(url, destination)
             credits.append(clean_metadata(info, meal))
             print(f"[{index:02}/{len(meals)}] {meal['id']}")
-        except Exception as error:  # continue so the failure list is actionable
-            failures.append({"meal": meal, "error": str(error)})
-            print(f"FAILED {meal['id']}: {error}")
-        time.sleep(0.4)
+        except Exception as error:  # a neutral placeholder is safer than a wrong dish
+            if destination.exists():
+                destination.unlink()
+            credits.append(make_placeholder(destination, meal))
+            failures.append({"mealId": meal["id"], "error": str(error), "placeholder": True})
+            print(f"PLACEHOLDER {meal['id']}: {error}")
+        CREDITS_JSON.write_text(json.dumps(credits, ensure_ascii=False, indent=2), encoding="utf-8")
+        time.sleep(1.25)
 
     CREDITS_JSON.write_text(json.dumps(credits, ensure_ascii=False, indent=2), encoding="utf-8")
-    if failures:
-        raise SystemExit(json.dumps(failures, ensure_ascii=False, indent=2))
     make_contact_sheet(meals)
-    print(f"Saved {len(credits)} images and {CONTACT_SHEET}")
+    print(f"Saved {len(credits)} images and {CONTACT_SHEET}; placeholders: {len(failures)}")
+    if failures:
+        (ROOT / "artifacts" / "meal-image-placeholders.json").write_text(json.dumps(failures, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 if __name__ == "__main__":

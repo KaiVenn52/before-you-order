@@ -1,6 +1,6 @@
 # Before You Order — Project Status
 
-## Implemented through V1.7
+## Implemented through V1.8 locally
 
 - Expo SDK 57 / React Native Android application.
 - One-recommendation decision flow for dine-out, takeaway, or delivery.
@@ -8,7 +8,10 @@
 - Random cuisine selection that avoids repeating the currently selected cuisine.
 - Ten Malaysian venue formats with bilingual discovery terms: kopitiam, cafe/brunch, zi char/dai chow, mamak, hawker centre, Malay warung, banana leaf restaurant, steamboat/BBQ, bakery/dessert, and vegetarian restaurant.
 - Nearby, best-rated, and budget-friendly Google Maps searches for both dishes and venue formats.
-- 100 dishes across seven cuisine groups relevant to Malaysia's multicultural food landscape.
+- 244 dishes across 12 cuisine groups; Malay, Malaysian Chinese, Indian/Mamak, Nyonya, and East Malaysian dishes make up the majority.
+- Explicit per-dish food-form metadata, bilingual names and descriptions, Malaysia-aware search aliases, price guidance, and reusable image attribution.
+- Dedicated Nyonya and East Malaysian groups, plus separate Thai, Indonesian, Vietnamese, and Middle Eastern collections.
+- A catalog validator that rejects duplicate IDs or names, missing bilingual metadata, missing assets, and unsupported image licenses.
 - Optimized local meal photos with Wikimedia licensing and in-app attribution.
 - Full visual and attribution re-audit with direct Commons file mappings for corrected images.
 - Direct Google Maps nearby search for each recommendation.
@@ -36,9 +39,10 @@
 - Confirm Google Maps/browser handoff on the user's phone.
 - Gather feedback from at least 5–10 Malaysian users on recommendation relevance.
 - Tune dish metadata and rankings based on observed choices rather than assumptions.
+- Review any neutral image placeholders and replace them only when an exact, reusable photo is available.
 
 ## Distribution status and remaining boundaries
 
-- V1.7.0 (version code 12) is published to the Google Play internal testing track; Google Play recognizes its ReTrace mapping file and native debug symbols.
+- V1.7.0 (version code 12) remains the Google Play internal-testing build. V1.8.0 is local source work only until a separately approved store build and upload.
 - No public production release or subscription setup.
 - No location permission or precise location collection; nearby discovery is delegated to Google Maps.

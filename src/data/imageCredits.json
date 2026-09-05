@@ -2,7 +2,7 @@
   {
     "mealId": "nasi-lemak",
     "sourceTitle": "Nasi lemak",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Meandkancil2020\" title=\"User:Meandkancil2020\">Meandkancil2020</a>",
+    "artist": "Meandkancil2020",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas,_di_Penang_Summer_Restaurant.jpg"
@@ -10,7 +10,7 @@
   {
     "mealId": "beef-rendang",
     "sourceTitle": "Rendang",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Midori\" title=\"User:Midori\">Midori</a>",
+    "artist": "Midori",
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rendang_daging_sapi_asli_Padang.JPG"
@@ -18,7 +18,7 @@
   {
     "mealId": "nasi-kerabu",
     "sourceTitle": "Nasi kerabu",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/92405724@N00\">amrufm</a> from Shah Alam, Malaysia",
+    "artist": "amrufm from Shah Alam, Malaysia",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nasi_kerabu.jpg"
@@ -26,7 +26,7 @@
   {
     "mealId": "nasi-dagang",
     "sourceTitle": "Nasi dagang",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/47934540@N00\">:: cool ::</a>",
+    "artist": ":: cool ::",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mak_ngah_nasi_dagang.jpg"
@@ -34,7 +34,7 @@
   {
     "mealId": "mee-rebus",
     "sourceTitle": "Mee rebus",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Banej\" title=\"User:Banej\">Banej</a>",
+    "artist": "Banej",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mee_Rebus_by_Banej,_Singapore_October_2017.jpg"
@@ -42,7 +42,7 @@
   {
     "mealId": "ayam-percik",
     "sourceTitle": "Ayam percik",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Syafls&action=edit&redlink=1\" class=\"new\" title=\"User:Syafls (page does not exist)\">Syafls</a>",
+    "artist": "Syafls",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:AyamPercikKelantan.jpg"
@@ -50,7 +50,7 @@
   {
     "mealId": "soto-ayam",
     "sourceTitle": "Soto ayam",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Midori\" title=\"User:Midori\">Sakurai Midori</a>",
+    "artist": "Sakurai Midori",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soto_ayam.JPG"
@@ -58,7 +58,7 @@
   {
     "mealId": "asam-pedas",
     "sourceTitle": "Asam pedas",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Zhilal_Darma\" title=\"User:Zhilal Darma\">Zhilal Darma</a>",
+    "artist": "Zhilal Darma",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ikan_Asam_Pedas_Mempawah.jpg"
@@ -66,7 +66,7 @@
   {
     "mealId": "nasi-goreng-kampung",
     "sourceTitle": "Nasi goreng kampung",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/77742560@N06\">shankar s.</a> from Dubai, united arab emirates",
+    "artist": "shankar s. from Dubai, united arab emirates",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nasi_Goreng_Kampung_(11967588375).jpg"
@@ -74,7 +74,7 @@
   {
     "mealId": "lontong",
     "sourceTitle": "Lontong",
-    "artist": "No machine-readable author provided. <a href=\"//commons.wikimedia.org/w/index.php?title=User:Di%C3%A1doco&action=edit&redlink=1\" class=\"new\" title=\"User:Diádoco (page does not exist)\">Diádoco</a> assumed (based on copyright claims).",
+    "artist": "No machine-readable author provided. Diádoco assumed (based on copyright claims).",
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lontong.jpg"
@@ -90,7 +90,7 @@
   {
     "mealId": "ayam-goreng-berempah",
     "sourceTitle": "Ayam goreng berempah",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Nur_Aishah_Binti_Abdullah&action=edit&redlink=1\" class=\"new\" title=\"User:Nur Aishah Binti Abdullah (page does not exist)\">Nur Aishah Binti Abdullah</a>",
+    "artist": "Nur Aishah Binti Abdullah",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayam_Goreng_Berempah.jpg"
@@ -114,15 +114,15 @@
   {
     "mealId": "bubur-lambuk",
     "sourceTitle": "Bubur lambuk",
-    "artist": "<a href=\"https://ms.wikipedia.org/wiki/User:Yosri\" class=\"extiw\" title=\"ms:User:Yosri\">Yosri</a> at <a class=\"external text\" data-mw-original-href=\"http://ms.wikipedia.org\" href=\"https://ms.wikipedia.org\">ms.wikipedia</a>",
-    "license": "GFDL",
-    "licenseUrl": "http://www.gnu.org/copyleft/fdl.html",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:YosriBuburLambuk.jpg"
+    "artist": "Fifi Perelis",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buburlambuk.jpg"
   },
   {
     "mealId": "chicken-rice",
     "sourceTitle": "Hainanese chicken rice",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Misaochan\" title=\"User:Misaochan\">Misaochan</a>",
+    "artist": "Misaochan",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hainanese_chicken_rice.jpg"
@@ -130,7 +130,7 @@
   {
     "mealId": "char-kway-teow",
     "sourceTitle": "Char kway teow",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/10559879@N00\">Alpha</a> from Melbourne, Australia",
+    "artist": "Alpha from Melbourne, Australia",
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Char_kway_teow_-_Old_Town_Kopitiam.jpg"
@@ -138,7 +138,7 @@
   {
     "mealId": "bak-kut-teh",
     "sourceTitle": "Bak kut teh",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Chensiyuan\" title=\"User:Chensiyuan\">Chensiyuan</a>",
+    "artist": "Chensiyuan",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bak_kut_teh_zz.jpg"
@@ -146,7 +146,7 @@
   {
     "mealId": "wonton-noodles",
     "sourceTitle": "Wonton noodles",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:CherylGarnet&action=edit&redlink=1\" class=\"new\" title=\"User:CherylGarnet (page does not exist)\">CherylGarnet</a>",
+    "artist": "CherylGarnet",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mee_Wantan_Merah.jpg"
@@ -154,7 +154,7 @@
   {
     "mealId": "hokkien-mee",
     "sourceTitle": "Hokkien mee",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/19160878@N08\">brown_colour</a>",
+    "artist": "brown_colour",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:KL_hokkien_mee.jpg"
@@ -162,7 +162,7 @@
   {
     "mealId": "curry-mee",
     "sourceTitle": "Curry mee",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Shinichi2018&action=edit&redlink=1\" class=\"new\" title=\"User:Shinichi2018 (page does not exist)\">Shinichi2018</a>",
+    "artist": "Shinichi2018",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Curry_mee.jpg"
@@ -170,7 +170,7 @@
   {
     "mealId": "pan-mee",
     "sourceTitle": "Pan mee",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Grantye&action=edit&redlink=1\" class=\"new\" title=\"User:Grantye (page does not exist)\">Grantye</a>",
+    "artist": "Grantye",
     "license": "Public domain",
     "licenseUrl": "",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:PanMee.jpg"
@@ -178,7 +178,7 @@
   {
     "mealId": "yong-tau-foo",
     "sourceTitle": "Yong tau foo",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Foodi-elaine&action=edit&redlink=1\" class=\"new\" title=\"User:Foodi-elaine (page does not exist)\">Foodi-elaine</a>",
+    "artist": "Foodi-elaine",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malaysian_Yong_Tau_Foo.jpg"
@@ -186,7 +186,7 @@
   {
     "mealId": "chee-cheong-fun",
     "sourceTitle": "Chee cheong fun",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Asamboi\" title=\"User:Asamboi\">Asamboi</a>",
+    "artist": "Asamboi",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chaoshan_rice_noodle_roll.jpg"
@@ -194,10 +194,10 @@
   {
     "mealId": "claypot-chicken-rice",
     "sourceTitle": "Claypot chicken rice",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/10559879@N00\">Alpha</a> from Melbourne, Australia",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_Olive_Rice_-_Soup_Restaurant_(2500746236).jpg"
+    "artist": "Banej",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claypot_Chicken_Rice,_Singapore.JPG"
   },
   {
     "mealId": "lei-cha",
@@ -210,7 +210,7 @@
   {
     "mealId": "chinese-fried-rice",
     "sourceTitle": "Fried rice",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Hrishikes\" title=\"User:Hrishikes\">Hrishikes</a>",
+    "artist": "Hrishikes",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_fried_rice_homemade.jpg"
@@ -218,15 +218,15 @@
   {
     "mealId": "dim-sum",
     "sourceTitle": "Dim sum",
-    "artist": "Pattaya Patrol",
+    "artist": "PattayaPatrol",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:DFC_5241-_Colorful_skewers_of_steamed_and_grilled_dim_sum_-_bright_yellow_siu_mai,_green_vegetable_dumplings,_seaweed-wrapped_bites_and_savory_meat_balls_-_ready_to_enjoy_at_a_bustling_Thai_street_food_stall.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:DFC_3931_A_close-up_of_a_cluster_of_steamed_wontons_with_yellow_wrappers_arranged_on_a_woven_bamboo_tray.jpg"
   },
   {
     "mealId": "congee",
     "sourceTitle": "Congee",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/10559879@N00\">Alpha</a> from Melbourne, Australia",
+    "artist": "Alpha from Melbourne, Australia",
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Century_Egg,_Jellyfish,_Chicken_Congee_-_Wonton_House_Swanston_AUD8.90_(5049732373).jpg"
@@ -234,7 +234,7 @@
   {
     "mealId": "roast-duck-rice",
     "sourceTitle": "Cantonese roast duck",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Banej\" title=\"User:Banej\">Banej</a>",
+    "artist": "Banej",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roast_duck_rice_in_Singapore.jpg"
@@ -250,15 +250,16 @@
   {
     "mealId": "roti-canai",
     "sourceTitle": "Roti canai",
-    "artist": "<a href=\"https://ms.wikipedia.org/wiki/User:Yosri\" class=\"extiw\" title=\"ms:User:Yosri\">Yosri</a> at <a class=\"external text\" data-mw-original-href=\"http://ms.wikipedia.org\" href=\"https://ms.wikipedia.org\">ms.wikipedia</a>",
-    "license": "GFDL",
-    "licenseUrl": "http://www.gnu.org/copyleft/fdl.html",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:YosriRotiCanai.jpg"
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
   },
   {
     "mealId": "thosai",
     "sourceTitle": "Dosa (food)",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:MANSI_VISHNOI&action=edit&redlink=1\" class=\"new\" title=\"User:MANSI VISHNOI (page does not exist)\">MANSI VISHNOI</a>",
+    "artist": "MANSI VISHNOI",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:DOSA_CUISINE_INDIAN_FOOD.jpg"
@@ -266,7 +267,7 @@
   {
     "mealId": "nasi-kandar",
     "sourceTitle": "Nasi kandar",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Wiki_Asmah\" title=\"User:Wiki Asmah\">Wiki Asmah</a>",
+    "artist": "Wiki Asmah",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nasi_kandar_-_02.jpg"
@@ -274,7 +275,7 @@
   {
     "mealId": "mee-goreng-mamak",
     "sourceTitle": "Mie goreng",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:KtMystic&action=edit&redlink=1\" class=\"new\" title=\"User:KtMystic (page does not exist)\">KtMystic</a>",
+    "artist": "KtMystic",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mee_mamak.webp"
@@ -290,7 +291,7 @@
   {
     "mealId": "chapati-dhal",
     "sourceTitle": "Chapati",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Meena74&action=edit&redlink=1\" class=\"new\" title=\"User:Meena74 (page does not exist)\">Meena Kharatmal</a>",
+    "artist": "Meena Kharatmal",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Methi_bhaji_in_moog_dal_chapati_salad.jpg"
@@ -298,7 +299,7 @@
   {
     "mealId": "chicken-biryani",
     "sourceTitle": "Biryani",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Alnitak-Alnilam-Mintaka\" title=\"User:Alnitak-Alnilam-Mintaka\">Alnitak-Alnilam-Mintaka</a>",
+    "artist": "Alnitak-Alnilam-Mintaka",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andhra_Biryani_at_Himalaya_food_court.jpg"
@@ -306,10 +307,11 @@
   {
     "mealId": "idli-sambar",
     "sourceTitle": "Idli",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:BhargavVora&action=edit&redlink=1\" class=\"new\" title=\"User:BhargavVora (page does not exist)\">BhargavVora</a>",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Idli_(South_Indian_dish).jpg"
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
   },
   {
     "mealId": "banana-leaf-rice",
@@ -322,7 +324,7 @@
   {
     "mealId": "masala-thosai",
     "sourceTitle": "Masala dosa",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Bhavana_Homecook&action=edit&redlink=1\" class=\"new\" title=\"User:Bhavana Homecook (page does not exist)\">Bhavana Homecook</a>",
+    "artist": "Bhavana Homecook",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Benne_Masala_Dosa.jpg"
@@ -330,7 +332,7 @@
   {
     "mealId": "appam",
     "sourceTitle": "Appam",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Bhuvana_Meenakshi\" title=\"User:Bhuvana Meenakshi\">Bhuvana Meenakshi</a>",
+    "artist": "Bhuvana Meenakshi",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aapam_with_Kadala_curry_with_hot_Kattan_Chai_-_Calicut,_Kerala.jpg"
@@ -338,15 +340,15 @@
   {
     "mealId": "vadai",
     "sourceTitle": "Vada",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Sharvarism\" title=\"User:Sharvarism\">Sharvarism</a>",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crunchy_Crispy_Vada_pav.jpg"
+    "artist": "Dilip Muralidaran from Chennai, India",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vadai%26Sambar.jpg"
   },
   {
     "mealId": "butter-chicken",
     "sourceTitle": "Butter chicken",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Shairilay&action=edit&redlink=1\" class=\"new\" title=\"User:Shairilay (page does not exist)\">Shairilay</a>",
+    "artist": "Shairilay",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Butter_Chicken,_Goa.jpg"
@@ -354,15 +356,15 @@
   {
     "mealId": "naan",
     "sourceTitle": "Naan",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Ramblersm&action=edit&redlink=1\" class=\"new\" title=\"User:Ramblersm (page does not exist)\">Soumya Mukherjee</a>",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aminia_Special.PNG"
+    "artist": "Geoff Peters from Vancouver, BC, Canada",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Naan_bread_(3170160310).jpg"
   },
   {
     "mealId": "murtabak",
     "sourceTitle": "Murtabak",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Mojackjutaily\" title=\"User:Mojackjutaily\">Mojackjutaily</a>",
+    "artist": "Mojackjutaily",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Murtabak.jpg"
@@ -370,7 +372,7 @@
   {
     "mealId": "chicken-chop",
     "sourceTitle": "Chicken chop",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Shadowsnuggles&action=edit&redlink=1\" class=\"new\" title=\"User:Shadowsnuggles (page does not exist)\">Shadowsnuggles</a>",
+    "artist": "Shadowsnuggles",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_chop,a_unique_dish_of_Malaysia.jpg"
@@ -378,7 +380,7 @@
   {
     "mealId": "fish-and-chips",
     "sourceTitle": "Fish and chips",
-    "artist": "<table style=\"margin: 1.5em auto; width:60%; background-color:#CCCCCC; border:2px solid #aaaaaa; padding:1px;\" cellspacing=\"10\">\n\n<tbody><tr>\n<td align=\"center\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Flag-globe-2.gif\" class=\"mw-file-description\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Flag-globe-2.gif/120px-Flag-globe-2.gif?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail\" decoding=\"async\" width=\"80\" height=\"79\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Flag-globe-2.gif/250px-Flag-globe-2.gif?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail 2x\" data-file-width=\"257\" data-file-height=\"254\"></a></span>\n<p><b>Kolforn</b> <small>(<a href=\"//commons.wikimedia.org/wiki/User:Kolforn\" title=\"User:Kolforn\">Kolforn</a>)</small><br>\n<i>I'd appreciate if you could mail me <b>(Kolforn@gmail.com)</b> if you want to use this picture out of the Wikimedia project scope.</i>\n</p>\n</td></tr></tbody></table>\n<div class=\"responsive-license-cc layouttemplate licensetpl\" dir=\"ltr\" lang=\"en\"><div class=\"rlicense-icons\"><span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"w:en:Creative Commons\"><img alt=\"w:en:Creative Commons\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/120px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail\" decoding=\"async\" width=\"90\" height=\"36\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/250px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail 2x\" data-file-width=\"744\" data-file-height=\"300\"></span></span><br>\n<span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"attribution\"><img alt=\"attribution\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/40px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail\" decoding=\"async\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/60px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span> <span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"share alike\"><img alt=\"share alike\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/40px-Cc-sa_white.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail\" decoding=\"async\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/60px-Cc-sa_white.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span></div><div class=\"rlicense-text\"><div class=\"rlicense-declaration\">This file is licensed under the <a href=\"https://en.wikipedia.org/wiki/en:Creative_Commons\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons</a> <a href=\"//creativecommons.org/licenses/by-sa/4.0/deed.en\" class=\"extiw\" title=\"creativecommons:by-sa/4.0/deed.en\">Attribution-Share Alike 4.0 International</a> license.</div><div class=\"rlicense-desc\" style=\"text-align:start;\" lang=\"en\">\n<dl><dd>You are free:\n<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>\n<li><b>to remix</b> – to adapt the work</li></ul></dd>\n<dd>Under the following conditions:\n<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li>\n<li><b>share alike</b> – If you remix, transform, or build upon the material, you must distribute your contributions under the <a href=\"https://creativecommons.org/share-your-work/licensing-considerations/compatible-licenses\" class=\"extiw\" title=\"ccorg:share-your-work/licensing-considerations/compatible-licenses\">same or compatible license</a> as the original.</li></ul></dd></dl></div><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/licenses/by-sa/4.0</span><span class=\"licensetpl_short\" style=\"display:none;\">CC BY-SA 4.0 </span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Attribution-Share Alike 4.0 </span><span class=\"licensetpl_link_req\" style=\"display:none;\">true</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">true</span></div></div>",
+    "artist": "Wikimedia Commons contributor (see source page)",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:-2016-06-12_Haddock_and_Chips,_Trimingham.JPG"
@@ -386,7 +388,7 @@
   {
     "mealId": "spaghetti-bolognese",
     "sourceTitle": "Bolognese sauce",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:HaJunkiyada&action=edit&redlink=1\" class=\"new\" title=\"User:HaJunkiyada (page does not exist)\">HaJunkiyada</a>",
+    "artist": "HaJunkiyada",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Spaghetti_Bolognese_with_peas_and_broccoli.jpg"
@@ -394,7 +396,7 @@
   {
     "mealId": "caesar-salad",
     "sourceTitle": "Caesar salad",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/54359128@N00\">Geoff Peters</a> from Vancouver, BC, Canada",
+    "artist": "Geoff Peters from Vancouver, BC, Canada",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caesar_salad_(2).jpg"
@@ -410,7 +412,7 @@
   {
     "mealId": "grilled-chicken",
     "sourceTitle": "Grilled chicken",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:HaJunkiyada&action=edit&redlink=1\" class=\"new\" title=\"User:HaJunkiyada (page does not exist)\">HaJunkiyada</a>",
+    "artist": "HaJunkiyada",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Homemade_Grilled_Chicken_Dinner.jpg"
@@ -418,15 +420,16 @@
   {
     "mealId": "mushroom-soup",
     "sourceTitle": "Cream of mushroom soup",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Anagoria\" title=\"User:Anagoria\">Anagoria</a>",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-02-10_Mushroom_Soup_at_Restaurant_Uri_Buri_in_Acre_anagoria.jpg"
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
   },
   {
     "mealId": "club-sandwich",
     "sourceTitle": "Club sandwich",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Memm&action=edit&redlink=1\" class=\"new\" title=\"User:Memm (page does not exist)\">Memm</a>",
+    "artist": "Memm",
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Club-sandwich.jpg"
@@ -434,7 +437,7 @@
   {
     "mealId": "aglio-olio",
     "sourceTitle": "Aglio e olio",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Shreya13jain&action=edit&redlink=1\" class=\"new\" title=\"User:Shreya13jain (page does not exist)\">Shreya13jain</a>",
+    "artist": "Shreya13jain",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fettuccine_with_olive_oil_and_garlic.jpg"
@@ -442,7 +445,7 @@
   {
     "mealId": "pizza",
     "sourceTitle": "Pizza",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://pixabay.com/en/users/igorovsyannykov-6222956/\">igorovsyannykov</a>",
+    "artist": "igorovsyannykov",
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pizza-3007395.jpg"
@@ -450,7 +453,7 @@
   {
     "mealId": "carbonara",
     "sourceTitle": "Carbonara",
-    "artist": "<table style=\"margin: 1.5em auto; width:60%; background-color:#CCCCCC; border:2px solid #aaaaaa; padding:1px;\" cellspacing=\"10\">\n\n<tbody><tr>\n<td align=\"center\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Flag-globe-2.gif\" class=\"mw-file-description\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Flag-globe-2.gif/120px-Flag-globe-2.gif\" decoding=\"async\" width=\"80\" height=\"79\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Flag-globe-2.gif/250px-Flag-globe-2.gif 2x\" data-file-width=\"257\" data-file-height=\"254\"></a></span>\n<p><b>Kolforn</b> <small>(<a href=\"//commons.wikimedia.org/wiki/User:Kolforn\" title=\"User:Kolforn\">Kolforn</a>)</small><br>\n<i>I'd appreciate if you could mail me <b>(Kolforn@gmail.com)</b> if you want to use this picture out of the Wikimedia project scope.</i>\n</p>\n</td></tr></tbody></table>\n<div class=\"responsive-license-cc layouttemplate licensetpl\" dir=\"ltr\" lang=\"en\"><div class=\"rlicense-icons\"><span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"w:en:Creative Commons\"><img alt=\"w:en:Creative Commons\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/120px-CC_some_rights_reserved.svg.png\" decoding=\"async\" width=\"90\" height=\"36\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/250px-CC_some_rights_reserved.svg.png 2x\" data-file-width=\"744\" data-file-height=\"300\"></span></span><br>\n<span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"attribution\"><img alt=\"attribution\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/40px-Cc-by_new_white.svg.png\" decoding=\"async\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/60px-Cc-by_new_white.svg.png 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span> <span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"share alike\"><img alt=\"share alike\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/40px-Cc-sa_white.svg.png\" decoding=\"async\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/60px-Cc-sa_white.svg.png 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span></div><div class=\"rlicense-text\"><div class=\"rlicense-declaration\">This file is licensed under the <a href=\"https://en.wikipedia.org/wiki/en:Creative_Commons\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons</a> <a href=\"//creativecommons.org/licenses/by-sa/4.0/deed.en\" class=\"extiw\" title=\"creativecommons:by-sa/4.0/deed.en\">Attribution-Share Alike 4.0 International</a> license.</div><div class=\"rlicense-desc\" style=\"text-align:start;\" lang=\"en\">\n<dl><dd>You are free:\n<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>\n<li><b>to remix</b> – to adapt the work</li></ul></dd>\n<dd>Under the following conditions:\n<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li>\n<li><b>share alike</b> – If you remix, transform, or build upon the material, you must distribute your contributions under the <a href=\"https://creativecommons.org/share-your-work/licensing-considerations/compatible-licenses\" class=\"extiw\" title=\"ccorg:share-your-work/licensing-considerations/compatible-licenses\">same or compatible license</a> as the original.</li></ul></dd></dl></div><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/licenses/by-sa/4.0</span><span class=\"licensetpl_short\" style=\"display:none;\">CC BY-SA 4.0 </span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Attribution-Share Alike 4.0 </span><span class=\"licensetpl_link_req\" style=\"display:none;\">true</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">true</span></div></div>",
+    "artist": "Wikimedia Commons contributor (see source page)",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:-2019-11-18_Linguine_pancetta_and_mushroom_carbonara,_Trimingham_(1).JPG"
@@ -458,15 +461,16 @@
   {
     "mealId": "lasagna",
     "sourceTitle": "Lasagna",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Edible_Encyclopaedia&action=edit&redlink=1\" class=\"new\" title=\"User:Edible Encyclopaedia (page does not exist)\">Edible Encyclopaedia</a>",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lasagna-Raj%27sSpanishcafe,Kolkata-WestBengal-02.jpg"
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
   },
   {
     "mealId": "sushi-set",
     "sourceTitle": "Sushi",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Joli_Rumi\" title=\"User:Joli Rumi\">Joli Rumi</a>",
+    "artist": "Joli Rumi",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sushi_platter,_Nikko,_Japan.jpg"
@@ -482,7 +486,7 @@
   {
     "mealId": "donburi",
     "sourceTitle": "Donburi",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Ceeseven\" title=\"User:Ceeseven\">Ceeseven</a>",
+    "artist": "Ceeseven",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_Style_Beef_Big_Rice_Bowl_in_Hong_Kong.jpg"
@@ -490,7 +494,7 @@
   {
     "mealId": "udon",
     "sourceTitle": "Udon",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:%E5%8A%A0%E8%8C%82%E5%B7%9D%E3%81%AE%E6%B0%91&action=edit&redlink=1\" class=\"new\" title=\"User:加茂川の民 (page does not exist)\">加茂川の民</a>",
+    "artist": "加茂川の民",
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%B6%8F%E5%A4%A9%E3%81%AE%E3%81%86%E3%81%A9%E3%82%93.jpg"
@@ -498,15 +502,15 @@
   {
     "mealId": "japanese-curry",
     "sourceTitle": "Japanese curry",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/10559879@N00\">Alpha</a> from Melbourne, Australia",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Katsu_Curry_on_Rice_-_Kintochi_(2170458239).jpg"
+    "artist": "Ocdp",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kare-Raisu.jpg"
   },
   {
     "mealId": "yakitori",
     "sourceTitle": "Yakitori",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:%E6%AF%92%E5%B3%B6%E3%81%BF%E3%82%8B%E3%81%8F\" title=\"User:毒島みるく\">毒島みるく</a>",
+    "artist": "毒島みるく",
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_chicken_skewer_lunch_box_of_Nakau.jpg"
@@ -514,7 +518,7 @@
   {
     "mealId": "soba",
     "sourceTitle": "Soba",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Zheng_Zhou\" title=\"User:Zheng Zhou\">Zheng Zhou</a>",
+    "artist": "Zheng Zhou",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soba_Noodles_at_Tamawarai,_Shibuya,_Tokyo.jpg"
@@ -522,7 +526,7 @@
   {
     "mealId": "onigiri",
     "sourceTitle": "Onigiri",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Tednmiki&action=edit&redlink=1\" class=\"new\" title=\"User:Tednmiki (page does not exist)\">tednmiki</a>",
+    "artist": "tednmiki",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_rice_balls_(onigiri).jpg"
@@ -546,7 +550,7 @@
   {
     "mealId": "takoyaki",
     "sourceTitle": "Takoyaki",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:%E5%8A%A0%E8%8C%82%E5%B7%9D%E3%81%AE%E6%B0%91&action=edit&redlink=1\" class=\"new\" title=\"User:加茂川の民 (page does not exist)\">加茂川の民</a>",
+    "artist": "加茂川の民",
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%A8%E3%83%9D%E3%83%B3%E9%85%A2%E3%81%AE%E3%81%9F%E3%81%93%E7%84%BC%E3%81%8D.jpg"
@@ -554,7 +558,7 @@
   {
     "mealId": "bibimbap",
     "sourceTitle": "Bibimbap",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.souschef.co.uk/\">Sous Chef</a>",
+    "artist": "Sous Chef",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dolsot-bibimbap.jpg"
@@ -562,7 +566,7 @@
   {
     "mealId": "korean-fried-chicken",
     "sourceTitle": "Korean fried chicken",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Startandstar&action=edit&redlink=1\" class=\"new\" title=\"User:Startandstar (page does not exist)\">Startandstar</a>",
+    "artist": "Startandstar",
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_fried_chicken_240206.jpg"
@@ -570,7 +574,7 @@
   {
     "mealId": "kimchi-fried-rice",
     "sourceTitle": "Kimchi fried rice",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Onthewings\" title=\"User:Onthewings\">Andy Li</a>",
+    "artist": "Andy Li",
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kimchi-bokkeum-bap_(Kimchi_fried_rice)_-_Kogi_2023-09-11.jpg"
@@ -578,7 +582,7 @@
   {
     "mealId": "tteokbokki",
     "sourceTitle": "Tteokbokki",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Popo_le_Chien\" title=\"User:Popo le Chien\">Popo le Chien</a>",
+    "artist": "Popo le Chien",
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tteokbokki.JPG"
@@ -586,7 +590,7 @@
   {
     "mealId": "bulgogi",
     "sourceTitle": "Bulgogi",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/ayustety/\">by ayustety</a>",
+    "artist": "by ayustety",
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean.cuisine-Bulgogi-01.jpg"
@@ -594,7 +598,7 @@
   {
     "mealId": "japchae",
     "sourceTitle": "Japchae",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Ibrahim_Husain_Meraj\" title=\"User:Ibrahim Husain Meraj\">Ibrahim Husain Meraj</a>",
+    "artist": "Ibrahim Husain Meraj",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Homemade_Japchae,_Dhaka_03.jpg"
@@ -602,7 +606,7 @@
   {
     "mealId": "kimchi-jjigae",
     "sourceTitle": "Kimchi-jjigae",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/avlxyz/\">by avlxyz</a>",
+    "artist": "by avlxyz",
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean.cuisine-Kimchi_jjigae-01.jpg"
@@ -610,7 +614,7 @@
   {
     "mealId": "gimbap",
     "sourceTitle": "Gimbap",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/91049143@N00\">bryan...</a> from Taipei, Taiwan",
+    "artist": "bryan... from Taipei, Taiwan",
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gimbap_and_danmuji.jpg"
@@ -634,7 +638,7 @@
   {
     "mealId": "dak-galbi",
     "sourceTitle": "Dak-galbi",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:%E5%86%86%E5%91%A8%E7%8E%87%EF%BC%93%E3%83%91%E3%83%BC%E3%82%BB%E3%83%B3%E3%83%88\" title=\"User:円周率３パーセント\">円周率３パーセント</a>",
+    "artist": "円周率３パーセント",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cheese_dak_galbi_set_20200308-01.jpg"
@@ -642,7 +646,7 @@
   {
     "mealId": "pad-thai",
     "sourceTitle": "Pad thai",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/PattayaPatrol/\">PattayaPatrol</a>",
+    "artist": "PattayaPatrol",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:DFC_2078_A_plate_of_shrimp_pad_Thai_garnished_with_lime_bean_sprouts_scallions_and_crushed_peanuts.jpg"
@@ -650,7 +654,7 @@
   {
     "mealId": "tom-yum",
     "sourceTitle": "Tom yum",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Onthewings\" title=\"User:Onthewings\">Andy Li</a>",
+    "artist": "Andy Li",
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tom_Yum_Goong_Noodle_Soup_-_Nok_Nok_Kitchen_at_The_Cow_2024-03-28.jpg"
@@ -658,7 +662,7 @@
   {
     "mealId": "thai-green-curry",
     "sourceTitle": "Green curry",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Kenamparo&action=edit&redlink=1\" class=\"new\" title=\"User:Kenamparo (page does not exist)\">Kenamparo</a>",
+    "artist": "Kenamparo",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thai_Green_Curry_with_Rice.jpg"
@@ -666,7 +670,7 @@
   {
     "mealId": "pineapple-fried-rice",
     "sourceTitle": "Pineapple fried rice",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Ceeseven\" title=\"User:Ceeseven\">Ceeseven</a>",
+    "artist": "Ceeseven",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thai-style_Fried_Rice_in_Pineapple.jpg"
@@ -674,7 +678,7 @@
   {
     "mealId": "pho",
     "sourceTitle": "Pho",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
+    "artist": "Vyacheslav Argenberg",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pho_Vietnamese_noodle_soup_in_Ho_Chi_Minh_City,_Vietnam.jpg"
@@ -682,7 +686,7 @@
   {
     "mealId": "banh-mi",
     "sourceTitle": "Bánh mì",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Cyanhat&action=edit&redlink=1\" class=\"new\" title=\"User:Cyanhat (page does not exist)\">Jimmy Chen</a>",
+    "artist": "Jimmy Chen",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vietnamese_B%C3%A1nh_m%C3%AC_(Banh_Mi)_Sandwich.jpg"
@@ -690,7 +694,7 @@
   {
     "mealId": "pad-kra-pao",
     "sourceTitle": "Pad krapao",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Takeaway\" title=\"User:Takeaway\">Takeaway</a>",
+    "artist": "Takeaway",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_0426_Mu_krop_phat_kaphrao_khai_dao_rat_khao_in_Ayutthaya.jpg"
@@ -698,7 +702,7 @@
   {
     "mealId": "som-tam",
     "sourceTitle": "Green papaya salad",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Argenberg\" title=\"User:Argenberg\">Vyacheslav Argenberg</a>",
+    "artist": "Vyacheslav Argenberg",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Som_Tam_green_papaya_salad,_Bangkok,_Thailand.jpg"
@@ -706,7 +710,7 @@
   {
     "mealId": "ayam-penyet",
     "sourceTitle": "Ayam penyet",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Depiction1217&action=edit&redlink=1\" class=\"new\" title=\"User:Depiction1217 (page does not exist)\">Depiction1217</a>",
+    "artist": "Depiction1217",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayam_penyet_2026.jpg"
@@ -714,7 +718,7 @@
   {
     "mealId": "nasi-padang",
     "sourceTitle": "Nasi padang",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:SATELIT_BM&action=edit&redlink=1\" class=\"new\" title=\"User:SATELIT BM (page does not exist)\">SATELIT BM</a>",
+    "artist": "SATELIT BM",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nasi_Padang_Dengan_Lauk_Ikan_Lele.jpg"
@@ -730,7 +734,7 @@
   {
     "mealId": "mango-sticky-rice",
     "sourceTitle": "Mango sticky rice",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Kenamparo&action=edit&redlink=1\" class=\"new\" title=\"User:Kenamparo (page does not exist)\">Kenamparo</a>",
+    "artist": "Kenamparo",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mango_Sticky_Rice_and_Thai_Milk_tea.jpg"
@@ -738,7 +742,7 @@
   {
     "mealId": "buddhas-delight",
     "sourceTitle": "Buddha's delight",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/63637139@N00\">FotoosVanRobin</a> from Netherlands",
+    "artist": "FotoosVanRobin from Netherlands",
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boeddha%27s_Delight.jpg"
@@ -746,7 +750,7 @@
   {
     "mealId": "caprese-salad",
     "sourceTitle": "Caprese salad",
-    "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Pantone801&action=edit&redlink=1\" class=\"new\" title=\"User:Pantone801 (page does not exist)\">Pantone801</a>",
+    "artist": "Pantone801",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Insalata_caprese.jpg"
@@ -754,7 +758,7 @@
   {
     "mealId": "greek-salad",
     "sourceTitle": "Greek salad",
-    "artist": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/zone41/\">https://www.flickr.com/photos/zone41/</a>",
+    "artist": "https://www.flickr.com/photos/zone41/",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greek_Salad_Choriatiki.jpg"
@@ -762,7 +766,7 @@
   {
     "mealId": "falafel-bowl",
     "sourceTitle": "Falafel",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Onthewings\" title=\"User:Onthewings\">Andy Li</a>",
+    "artist": "Andy Li",
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasty_Buddha_Bowl_with_Falafel_-_Dyke_Road_Park_Cafe_2025-05-09.jpg"
@@ -770,15 +774,16 @@
   {
     "mealId": "tempeh-bowl",
     "sourceTitle": "Tempeh",
-    "artist": "<ul><li><a href=\"//commons.wikimedia.org/wiki/File:Saut%C3%A9ed_Tempeh.jpg\" title=\"File:Sautéed Tempeh.jpg\">Sautéed_Tempeh.jpg</a>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/23457733@N05\">mattjlc</a></li>\n<li>derivative work: <a href=\"//commons.wikimedia.org/wiki/User:Sentausa\" title=\"User:Sentausa\">Sentausa</a> (<a href=\"//commons.wikimedia.org/wiki/User_talk:Sentausa\" title=\"User talk:Sentausa\"><span class=\"signature-talk\">talk</span></a>)</li></ul>",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saut%C3%A9ed_Tempeh_cropped.jpg"
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
   },
   {
     "mealId": "acai-bowl",
     "sourceTitle": "Açaí bowl",
-    "artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/155807330@N05\">Ella Olsson</a> from Stockholm, Sweden",
+    "artist": "Ella Olsson from Stockholm, Sweden",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berries_Galore_Acai_Bowl_(30276166867).jpg"
@@ -794,9 +799,1209 @@
   {
     "mealId": "fresh-spring-rolls",
     "sourceTitle": "Gỏi cuốn",
-    "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Tony_Webster\" title=\"User:Tony Webster\">Tony Webster</a>",
+    "artist": "Tony Webster",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fresh_vegan_spring_rolls_8286724426_o.jpg"
+  },
+  {
+    "mealId": "nasi-tomato",
+    "sourceTitle": "Nasi tomato",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "nasi-hujan-panas",
+    "sourceTitle": "Nasi hujan panas",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "nasi-kukus",
+    "sourceTitle": "Nasi kukus",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "nasi-campur-malay",
+    "sourceTitle": "Malay nasi campur",
+    "artist": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nasi_campur_as_art,_Ubud,_Indonesia.jpg"
+  },
+  {
+    "mealId": "ayam-masak-merah",
+    "sourceTitle": "Ayam masak merah",
+    "artist": "Ahmad Shazlan",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayam_masak_merah.jpg"
+  },
+  {
+    "mealId": "rendang-tok",
+    "sourceTitle": "Rendang tok",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "daging-masak-hitam",
+    "sourceTitle": "Daging masak hitam",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "masak-lemak-cili-api",
+    "sourceTitle": "Masak lemak cili api",
+    "artist": "AyyanD",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ikan_parang_masak_lemak_lada_api.jpg"
+  },
+  {
+    "mealId": "ikan-patin-tempoyak",
+    "sourceTitle": "Ikan patin tempoyak",
+    "artist": "Firzafp",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Replica_of_Tempoyak_in_Kissa_CommonPlace_during_exhibition.jpg"
+  },
+  {
+    "mealId": "sambal-sotong",
+    "sourceTitle": "Sambal sotong",
+    "artist": "OreosDippedwithMilk",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nasi_Lemak_Daun_Pandan_Roza_Roslan.png"
+  },
+  {
+    "mealId": "gulai-kawah",
+    "sourceTitle": "Gulai kawah",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "roti-jala-curry",
+    "sourceTitle": "Roti jala with curry",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "sup-tulang",
+    "sourceTitle": "Sup tulang",
+    "artist": "Kamarool Rushdan",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SUP_TULANG.jpg"
+  },
+  {
+    "mealId": "nasi-ulam",
+    "sourceTitle": "Nasi ulam",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "penang-hokkien-mee",
+    "sourceTitle": "Prawn noodles",
+    "artist": "Anagoria",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-02-10_Shrimp_and_Artichoke_at_Restaurant_Uri_Buri_in_Acre_anagoria.jpg"
+  },
+  {
+    "mealId": "wonton-noodles-soup",
+    "sourceTitle": "Wonton noodles",
+    "artist": "Exploringlife",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:759_Wonton_Noodles.JPG"
+  },
+  {
+    "mealId": "chilli-pan-mee",
+    "sourceTitle": "Banmian",
+    "artist": "Andy Li",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Braised_Mushroom_Lo_Mein_with_Soup_-_CK_Bistro.jpg"
+  },
+  {
+    "mealId": "wat-tan-hor",
+    "sourceTitle": "Wat tan hor",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "cantonese-fried-noodles",
+    "sourceTitle": "Cantonese fried noodles",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "loh-mee",
+    "sourceTitle": "Loh mee",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "fish-head-noodles",
+    "sourceTitle": "Fish head noodles",
+    "artist": "Windmemories",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20240110_Soup_noodle_with_Lion%27s_Head_and_Shanghai-style_smoked_fish.jpg"
+  },
+  {
+    "mealId": "mee-sua-soup",
+    "sourceTitle": "Misua",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "hakka-mee",
+    "sourceTitle": "Hakka mee",
+    "artist": "User: (WT-shared) Shoestring at wts wikivoyage",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hakka_Mee,_Ipoh,_Malaysia.JPG"
+  },
+  {
+    "mealId": "hakka-yong-tau-foo",
+    "sourceTitle": "Hakka yong tau foo",
+    "artist": "N509FZ",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hakka-style_stuffed_tofu_at_Yunshan_Caf%C3%A9,_Beijing_Guangdong_Hotel_(20240128130539).jpg"
+  },
+  {
+    "mealId": "char-siu-rice",
+    "sourceTitle": "Char siu rice",
+    "artist": "Simon Shek",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charsiu.jpg"
+  },
+  {
+    "mealId": "siu-yuk-rice",
+    "sourceTitle": "Siu yuk rice",
+    "artist": "ERMeiH KUOK HYANT",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:HK_WC_%E7%81%A3%E4%BB%94_Wan_Chai_Road_food_barbecue_BBQ_meat_Char_Siu_Yuk_rice_box_%E5%AE%8F%E7%99%BC%E7%87%92%E8%87%98_Wang_Fat_Roasted_Meat_Choi_Sum_August_2021_SS2_01.jpg"
+  },
+  {
+    "mealId": "dry-bak-kut-teh",
+    "sourceTitle": "Bak kut teh",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "penang-chee-cheong-fun",
+    "sourceTitle": "Chee cheong fun",
+    "artist": "Asamboi",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chaoshan_rice_noodle_roll.jpg"
+  },
+  {
+    "mealId": "ipoh-hor-fun",
+    "sourceTitle": "Shahe fen",
+    "artist": "Takeaway",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kuai-tiao_rat_na_mu.JPG"
+  },
+  {
+    "mealId": "kampar-curry-chicken-bread",
+    "sourceTitle": "Curry bread",
+    "artist": "katorisi",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Curry-bun,curry-pan,katori-city,japan.JPG"
+  },
+  {
+    "mealId": "oyster-omelette",
+    "sourceTitle": "Oyster omelette",
+    "artist": "Archon6812",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Billyfoodoysteromelette.jpg"
+  },
+  {
+    "mealId": "sweet-sour-pork",
+    "sourceTitle": "Sweet and sour pork",
+    "artist": "avlxyz",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Almost_Nose-to-Tail_Pork_-_Lake_House_Restaurant,_Daylesford.jpg"
+  },
+  {
+    "mealId": "marmite-chicken",
+    "sourceTitle": "Marmite chicken",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "salted-egg-chicken",
+    "sourceTitle": "Salted egg chicken",
+    "artist": "Sgsamrat2021",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fruits_Honey_Chicken_-_Kolkata_-_West_Bengal_-_01.jpg"
+  },
+  {
+    "mealId": "butter-prawns",
+    "sourceTitle": "Butter prawns",
+    "artist": "Anagoria",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-02-10_Shrimp_and_Artichoke_at_Restaurant_Uri_Buri_in_Acre_anagoria.jpg"
+  },
+  {
+    "mealId": "kam-heong-lala",
+    "sourceTitle": "Clams in Asian cuisine",
+    "artist": "Judgefloro",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2442Fishes_food_cuisine_of_Bulacan_04.jpg"
+  },
+  {
+    "mealId": "claypot-tofu",
+    "sourceTitle": "Claypot tofu",
+    "artist": "Alpha from Melbourne, Australia",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_Olive_Rice_-_Soup_Restaurant_(2500746236).jpg"
+  },
+  {
+    "mealId": "steamed-fish",
+    "sourceTitle": "Chinese steamed fish",
+    "artist": "Lena salRIAN",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%BE%85%E6%B9%96_Luohu_%E6%B0%B4%E5%BA%AB%E6%96%B0%E6%9D%91_Shuiku_Xincun_shop_%E6%BD%A4%E7%99%BC%E7%B7%A3_restaurant_food_fish_plate_rice_June_2017_IX1_02.jpg"
+  },
+  {
+    "mealId": "ginger-scallion-fish",
+    "sourceTitle": "Ginger scallion fish",
+    "artist": "Tim Sackton from Somerville, MA",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ginger_Scallion_Red_Perch_(50-366)_(25058329532).jpg"
+  },
+  {
+    "mealId": "kung-pao-chicken",
+    "sourceTitle": "Kung pao chicken",
+    "artist": "Steven G. Johnson",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kung-pao-shanghai.jpg"
+  },
+  {
+    "mealId": "mutton-biryani",
+    "sourceTitle": "Mutton biryani",
+    "artist": "Kahani Swaad Ki",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kathal_Dum_Biryani.jpg"
+  },
+  {
+    "mealId": "maggi-goreng",
+    "sourceTitle": "Maggi goreng",
+    "artist": "amrufm",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maggi_Goreng.jpg"
+  },
+  {
+    "mealId": "roti-telur",
+    "sourceTitle": "Roti telur",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "roti-bawang",
+    "sourceTitle": "Roti bawang",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "roti-tissue",
+    "sourceTitle": "Roti tissue",
+    "artist": "L joo at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:RotiTissue001.jpg"
+  },
+  {
+    "mealId": "roti-bom",
+    "sourceTitle": "Roti bom",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "rava-thosai",
+    "sourceTitle": "Rava thosai",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "poori",
+    "sourceTitle": "Poori with potato masala",
+    "artist": "Nikitamusaddi",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeera_Puri_sabji.jpg"
+  },
+  {
+    "mealId": "chicken-varuval",
+    "sourceTitle": "Chicken varuval",
+    "artist": "Nur Aishah Binti Abdullah",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Varuval.jpg"
+  },
+  {
+    "mealId": "mutton-curry",
+    "sourceTitle": "Mutton curry",
+    "artist": "Riya Chattopadhyay",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BENGALI_MUTTON_KOSHA.jpg"
+  },
+  {
+    "mealId": "fish-head-curry",
+    "sourceTitle": "Fish head curry",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "palak-paneer",
+    "sourceTitle": "Palak paneer",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "paneer-tikka",
+    "sourceTitle": "Paneer tikka",
+    "artist": "YKanchan07",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hot_Paneer_tikka.jpg"
+  },
+  {
+    "mealId": "putu-mayam",
+    "sourceTitle": "Idiyappam",
+    "artist": "Yakshitha",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Idiyappam(Rice_noodles_with_coconut_milk).jpg"
+  },
+  {
+    "mealId": "rasam",
+    "sourceTitle": "Rasam",
+    "artist": "Prakash G",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hot_Lime_Soup.jpg"
+  },
+  {
+    "mealId": "vegetarian-thali",
+    "sourceTitle": "Vegetarian thali",
+    "artist": "Marajozkee",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bengali_Non-vegetarian_thali.jpg"
+  },
+  {
+    "mealId": "ayam-pongteh",
+    "sourceTitle": "Ayam pongteh",
+    "artist": "Shaun@KL",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayam_pongteh.jpg"
+  },
+  {
+    "mealId": "ayam-buah-keluak",
+    "sourceTitle": "Ayam buah keluak",
+    "artist": "Chensiyuan at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buahkeluak.JPG"
+  },
+  {
+    "mealId": "kari-kapitan",
+    "sourceTitle": "Kari kapitan",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "nyonya-laksa",
+    "sourceTitle": "Nyonya laksa",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "nyonya-chap-chye",
+    "sourceTitle": "Cap cai",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "jiu-hu-char",
+    "sourceTitle": "Jiu hu char",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "inchi-kabin",
+    "sourceTitle": "Inchi kabin",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "udang-lemak-nenas",
+    "sourceTitle": "Prawn curry",
+    "artist": "Riya Chattopadhyay",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chingri_Macher_Malai_Curry.jpg"
+  },
+  {
+    "mealId": "nyonya-otak-otak",
+    "sourceTitle": "Otak-otak",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "pie-tee",
+    "sourceTitle": "Kueh pie tee",
+    "artist": "Alpha from Melbourne, Australia",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pie-Tee_-_Aunty_Nat_(4591377212).jpg"
+  },
+  {
+    "mealId": "nyonya-popiah",
+    "sourceTitle": "Popiah",
+    "artist": "Sjschen .",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:LunBhia.jpg"
+  },
+  {
+    "mealId": "nyonya-nasi-ulam",
+    "sourceTitle": "Nasi ulam",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "nyonya-asam-fish",
+    "sourceTitle": "Asam pedas",
+    "artist": "Elly Suhailee",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ASAM_PEDAS_IKAN_PARI.jpg"
+  },
+  {
+    "mealId": "sambal-petai-prawns",
+    "sourceTitle": "Sambal",
+    "artist": "Ima Turyani",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cencalok_Bintan.jpg"
+  },
+  {
+    "mealId": "babi-pongteh",
+    "sourceTitle": "Pongteh",
+    "artist": "Shaun@KL",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayam_pongteh.jpg"
+  },
+  {
+    "mealId": "sarawak-laksa",
+    "sourceTitle": "Sarawak laksa",
+    "artist": "CherylGarnet",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Homemade_Laksa_Sarawak.jpg"
+  },
+  {
+    "mealId": "kolo-mee",
+    "sourceTitle": "Kolo mee",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "kampua-mee",
+    "sourceTitle": "Kampua mee",
+    "artist": "Miss Izzah",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mee_Kampua.jpg"
+  },
+  {
+    "mealId": "tomato-crispy-mee",
+    "sourceTitle": "Tomato noodles",
+    "artist": "Banej",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_Noodle_With_Tomato_and_Egg_Sauce.jpg"
+  },
+  {
+    "mealId": "manok-pansoh",
+    "sourceTitle": "Ayam pansuh",
+    "artist": "Song GK",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manuk_pansuh.jpg"
+  },
+  {
+    "mealId": "midin-belacan",
+    "sourceTitle": "Midin",
+    "artist": "Encik Tekateki",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fried_Midin_or_Paku_in_Sibu.png"
+  },
+  {
+    "mealId": "umai",
+    "sourceTitle": "Umai",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "mee-sapi",
+    "sourceTitle": "Mee sapi",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "nasi-lalap",
+    "sourceTitle": "Nasi lalap",
+    "artist": "M Toegiono from Tokyo, Japan",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Masakan_Sunda.jpg"
+  },
+  {
+    "mealId": "hinava",
+    "sourceTitle": "Hinava",
+    "artist": "Sweizhong",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hinava.jpg"
+  },
+  {
+    "mealId": "linopot-set",
+    "sourceTitle": "Linopot",
+    "artist": "Nelynnnnn",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Linopot_01.jpg"
+  },
+  {
+    "mealId": "pinasakan-sada",
+    "sourceTitle": "Pinasakan",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "ngiu-chap",
+    "sourceTitle": "Ngiu chap",
+    "artist": "Smuconlaw .",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_tripe_in_a_satay_sauce_with_rice,_Hung_Lee_Restaurant,_Kowloon,_Hong_Kong_-_20130811.JPG"
+  },
+  {
+    "mealId": "beaufort-mee",
+    "sourceTitle": "Beaufort noodles",
+    "artist": "Sammuel chan",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beaufort_Mee.jpg"
+  },
+  {
+    "mealId": "dabai-fried-rice",
+    "sourceTitle": "Canarium odontophyllum",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "gyudon",
+    "sourceTitle": "Gyudon",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "oyakodon",
+    "sourceTitle": "Oyakodon",
+    "artist": "毒島みるく",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef,_grilled_chicken_and_egg_bowl_of_Matsuya.jpg"
+  },
+  {
+    "mealId": "tempura-set",
+    "sourceTitle": "Tempura set",
+    "artist": "IXTA9839 Sony ILCE-7M3",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_and_burdock_tempura_udon_and_Oden_in_Sukesan_Udon_Maebashi-Nishi.jpg"
+  },
+  {
+    "mealId": "sashimi-set",
+    "sourceTitle": "Sashimi set",
+    "artist": "lovemedead",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amberjack_fish_served_sashimi_style_over_ice.jpg"
+  },
+  {
+    "mealId": "okonomiyaki",
+    "sourceTitle": "Okonomiyaki",
+    "artist": "woinary from Food court Okonomi Hiroba in Hiroshima Airport in Mihara, Hiroshima",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hiroshima_yaki_by_woinary_at_the_food_court_in_Hiroshima_Airport.jpg"
+  },
+  {
+    "mealId": "omurice",
+    "sourceTitle": "Omurice",
+    "artist": "Art Prof from Salt Lake City, UT",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%83%81%E3%83%BC%E3%82%BA_%E3%83%87%E3%82%B3%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3_(53126723253).jpg"
+  },
+  {
+    "mealId": "teriyaki-chicken",
+    "sourceTitle": "Teriyaki chicken rice",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "samgyeopsal",
+    "sourceTitle": "Samgyeopsal",
+    "artist": "jinsoo jang",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samgyeopsal-gui.jpg"
+  },
+  {
+    "mealId": "samgyetang",
+    "sourceTitle": "Samgyetang",
+    "artist": "Korea.net / Korean Culture and Information Service",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ginseng_Chicken_Soup.jpg"
+  },
+  {
+    "mealId": "naengmyeon",
+    "sourceTitle": "Naengmyeon",
+    "artist": "Suohros",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mul_Naengmyeon.jpg"
+  },
+  {
+    "mealId": "haemul-pajeon",
+    "sourceTitle": "Haemul pajeon",
+    "artist": "Jirka Matousek",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haemul-pajeon_1.jpg"
+  },
+  {
+    "mealId": "budae-jjigae",
+    "sourceTitle": "Budae jjigae",
+    "artist": "lazy fri13th",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Budae-jjigae_1.jpg"
+  },
+  {
+    "mealId": "thai-red-curry",
+    "sourceTitle": "Thai red curry",
+    "artist": "Takeaway",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mu_phat_phrik_khing.jpg"
+  },
+  {
+    "mealId": "massaman-curry",
+    "sourceTitle": "Massaman curry",
+    "artist": "Vee Satayamas",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_Massaman_curry_with_brown_rice.jpg"
+  },
+  {
+    "mealId": "pad-see-ew",
+    "sourceTitle": "Pad see ew",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "boat-noodles",
+    "sourceTitle": "Thai boat noodles",
+    "artist": "Wikimedia contributor",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayutthaya_Boat_noodles_restaurant_Philippines5.jpg"
+  },
+  {
+    "mealId": "thai-chicken-rice",
+    "sourceTitle": "Khao man gai",
+    "artist": "Another Believer",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken,_Rice_%26_Peanut_Sauce_at_Nong%27s_Khao_Man_Gai,_Portland,_Oregon,_2025.jpg"
+  },
+  {
+    "mealId": "moo-ping",
+    "sourceTitle": "Mu ping",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "tom-yum-noodles",
+    "sourceTitle": "Tom yum",
+    "artist": "Alpha from Melbourne, Australia",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hot_and_Spicy_Leftovers.jpg"
+  },
+  {
+    "mealId": "khao-soi",
+    "sourceTitle": "Khao soi",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "larb",
+    "sourceTitle": "Thai larb",
+    "artist": "Takeaway",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lap_khua_mu.JPG"
+  },
+  {
+    "mealId": "ayam-geprek",
+    "sourceTitle": "Ayam geprek",
+    "artist": "NaidNdeso",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_Penyet.jpg"
+  },
+  {
+    "mealId": "indonesian-nasi-goreng",
+    "sourceTitle": "Nasi goreng",
+    "artist": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gili_Meno_Island,_Nasi_goreng,_Fried_rice_with_juice,_Indonesia.jpg"
+  },
+  {
+    "mealId": "mie-ayam",
+    "sourceTitle": "Mie ayam",
+    "artist": "Valeriefarias",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:M_is_for_Mie_Ayam.jpg"
+  },
+  {
+    "mealId": "bakso",
+    "sourceTitle": "Bakso",
+    "artist": "Gunawan Kartapranata",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bakmi_Bangka_Bakso_Kuah_3.jpg"
+  },
+  {
+    "mealId": "rawon",
+    "sourceTitle": "Rawon",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "gado-gado",
+    "sourceTitle": "Gado-gado",
+    "artist": "Andy Li",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gado-gado_-_Bali_2025-09-25.jpg"
+  },
+  {
+    "mealId": "pecel-lele",
+    "sourceTitle": "Pecel lele",
+    "artist": "Abdul Hanif Arromy",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lele_Goreng_203802.jpg"
+  },
+  {
+    "mealId": "sate-ayam-indonesia",
+    "sourceTitle": "Satay",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "indonesian-martabak",
+    "sourceTitle": "Martabak",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "soto-betawi",
+    "sourceTitle": "Soto Betawi",
+    "artist": "Irhanz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SOTO_BETAWI.jpg"
+  },
+  {
+    "mealId": "ayam-bakar-indonesia",
+    "sourceTitle": "Ayam bakar",
+    "artist": "Herryz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayam_Bakar_Bali.jpg"
+  },
+  {
+    "mealId": "bun-bo-hue",
+    "sourceTitle": "Bún bò Huế",
+    "artist": "avlxyz",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bun_Bo_Hue_-_Co_Do_AUD8.jpg"
+  },
+  {
+    "mealId": "com-tam",
+    "sourceTitle": "Cơm tấm",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "banh-xeo",
+    "sourceTitle": "Bánh xèo",
+    "artist": "pelican from Tokyo, Japan",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_x%C3%A8o_(15826153307).jpg"
+  },
+  {
+    "mealId": "cao-lau",
+    "sourceTitle": "Cao lầu",
+    "artist": "Charles Haynes",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cao_L%E1%BA%A7u.jpg"
+  },
+  {
+    "mealId": "vietnamese-chicken-rice",
+    "sourceTitle": "Cơm gà",
+    "artist": "Dina Said",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Egyptian_food_Koshary.jpg"
+  },
+  {
+    "mealId": "bo-kho",
+    "sourceTitle": "Bò kho",
+    "artist": "The original uploader was Badagnani at English Wikipedia .",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kho.jpg"
+  },
+  {
+    "mealId": "chicken-burger",
+    "sourceTitle": "Chicken burger",
+    "artist": "Wikimedia Commons contributor (see source page)",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018-03-25_Chicken_burger_with_Focaccia_burger_bun,_Cap_Finist%C3%A8re_Brittany_Ferry.jpg"
+  },
+  {
+    "mealId": "grilled-steak",
+    "sourceTitle": "Beef steak",
+    "artist": "JIP",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22Tuli%22_dish_from_Restel.jpg"
+  },
+  {
+    "mealId": "mac-and-cheese",
+    "sourceTitle": "Mac and cheese",
+    "artist": "Jessica from Hove, United Kingdom",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flickr_wordridden_3397802319--Macaroni_and_cheese.jpg"
+  },
+  {
+    "mealId": "big-breakfast",
+    "sourceTitle": "Full breakfast",
+    "artist": "Joadl",
+    "license": "CC BY-SA 3.0 at",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Full_English_breakfast.jpg"
+  },
+  {
+    "mealId": "eggs-benedict",
+    "sourceTitle": "Eggs Benedict",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "pancakes",
+    "sourceTitle": "Pancakes",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "waffles",
+    "sourceTitle": "Waffles",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "roast-chicken",
+    "sourceTitle": "Roast chicken",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "lamb-chop",
+    "sourceTitle": "Lamb chop",
+    "artist": "Spacekid",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamb_chops_with_fries,_salad_and_rice_in_Limassol,_Cyprus.JPEG"
+  },
+  {
+    "mealId": "chicken-pie",
+    "sourceTitle": "Chicken pie",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "chicken-shawarma",
+    "sourceTitle": "Chicken shawarma",
+    "artist": "USDAgov",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:MyPlate_gov_Cultural_Food_(20241025-USDA-FNS-UNK-0017).jpg"
+  },
+  {
+    "mealId": "beef-shawarma",
+    "sourceTitle": "Beef shawarma",
+    "artist": "HaJunkiyada",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_%E2%80%93_Israeli_Shawarma_with_Hummus_and_Tahini.jpg"
+  },
+  {
+    "mealId": "falafel-wrap",
+    "sourceTitle": "Falafel wrap",
+    "artist": "Andy Li",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Falafel_%26Tzatziki_Wrap_-_Lavash.jpg"
+  },
+  {
+    "mealId": "chicken-mandi",
+    "sourceTitle": "Chicken mandi",
+    "artist": "Miansari66",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Mandi_Rice_%D9%85%D9%86%D8%AF%D9%8A_%D8%AF%D8%AC%D8%A7%D8%AC.JPG"
+  },
+  {
+    "mealId": "lamb-mandi",
+    "sourceTitle": "Lamb mandi",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "kabsa",
+    "sourceTitle": "Kabsa",
+    "artist": "Simon Legner ( User:simon04 )",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:In_Joghurt_marinierte_H%C3%BChnerbrust_mit_Kabsa-Reis_und_Brokkoli_(IMG_20250410_115032).jpg"
+  },
+  {
+    "mealId": "shish-kebab",
+    "sourceTitle": "Shish kebab",
+    "artist": "E4024",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karides_%C5%9Fi%C5%9F_kebap.jpg"
+  },
+  {
+    "mealId": "hummus-pita",
+    "sourceTitle": "Hummus with pita",
+    "artist": "Before You Order",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": true
+  },
+  {
+    "mealId": "shakshuka",
+    "sourceTitle": "Shakshuka",
+    "artist": "HaJunkiyada",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Shakshuka_cooked_at_home.jpg"
+  },
+  {
+    "mealId": "middle-eastern-mixed-grill",
+    "sourceTitle": "Mixed grill",
+    "artist": "Elisart from Caracas, Venezuela",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PinchosAmericanos.jpg"
   }
 ]

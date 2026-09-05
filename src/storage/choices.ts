@@ -1,5 +1,5 @@
 import * as SQLite from 'expo-sqlite';
-import type { CuisineId, EatingMode, FeedbackAction, Language, MealFeedback, Preferences, UserSettings } from '../domain/types';
+import { isCuisineId, type CuisineId, type EatingMode, type FeedbackAction, type Language, type MealFeedback, type Preferences, type UserSettings } from '../domain/types';
 
 export const defaultPreferences: Preferences = {
   diet: 'all', eggFree: false, porkFree: false, beefFree: false, seafoodFree: false, budget: 'flexible',
@@ -53,7 +53,7 @@ export function saveLanguage(language: Language) {
 export function getUserSettings(): UserSettings {
   const row = db.getFirstSync<{
     diet: Preferences['diet']; egg_free: number; pork_free: number; beef_free: number; seafood_free: number;
-    budget: Preferences['budget']; last_mode: EatingMode; last_cuisine: CuisineId | null;
+    budget: Preferences['budget']; last_mode: EatingMode; last_cuisine: string | null;
   }>('SELECT diet, egg_free, pork_free, beef_free, seafood_free, budget, last_mode, last_cuisine FROM user_settings_v2 WHERE id = 1');
   if (!row) return { preferences: defaultPreferences, lastMode: 'dine-out', lastCuisine: null };
   return {
@@ -61,7 +61,7 @@ export function getUserSettings(): UserSettings {
       diet: row.diet, eggFree: row.egg_free === 1, porkFree: row.pork_free === 1,
       beefFree: row.beef_free === 1, seafoodFree: row.seafood_free === 1, budget: row.budget,
     },
-    lastMode: row.last_mode, lastCuisine: row.last_cuisine,
+    lastMode: row.last_mode, lastCuisine: isCuisineId(row.last_cuisine) ? row.last_cuisine : null,
   };
 }
 

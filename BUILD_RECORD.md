@@ -1,5 +1,15 @@
 # Android Build Record
 
+## V1.8 catalog expansion — local validation only — 2026-09-05
+
+- Status: `LOCAL SOURCE VALIDATED — NOT BUILT OR UPLOADED TO GOOGLE PLAY`
+- App version: `1.8.0`
+- Scope: expanded the catalog from 100 to 244 dishes across 12 cuisine groups; added dedicated Nyonya and East Malaysian groups, explicit food-form metadata, bilingual descriptions, Malaysia-aware Maps aliases, and wrapped cuisine controls.
+- Malaysia focus: 133 of 244 dishes belong to Malay, Malaysian Chinese, Indian/Mamak, Nyonya, or East Malaysian groups.
+- Image integrity: 244 local WebP assets and 244 credit records; 191 use visually reviewed reusable photos and 53 deliberately use neutral original placeholders after ambiguous or incorrect search results were rejected.
+- Validation: Expo Doctor passed 21/21 checks; TypeScript passed; 15/15 tests passed; catalog validation passed; local Android Hermes export completed with 240 deduplicated bundled assets and an 8.2 MB JavaScript bundle.
+- Boundaries: no EAS build, AAB generation, Google Play upload, or track change was performed for V1.8.
+
 ## Google Play internal testing release V1.7 — 2026-08-31
 
 - Status: `PUBLISHED TO INTERNAL TESTING`

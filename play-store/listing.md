@@ -16,7 +16,7 @@ Stop scrolling menus. Get a smart meal pick, then find a nearby place.
 
 Can't decide what to eat? Before You Order turns “anything is fine” into one clear next step.
 
-Choose a cuisine, food type, and eating mode—or leave everything open and let the app surprise you. You will get a focused meal suggestion from a Malaysia-friendly catalogue spanning Malay, Chinese, Indian/Mamak, Japanese, Korean, Southeast Asian, and Western food.
+Choose a cuisine, food type, and eating mode—or leave everything open and let the app surprise you. You will get a focused meal suggestion from a 244-dish catalogue spanning 12 cuisine groups, with deep coverage of Malay, Malaysian Chinese, Indian/Mamak, Nyonya, Sabah, and Sarawak food.
 
 Make it yours over time:
 
@@ -36,13 +36,13 @@ Food & Drink
 
 ## Release name
 
-1.6.0 — 100-dish catalogue
+1.8.0 — 244-dish Malaysia catalogue
 
 ## Release notes
 
 Update highlights:
 
-- 100 meals across seven cuisine groups, including 20 new Malaysian and regional favourites
+- 244 dishes across 12 cuisine groups, including dedicated Nyonya and East Malaysian collections
 - English/中文 interface toggle with device persistence
 - Cuisine, food-type, and dine-out/takeaway/delivery controls
 - Smarter suggestions that learn from your choices

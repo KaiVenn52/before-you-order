@@ -92,28 +92,28 @@ test('dietary and budget settings are hard filters', () => {
   assert.deepEqual(result, []);
 });
 
-test('the production catalog has 100 unique meals and seven cuisines', () => {
-  assert.equal(meals.length, 100);
-  assert.equal(new Set(meals.map((meal) => meal.id)).size, 100);
-  assert.equal(new Set(meals.map((meal) => meal.imageKey)).size, 100);
+test('the production catalog has 244 unique meals and twelve cuisines', () => {
+  assert.equal(meals.length, 244);
+  assert.equal(new Set(meals.map((meal) => meal.id)).size, 244);
+  assert.equal(new Set(meals.map((meal) => meal.imageKey)).size, 244);
   assert.equal(meals.every((meal) => meal.foodTypes.length > 0), true);
   assert.equal(meals.every((meal) => Boolean(meal.localName && meal.descriptionZh)), true);
   assert.equal('vegetarian' in cuisineLabels, false);
   assert.deepEqual(foodTypeLabels.rice, { en: 'Rice', zh: '饭' });
   assert.deepEqual(foodTypeLabels.noodles, { en: 'Noodles', zh: '面' });
   const cuisines = new Set(meals.map((meal) => meal.cuisine));
-  assert.equal(cuisines.size, 7);
-  assert.equal(meals.filter((meal) => meal.cuisine === 'malay').length, 15);
-  assert.equal(meals.filter((meal) => meal.cuisine === 'chinese').length, 17);
-  assert.equal(meals.filter((meal) => meal.cuisine === 'indian').length, 15);
-  assert.equal(meals.filter((meal) => meal.cuisine === 'western').length, 17);
-  assert.equal(meals.filter((meal) => meal.cuisine === 'japanese').length, 11);
-  assert.equal(meals.filter((meal) => meal.cuisine === 'korean').length, 11);
-  assert.equal(meals.filter((meal) => meal.cuisine === 'southeast-asian').length, 14);
+  assert.equal(cuisines.size, 12);
+  assert.deepEqual(Object.fromEntries([...cuisines].map((id) => [id, meals.filter((meal) => meal.cuisine === id).length])), {
+    malay: 29, chinese: 43, indian: 31, western: 26, japanese: 18, korean: 16,
+    thai: 16, vietnamese: 10, indonesian: 14, 'middle-eastern': 11, nyonya: 15, 'east-malaysian': 15,
+  });
+  assert.ok(meals.filter((meal) => ['malay', 'chinese', 'indian', 'nyonya', 'east-malaysian'].includes(meal.cuisine)).length > meals.length / 2);
   assert.ok(recommendMeals(meals, 'delivery', null, null, defaults).length < recommendMeals(meals, 'dine-out', null, null, defaults).length);
   const hokkienMee = meals.find((meal) => meal.id === 'hokkien-mee');
-  assert.equal(hokkienMee?.localName, '福建面');
-  assert.match(hokkienMee?.searchQuery ?? '', /Hokkien mee.*福建面/);
+  assert.equal(hokkienMee?.localName, '吉隆坡福建面（大碌面）');
+  assert.match(hokkienMee?.searchQuery ?? '', /KL Hokkien mee.*吉隆坡福建面/);
+  assert.deepEqual(hokkienMee?.foodTypes, ['noodles']);
+  assert.deepEqual(meals.find((meal) => meal.id === 'katsudon')?.foodTypes, ['rice']);
   assert.ok(meals.find((meal) => meal.id === 'lei-cha')?.foodTypes.includes('rice'));
   const vegetarianChoices = recommendMeals(meals, 'dine-out', null, null, { ...defaults, diet: 'vegetarian' });
   assert.ok(vegetarianChoices.some((meal) => meal.id === 'char-kway-teow'));
@@ -121,10 +121,10 @@ test('the production catalog has 100 unique meals and seven cuisines', () => {
   assert.equal(vegetarianChoices.every((meal) => meal.vegetarian || meal.vegetarianAvailable), true);
 });
 
-test('every meal has a direct, semantically reviewed image credit', () => {
-  assert.equal(imageCredits.length, 100);
-  assert.equal(new Set(imageCredits.map((credit) => credit.mealId)).size, 100);
+test('every credited image is direct and uses an accepted reusable license', () => {
+  assert.equal(new Set(imageCredits.map((credit) => credit.mealId)).size, imageCredits.length);
   assert.equal(imageCredits.some((credit) => /\.(pdf|djvu)(?:$|\?)/i.test(credit.sourceUrl)), false);
+  assert.equal(imageCredits.every((credit) => /^(CC0|CC BY(?:-SA)?|Public domain|Original artwork)/i.test(credit.license)), true);
   assert.match(imageCredits.find((credit) => credit.mealId === 'hokkien-mee')?.sourceUrl ?? '', /KL_hokkien_mee/i);
   assert.match(imageCredits.find((credit) => credit.mealId === 'yong-tau-foo')?.sourceUrl ?? '', /Malaysian_Yong_Tau_Foo/i);
   assert.match(imageCredits.find((credit) => credit.mealId === 'korean-fried-chicken')?.sourceUrl ?? '', /Korean_fried_chicken/i);

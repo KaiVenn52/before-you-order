@@ -249,10 +249,10 @@ function AppContent() {
             <View style={{ flex: 1 }}><Text style={styles.randomTitle}>{tr(language, 'surpriseCuisine')}</Text><Text style={styles.randomValue}>{cuisine ? `${tr(language, 'cuisinePicked')}: ${cuisineLabels[cuisine][language]}` : tr(language, 'anything')}</Text></View>
             <Sparkle size={19} weight="fill" color={C.gold} />
           </Pressable>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.cuisineRow}>
+          <View style={styles.cuisineRow}>
             <ChoiceChip label={tr(language, 'anything')} active={cuisine === null} onPress={() => changeCuisine(null)} />
             {cuisines.map((id) => <ChoiceChip key={id} label={cuisineLabels[id][language]} active={cuisine === id} onPress={() => changeCuisine(id)} />)}
-          </ScrollView>
+          </View>
 
           <View style={styles.questionRow}>
             <Text style={styles.question}>{tr(language, 'foodQuestion')}</Text><Text style={styles.optional}>{tr(language, 'optional')}</Text>
@@ -419,7 +419,7 @@ function CreditsModal({ language, visible, onClose }: { language: Language; visi
       <View style={styles.backdrop}><Pressable style={{ flex: 1 }} onPress={onClose} />
         <View style={[styles.sheet, { maxHeight: '78%' }]}>
           <View style={styles.sheetHeader}><View><Text style={styles.sheetTitle}>{tr(language, 'photoCredits')}</Text><Text style={styles.sheetHint}>{tr(language, 'creditsHint')}</Text></View><Pressable onPress={onClose} hitSlop={12}><X size={25} color={C.ink} /></Pressable></View>
-          <ScrollView>{imageCredits.map((credit) => <Pressable key={credit.mealId} onPress={() => Linking.openURL(credit.sourceUrl)} style={styles.creditRow}><Text style={styles.creditMeal}>{credit.sourceTitle}</Text><Text style={styles.creditMeta}>{clean(credit.artist)} · {credit.license}</Text></Pressable>)}</ScrollView>
+          <ScrollView>{imageCredits.map((credit) => <Pressable key={credit.mealId} disabled={!credit.sourceUrl} onPress={credit.sourceUrl ? () => Linking.openURL(credit.sourceUrl) : undefined} style={styles.creditRow}><Text style={styles.creditMeal}>{credit.sourceTitle}</Text><Text style={styles.creditMeta}>{clean(credit.artist)} · {credit.license}</Text></Pressable>)}</ScrollView>
         </View>
       </View>
     </Modal>
@@ -438,7 +438,7 @@ const styles = StyleSheet.create({
   question: { color: C.ink, fontSize: 17, fontWeight: '800', marginBottom: 10 }, questionRow: { flexDirection: 'row', alignItems: 'baseline', gap: 7, marginTop: 21 }, optional: { color: C.muted, fontSize: 12 },
   modeRow: { flexDirection: 'row', gap: 8 }, mode: { flex: 1, minHeight: 69, borderWidth: 1, borderColor: C.line, borderRadius: 14, backgroundColor: C.paper, alignItems: 'center', justifyContent: 'center', gap: 5 },
   modeActive: { backgroundColor: C.green, borderColor: C.green }, modeText: { color: C.ink, fontSize: 12, fontWeight: '700' }, modeTextActive: { color: '#fff' },
-  cuisineRow: { gap: 8, paddingRight: 12 }, foodTypeRow: { gap: 8, paddingRight: 12, paddingBottom: 18 }, chip: { minHeight: 43, paddingHorizontal: 15, borderRadius: 22, borderWidth: 1, borderColor: '#DCCEB8', backgroundColor: C.paper, justifyContent: 'center' },
+  cuisineRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 }, foodTypeRow: { gap: 8, paddingRight: 12, paddingBottom: 18 }, chip: { minHeight: 43, paddingHorizontal: 15, borderRadius: 22, borderWidth: 1, borderColor: '#DCCEB8', backgroundColor: C.paper, justifyContent: 'center' },
   chipActive: { backgroundColor: C.ink, borderColor: C.ink }, chipText: { color: C.text, fontSize: 12, fontWeight: '700' }, chipTextActive: { color: '#fff' },
   randomAction: { minHeight: 66, flexDirection: 'row', alignItems: 'center', gap: 11, borderRadius: 15, borderWidth: 1, borderColor: C.line, backgroundColor: C.paper, paddingHorizontal: 13, marginBottom: 11 },
   randomIcon: { width: 39, height: 39, borderRadius: 20, backgroundColor: C.greenSoft, alignItems: 'center', justifyContent: 'center' },

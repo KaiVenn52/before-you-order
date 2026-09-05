@@ -1,13 +1,13 @@
 {
   "name": "before-you-order-mobile",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "main": "index.ts",
   "dependencies": {
-    "expo": "~57.0.18",
-    "expo-build-properties": "~57.0.15",
-    "expo-dev-client": "~57.0.16",
+    "expo": "~57.0.20",
+    "expo-build-properties": "~57.0.17",
+    "expo-dev-client": "~57.0.18",
     "expo-haptics": "~57.0.2",
-    "expo-image": "~57.0.3",
+    "expo-image": "~57.0.4",
     "expo-localization": "~57.0.1",
     "expo-sqlite": "~57.0.2",
     "expo-status-bar": "~57.0.1",
@@ -29,8 +29,9 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "node --max-old-space-size=4096 ./node_modules/typescript/bin/tsc --noEmit",
     "test": "tsx --test tests/*.test.ts",
+    "validate:catalog": "tsx scripts/validate_catalog.ts",
     "validate": "npm run typecheck && npm test && npx expo export --platform android --output-dir dist-android"
   },
   "private": true
