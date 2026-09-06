@@ -147,6 +147,35 @@ test('App: venue flow, credits links and image error fallback remain accessible'
   } finally { await act(async () => app.unmount()); }
 });
 
+test('App: attribution failures have a translated link error and a working retry', async () => {
+  for (const language of ['en', 'zh']) {
+    reset(); locale = language;
+    const app = await mount();
+    try {
+      await press(app, language === 'en' ? 'Photo credits' : '图片来源');
+      assert.match(text(app.root), language === 'en' ? /Converted to WebP/ : /已转换为 WebP/);
+      assert.match(text(app.root), language === 'en' ? /author as assumed/ : /作者标为推定/);
+      const link = app.root.findAll(node => String(node.type) === 'Pressable' && node.props.accessibilityRole === 'link')[0];
+      mapsFail = true;
+      await act(async () => link.props.onPress());
+      assert.equal(alerts[0][0], language === 'en' ? 'Could not open this link' : '无法打开此链接');
+      mapsFail = false;
+      await act(async () => alerts[0][2][1].onPress());
+      assert.equal(opened.length, 1);
+    } finally { await act(async () => app.unmount()); }
+  }
+});
+
+test('App: original placeholders use translated native content rather than baked English labels', async () => {
+  reset(); locale = 'zh';
+  meals.filter(meal => meal.id !== 'roti-canai').forEach(meal => storage.blacklistMeal(meal.id));
+  const app = await mount();
+  try {
+    assert.equal(app.root.findAll(node => String(node.type) === 'Image').length, 0);
+    assert.match(text(app.root), /照片/);
+  } finally { await act(async () => app.unmount()); }
+});
+
 test('App: unreadable blacklist pauses dish recommendations while venue mode remains usable', async t => {
   reset(); t.mock.method(Math, 'random', () => 0.5);
   storage = createChoiceStorage(() => { throw new Error('database unavailable'); });

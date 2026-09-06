@@ -1,0 +1,3989 @@
+{
+  "reviewedOn": "2026-09-06",
+  "reviewer": "Local contact-sheet and catalog review",
+  "scope": "All 244 current local assets inspected in 21 numbered contact sheets; bilingual descriptions and explicit food categories reviewed. This is not device QA, photographer identity verification, or proof that imported source URLs match local bytes.",
+  "categoryConvention": "rice: rice meals and porridge; noodles: noodles/pasta/rice rolls/string hoppers; bread: breads/wraps/crepes/pastry; soup: soups/broth/gravy curries; plate: mains/sides; light: snacks/salads. Multiple categories describe serving options, not mandatory ingredients.",
+  "items": [
+    {
+      "mealId": "nasi-lemak",
+      "name": "Nasi lemak",
+      "localName": "椰浆饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Coconut rice with sambal and classic sides—the Malaysian default when nothing else wins.",
+      "descriptionZh": "椰香米饭配参巴和经典配菜，是最稳妥的马来西亚日常选择。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 1,
+      "cell": 1,
+      "imageSha256": "ace911c055175e4bc9b70941f684e82fb369a38d390a8f67fa4ce0a32b5c8d14",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "beef-rendang",
+      "name": "Beef rendang",
+      "localName": "仁当牛肉",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Slow-cooked, deeply spiced beef for a richer, more substantial meal.",
+      "descriptionZh": "慢煮香料牛肉，味道浓郁，适合想吃得比较满足的时候。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 1,
+      "cell": 2,
+      "imageSha256": "5caa694a1acf59ad7d7673954f6838a3accf92ee72782142969aafd6bd3340da",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "nasi-kerabu",
+      "name": "Nasi kerabu",
+      "localName": "蓝花饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Herbed blue rice with vegetables and a protein; fresh, aromatic and full of texture.",
+      "descriptionZh": "蓝色香草饭配蔬菜和肉类，口感丰富又清新。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 1,
+      "cell": 3,
+      "imageSha256": "ddd25385d6dd6935302e1cabf16608f79b14f1de2ce5c3ba300829d395c7ab4a",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "nasi-dagang",
+      "name": "Nasi dagang",
+      "localName": "达岗饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Fragrant rice traditionally served with fish curry, especially good for breakfast or lunch.",
+      "descriptionZh": "东海岸风味香饭配鱼咖喱，早餐或午餐都很合适。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 1,
+      "cell": 4,
+      "imageSha256": "9ab7d17e16fd0f5ec71fe0e17829304e7f06cd8ccec80b016e437ad0d3ce452c",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "mee-rebus",
+      "name": "Mee rebus",
+      "localName": "马来卤面",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Yellow noodles in a thick sweet-savoury gravy when you want comfort in a bowl.",
+      "descriptionZh": "黄面配浓稠甜咸酱汁，是温暖又有饱足感的一碗面。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 1,
+      "cell": 5,
+      "imageSha256": "642531e0f8411c57d570dcf1f689dc0278df027e16301a708c04bdec9ca5d5a2",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "ayam-percik",
+      "name": "Ayam percik",
+      "localName": "椰浆烤鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Charred chicken in a coconut-spice sauce: smoky, savoury and satisfying.",
+      "descriptionZh": "炭烤鸡配椰浆香料酱，带烟香而且十分下饭。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 1,
+      "cell": 6,
+      "imageSha256": "546e9a1efa97ea9b2ca2af12185f8759440d44ebd6e0442b1fcb97aa6c4ecda3",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "soto-ayam",
+      "name": "Soto ayam",
+      "localName": "鸡肉索托汤",
+      "foodTypes": [
+        "soup"
+      ],
+      "description": "A warming chicken soup with rice cakes or noodles that feels lighter than fried food.",
+      "descriptionZh": "清香鸡汤配饭糕或面，想吃清爽一点时很适合。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 1,
+      "cell": 7,
+      "imageSha256": "01a8a03eaf2aa2100582286f7fa4cdb73f751160fe70de5617f905e3a27c0252",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "asam-pedas",
+      "name": "Asam pedas",
+      "localName": "亚参辣鱼",
+      "foodTypes": [
+        "soup",
+        "plate"
+      ],
+      "description": "A sour-spicy fish stew for days when you want bold flavour with rice.",
+      "descriptionZh": "酸辣鱼汤配白饭，味道鲜明又开胃。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 1,
+      "cell": 8,
+      "imageSha256": "a109d881c1e6f0b2f0d4c728174787ea15ce5cbc46e25c0cbfe4e25e29a6a09a",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "nasi-goreng-kampung",
+      "name": "Nasi goreng kampung",
+      "localName": "乡村炒饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Village-style fried rice with anchovies, chilli and greens for a smoky, punchy plate.",
+      "descriptionZh": "带江鱼仔、辣椒和菜香的马来炒饭，简单直接又有锅气。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 1,
+      "cell": 9,
+      "imageSha256": "2302bb19bf9f36d8ff4c32fa5cbcb1e765862922743f1e2282ea884186ec615a",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "lontong",
+      "name": "Lontong",
+      "localName": "隆冬",
+      "foodTypes": [
+        "rice",
+        "soup"
+      ],
+      "description": "Rice cakes in coconut vegetable gravy with sambal, popular for breakfast and brunch.",
+      "descriptionZh": "米糕配椰奶蔬菜汤和参巴，是常见的马来早餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 1,
+      "cell": 10,
+      "imageSha256": "246698235bb1535c505f0baf6669beb5de16f8685ded06abe2bbfe9e3ef5c773",
+      "display": "withheld",
+      "imageDecision": "Only plain sliced rice cakes are visible; coconut vegetable gravy is absent. Source authorship is also assumed, not confirmed."
+    },
+    {
+      "mealId": "laksa-johor",
+      "name": "Laksa Johor",
+      "localName": "柔佛叻沙",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Spaghetti with a thick fish-based laksa gravy and fresh herbs—the Johor signature.",
+      "descriptionZh": "用意大利面配浓郁鱼肉叻沙酱，是柔佛很有代表性的味道。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 1,
+      "cell": 11,
+      "imageSha256": "c50c4f4a153788aa4723d17030d4f1d8b263528976612e56f1ffafd9b296226c",
+      "display": "withheld",
+      "imageDecision": "Foon Yew laksa image does not establish the spaghetti and thick fish gravy described for Laksa Johor."
+    },
+    {
+      "mealId": "ayam-goreng-berempah",
+      "name": "Ayam goreng berempah",
+      "localName": "香料炸鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Crisp fried chicken covered in fragrant fried spices, made to pair with rice.",
+      "descriptionZh": "裹满炸香料碎的酥脆炸鸡，配饭吃特别满足。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 1,
+      "cell": 12,
+      "imageSha256": "62e3b04e962463504ff0d1cefd29b2fe4073129b6a5c84cefa2b795996e69bfe",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "nasi-minyak",
+      "name": "Nasi minyak",
+      "localName": "香料油饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Fragrant ghee rice with warm spices, usually paired with curry or celebratory dishes.",
+      "descriptionZh": "牛油香饭带温暖香料气息，常配咖喱或宴席菜。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 2,
+      "cell": 1,
+      "imageSha256": "cc4447dcc219e44c6a4410716b2d0e5ef1c9083bb8c55175cab8ef99fd46cfdf",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "ikan-bakar",
+      "name": "Ikan bakar",
+      "localName": "马来烤鱼",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Charcoal-grilled fish with sambal and lime for a smoky, punchy meal with rice.",
+      "descriptionZh": "炭火烤鱼配参巴和青柠，烟香浓郁而且很下饭。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 2,
+      "cell": 2,
+      "imageSha256": "541d64f588be9713c7bb4176260a9406bacc41f2b25167be46b726645c33ce3b",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "bubur-lambuk",
+      "name": "Bubur lambuk",
+      "localName": "香料咸粥",
+      "foodTypes": [
+        "rice",
+        "soup"
+      ],
+      "description": "Spiced rice porridge with herbs and savoury toppings when you want something soft and warming.",
+      "descriptionZh": "米粥加入香料、香草和咸香配料，柔软暖胃。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 2,
+      "cell": 3,
+      "imageSha256": "e6302b94cd2b713f65997e8985d9fa2dc7b7ed0398373a84799fbc5120b9d600",
+      "display": "withheld",
+      "imageDecision": "Event and serving scene; the porridge cannot be inspected clearly in the card crop."
+    },
+    {
+      "mealId": "chicken-rice",
+      "name": "Hainanese chicken rice",
+      "localName": "海南鸡饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Tender chicken and fragrant rice: quick, familiar and easy to find almost anywhere.",
+      "descriptionZh": "嫩鸡配鸡油香饭，快速、熟悉，而且几乎到处都找得到。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 2,
+      "cell": 4,
+      "imageSha256": "8ff91ec18376875507b1171484467a9ce88b69d7daeeb4001b2a47635420cee0",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "char-kway-teow",
+      "name": "Char kway teow",
+      "localName": "炒粿条",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Smoky flat noodles with wok hei when you want something indulgent and fast.",
+      "descriptionZh": "大火炒出的粿条带锅气，适合想吃香口快餐的时候。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 2,
+      "cell": 5,
+      "imageSha256": "9f8b13c2c19794cb74db0daea4be8f22a8e1cb50ee84c31da69da32019c1d44a",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "bak-kut-teh",
+      "name": "Bak kut teh",
+      "localName": "肉骨茶",
+      "foodTypes": [
+        "soup"
+      ],
+      "description": "Peppery herbal pork rib soup, best when you have time for a sit-down meal.",
+      "descriptionZh": "胡椒药材猪骨汤，适合有时间坐下来慢慢吃的一餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 2,
+      "cell": 6,
+      "imageSha256": "470bb1a82595f0b0ef0ebe9a35a0d9681c07b430af9cc94d7979eda756bffa1f",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "wonton-noodles",
+      "name": "Wantan noodles (dry)",
+      "localName": "云吞干捞面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Springy dry-tossed noodles with char siu, greens and dumplings.",
+      "descriptionZh": "弹牙干捞面配叉烧、青菜和云吞，是容易决定的午餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 2,
+      "cell": 7,
+      "imageSha256": "b2b07468e1e89947cc6675a09f1d6866ac481defd1d1f2f3bf042b6c3e1cf4a1",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "hokkien-mee",
+      "name": "KL Hokkien mee",
+      "localName": "吉隆坡福建面（大碌面）",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Dark, savoury braised noodles built for a hearty dinner.",
+      "descriptionZh": "深色浓香的焖炒面，适合想吃丰盛晚餐的时候。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 2,
+      "cell": 8,
+      "imageSha256": "9729602794d7db1b81bdb7a1fd62874fda0884a2a1197288245bfccbfedf26e2",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "curry-mee",
+      "name": "Curry mee",
+      "localName": "咖喱面",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Creamy curry noodles with tofu puffs and toppings for a bold, warming bowl.",
+      "descriptionZh": "浓香咖喱汤配豆卜和各种配料，暖胃又够味。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 2,
+      "cell": 9,
+      "imageSha256": "027bfb9861356a88b865ed338ef7caa0d7a61c33787101e60ca4c2f1344c96af",
+      "display": "withheld",
+      "imageDecision": "Current local crop does not clearly show curry noodles; corrected metadata alone is insufficient."
+    },
+    {
+      "mealId": "pan-mee",
+      "name": "Pan mee",
+      "localName": "板面",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Hand-torn noodles with greens; choose soup for comfort or dry for stronger flavour.",
+      "descriptionZh": "手工面配青菜，可选汤面或干捞，口味十分灵活。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 2,
+      "cell": 10,
+      "imageSha256": "894773b1cdb304de5e0d9e4b7edcf2ac8a4bb83687c048b324257e9db7d48363",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "yong-tau-foo",
+      "name": "Yong tau foo",
+      "localName": "酿豆腐",
+      "foodTypes": [
+        "soup",
+        "plate"
+      ],
+      "description": "Pick your own tofu and vegetables, then choose clear soup or dry sauce.",
+      "descriptionZh": "自己挑豆腐和蔬菜，再选择清汤或干捞酱汁。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 2,
+      "cell": 11,
+      "imageSha256": "3021d2c12e0335fad3242302d519406164c85f69f1c2ddb58b1fedb24c74c4c5",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "chee-cheong-fun",
+      "name": "Chee cheong fun",
+      "localName": "猪肠粉",
+      "foodTypes": [
+        "noodles",
+        "light"
+      ],
+      "description": "Silky rice rolls served with sweet sauce, curry or yong tau foo pieces.",
+      "descriptionZh": "滑嫩米浆卷配甜酱、咖喱或酿料，早餐和午餐都方便。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 2,
+      "cell": 12,
+      "imageSha256": "8b101db571a80aca0dd7ff8259931d021c7cddf8f6f5d3321469cfd744cdb668",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "claypot-chicken-rice",
+      "name": "Claypot chicken rice",
+      "localName": "瓦煲鸡饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Soy-marinated chicken and rice cooked in claypot for a fragrant crispy base.",
+      "descriptionZh": "鸡肉、腊味和酱油饭在瓦煲中焖出焦香锅巴。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 3,
+      "cell": 1,
+      "imageSha256": "513922bb49cadeefe7a9839ef04dbf9d7a28e720fa47983233dbd752106e6a0c",
+      "display": "withheld",
+      "imageDecision": "Current local image shows a rice plate without a claypot; source title alone does not verify the bytes."
+    },
+    {
+      "mealId": "lei-cha",
+      "name": "Lei cha rice",
+      "localName": "擂茶饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Rice, chopped vegetables and beans served with a fragrant herb tea broth.",
+      "descriptionZh": "杂粮饭、蔬菜和豆类配香草茶汤，清爽而且有层次。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 3,
+      "cell": 2,
+      "imageSha256": "c6286221f890498d81c6888834df6bca1ce4e412da14f47169dcdef3acb9e774",
+      "display": "withheld",
+      "imageDecision": "Current local image shows takeaway noodles rather than rice, chopped greens and herb broth."
+    },
+    {
+      "mealId": "chinese-fried-rice",
+      "name": "Chinese fried rice",
+      "localName": "炒饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Familiar wok-fried rice that vegetarian shops can prepare without meat.",
+      "descriptionZh": "最熟悉的镬炒米饭，可在素食餐馆选择纯素版本。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 3,
+      "cell": 3,
+      "imageSha256": "fefaff29c2c83097d4a07ef88b9487e33e37c8c629bc8b73b976d4452ef8980d",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "dim-sum",
+      "name": "Dim sum",
+      "localName": "点心",
+      "foodTypes": [
+        "light"
+      ],
+      "description": "A mix of steamed and fried bite-size dishes, ideal when the table wants variety.",
+      "descriptionZh": "蒸点和炸点小份组合，适合多人一起尝不同口味。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 3,
+      "cell": 4,
+      "imageSha256": "d3dd4f2509202d7276f89ef029a32f54116ceb577559ba4744a0f30375364d6a",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "congee",
+      "name": "Chinese congee",
+      "localName": "中式粥",
+      "foodTypes": [
+        "rice",
+        "soup"
+      ],
+      "description": "Gentle rice porridge with your choice of egg, fish, chicken or preserved vegetables.",
+      "descriptionZh": "清淡米粥可配蛋、鱼、鸡肉或咸菜，暖胃又容易入口。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 3,
+      "cell": 5,
+      "imageSha256": "b1fb233eb40d61eea676e5c6e8b704a8219880fef7b042cadb8b488e09bd3d9b",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "roast-duck-rice",
+      "name": "Roast duck rice",
+      "localName": "烧鸭饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Cantonese roast duck over rice with savoury sauce for a rich, dependable lunch.",
+      "descriptionZh": "广式烧鸭铺在白饭上配咸香酱汁，是丰盛可靠的午餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 3,
+      "cell": 6,
+      "imageSha256": "211f6304623394d16ebc1bf9a0d7dec2c1e5959adbe1ce82d6243576c5687108",
+      "display": "withheld",
+      "imageDecision": "Tight roast-duck crop does not show the rice meal described."
+    },
+    {
+      "mealId": "fish-ball-noodles",
+      "name": "Fish ball noodles",
+      "localName": "鱼丸面",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Springy fish balls with noodles served dry or in a clear broth.",
+      "descriptionZh": "弹牙鱼丸配面，可选择干捞或清汤。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 3,
+      "cell": 7,
+      "imageSha256": "08d2f8b811bd592a434f5b50fd7c000d38e9f7370a886585fb73d40737a13090",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "roti-canai",
+      "name": "Roti canai",
+      "localName": "印度煎饼",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "Crisp, flaky flatbread with dhal—the dependable mamak choice at almost any hour.",
+      "descriptionZh": "酥脆分层的煎饼配扁豆咖喱，任何时间都可靠。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 3,
+      "cell": 8,
+      "imageSha256": "3ea4d8048b990018c6e10d99369ed29e5af584ec6a12ba282778d88a4500b668",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "thosai",
+      "name": "Thosai",
+      "localName": "多赛",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "A crisp fermented rice-lentil crepe with dhal and chutney; light but satisfying.",
+      "descriptionZh": "发酵米豆薄饼配扁豆汤和酸辣酱，清爽但有饱足感。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 3,
+      "cell": 9,
+      "imageSha256": "de068b29ce197e16ad112c6b8fe6876e109a0c5ebde3847237c638f44fb17bd1",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "nasi-kandar",
+      "name": "Nasi kandar",
+      "localName": "扁担饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Rice, curries and your choice of sides when you want full control over the plate.",
+      "descriptionZh": "白饭配多种咖喱和自选菜肴，可以完全按口味搭配。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 3,
+      "cell": 10,
+      "imageSha256": "80a8cd0a4bf68deb5721c6eb9a0b4facd4bfa1ee3f5ec85235297fbb204b5e6b",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "mee-goreng-mamak",
+      "name": "Mee goreng mamak",
+      "localName": "嘛嘛炒面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Tangy, spicy fried noodles with tofu and vegetables for a fast comfort meal.",
+      "descriptionZh": "酸辣炒面配豆腐和蔬菜，是快速又够味的选择。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 3,
+      "cell": 11,
+      "imageSha256": "c797969d7dd2e6cdd3e8dc9e9661b5146cbc4301f738da0d401ecab8ca695857",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "tandoori-chicken",
+      "name": "Tandoori chicken",
+      "localName": "坦都里烤鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Yogurt-spiced grilled chicken that pairs well with naan or a lighter salad.",
+      "descriptionZh": "酸奶香料腌制的烤鸡，可配馕或沙拉。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 3,
+      "cell": 12,
+      "imageSha256": "cda4df90ae1c36dac9f395e106fb64195a0aa2c45feff67c43da3e73d0f7c0c5",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "chapati-dhal",
+      "name": "Chapati with dhal",
+      "localName": "恰巴提配扁豆咖喱",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "Whole-wheat flatbread and lentil curry: simple, filling and meat-free.",
+      "descriptionZh": "全麦薄饼配扁豆咖喱，简单、饱足而且不含肉。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 4,
+      "cell": 1,
+      "imageSha256": "928be1f17c1e81213aba1ae819ff8c405bd545db83ac770318df0d2cf7f0d1a8",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "chicken-biryani",
+      "name": "Chicken biryani",
+      "localName": "鸡肉印度香饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Aromatic spiced rice and chicken for a substantial one-plate meal.",
+      "descriptionZh": "香料长米配鸡肉，是份量充足的一盘式主餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 4,
+      "cell": 2,
+      "imageSha256": "95eab7ccce8e1746111afa02f0eebb6923288edc2cd7bb8b463488f7e1c3056a",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "idli-sambar",
+      "name": "Idli with sambar",
+      "localName": "蒸米糕配扁豆汤",
+      "foodTypes": [
+        "light",
+        "soup"
+      ],
+      "description": "Soft steamed rice cakes with lentil stew; gentle, light and traditionally vegetarian.",
+      "descriptionZh": "柔软蒸米糕配扁豆蔬菜汤，温和清爽而且传统上是素食。",
+      "categoryDecision": "Corrected bread to light: steamed rice cakes with lentil soup.",
+      "sheet": 4,
+      "cell": 3,
+      "imageSha256": "18fb997620dae176c897cb90c1a49805b1b8add085d0950eae78ea46ec4b835f",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "banana-leaf-rice",
+      "name": "Banana leaf rice",
+      "localName": "香蕉叶饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Rice, curries, vegetables and optional protein served across a banana leaf.",
+      "descriptionZh": "香蕉叶上的白饭配多种咖喱、蔬菜和自选主菜。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 4,
+      "cell": 4,
+      "imageSha256": "94e7a98e9846720eb0f62135c9587f6717ddb29ba7e70afb19526e3b0ee8a128",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "masala-thosai",
+      "name": "Masala thosai",
+      "localName": "马萨拉多赛",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "A crisp thosai filled with spiced potato for a more complete vegetarian meal.",
+      "descriptionZh": "酥脆多赛包着香料马铃薯，份量比普通多赛更完整。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 4,
+      "cell": 5,
+      "imageSha256": "8b1efc563c77185ed7ca336ac94243bcef06f1a4df1d2e0e34bea7b2564008b4",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "appam",
+      "name": "Appam",
+      "localName": "阿榜",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "A fermented rice pancake with crisp edges and a soft centre, served sweet or savoury.",
+      "descriptionZh": "边缘酥脆、中心柔软的发酵米饼，可配椰奶或咖喱。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 4,
+      "cell": 6,
+      "imageSha256": "1f37317142253f850d6e3391627983f1c3e2b0f11ad9725ddd31e5c2ff6d5983",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "vadai",
+      "name": "Vadai",
+      "localName": "印度炸豆饼",
+      "foodTypes": [
+        "light"
+      ],
+      "description": "Crisp savoury lentil fritters for breakfast, a snack or a small extra side.",
+      "descriptionZh": "香脆豆类炸饼，适合作为早餐、小吃或加餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 4,
+      "cell": 7,
+      "imageSha256": "afe310dcd71e26e81d62c986650e0a78ec8c0d20674a17e402863fe6b3f82a4c",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "butter-chicken",
+      "name": "Butter chicken",
+      "localName": "印度奶油鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Creamy tomato-spice chicken curry that works especially well with rice or naan.",
+      "descriptionZh": "浓滑番茄香料鸡肉咖喱，配饭或馕都很合适。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 4,
+      "cell": 8,
+      "imageSha256": "1b3fc543bb06d2acd3bcf3ce553d28ac7e349c10ab298ced15bbf079bc81f517",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "naan",
+      "name": "Naan with curry",
+      "localName": "馕配咖喱",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "Soft tandoor-baked bread with dhal or curry for an easy shareable meal.",
+      "descriptionZh": "泥炉烤出的柔软面饼配扁豆或咖喱，方便分享。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 4,
+      "cell": 9,
+      "imageSha256": "3aacaf6b6db938cbac6d9cd01434ff798368088193cd072b4d5eecc3ce7e50f7",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "murtabak",
+      "name": "Murtabak",
+      "localName": "印度煎馅饼",
+      "foodTypes": [
+        "bread",
+        "plate"
+      ],
+      "description": "Pan-fried stuffed flatbread with egg, onion and meat, served with curry.",
+      "descriptionZh": "面饼包鸡蛋、洋葱和肉馅煎香，再配咖喱。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 4,
+      "cell": 10,
+      "imageSha256": "9461573f0108033df037c9e357f2c53563e4d228f57b494e9ed495b32a98f631",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "chicken-chop",
+      "name": "Chicken chop",
+      "localName": "鸡扒",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Grilled or fried chicken with sauce and sides—the local kopitiam Western staple.",
+      "descriptionZh": "烤或炸鸡扒配酱汁和配菜，是本地西餐档的经典。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 4,
+      "cell": 11,
+      "imageSha256": "e85c7884edf789a4fe480357a0e3aed3cf79263a8f982a812c4e36c2931af79b",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "fish-and-chips",
+      "name": "Fish and chips",
+      "localName": "炸鱼薯条",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Crisp battered fish and fries for an uncomplicated comfort-food choice.",
+      "descriptionZh": "酥脆炸鱼配薯条，是简单直接的西式安慰餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 4,
+      "cell": 12,
+      "imageSha256": "dc7fcdee565918462148c7c6dc7edaa944026c00708056a756584978e313cef5",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "spaghetti-bolognese",
+      "name": "Spaghetti bolognese",
+      "localName": "肉酱意大利面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Tomato meat sauce and pasta: familiar, filling and widely available.",
+      "descriptionZh": "番茄肉酱配意大利面，熟悉、饱足而且容易找到。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 5,
+      "cell": 1,
+      "imageSha256": "0dacf5bbe5947222f53280b523f7c141426a3383b187966a0cda0c32b22fc24d",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "caesar-salad",
+      "name": "Caesar salad",
+      "localName": "凯撒沙拉",
+      "foodTypes": [
+        "light"
+      ],
+      "description": "Crunchy greens with a creamy dressing; add chicken when you want a lighter main.",
+      "descriptionZh": "爽脆生菜配浓郁酱汁，想吃轻一点时可作为主餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 5,
+      "cell": 2,
+      "imageSha256": "ca7d512168df7519c0d0e02b2c16b15436de76f4af50d9aac983f1ee5abbcb47",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "cheeseburger",
+      "name": "Cheeseburger",
+      "localName": "芝士汉堡",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "A straightforward burger choice when speed and satisfaction matter more than novelty.",
+      "descriptionZh": "想快速解决一餐时，汉堡是直接而满足的选择。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 5,
+      "cell": 3,
+      "imageSha256": "e9f5ce92381ad70775c4ed85ec9622be8e1f31d91327b73420e9746cb3fa24a6",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "grilled-chicken",
+      "name": "Grilled chicken",
+      "localName": "烤鸡扒",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Lean grilled chicken with vegetables or mash for a balanced, reliable plate.",
+      "descriptionZh": "烤鸡配蔬菜或薯泥，是均衡可靠的一盘主餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 5,
+      "cell": 4,
+      "imageSha256": "989f6e43c67e27d2652c4030bb128a2d5c5de71920f7bdaa9593ae5dbde49c54",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "mushroom-soup",
+      "name": "Mushroom soup",
+      "localName": "蘑菇汤",
+      "foodTypes": [
+        "soup"
+      ],
+      "description": "Creamy and warming; pair with bread when you only want a small meal.",
+      "descriptionZh": "浓滑暖胃，配面包就能成为一顿简单轻食。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 5,
+      "cell": 5,
+      "imageSha256": "f4c01fac6a09adee91dd507fb2b503af58ad1928f76f4d3d179950fffccbc1d1",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "club-sandwich",
+      "name": "Club sandwich",
+      "localName": "Club Sandwich 俱乐部三明治",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "A layered, portable meal that works well for takeaway or a quick café lunch.",
+      "descriptionZh": "多层夹馅而且方便携带，适合外带或快速午餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 5,
+      "cell": 6,
+      "imageSha256": "9978d460902c245d9b9b66c74548567caf2255def72dfbd830cfcdd941d3d737",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "aglio-olio",
+      "name": "Aglio olio",
+      "localName": "蒜香橄榄油意面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Pasta with garlic, olive oil and chilli for a lighter, direct flavour.",
+      "descriptionZh": "蒜香、辣椒和橄榄油带出清爽直接的意面风味。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 5,
+      "cell": 7,
+      "imageSha256": "af4cb9d549377a6b2e4594d75da9cf00c89a9dc5f4bf9e5c14695bebeb044486",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "pizza",
+      "name": "Pizza",
+      "localName": "披萨",
+      "foodTypes": [
+        "bread",
+        "plate"
+      ],
+      "description": "Flexible toppings, easy sharing and widely available vegetarian combinations.",
+      "descriptionZh": "配料选择很多，适合分享，也容易找到素食版本。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 5,
+      "cell": 8,
+      "imageSha256": "1a1ff7c90fdccf46110c1b162aad5f93e06887444e974d18780892f114ef64d7",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "carbonara",
+      "name": "Pasta carbonara",
+      "localName": "卡邦尼意面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Creamy, savoury pasta for days when you want a richer café meal.",
+      "descriptionZh": "浓郁奶香的咸香意面，适合想吃丰盛咖啡馆餐点的时候。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 5,
+      "cell": 9,
+      "imageSha256": "e8241928010b806241705e43038ba0e9cf45fa768a461584ced095cf8bfe02f9",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "lasagna",
+      "name": "Lasagna",
+      "localName": "千层面",
+      "foodTypes": [
+        "noodles",
+        "plate"
+      ],
+      "description": "Baked pasta layered with sauce, cheese and meat for a substantial sit-down meal.",
+      "descriptionZh": "面片、酱汁、芝士和肉馅层层烘烤，是份量十足的主餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 5,
+      "cell": 10,
+      "imageSha256": "417d76ef8cf0cf308eb33fa8b4545d94367069560bba87cb0af550f9d14367dd",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "sushi-set",
+      "name": "Sushi set",
+      "localName": "寿司拼盘",
+      "foodTypes": [
+        "rice",
+        "light"
+      ],
+      "description": "A varied set of rice and seafood bites when you want variety without a heavy sauce.",
+      "descriptionZh": "多种饭团和海鲜小份组合，选择丰富而不会太厚重。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 5,
+      "cell": 11,
+      "imageSha256": "8d47640d09fa0f51fe2d097411361a4a5ba18b574792d33f2de4292709915246",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "ramen",
+      "name": "Ramen",
+      "localName": "拉面",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "A rich noodle soup built for comfort; broth and toppings vary greatly by shop.",
+      "descriptionZh": "浓郁汤底配面和各种配料，是暖胃的日式选择。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 5,
+      "cell": 12,
+      "imageSha256": "80138de3fa0a7b09d76b8b45fdc9d4bc415fd5099b6034ddd99063af8a623fa6",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "donburi",
+      "name": "Donburi",
+      "localName": "日式盖饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Protein and vegetables over rice—a convenient, complete one-bowl meal.",
+      "descriptionZh": "肉类和蔬菜铺在米饭上，是方便完整的一碗饭。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 6,
+      "cell": 1,
+      "imageSha256": "1e610b71814f35797976fbe352c02ebb8a9003a3f16ca7f6655ea835b65774be",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "udon",
+      "name": "Udon",
+      "localName": "乌冬面",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Thick, chewy noodles served in broth or dry; comforting without being complicated.",
+      "descriptionZh": "粗弹面条可配汤或干拌，简单又有满足感。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 6,
+      "cell": 2,
+      "imageSha256": "e3bed6671874572ef8d03414312835d4b3689dc5195520adab181577e88e2bf9",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "japanese-curry",
+      "name": "Japanese curry rice",
+      "localName": "日式咖喱饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Mild, savoury curry over rice with chicken, beef or vegetables.",
+      "descriptionZh": "温和浓稠的咖喱配饭，可选鸡肉、牛肉或蔬菜。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 6,
+      "cell": 3,
+      "imageSha256": "440bc59eb0c14731535653ac28b5cfa79230695b1d20de54233749cb07066df4",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "yakitori",
+      "name": "Yakitori",
+      "localName": "日式烤鸡串",
+      "foodTypes": [
+        "plate",
+        "light"
+      ],
+      "description": "Charcoal-grilled chicken skewers, best for sharing or pairing with rice.",
+      "descriptionZh": "炭烤鸡肉串适合分享，也可以配饭成为主餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 6,
+      "cell": 4,
+      "imageSha256": "badd8f814ee48c339a525023e63e02e824f6b399a100d552116142e94580532d",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "soba",
+      "name": "Soba noodles",
+      "localName": "荞麦面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Buckwheat noodles served hot or chilled for a lighter Japanese option.",
+      "descriptionZh": "可热吃或冷吃的荞麦面，是比较清爽的日式选择。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 6,
+      "cell": 5,
+      "imageSha256": "5d3e77945f04dd121a46e7af8f7c5e80d525bbda74cd1eaa4dead7eb30e3ca93",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "onigiri",
+      "name": "Onigiri",
+      "localName": "饭团",
+      "foodTypes": [
+        "rice",
+        "light"
+      ],
+      "description": "A portable rice snack with simple fillings, ideal for a quick small meal.",
+      "descriptionZh": "便携米饭小吃配简单馅料，适合快速吃一点。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 6,
+      "cell": 6,
+      "imageSha256": "0f3c0e4902e4580426ddced50462bb9635e72f10e8ec0c5034be8c54ee6749df",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "chicken-katsu-curry",
+      "name": "Chicken katsu curry",
+      "localName": "炸鸡排咖喱饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Crisp chicken cutlet with mild Japanese curry and rice for a filling plate.",
+      "descriptionZh": "酥脆鸡排配日式咖喱和白饭，是很有饱足感的一盘。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 6,
+      "cell": 7,
+      "imageSha256": "8dbec05795a1335a25a6f017985d755631395a21d6d81884b330a71e688a04ef",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "katsudon",
+      "name": "Katsudon",
+      "localName": "日式炸肉排盖饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Crisp cutlet simmered with egg and onion over rice for a hearty one-bowl meal.",
+      "descriptionZh": "炸肉排与鸡蛋洋葱同煮后铺在饭上，丰盛又暖胃。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 6,
+      "cell": 8,
+      "imageSha256": "ebdbe2e1bda583afcd785fced50f306eab3d72cac26394c9e7ffc32fb513e7eb",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "takoyaki",
+      "name": "Takoyaki",
+      "localName": "章鱼烧",
+      "foodTypes": [
+        "light"
+      ],
+      "description": "Hot octopus-filled batter bites, best as a snack or a shared extra.",
+      "descriptionZh": "外软内热的章鱼面糊小丸子，适合作为小吃或加餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 6,
+      "cell": 9,
+      "imageSha256": "63796345d315222a9a0bff47b33b1df4c7ac98ef86bfefefdf9521f32ca3e4d1",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "bibimbap",
+      "name": "Bibimbap",
+      "localName": "韩式拌饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Rice, vegetables, egg and sauce mixed together for colour, texture and balance.",
+      "descriptionZh": "米饭、蔬菜、鸡蛋和酱料拌在一起，颜色和口感都丰富。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 6,
+      "cell": 10,
+      "imageSha256": "f4781c20bb5c1b4956a9883035ec78b52dbb895053ab5e041e287aa046ecb1d5",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "korean-fried-chicken",
+      "name": "Korean fried chicken",
+      "localName": "韩式炸鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Crisp chicken with a sweet-spicy glaze when you want something made for sharing.",
+      "descriptionZh": "酥脆炸鸡裹甜辣酱，适合想分享或吃香口食物的时候。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 6,
+      "cell": 11,
+      "imageSha256": "30a37f0e9edd1e7c662b4bc2b2aa4d3f0792c224d9cf13088b6b417e8368b584",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "kimchi-fried-rice",
+      "name": "Kimchi fried rice",
+      "localName": "泡菜炒饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Tangy, savoury fried rice—often topped with egg—for a fast, punchy meal.",
+      "descriptionZh": "酸香泡菜炒饭通常配煎蛋，快速而够味。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 6,
+      "cell": 12,
+      "imageSha256": "55e0c3899e2db6d856e7b75f295b699ce7f29eeeac2d3f055a71c832aca850d1",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "tteokbokki",
+      "name": "Tteokbokki",
+      "localName": "辣炒年糕",
+      "foodTypes": [
+        "light",
+        "plate"
+      ],
+      "description": "Chewy rice cakes in spicy sauce; better as a snack or shared side than a balanced main.",
+      "descriptionZh": "弹牙年糕配辣酱，更适合作为小吃或分享。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 7,
+      "cell": 1,
+      "imageSha256": "d23aafaee437023b20428b0b646d98573cc028cda6c67c5d475599a32b354468",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "bulgogi",
+      "name": "Bulgogi",
+      "localName": "韩式烤牛肉",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Sweet-savoury grilled beef with rice and side dishes.",
+      "descriptionZh": "甜咸烤牛肉配白饭和小菜，味道温和。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 7,
+      "cell": 2,
+      "imageSha256": "95da6b11e50689793ff4c78f8e5139acbc7ad0c1f964fa9a7c859e32ec794704",
+      "display": "withheld",
+      "imageDecision": "Uncooked beef on a griddle rather than the finished grilled dish."
+    },
+    {
+      "mealId": "japchae",
+      "name": "Japchae",
+      "localName": "韩式炒冬粉",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Springy glass noodles with vegetables and often beef; savoury but not very spicy.",
+      "descriptionZh": "弹牙粉丝配蔬菜和肉类，咸香但通常不会太辣。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 7,
+      "cell": 3,
+      "imageSha256": "ef2e59cd9201f7708b4bcc8318eecffe50187210f7d1ed43b26b565e1b1aa1e4",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "kimchi-jjigae",
+      "name": "Kimchi jjigae",
+      "localName": "泡菜汤",
+      "foodTypes": [
+        "soup"
+      ],
+      "description": "Hot, sour kimchi stew with tofu and often pork for a warming sit-down meal.",
+      "descriptionZh": "酸辣泡菜、豆腐和肉类炖成的暖胃汤锅。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 7,
+      "cell": 4,
+      "imageSha256": "683275946d71812f8887baec57f488cab365159ceb3cd9f6bd871653cf7494e1",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "gimbap",
+      "name": "Gimbap",
+      "localName": "紫菜包饭",
+      "foodTypes": [
+        "rice",
+        "light"
+      ],
+      "description": "Rolled rice with vegetables and fillings; portable, shareable and easy to eat.",
+      "descriptionZh": "米饭、蔬菜和馅料卷在一起，方便携带和分享。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 7,
+      "cell": 5,
+      "imageSha256": "3c3db0464c258f82832970b0d440e8320f2d603759bbbd1f6953ecbef5f78a79",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "jjajangmyeon",
+      "name": "Jjajangmyeon",
+      "localName": "韩式炸酱面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Thick noodles in a savoury black bean sauce, a Korean takeaway classic.",
+      "descriptionZh": "粗面配浓郁黑豆酱和配料，是经典的韩式外卖选择。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 7,
+      "cell": 6,
+      "imageSha256": "9d3032683a3abe6ccf5b3287dcacb2fa8f8baf89850b778e457a4231e0b447d6",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "sundubu-jjigae",
+      "name": "Sundubu jjigae",
+      "localName": "韩式嫩豆腐锅",
+      "foodTypes": [
+        "soup"
+      ],
+      "description": "Bubbling soft-tofu stew with egg and your choice of seafood or meat.",
+      "descriptionZh": "滚烫嫩豆腐汤配鸡蛋和海鲜或肉类，香辣暖胃。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 7,
+      "cell": 7,
+      "imageSha256": "3aa9ea7676191ef65fdb2cde39baae90b9420efcc8bf3fa1686ba4ffffb844eb",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "dak-galbi",
+      "name": "Dak-galbi",
+      "localName": "韩式辣炒鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Spicy stir-fried chicken with cabbage and rice cakes, made for sharing.",
+      "descriptionZh": "辣炒鸡肉、包菜和年糕，适合多人分享。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 7,
+      "cell": 8,
+      "imageSha256": "0dbfff25aa062e3b33357ac3267e4021f64b3be02170ecf44fbdf3245f29c62e",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "pad-thai",
+      "name": "Pad Thai",
+      "localName": "泰式炒河粉",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Sweet-sour stir-fried rice noodles with peanuts and a choice of protein.",
+      "descriptionZh": "酸甜炒米粉配花生和自选肉类，味道平衡。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 7,
+      "cell": 9,
+      "imageSha256": "2bf981625a3c07faadbe9504fddaa35ace9b3fc464435fa0c9ee3b27b010ba30",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "tom-yum",
+      "name": "Tom yum soup",
+      "localName": "冬阴功",
+      "foodTypes": [
+        "soup"
+      ],
+      "description": "Hot and sour Thai soup with seafood or chicken when you want a sharp flavour reset.",
+      "descriptionZh": "酸辣泰式汤配海鲜或鸡肉，味道鲜明又开胃。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 7,
+      "cell": 10,
+      "imageSha256": "3a970e7648115bf643696b3df0e0ed1dcec31945a244fb767b455ca924f6f107",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "thai-green-curry",
+      "name": "Thai green curry",
+      "localName": "泰式青咖喱",
+      "foodTypes": [
+        "soup",
+        "plate"
+      ],
+      "description": "Fragrant coconut curry with herbs, vegetables and your choice of protein.",
+      "descriptionZh": "香草椰奶咖喱配蔬菜和肉类，香辣浓郁。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 7,
+      "cell": 11,
+      "imageSha256": "25a5218540495b98192c5055e34439fc6785d156fe39e680255f3f58d5039bbe",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "pineapple-fried-rice",
+      "name": "Pineapple fried rice",
+      "localName": "黄梨炒饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Sweet-savoury fried rice with fruit, nuts and often seafood.",
+      "descriptionZh": "甜咸炒饭配黄梨、坚果和海鲜，味道活泼。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 7,
+      "cell": 12,
+      "imageSha256": "9b499f9c1f7eb504cda459fd201b650a55e81af146f1b41efbb17dc4fecfab89",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "pho",
+      "name": "Pho",
+      "localName": "越南河粉",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Vietnamese rice noodles in aromatic broth with herbs; restorative and not too heavy.",
+      "descriptionZh": "香料清汤配河粉和香草，清爽而不会太厚重。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 8,
+      "cell": 1,
+      "imageSha256": "c40db590eb6d8ee241b3a837d5aa2caa74415fbda5eff08f4952f3daae6bae16",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "banh-mi",
+      "name": "Banh mi",
+      "localName": "越南法包",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "Crisp Vietnamese baguette with pickles and savoury fillings; ideal for takeaway.",
+      "descriptionZh": "酥脆法包配腌菜和咸香馅料，非常适合外带。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 8,
+      "cell": 2,
+      "imageSha256": "1f609b6cd4cc4e12a5b71c847cbc0464d11c898d2a4da0bda81c1b19ab6be3e5",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "pad-kra-pao",
+      "name": "Pad kra pao",
+      "localName": "泰式打抛饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Thai basil stir-fry over rice, usually topped with a fried egg.",
+      "descriptionZh": "罗勒炒肉铺在米饭上，通常会加一颗煎蛋。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 8,
+      "cell": 3,
+      "imageSha256": "9d7d2ec83866ace2fcdc2dca91c20f795f9f7b805969cedb904b8507ab2f972b",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "som-tam",
+      "name": "Som tam",
+      "localName": "青木瓜沙拉",
+      "foodTypes": [
+        "light"
+      ],
+      "description": "Crunchy green papaya salad with lime and chilli; fresh, fiery and best with a side.",
+      "descriptionZh": "青木瓜、青柠和辣椒带来爽脆酸辣的口感。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 8,
+      "cell": 4,
+      "imageSha256": "1c732f951e7ae5861d55872d6ed3360634f09c46dbc749967320dc73f699a76c",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "ayam-penyet",
+      "name": "Ayam penyet",
+      "localName": "印尼扁鸡饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Indonesian smashed fried chicken with sambal, tofu and tempeh for a bold rice meal.",
+      "descriptionZh": "炸鸡配参巴、豆腐和天贝，是香辣够味的印尼饭餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 8,
+      "cell": 5,
+      "imageSha256": "ef3e98c7b5ffe3a47d3b50fa57fb709e5e95f6ab47bf690d1279216014b9ac32",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "nasi-padang",
+      "name": "Nasi Padang",
+      "localName": "巴东饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Steamed rice with a choose-your-own spread of Indonesian curries, vegetables and proteins.",
+      "descriptionZh": "白饭配自选印尼咖喱、蔬菜和肉类，选择非常丰富。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 8,
+      "cell": 6,
+      "imageSha256": "1a2a07f90066f937264ab97ae00e16a33cac27a76a24ebcf713d9b1e9ed0700a",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "bun-cha",
+      "name": "Bún chả",
+      "localName": "越南烤肉米粉",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Vietnamese grilled pork with rice noodles, herbs and a bright dipping broth.",
+      "descriptionZh": "炭烤猪肉配米粉、香草和酸甜蘸汤，清爽又有烟香。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 8,
+      "cell": 7,
+      "imageSha256": "9ecee498adec5976dc977fdda54ec264dfc15a45d84a91617703944eb9815b25",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "mango-sticky-rice",
+      "name": "Mango sticky rice",
+      "localName": "芒果糯米饭",
+      "foodTypes": [
+        "rice",
+        "light"
+      ],
+      "description": "Sweet coconut sticky rice with ripe mango for a light meal or dessert-sized choice.",
+      "descriptionZh": "椰香糯米配成熟芒果，适合轻食或甜点份量的一餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 8,
+      "cell": 8,
+      "imageSha256": "66b27b4946b015c8e10d5f2a175d545eb627315a3bb7462a638fba2eb1f27ef0",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "buddhas-delight",
+      "name": "Buddha's delight",
+      "localName": "罗汉斋",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "A mixed vegetable and tofu stir-fry that is substantial enough to pair with rice.",
+      "descriptionZh": "多种蔬菜和豆腐一起炒，配饭就是完整的一餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 8,
+      "cell": 9,
+      "imageSha256": "253cd7a93bbe506954be96b81626702a452a3758126127b58e4b0f423e43d95b",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "caprese-salad",
+      "name": "Caprese salad",
+      "localName": "卡普雷塞沙拉",
+      "foodTypes": [
+        "light"
+      ],
+      "description": "Tomato, mozzarella and basil for a fresh, simple café meal.",
+      "descriptionZh": "番茄、水牛芝士和罗勒组成的清新简餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 8,
+      "cell": 10,
+      "imageSha256": "8c4242477839968238d9f749c27cff954fb450df7175226e03143b8cafaa1b14",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "greek-salad",
+      "name": "Greek salad",
+      "localName": "希腊沙拉",
+      "foodTypes": [
+        "light"
+      ],
+      "description": "Crisp vegetables, olives and feta—refreshing when a cooked meal feels too heavy.",
+      "descriptionZh": "蔬菜、橄榄和菲达芝士清爽开胃。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 8,
+      "cell": 11,
+      "imageSha256": "9168deff261ad3569c79189fcabf88ffbf9f3912f907177ae8d28616b962d1a2",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "falafel-bowl",
+      "name": "Falafel bowl",
+      "localName": "炸鹰嘴豆丸子碗",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Chickpea patties, grains and vegetables with sauce for a complete meat-free bowl.",
+      "descriptionZh": "鹰嘴豆丸、谷物和蔬菜组成完整的无肉主餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 8,
+      "cell": 12,
+      "imageSha256": "18a545bc9cb51f3b2d3b46727310f69721ce6e766895d8e40a3bdb8917b9a1b2",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "tempeh-bowl",
+      "name": "Tempeh rice plate",
+      "localName": "天贝饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Nutty tempeh with rice and vegetable sides: filling, local-friendly plant protein.",
+      "descriptionZh": "天贝配米饭和蔬菜，植物蛋白丰富而且很有饱足感。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 9,
+      "cell": 1,
+      "imageSha256": "dbbaf830953f8c892d67f9d687d3f4d90fefbb32bd96c07de2fc9def40243705",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "acai-bowl",
+      "name": "Açaí bowl",
+      "localName": "巴西莓果碗",
+      "foodTypes": [
+        "light"
+      ],
+      "description": "Cold fruit puree with toppings; suited to breakfast or a light meal, not every appetite.",
+      "descriptionZh": "冰凉果泥配水果和谷物，适合早餐或轻食。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 9,
+      "cell": 2,
+      "imageSha256": "fef2909e5b111254b9bba7579e238ac284ebfe0a7c7284139416b56ed9fe1bbe",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "avocado-toast",
+      "name": "Avocado toast",
+      "localName": "牛油果吐司",
+      "foodTypes": [
+        "bread",
+        "light"
+      ],
+      "description": "Creamy avocado on toast, often with egg; a familiar café breakfast or brunch.",
+      "descriptionZh": "牛油果铺在吐司上，是常见的咖啡馆早餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 9,
+      "cell": 3,
+      "imageSha256": "4372a8af5b4e62a53ea0f2d0a8be8912503f5b48e69a9ff57de9d7000afae38c",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "fresh-spring-rolls",
+      "name": "Fresh spring rolls",
+      "localName": "越南鲜春卷",
+      "foodTypes": [
+        "light"
+      ],
+      "description": "Rice-paper rolls packed with herbs, vegetables and tofu for a light, portable meal.",
+      "descriptionZh": "米纸包香草、蔬菜和豆腐，清爽而方便入口。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 9,
+      "cell": 4,
+      "imageSha256": "281219aef80e65653eb640a342e4e9129abcdaf76e61be8f1f88cafae9563e1f",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "nasi-tomato",
+      "name": "Nasi tomato",
+      "localName": "番茄饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Tomato-spiced rice usually served with ayam masak merah and acar.",
+      "descriptionZh": "带番茄和香料香气的米饭，常配红煮鸡和腌菜。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 9,
+      "cell": 5,
+      "imageSha256": "e8c7ab761b6a717cd17d7c657e9f234f705c3004493c800547b74b8bfb0065f4",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "nasi-hujan-panas",
+      "name": "Nasi hujan panas",
+      "localName": "彩虹香饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Colourful spiced rice with raisins and a curry or roasted side.",
+      "descriptionZh": "色彩丰富的香料饭，通常配葡萄干、咖喱或烤肉。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 9,
+      "cell": 6,
+      "imageSha256": "fd0aa26c7181208dbc21cfad4917f3408c6670c214707c86d96a96eef628b9f4",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "nasi-kukus",
+      "name": "Nasi kukus",
+      "localName": "蒸饭配香料炸鸡",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Steamed rice with curry gravy, sambal and spiced fried chicken.",
+      "descriptionZh": "蒸香饭淋咖喱汁，配参巴和香料炸鸡。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 9,
+      "cell": 7,
+      "imageSha256": "a0638268b065a83d21ea88df8e824e3ba4ba4410d43b93b82cd4f62c8c6ad303",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "nasi-campur-malay",
+      "name": "Malay nasi campur",
+      "localName": "马来杂饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Rice with a choose-your-own spread of Malay curries, vegetables and lauk.",
+      "descriptionZh": "白饭配自选马来咖喱、蔬菜和各式菜肴。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 9,
+      "cell": 8,
+      "imageSha256": "f0be1327d5f78fb28a65d9633fb7c1a7845f2f9768dae78a6bfa0becc13ad359",
+      "display": "withheld",
+      "imageDecision": "Source is Indonesian nasi campur; Malaysian dish needs confirmation."
+    },
+    {
+      "mealId": "ayam-masak-merah",
+      "name": "Ayam masak merah",
+      "localName": "红煮鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Chicken in a rich tomato-chilli sauce that pairs naturally with rice.",
+      "descriptionZh": "鸡肉以番茄辣椒酱焖煮，酸甜浓香而且下饭。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 9,
+      "cell": 9,
+      "imageSha256": "9b87be68e637a273cf9a1ef84e1690f017b9f7a9964327564ea9a8d564e42de9",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "rendang-tok",
+      "name": "Rendang tok",
+      "localName": "霹雳干仁当牛肉",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Perak-style dry beef rendang with deeply toasted spices.",
+      "descriptionZh": "霹雳式干身仁当牛肉，香料炒得浓郁焦香。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 9,
+      "cell": 10,
+      "imageSha256": "130f88f1e19ac9fe13a3fc35c3c7ed48c8f9b1688b8dc80b9968df65dfd591c6",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "daging-masak-hitam",
+      "name": "Daging masak hitam",
+      "localName": "黑酱香料牛肉",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Beef braised in a dark sweet-spiced sauce, often eaten with fragrant rice.",
+      "descriptionZh": "牛肉以深色甜香料酱焖煮，常配香饭食用。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 9,
+      "cell": 11,
+      "imageSha256": "127d581c58e91ba28beb8197f0efabd1f71fcec463ef2fd5f7a4ac49898a8cd0",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "masak-lemak-cili-api",
+      "name": "Masak lemak cili api",
+      "localName": "椰浆黄辣咖喱",
+      "foodTypes": [
+        "soup",
+        "plate"
+      ],
+      "description": "Negeri Sembilan coconut gravy sharpened with bird’s-eye chilli.",
+      "descriptionZh": "森美兰椰浆黄咖喱加入指天椒，香浓又辛辣。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 9,
+      "cell": 12,
+      "imageSha256": "e865867881f206269e95f050c748345858dc8d1aa64c1e64bdb70d5ea69d861a",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "ikan-patin-tempoyak",
+      "name": "Ikan patin tempoyak",
+      "localName": "榴莲酱巴丁鱼",
+      "foodTypes": [
+        "soup",
+        "plate"
+      ],
+      "description": "River fish cooked in a tangy fermented durian gravy.",
+      "descriptionZh": "河鱼以发酵榴莲酱汁烹煮，酸香浓郁。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 10,
+      "cell": 1,
+      "imageSha256": "3879d8fc8253b7639bf00934474a60573cd380b4d6a6bb77c04a2225ee5c5f72",
+      "display": "withheld",
+      "imageDecision": "Source title describes an exhibition replica."
+    },
+    {
+      "mealId": "sambal-sotong",
+      "name": "Sambal sotong",
+      "localName": "参巴苏东",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Squid coated in sweet-hot sambal, made to be eaten with rice.",
+      "descriptionZh": "苏东裹上甜辣参巴，最适合配白饭。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 10,
+      "cell": 2,
+      "imageSha256": "cb51ba057abfea6b2bcc8161a9b0731c98193feb5da1538b8e0ab731d315274b",
+      "display": "withheld",
+      "imageDecision": "Source title describes nasi lemak rather than squid."
+    },
+    {
+      "mealId": "gulai-kawah",
+      "name": "Gulai kawah",
+      "localName": "大锅咖喱肉",
+      "foodTypes": [
+        "soup",
+        "plate"
+      ],
+      "description": "Slow-cooked Malay meat curry traditionally prepared in a large wok.",
+      "descriptionZh": "传统大锅慢煮的马来肉类咖喱，酱汁浓厚。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 10,
+      "cell": 3,
+      "imageSha256": "ca8d0cb44b269d1d8f0b92d97abcce1b914146f4efc18f53217f8af30bb79cc7",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "roti-jala-curry",
+      "name": "Roti jala with curry",
+      "localName": "网饼配咖喱",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "Lacy turmeric crepes served with chicken or vegetable curry.",
+      "descriptionZh": "姜黄网状薄饼配鸡肉或蔬菜咖喱。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 10,
+      "cell": 4,
+      "imageSha256": "73627067a153bff79171c8816329d4ac8fdafd034dc3be896bc73b093f21aad7",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "sup-tulang",
+      "name": "Sup tulang",
+      "localName": "香料牛骨汤",
+      "foodTypes": [
+        "soup"
+      ],
+      "description": "Peppery spiced bone soup with tender meat and a deeply savoury broth.",
+      "descriptionZh": "胡椒香料牛骨汤带嫩肉，汤味浓厚。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 10,
+      "cell": 5,
+      "imageSha256": "96f146eec104445412234d3a31500df230bba2120bec2b5ac349aca302c9c89f",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "nasi-ulam",
+      "name": "Nasi ulam",
+      "localName": "香草拌饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Rice tossed with finely sliced herbs, vegetables and toasted aromatics.",
+      "descriptionZh": "米饭拌入切细香草、蔬菜和烘香配料，清新有层次。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 10,
+      "cell": 6,
+      "imageSha256": "f4bce5f791623b81cc48ab78f37a33de4833f90dbb6e2971014f42bbd7589b51",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "penang-hokkien-mee",
+      "name": "Penang Hokkien mee",
+      "localName": "槟城虾面",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Prawn-and-pork broth noodles with chilli, egg and aromatic fried shallots.",
+      "descriptionZh": "虾壳猪骨汤面配辣椒、鸡蛋和炸葱，是槟城代表味道。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 10,
+      "cell": 7,
+      "imageSha256": "0b1a55956ddebcf45a1ca6c044850d7278f041f1216b08f917b6c3433039a011",
+      "display": "withheld",
+      "imageDecision": "Source describes shrimp and artichoke in Acre, not prawn noodles."
+    },
+    {
+      "mealId": "wonton-noodles-soup",
+      "name": "Wantan noodles soup",
+      "localName": "云吞汤面",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Springy egg noodles and dumplings in a clear savoury broth.",
+      "descriptionZh": "弹牙蛋面和云吞配清甜汤底，简单暖胃。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 10,
+      "cell": 8,
+      "imageSha256": "ed936d98d990ff1b6061f2daec3099ceee419f88c24cd73c2096213a5fa72683",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "chilli-pan-mee",
+      "name": "Chilli pan mee",
+      "localName": "辣椒板面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Dry pan mee with minced meat, anchovies, egg and a punchy chilli mix.",
+      "descriptionZh": "干捞板面配肉碎、江鱼仔、鸡蛋和辣椒酱。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 10,
+      "cell": 9,
+      "imageSha256": "db180f7a096ff81e2109bb62cbd9de9a9c802d8635d4c530d402254fed6a911d",
+      "display": "withheld",
+      "imageDecision": "Source describes mushroom lo mein."
+    },
+    {
+      "mealId": "wat-tan-hor",
+      "name": "Wat tan hor",
+      "localName": "滑蛋河",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Wok-charred flat noodles under silky egg gravy.",
+      "descriptionZh": "炒香河粉淋上滑嫩蛋花芡汁。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 10,
+      "cell": 10,
+      "imageSha256": "e5ba16cb2879e1a551bf2fdea6667e70cb610cb9f476aa0fb6b90ac6c106ade3",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "cantonese-fried-noodles",
+      "name": "Cantonese fried noodles",
+      "localName": "广府炒",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Crisp or wok-fried noodles covered with seafood-and-egg gravy.",
+      "descriptionZh": "香脆或炒香面条淋上海鲜蛋花芡汁。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 10,
+      "cell": 11,
+      "imageSha256": "c0b862e5311f893ce2c55fdf1f2a348b07a14115efe41d9c7040af11f1c24a32",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "loh-mee",
+      "name": "Loh mee",
+      "localName": "卤面",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Thick yellow noodles in a dark, savoury egg-thickened broth.",
+      "descriptionZh": "粗黄面配深色浓稠蛋花卤汁，咸香暖胃。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 10,
+      "cell": 12,
+      "imageSha256": "ee0cf19b1aa277d32a76b1888924aef066c2acace34751886ab594a48b5a5340",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "fish-head-noodles",
+      "name": "Fish head noodles",
+      "localName": "鱼头米粉",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Rice vermicelli with fried fish in a tangy milky broth.",
+      "descriptionZh": "米粉配炸鱼头和酸香奶白汤底。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 11,
+      "cell": 1,
+      "imageSha256": "28115093d89ced554b7889faa1319232550b418e98fb705c9b17e10c76e15427",
+      "display": "withheld",
+      "imageDecision": "Source describes Shanghai smoked fish and lions head noodles."
+    },
+    {
+      "mealId": "mee-sua-soup",
+      "name": "Mee sua soup",
+      "localName": "面线汤",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Fine wheat noodles in a gentle broth with egg, meat or seafood.",
+      "descriptionZh": "细面线配清汤，可加入鸡蛋、肉类或海鲜。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 11,
+      "cell": 2,
+      "imageSha256": "a503249fc8d48d62c2c12d1939cd6af3832cb93324d5bddc1db6bf20f41d1017",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "hakka-mee",
+      "name": "Hakka mee",
+      "localName": "客家面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Dry springy noodles tossed with savoury minced meat and scallions.",
+      "descriptionZh": "弹牙干捞面配咸香肉碎和青葱。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 11,
+      "cell": 3,
+      "imageSha256": "026be16623eb1e11ee6b5f7243fe4f2d7da22f81f418a2227127495efa506d9c",
+      "display": "withheld",
+      "imageDecision": "Current image resembles dark fried flat noodles; dry Hakka noodles with mince are not established."
+    },
+    {
+      "mealId": "hakka-yong-tau-foo",
+      "name": "Hakka yong tau foo",
+      "localName": "客家酿豆腐",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Tofu and vegetables filled with seasoned fish or meat paste.",
+      "descriptionZh": "豆腐和蔬菜酿入调味鱼肉或肉馅，是经典客家菜。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 11,
+      "cell": 4,
+      "imageSha256": "79231998720337ddf81edf56b4535bc2764fd16a1161b4806610d78a87f7fe68",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "char-siu-rice",
+      "name": "Char siu rice",
+      "localName": "叉烧饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Caramelised Cantonese barbecued pork served over rice.",
+      "descriptionZh": "蜜香广式叉烧铺在白饭上，简单满足。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 11,
+      "cell": 5,
+      "imageSha256": "18b5b38c80c6cd5ea7d0f38f105ce385046b46d2e14a2dabf92e96c79d9a5621",
+      "display": "withheld",
+      "imageDecision": "Only hanging roast pork is visible, rather than the plated rice meal."
+    },
+    {
+      "mealId": "siu-yuk-rice",
+      "name": "Siu yuk rice",
+      "localName": "烧肉饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Crisp-skinned roast pork with rice and savoury sauce.",
+      "descriptionZh": "脆皮烧肉配白饭和咸香酱汁。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 11,
+      "cell": 6,
+      "imageSha256": "2cfe8344a6a7bf6acb9951366004ce12c1567f66212979f7af848dcf46182e1c",
+      "display": "withheld",
+      "imageDecision": "Visible glazed char siu does not establish the requested crispy roast pork belly."
+    },
+    {
+      "mealId": "dry-bak-kut-teh",
+      "name": "Dry bak kut teh",
+      "localName": "干肉骨茶",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Pork ribs cooked down with dark sauce, dried chilli and okra.",
+      "descriptionZh": "猪排骨与黑酱油、干辣椒和羊角豆收汁炒香。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 11,
+      "cell": 7,
+      "imageSha256": "2ed31d6185c1f18ba11e7b5ada4a82fcf2f05dfb8a3a798331fcac78ec45bc2c",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "penang-chee-cheong-fun",
+      "name": "Penang chee cheong fun",
+      "localName": "槟城猪肠粉",
+      "foodTypes": [
+        "noodles",
+        "light"
+      ],
+      "description": "Rice rolls dressed with sweet sauce, chilli and pungent shrimp paste.",
+      "descriptionZh": "米浆卷配甜酱、辣椒和虾膏，是槟城式吃法。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 11,
+      "cell": 8,
+      "imageSha256": "8b101db571a80aca0dd7ff8259931d021c7cddf8f6f5d3321469cfd744cdb668",
+      "display": "withheld",
+      "imageDecision": "Shared Chaoshan rice roll image does not establish Penang preparation."
+    },
+    {
+      "mealId": "ipoh-hor-fun",
+      "name": "Ipoh hor fun",
+      "localName": "怡保河粉",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Silky flat noodles with chicken and prawns in a clear sweet broth.",
+      "descriptionZh": "滑嫩河粉配鸡肉、鲜虾和清甜汤底。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 11,
+      "cell": 9,
+      "imageSha256": "f065fce4cb69b0b9e554e771bf044fcee242426b0aa461c2659dc03a4503cbe2",
+      "display": "withheld",
+      "imageDecision": "Source describes Thai rat na noodles."
+    },
+    {
+      "mealId": "kampar-curry-chicken-bread",
+      "name": "Kampar curry chicken bread",
+      "localName": "金宝咖喱鸡面包",
+      "foodTypes": [
+        "bread",
+        "plate"
+      ],
+      "description": "A baked bread loaf opened to reveal wrapped curry chicken inside.",
+      "descriptionZh": "烤面包内包着咖喱鸡，切开后适合多人分享。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 11,
+      "cell": 10,
+      "imageSha256": "e67231174578781ff5a6727079345ca4bc3ad936d69e3fb0708eedc2766b47fc",
+      "display": "withheld",
+      "imageDecision": "Source describes Japanese curry bun."
+    },
+    {
+      "mealId": "oyster-omelette",
+      "name": "Oyster omelette",
+      "localName": "蚝煎",
+      "foodTypes": [
+        "plate",
+        "light"
+      ],
+      "description": "Crisp-edged starch-and-egg omelette dotted with oysters.",
+      "descriptionZh": "粉浆鸡蛋煎得边缘香脆，配上鲜蚝。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 11,
+      "cell": 11,
+      "imageSha256": "e985151a401653366d04db48e2be060c4f3fd90dce2acc401969207f00959754",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "sweet-sour-pork",
+      "name": "Sweet and sour pork",
+      "localName": "咕噜肉",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Crisp pork in a glossy sweet-sour sauce with peppers and pineapple.",
+      "descriptionZh": "炸猪肉配酸甜酱、甜椒和黄梨，开胃下饭。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 11,
+      "cell": 12,
+      "imageSha256": "47e72dc9a2a4e1562f5f243e3c59b602ba20b6cf717ed121623d3494739454a5",
+      "display": "withheld",
+      "imageDecision": "Source describes a nose-to-tail pork plate; preparation unclear."
+    },
+    {
+      "mealId": "marmite-chicken",
+      "name": "Marmite chicken",
+      "localName": "妈蜜鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Fried chicken glazed with a dark sweet-savoury Marmite sauce.",
+      "descriptionZh": "炸鸡裹上甜咸浓郁的妈蜜酱汁。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 12,
+      "cell": 1,
+      "imageSha256": "2da7dd46cba27e314e70af95bcbbde620ccf3cbecd85ce3233d42065e0131980",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "salted-egg-chicken",
+      "name": "Salted egg chicken",
+      "localName": "咸蛋鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Crisp chicken coated in rich salted-egg yolk sauce.",
+      "descriptionZh": "酥脆鸡肉裹上浓香咸蛋黄酱。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 12,
+      "cell": 2,
+      "imageSha256": "f254265deecb679bca5c7c712b4f405c2ad901ee11682bf18cfb8bee7c9bde36",
+      "display": "withheld",
+      "imageDecision": "Source describes honey chicken."
+    },
+    {
+      "mealId": "butter-prawns",
+      "name": "Butter prawns",
+      "localName": "奶油虾",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Prawns tossed with butter, curry leaves and crisp egg floss.",
+      "descriptionZh": "鲜虾配牛油、咖喱叶和香脆蛋丝。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 12,
+      "cell": 3,
+      "imageSha256": "0b1a55956ddebcf45a1ca6c044850d7278f041f1216b08f917b6c3433039a011",
+      "display": "withheld",
+      "imageDecision": "Source describes shrimp and artichoke in Acre."
+    },
+    {
+      "mealId": "kam-heong-lala",
+      "name": "Kam heong lala",
+      "localName": "甘香啦啦",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Clams stir-fried with dried shrimp, curry leaves and chilli.",
+      "descriptionZh": "啦啦与虾米、咖喱叶和辣椒炒出浓郁甘香味。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 12,
+      "cell": 4,
+      "imageSha256": "450736f4327f637f32fb6dbed2de341a71a47ffab19e6b3efd09cf4530197a77",
+      "display": "withheld",
+      "imageDecision": "Source describes general Bulacan fish cuisine; clams unconfirmed."
+    },
+    {
+      "mealId": "claypot-tofu",
+      "name": "Claypot tofu",
+      "localName": "砂煲豆腐",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Tofu, vegetables and mushrooms simmered in a savoury claypot sauce.",
+      "descriptionZh": "豆腐、蔬菜和菇类在砂煲酱汁中焖煮。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 12,
+      "cell": 5,
+      "imageSha256": "4e31d69d534d26b06f53e374787f72a6fe641471aab2979e174a3aaa1f340b88",
+      "display": "withheld",
+      "imageDecision": "Source describes olive rice."
+    },
+    {
+      "mealId": "steamed-fish",
+      "name": "Chinese steamed fish",
+      "localName": "清蒸鱼",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Whole fish steamed with soy, ginger and scallions.",
+      "descriptionZh": "整条鱼配酱油、姜丝和青葱清蒸，鲜味直接。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 12,
+      "cell": 6,
+      "imageSha256": "1889453d50504326c374695e3cb53436094247b3b900169967df98f01e05b1ac",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "ginger-scallion-fish",
+      "name": "Ginger scallion fish",
+      "localName": "姜葱鱼片",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Fish slices stir-fried with ginger, scallions and a light savoury sauce.",
+      "descriptionZh": "鱼片配姜葱和清淡咸香酱汁快炒。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 12,
+      "cell": 7,
+      "imageSha256": "b31325b55e5cf27306d3f3be61ede3e81159fdc7c5af4f70f9d6bd5308464dec",
+      "display": "withheld",
+      "imageDecision": "Whole fish shown; catalog describes stir-fried fish slices."
+    },
+    {
+      "mealId": "kung-pao-chicken",
+      "name": "Kung pao chicken",
+      "localName": "宫保鸡丁",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Chicken stir-fried with dried chilli, peanuts and a tangy sauce.",
+      "descriptionZh": "鸡丁与干辣椒、花生和酸香酱汁快炒。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 12,
+      "cell": 8,
+      "imageSha256": "6566b87290d137e59ed3ec1f57886f14a372ea37913e83db6633137e941252da",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "mutton-biryani",
+      "name": "Mutton biryani",
+      "localName": "羊肉印度香饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Aromatic basmati rice layered with tender spiced mutton.",
+      "descriptionZh": "香料长米配炖得软嫩的羊肉，份量充足。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 12,
+      "cell": 9,
+      "imageSha256": "bc18e5d4c9fee79f957f14fee863aa6d6f4b98f55e4898bf5da3f92be381cad7",
+      "display": "withheld",
+      "imageDecision": "Source describes jackfruit biryani."
+    },
+    {
+      "mealId": "maggi-goreng",
+      "name": "Maggi goreng",
+      "localName": "嘛嘛炒快熟面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Instant noodles wok-fried mamak-style with tofu, egg and vegetables.",
+      "descriptionZh": "快熟面以嘛嘛档方式配豆腐、鸡蛋和蔬菜炒香。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 12,
+      "cell": 10,
+      "imageSha256": "125cfb2863f783a70e25306dfbde8ae5d8977a8ff48debeeaefbe752a2aa3b89",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "roti-telur",
+      "name": "Roti telur",
+      "localName": "鸡蛋印度煎饼",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "Flaky roti canai folded around egg and served with curry.",
+      "descriptionZh": "酥脆印度煎饼包入鸡蛋，配咖喱食用。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 12,
+      "cell": 11,
+      "imageSha256": "cc8d889c1d118f59cc74f98c97ec4b6ccc2289e1b42090a946b486ff4f07a987",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "roti-bawang",
+      "name": "Roti bawang",
+      "localName": "洋葱印度煎饼",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "Roti canai cooked with chopped onion for extra sweetness and crunch.",
+      "descriptionZh": "印度煎饼加入洋葱，带自然甜味和爽脆口感。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 12,
+      "cell": 12,
+      "imageSha256": "983d327f8ca0650117af90a153497b645fdbfdcba18f92db669ce568e6ec6471",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "roti-tissue",
+      "name": "Roti tissue",
+      "localName": "纸巾煎饼",
+      "foodTypes": [
+        "bread",
+        "light"
+      ],
+      "description": "A tall, paper-thin crisp roti finished with sugar or condensed milk.",
+      "descriptionZh": "薄脆煎饼卷成高塔，常撒糖或炼奶。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 13,
+      "cell": 1,
+      "imageSha256": "03c0d0e584c5c6c1da876b41e911c556a92172b447243e68bbc5879d98aadb79",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "roti-bom",
+      "name": "Roti bom",
+      "localName": "奶油甜煎饼",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "A thick, crisp roti enriched with margarine and sugar.",
+      "descriptionZh": "较厚的香脆煎饼加入牛油和糖，香甜扎实。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 13,
+      "cell": 2,
+      "imageSha256": "829a4b283dd4fba3080734991fb866fc8f43031de6370888fc3eaf2c3d3285f2",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "rava-thosai",
+      "name": "Rava thosai",
+      "localName": "粗麦多赛",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "A lacy semolina crepe with crisp edges, served with dhal and chutney.",
+      "descriptionZh": "粗麦粉制成的网状脆边薄饼，配扁豆汤和酸辣酱。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 13,
+      "cell": 3,
+      "imageSha256": "0176f65e8ab5ff34032399ba2a4f51bcb499d2d9ac48c5543e32da99bc24d33c",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "poori",
+      "name": "Poori with potato masala",
+      "localName": "印度炸面包配马铃薯",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "Puffed fried bread served with spiced potato masala.",
+      "descriptionZh": "鼓起的炸面包配香料马铃薯，是常见早餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 13,
+      "cell": 4,
+      "imageSha256": "8c503fe99b54e722ab41f918db6aca6ee8e4d5678c114fa3e798826bd7b97f39",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "chicken-varuval",
+      "name": "Chicken varuval",
+      "localName": "南印度干炒鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Dry-fried chicken coated with black pepper and toasted spices.",
+      "descriptionZh": "鸡肉以黑胡椒和烘香香料干炒，味道浓郁。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 13,
+      "cell": 5,
+      "imageSha256": "68891e0294f89633b91bb8ef46725054812814d2888553f991c1763a7d559537",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "mutton-curry",
+      "name": "Mutton curry",
+      "localName": "羊肉咖喱",
+      "foodTypes": [
+        "soup",
+        "plate"
+      ],
+      "description": "Tender mutton in a robust spice gravy for rice, chapati or naan.",
+      "descriptionZh": "软嫩羊肉配浓厚香料咖喱，可搭饭、恰巴提或馕。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 13,
+      "cell": 6,
+      "imageSha256": "ef4aa480d107eadd0cf0be7378ab8212875c4a7b9c7c4dbf2432b0688ef07111",
+      "display": "withheld",
+      "imageDecision": "Source describes Bengali kosha; intended South Indian preparation unconfirmed."
+    },
+    {
+      "mealId": "fish-head-curry",
+      "name": "Fish head curry",
+      "localName": "咖喱鱼头",
+      "foodTypes": [
+        "soup",
+        "plate"
+      ],
+      "description": "Fish head and vegetables simmered in tangy South Indian curry.",
+      "descriptionZh": "鱼头和蔬菜在酸香南印度咖喱中炖煮。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 13,
+      "cell": 7,
+      "imageSha256": "acf8c76be03b25a51b538ec2c7fc65539fa7258133ee83cf01862789c45d8b5a",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "palak-paneer",
+      "name": "Palak paneer",
+      "localName": "菠菜芝士咖喱",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Paneer cubes in a smooth spiced spinach gravy.",
+      "descriptionZh": "印度芝士块配浓滑香料菠菜酱。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 13,
+      "cell": 8,
+      "imageSha256": "52258c34e186a1f3f626f7f35e9b224dac258e9c7b01b17edc9015d73c7c4187",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "paneer-tikka",
+      "name": "Paneer tikka",
+      "localName": "坦都里烤印度芝士",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Spiced paneer and vegetables charred in a tandoor.",
+      "descriptionZh": "印度芝士和蔬菜以香料腌制后在泥炉烤香。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 13,
+      "cell": 9,
+      "imageSha256": "fe9c1d55356cb091edbf0cb7ffca15ce55f44c0eb41df050db8a916f558cb9fa",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "putu-mayam",
+      "name": "Putu mayam",
+      "localName": "印度米粉糕",
+      "foodTypes": [
+        "noodles",
+        "light"
+      ],
+      "description": "Soft rice-flour string hoppers served with coconut and palm sugar.",
+      "descriptionZh": "柔软米粉丝糕配椰丝和椰糖，常作早餐或小吃。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 13,
+      "cell": 10,
+      "imageSha256": "559a7b2043173b35addd51e4e6855dcdf3f590506078e37a4f76d2dbdef5c187",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "rasam",
+      "name": "Rasam",
+      "localName": "南印度酸辣汤",
+      "foodTypes": [
+        "soup"
+      ],
+      "description": "A light tamarind, tomato and pepper soup served with rice.",
+      "descriptionZh": "罗望子、番茄和胡椒煮成的清爽酸辣汤，常配饭。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 13,
+      "cell": 11,
+      "imageSha256": "4d73f7a88b82beb143a4f3bcc7fee62fe9e6db88d45e5b3fa12d0c66d5998885",
+      "display": "withheld",
+      "imageDecision": "Source describes lime soup."
+    },
+    {
+      "mealId": "vegetarian-thali",
+      "name": "Vegetarian thali",
+      "localName": "印度素食套餐",
+      "foodTypes": [
+        "rice",
+        "plate"
+      ],
+      "description": "Rice or bread with several distinct vegetable curries and dhal.",
+      "descriptionZh": "饭或面饼配多种蔬菜咖喱和扁豆，是完整素食套餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 13,
+      "cell": 12,
+      "imageSha256": "230752a09c66372826f80d8b63105884d0bdbf8420bee541c67c7a29f7d1b947",
+      "display": "withheld",
+      "imageDecision": "Source explicitly describes a non-vegetarian thali."
+    },
+    {
+      "mealId": "ayam-pongteh",
+      "name": "Ayam pongteh",
+      "localName": "娘惹豆酱焖鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Chicken braised with fermented bean paste, potato and palm sugar.",
+      "descriptionZh": "鸡肉与豆酱、马铃薯和椰糖焖煮，咸甜温润。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 14,
+      "cell": 1,
+      "imageSha256": "9e36d95c24c35cb8e8d00266df2346625957fbec1add23322975852a9a13e3a6",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "ayam-buah-keluak",
+      "name": "Ayam buah keluak",
+      "localName": "黑果焖鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Peranakan chicken braised with earthy buah keluak nuts.",
+      "descriptionZh": "娘惹鸡肉与味道浓厚的黑果一起焖煮。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 14,
+      "cell": 2,
+      "imageSha256": "fdbb736dbe75d560c4a3b1a6d14eb13f315964747cc8dfabadeb711d9dcd424d",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "kari-kapitan",
+      "name": "Kari kapitan",
+      "localName": "甲必丹咖喱鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Fragrant dry-style Nyonya chicken curry with lemongrass and lime leaf.",
+      "descriptionZh": "娘惹干咖喱鸡带香茅和疯柑叶香气。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 14,
+      "cell": 3,
+      "imageSha256": "2d8e8f47350b52ae89656d4ea5c20b4dcd4eb231f383a6a46cfef6977d6ea3f6",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "nyonya-laksa",
+      "name": "Nyonya laksa",
+      "localName": "娘惹叻沙",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Noodles in a rich coconut-spice broth with tofu puffs and toppings.",
+      "descriptionZh": "面条配浓郁椰浆香料汤、豆卜和各式配料。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 14,
+      "cell": 4,
+      "imageSha256": "4dcbdd1c4c08a1266b7c6342ad2465d91f01a1c7639ca0936134ef305c362edc",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "nyonya-chap-chye",
+      "name": "Nyonya chap chye",
+      "localName": "娘惹杂菜",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Mixed vegetables, beancurd skin and glass noodles braised together.",
+      "descriptionZh": "杂菜、腐竹和冬粉一起焖煮，清甜入味。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 14,
+      "cell": 5,
+      "imageSha256": "af116e00cd334af8d7f7ec97b50d0e265e257b9c66aa91f250c8f8e79dfee375",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "jiu-hu-char",
+      "name": "Jiu hu char",
+      "localName": "鱿鱼炒萝卜丝",
+      "foodTypes": [
+        "plate",
+        "light"
+      ],
+      "description": "Jicama stir-fried with dried cuttlefish and vegetables, wrapped in lettuce.",
+      "descriptionZh": "沙葛丝与鱿鱼干和蔬菜炒香，可用生菜包着吃。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 14,
+      "cell": 6,
+      "imageSha256": "355f7cb79b930f6ab2ef0e4f03ea69bcfa0ba764aad62c0c634592851f289f71",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "inchi-kabin",
+      "name": "Inchi kabin",
+      "localName": "娘惹香料炸鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Peranakan fried chicken marinated with coconut milk and warm spices.",
+      "descriptionZh": "鸡肉以椰浆和香料腌制后炸香，是娘惹经典。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 14,
+      "cell": 7,
+      "imageSha256": "565274a31691e7569905221db6bed5b5c74b69219a0eee94a9c8ec69b8659c74",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "udang-lemak-nenas",
+      "name": "Udang masak lemak nenas",
+      "localName": "黄梨椰浆虾",
+      "foodTypes": [
+        "soup",
+        "plate"
+      ],
+      "description": "Prawns and pineapple in a creamy turmeric-coconut gravy.",
+      "descriptionZh": "鲜虾和黄梨配姜黄椰浆汁，酸甜香浓。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 14,
+      "cell": 8,
+      "imageSha256": "164fa89fa8802253871ae6de3d25316421247ea18ac368f375ec0d27106852c7",
+      "display": "withheld",
+      "imageDecision": "Source describes Bengali prawn malai curry; pineapple unconfirmed."
+    },
+    {
+      "mealId": "nyonya-otak-otak",
+      "name": "Nyonya otak-otak",
+      "localName": "娘惹乌打",
+      "foodTypes": [
+        "light",
+        "plate"
+      ],
+      "description": "Spiced fish custard steamed in banana leaves.",
+      "descriptionZh": "香料鱼浆以香蕉叶包裹蒸熟，柔嫩浓香。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 14,
+      "cell": 9,
+      "imageSha256": "53d20637d08794e5bb0379c296deefacd5cb5a3239396784de1116f8b040859b",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "pie-tee",
+      "name": "Pie tee",
+      "localName": "娘惹小金杯",
+      "foodTypes": [
+        "light"
+      ],
+      "description": "Crisp pastry cups filled with jicama, vegetables and prawns.",
+      "descriptionZh": "香脆小金杯装入沙葛、蔬菜和鲜虾馅。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 14,
+      "cell": 10,
+      "imageSha256": "32e1b6bed741f54368b64594f0d1f9ea8f784d8a97cbab9edc45fb17fab4abbe",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "nyonya-popiah",
+      "name": "Nyonya popiah",
+      "localName": "娘惹薄饼",
+      "foodTypes": [
+        "bread",
+        "light"
+      ],
+      "description": "Soft spring-roll skins wrapped around braised jicama and fresh garnishes.",
+      "descriptionZh": "薄饼皮包着焖沙葛和新鲜配料，清爽有层次。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 14,
+      "cell": 11,
+      "imageSha256": "88386c6d4533fb9d9798e583d6bc08f63febca73e42e76c7816159208f675bc9",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "nyonya-nasi-ulam",
+      "name": "Nyonya nasi ulam",
+      "localName": "娘惹香草饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Rice mixed with finely sliced local herbs, dried shrimp and toasted coconut.",
+      "descriptionZh": "米饭拌入本地香草、虾米和烘椰丝。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 14,
+      "cell": 12,
+      "imageSha256": "f4bce5f791623b81cc48ab78f37a33de4833f90dbb6e2971014f42bbd7589b51",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "nyonya-asam-fish",
+      "name": "Nyonya asam fish",
+      "localName": "娘惹亚参鱼",
+      "foodTypes": [
+        "soup",
+        "plate"
+      ],
+      "description": "Fish cooked with tamarind, chilli and fragrant torch ginger.",
+      "descriptionZh": "鱼肉配罗望子、辣椒和姜花煮成酸辣酱汁。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 15,
+      "cell": 1,
+      "imageSha256": "46b300868ef2c15b9afc691fc0dea76ca50563ac796069b553eb565ec9516801",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "sambal-petai-prawns",
+      "name": "Sambal petai prawns",
+      "localName": "参巴臭豆虾",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Prawns and petai beans stir-fried in a bold sambal.",
+      "descriptionZh": "鲜虾和臭豆以浓郁参巴炒香，十分下饭。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 15,
+      "cell": 2,
+      "imageSha256": "d085418865f2e51eda2f441aed58d4bc30bcc120244151d47f5f65ee2f8c5b91",
+      "display": "withheld",
+      "imageDecision": "Source describes fermented shrimp condiment cencalok."
+    },
+    {
+      "mealId": "babi-pongteh",
+      "name": "Babi pongteh",
+      "localName": "娘惹豆酱焖猪肉",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Pork and potato slowly braised with fermented bean paste and palm sugar.",
+      "descriptionZh": "猪肉和马铃薯以豆酱、椰糖慢慢焖至入味。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 15,
+      "cell": 3,
+      "imageSha256": "9e36d95c24c35cb8e8d00266df2346625957fbec1add23322975852a9a13e3a6",
+      "display": "withheld",
+      "imageDecision": "Shared source describes chicken, not pork."
+    },
+    {
+      "mealId": "sarawak-laksa",
+      "name": "Sarawak laksa",
+      "localName": "砂拉越叻沙",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Rice vermicelli in an aromatic sambal-coconut broth with prawns and chicken.",
+      "descriptionZh": "米粉配香料参巴椰浆汤、鲜虾和鸡丝，是砂拉越名物。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 15,
+      "cell": 4,
+      "imageSha256": "cb27a203dab7c3097becc3bc1b85e36865e4c533ceed837d4bfd3363dcb9571b",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "kolo-mee",
+      "name": "Kolo mee",
+      "localName": "哥罗面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Dry springy noodles tossed with fragrant oil, shallots and sliced meat.",
+      "descriptionZh": "干捞弹牙面拌香油和炸葱，配叉烧或肉碎。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 15,
+      "cell": 5,
+      "imageSha256": "78cd82f23c9ee6f7d6280fb212e8bf6a326d2da24d5fcc9e938da7301d24bf28",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "kampua-mee",
+      "name": "Kampua mee",
+      "localName": "干盘面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Sibu-style dry noodles with shallot oil, seasoning and sliced meat.",
+      "descriptionZh": "诗巫式干捞面拌葱油和调味，配切片肉类。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 15,
+      "cell": 6,
+      "imageSha256": "494812ab487baf5e5487ef65b39d0a0f5bfa0b9e6a2dd4b52fc48a23a85765cf",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "tomato-crispy-mee",
+      "name": "Sarawak tomato crispy mee",
+      "localName": "砂拉越茄汁炸面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Crisp noodles covered in a savoury-sweet tomato gravy.",
+      "descriptionZh": "香脆炸面淋上咸甜番茄芡汁，是砂拉越茶室常见选择。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 15,
+      "cell": 7,
+      "imageSha256": "2d5a6920cdc88f6615585b4f4e18e5e14684ca0809087c733b0f2859836912f6",
+      "display": "withheld",
+      "imageDecision": "Source describes tomato and egg noodles; Sarawak crispy form unconfirmed."
+    },
+    {
+      "mealId": "manok-pansoh",
+      "name": "Manok pansoh",
+      "localName": "竹筒鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Iban chicken cooked in bamboo with lemongrass, ginger and herbs.",
+      "descriptionZh": "伊班鸡肉与香茅、姜和香草放入竹筒慢煮。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 15,
+      "cell": 8,
+      "imageSha256": "ce609a479a47d608503512f6dae3c48a4fa0fddd2727dd09f2366d63e97a4353",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "midin-belacan",
+      "name": "Midin belacan",
+      "localName": "马丁蕨炒峇拉煎",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Sarawak jungle fern quickly stir-fried with belacan and chilli.",
+      "descriptionZh": "砂拉越野生蕨菜配峇拉煎和辣椒快炒。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 15,
+      "cell": 9,
+      "imageSha256": "4b42ca49dc4f6817a4bfcc429332d2371d231417a1a7dc08ff8c80b1d6981756",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "umai",
+      "name": "Umai",
+      "localName": "砂拉越酸腌生鱼",
+      "foodTypes": [
+        "light"
+      ],
+      "description": "Melanau raw fish cured with lime, onion and chilli.",
+      "descriptionZh": "马兰诺式生鱼以青柠、洋葱和辣椒腌制，酸香清爽。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 15,
+      "cell": 10,
+      "imageSha256": "a99a143c31fb0f2346a5a1f448ae94b27485f4548d88fa8137ef87d9626faf97",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "mee-sapi",
+      "name": "Mee sapi",
+      "localName": "沙巴牛肉面",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Sabah beef noodles served dry or in a deeply savoury broth.",
+      "descriptionZh": "沙巴牛肉面可选干捞或浓香汤面。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 15,
+      "cell": 11,
+      "imageSha256": "29f42b9243f4e2be200986ed27f6713913e47639a3815d36880a3f55a29890a7",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "nasi-lalap",
+      "name": "Nasi lalap",
+      "localName": "沙巴炸鸡饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Rice with fried chicken, fresh vegetables, tofu, tempeh and sambal.",
+      "descriptionZh": "白饭配炸鸡、生菜、豆腐、天贝和参巴。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 15,
+      "cell": 12,
+      "imageSha256": "14c049561b98a1c89cd8c8f540478c8fc18d5b3d2bfe62e159edfe132e567c37",
+      "display": "withheld",
+      "imageDecision": "Source describes general Sundanese food."
+    },
+    {
+      "mealId": "hinava",
+      "name": "Hinava",
+      "localName": "沙巴酸腌鱼",
+      "foodTypes": [
+        "light"
+      ],
+      "description": "Kadazan-Dusun fish cured with lime, ginger, onion and chilli.",
+      "descriptionZh": "卡达山杜顺式鱼肉以青柠、姜、洋葱和辣椒腌制。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 16,
+      "cell": 1,
+      "imageSha256": "3b4c8d4e35a1606993640eabf476fcb4a6ae2329205df97db916aaf91be1602b",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "linopot-set",
+      "name": "Linopot set",
+      "localName": "叶包饭传统套餐",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Leaf-wrapped rice served with Sabah vegetables, fish and preserved sides.",
+      "descriptionZh": "叶子包饭配沙巴蔬菜、鱼和传统腌菜，是完整套餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 16,
+      "cell": 2,
+      "imageSha256": "19662b8f463d29f8e3b2fb798af0746d7e34d81747c0ca9142e942935764c260",
+      "display": "withheld",
+      "imageDecision": "Closed leaf parcels hide the rice; the described Sabah meal sides are not shown."
+    },
+    {
+      "mealId": "pinasakan-sada",
+      "name": "Pinasakan sada",
+      "localName": "沙巴酸果焖鱼",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Basung fish simmered with tangy takob-akob fruit until richly flavoured.",
+      "descriptionZh": "巴宋鱼与酸香野果慢煮至入味，是沙巴传统菜。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 16,
+      "cell": 3,
+      "imageSha256": "443b6e5cce70ef055d51bcef0f49f0cd6cfab7a26c324227e054f616e367c93b",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "ngiu-chap",
+      "name": "Ngiu chap",
+      "localName": "沙巴牛杂汤",
+      "foodTypes": [
+        "soup",
+        "noodles"
+      ],
+      "description": "Sabah beef and offal soup, usually served with noodles or rice.",
+      "descriptionZh": "沙巴牛肉牛杂汤，通常配面或白饭。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 16,
+      "cell": 4,
+      "imageSha256": "20734509c28f36dca3a41adbd6b780437536785f86aa273b8fdad80749985f95",
+      "display": "withheld",
+      "imageDecision": "Source describes tripe in satay sauce with rice, not Sabah soup."
+    },
+    {
+      "mealId": "beaufort-mee",
+      "name": "Beaufort mee",
+      "localName": "保佛炒面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Sabah wok-fried noodles with charred meat and a glossy vegetable gravy.",
+      "descriptionZh": "沙巴保佛炒面配焦香肉片和蔬菜芡汁。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 16,
+      "cell": 5,
+      "imageSha256": "e713893600644cbad93deeb0ab0801f422ed5df110b30e2ef474effe536212e1",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "dabai-fried-rice",
+      "name": "Dabai fried rice",
+      "localName": "达拜果炒饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Sarawak fried rice flavoured with creamy local dabai fruit.",
+      "descriptionZh": "砂拉越炒饭加入香滑本地达拜果，味道独特。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 16,
+      "cell": 6,
+      "imageSha256": "cd759023120413f7e416e5142388d42b0fdce3278665f285f37bad6837ea21ba",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "gyudon",
+      "name": "Gyudon",
+      "localName": "日式牛肉盖饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Thin beef and onion simmered in a sweet-savoury sauce over rice.",
+      "descriptionZh": "薄切牛肉和洋葱以甜咸酱汁煮熟后盖在饭上。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 16,
+      "cell": 7,
+      "imageSha256": "b66387dda239da4a63cdc52246a33447bf3afc90b40fb10eae79eacdbb0480ca",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "oyakodon",
+      "name": "Oyakodon",
+      "localName": "亲子盖饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Chicken and softly set egg simmered together over rice.",
+      "descriptionZh": "鸡肉和滑蛋以日式酱汁同煮后铺在白饭上。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 16,
+      "cell": 8,
+      "imageSha256": "9eba849342878f3cb5d3352db853554ea66d1400c2042e2c6010c863dfcf5a17",
+      "display": "withheld",
+      "imageDecision": "Source includes beef and grilled chicken, not the described simmered chicken bowl."
+    },
+    {
+      "mealId": "tempura-set",
+      "name": "Tempura set",
+      "localName": "天妇罗套餐",
+      "foodTypes": [
+        "rice",
+        "plate"
+      ],
+      "description": "Lightly battered prawns and vegetables served with rice and soup.",
+      "descriptionZh": "薄脆面衣炸虾和蔬菜配白饭及汤。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 16,
+      "cell": 9,
+      "imageSha256": "7f60ee5119712f55043169eeda2e890d334ec5fbdfad062ef95cfeae8ab04da8",
+      "display": "withheld",
+      "imageDecision": "Source describes tempura udon and oden, not rice set."
+    },
+    {
+      "mealId": "sashimi-set",
+      "name": "Sashimi set",
+      "localName": "刺身拼盘",
+      "foodTypes": [
+        "light",
+        "plate"
+      ],
+      "description": "A selection of sliced raw fish served with soy and wasabi.",
+      "descriptionZh": "多种新鲜生鱼片配酱油和芥末。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 16,
+      "cell": 10,
+      "imageSha256": "f3036df9c4abd8e56cde59cb08a0818c1c6e009fad141ec0eefeb0878fae4252",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "okonomiyaki",
+      "name": "Okonomiyaki",
+      "localName": "大阪烧",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "A savoury cabbage pancake with sauce, mayonnaise and toppings.",
+      "descriptionZh": "包菜咸煎饼配酱汁、美乃滋和各种配料。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 16,
+      "cell": 11,
+      "imageSha256": "61237509a2a0b269f85a367c698d90271adeab781c15ab770d638c842281fccc",
+      "display": "withheld",
+      "imageDecision": "Source describes Hiroshima preparation; Chinese name specifies Osaka."
+    },
+    {
+      "mealId": "omurice",
+      "name": "Omurice",
+      "localName": "蛋包饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Seasoned fried rice wrapped in a soft omelette with sauce.",
+      "descriptionZh": "调味炒饭包在柔嫩蛋皮内，再淋上酱汁。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 16,
+      "cell": 12,
+      "imageSha256": "555d03bd7673bea073e3100ccec4293aa01594e28eb3334fa044d7f1b6a5158c",
+      "display": "withheld",
+      "imageDecision": "Source title describes cheese decoration; egg-wrapped rice unconfirmed."
+    },
+    {
+      "mealId": "teriyaki-chicken",
+      "name": "Teriyaki chicken rice",
+      "localName": "照烧鸡饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Grilled chicken glazed with teriyaki sauce and served with rice.",
+      "descriptionZh": "烤鸡裹上照烧酱汁，配白饭和蔬菜。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 17,
+      "cell": 1,
+      "imageSha256": "e6add2d8176913ab50d56fc34fa35790f4e35def418c4a1831c04219eb4aa20f",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "samgyeopsal",
+      "name": "Samgyeopsal",
+      "localName": "韩式烤五花肉",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Pork belly grilled at the table and wrapped with lettuce and sauces.",
+      "descriptionZh": "五花肉在桌边烤香，配生菜和酱料包着吃。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 17,
+      "cell": 2,
+      "imageSha256": "42eb476e6f4d3c48a8c0ed6e0d08270a7116d0e69d331d6c5b1a238b4977c588",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "samgyetang",
+      "name": "Samgyetang",
+      "localName": "韩式人参鸡汤",
+      "foodTypes": [
+        "soup"
+      ],
+      "description": "A whole young chicken simmered with glutinous rice, ginseng and garlic.",
+      "descriptionZh": "嫩鸡塞入糯米，与人参和蒜一起慢炖成汤。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 17,
+      "cell": 3,
+      "imageSha256": "bdf03c30ba4e1af8c3cec7c3b58d196e71f8a721380dc6cb29f74703b8a8d87a",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "naengmyeon",
+      "name": "Naengmyeon",
+      "localName": "韩式冷面",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Chewy cold noodles in chilled broth or a spicy mixed sauce.",
+      "descriptionZh": "弹牙冷面可配冰凉汤底或辣酱干拌。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 17,
+      "cell": 4,
+      "imageSha256": "873e8db720752d79e2a8b873a23a708d979ba6b42124d6b50b7b5b3b08405b30",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "haemul-pajeon",
+      "name": "Haemul pajeon",
+      "localName": "韩式海鲜葱饼",
+      "foodTypes": [
+        "plate",
+        "light"
+      ],
+      "description": "Crisp savoury pancake packed with scallions and seafood.",
+      "descriptionZh": "香脆咸煎饼加入大量青葱和海鲜。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 17,
+      "cell": 5,
+      "imageSha256": "de37ff055fc46e41057f2422b6f0d2fc8417227dfd5c883bc5a776b11c188be8",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "budae-jjigae",
+      "name": "Budae jjigae",
+      "localName": "韩式部队锅",
+      "foodTypes": [
+        "soup",
+        "noodles"
+      ],
+      "description": "A bubbling spicy stew with sausage, noodles, kimchi and tofu.",
+      "descriptionZh": "香辣汤锅加入香肠、面、泡菜和豆腐，适合分享。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 17,
+      "cell": 6,
+      "imageSha256": "daebb216d63d0d7c4300bccf1805cf73145d22d187c93cc791f78fc411f565b3",
+      "display": "withheld",
+      "imageDecision": "Prepared raw hotpot ingredients rather than a cooked spicy stew."
+    },
+    {
+      "mealId": "thai-red-curry",
+      "name": "Thai red curry",
+      "localName": "泰式红咖喱",
+      "foodTypes": [
+        "soup",
+        "plate"
+      ],
+      "description": "Coconut red curry with vegetables and a choice of meat or seafood.",
+      "descriptionZh": "椰浆红咖喱配蔬菜和自选肉类或海鲜。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 17,
+      "cell": 7,
+      "imageSha256": "d379dc6042ad6d848794931dadf4c15aeb93144b4c385fb558996c127b2a6625",
+      "display": "withheld",
+      "imageDecision": "Source describes dry prik khing stir fry, not coconut curry."
+    },
+    {
+      "mealId": "massaman-curry",
+      "name": "Massaman curry",
+      "localName": "马沙曼咖喱",
+      "foodTypes": [
+        "soup",
+        "plate"
+      ],
+      "description": "Mild southern Thai curry with potato, peanuts and slow-cooked meat.",
+      "descriptionZh": "温和南泰咖喱配马铃薯、花生和慢炖肉类。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 17,
+      "cell": 8,
+      "imageSha256": "39fbdd25340bfba6121038f87a282e052df3109a77c8763d29ed8f819fcff496",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "pad-see-ew",
+      "name": "Pad see ew",
+      "localName": "泰式酱油炒河粉",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Wide rice noodles wok-fried with dark soy, egg and greens.",
+      "descriptionZh": "宽河粉配黑酱油、鸡蛋和青菜大火炒香。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 17,
+      "cell": 9,
+      "imageSha256": "05fd50ecff664fe468b69c0546b3e9fcbf12eafa13c611baa6cdf9a0e4aa726d",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "boat-noodles",
+      "name": "Thai boat noodles",
+      "localName": "泰式船面",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Small bowls of noodles in a dark, aromatic and deeply savoury broth.",
+      "descriptionZh": "小碗面配深色浓香汤底，味道厚重。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 17,
+      "cell": 10,
+      "imageSha256": "085d05dff4a98b0a225561cb323bef2346be29df26a8c041cfed6207d195bab6",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "thai-chicken-rice",
+      "name": "Thai chicken rice",
+      "localName": "泰式鸡饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Tender chicken with fragrant rice and a sharp fermented-bean sauce.",
+      "descriptionZh": "嫩鸡配香饭和味道鲜明的豆酱辣汁。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 17,
+      "cell": 11,
+      "imageSha256": "b9fa17bf4dbf200880819671ba2c32f0359fc292fe36f757056ebc5ea3f39eba",
+      "display": "withheld",
+      "imageDecision": "Source and visible topping describe peanut sauce; the catalog specifies fermented-bean sauce."
+    },
+    {
+      "mealId": "moo-ping",
+      "name": "Moo ping",
+      "localName": "泰式烤猪肉串",
+      "foodTypes": [
+        "plate",
+        "light"
+      ],
+      "description": "Sweet-savoury grilled pork skewers, often paired with sticky rice.",
+      "descriptionZh": "甜咸烤猪肉串，通常配糯米一起吃。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 17,
+      "cell": 12,
+      "imageSha256": "34cdc54fde8c34869ed2509a9cc6209ad5233ae4dd6eec0274b27e525dba93e9",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "tom-yum-noodles",
+      "name": "Tom yum noodles",
+      "localName": "冬阴功汤面",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Rice noodles in a hot-sour tom yum broth with seafood or chicken.",
+      "descriptionZh": "米粉配酸辣冬阴功汤，可加海鲜或鸡肉。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 18,
+      "cell": 1,
+      "imageSha256": "430cffd2d8d7da0b95389480304547d0433df0055ac21e25b70d7b171509c4ee",
+      "display": "withheld",
+      "imageDecision": "Source describes hot and spicy leftovers."
+    },
+    {
+      "mealId": "khao-soi",
+      "name": "Khao soi",
+      "localName": "泰北咖喱面",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Northern Thai curry noodles topped with crisp noodles and pickles.",
+      "descriptionZh": "泰北椰浆咖喱面配炸脆面和腌菜。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 18,
+      "cell": 2,
+      "imageSha256": "aed7e7f4db4009b0a180b9884fd9e6f786abcc57cdba714a990e196ae2640512",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "larb",
+      "name": "Thai larb",
+      "localName": "泰式香辣肉碎沙拉",
+      "foodTypes": [
+        "plate",
+        "light"
+      ],
+      "description": "Minced meat tossed with lime, chilli, herbs and toasted rice powder.",
+      "descriptionZh": "肉碎拌青柠、辣椒、香草和烘米粉，酸辣清新。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 18,
+      "cell": 3,
+      "imageSha256": "cc2a7796bcd5ec4ab95fc57acd1eefe7762697ff07d16fb6d525369a7b6e7849",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "ayam-geprek",
+      "name": "Ayam geprek",
+      "localName": "印尼辣椒捣鸡饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Crisp chicken crushed with fiery sambal and served with rice.",
+      "descriptionZh": "酥脆炸鸡与火辣参巴一起捣碎，配白饭。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 18,
+      "cell": 4,
+      "imageSha256": "07a3e41ba5c18d66c6f295414550433ece1157e52bc884294c2082a9e88a493c",
+      "display": "withheld",
+      "imageDecision": "Source describes penyet; geprek preparation unconfirmed."
+    },
+    {
+      "mealId": "indonesian-nasi-goreng",
+      "name": "Indonesian nasi goreng",
+      "localName": "印尼炒饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Sweet-savoury fried rice with kecap manis, egg and crisp garnishes.",
+      "descriptionZh": "炒饭加入甜酱油、鸡蛋和香脆配料，印尼风味鲜明。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 18,
+      "cell": 5,
+      "imageSha256": "197514fbaa330fc56c7f9325a257cfd33e53070a25b5c1a595337d15f453c0fc",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "mie-ayam",
+      "name": "Mie ayam",
+      "localName": "印尼鸡肉面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Springy noodles topped with sweet-savoury chicken and greens.",
+      "descriptionZh": "弹牙面条配甜咸鸡肉和青菜。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 18,
+      "cell": 6,
+      "imageSha256": "8c06024ee8e162ba4c4acc159c8108fce87a3177cbd1fb6e20c1d8dc4c142803",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "bakso",
+      "name": "Bakso",
+      "localName": "印尼牛肉丸汤",
+      "foodTypes": [
+        "soup",
+        "noodles"
+      ],
+      "description": "Bouncy meatballs in clear broth with noodles and fried shallots.",
+      "descriptionZh": "弹牙肉丸配清汤、面条和炸葱。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 18,
+      "cell": 7,
+      "imageSha256": "5ff33a10f106f4fc8c3c7e5707d74825f47d8d2199ef4f2ed9f888218251bb67",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "rawon",
+      "name": "Rawon",
+      "localName": "印尼黑果牛肉汤",
+      "foodTypes": [
+        "soup"
+      ],
+      "description": "East Javanese beef soup darkened by earthy keluak nuts.",
+      "descriptionZh": "东爪哇牛肉汤加入黑果，汤色深而味道浓厚。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 18,
+      "cell": 8,
+      "imageSha256": "902750bbaecac67c3744850ac7401ff81a7332392d2ab56a720bb683439870be",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "gado-gado",
+      "name": "Gado-gado",
+      "localName": "印尼花生酱杂菜",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Blanched vegetables, tofu and egg dressed with peanut sauce.",
+      "descriptionZh": "烫蔬菜、豆腐和鸡蛋淋上浓香花生酱。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 18,
+      "cell": 9,
+      "imageSha256": "35beb330377899ab5fca948be05dc474350ccba994fe4f8b1c3902cc9334f2cd",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "pecel-lele",
+      "name": "Pecel lele",
+      "localName": "印尼炸鲶鱼饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Fried catfish with sambal, raw vegetables and rice.",
+      "descriptionZh": "炸鲶鱼配参巴、生菜和白饭。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 18,
+      "cell": 10,
+      "imageSha256": "b92f4c424ceb8df50a17c6b94d9b9596ed38e32d2aff0b71a4e7c7bb4d96e494",
+      "display": "withheld",
+      "imageDecision": "Close crop of fried fish does not establish the described sambal, vegetables and rice meal."
+    },
+    {
+      "mealId": "sate-ayam-indonesia",
+      "name": "Indonesian sate ayam",
+      "localName": "印尼鸡肉沙爹",
+      "foodTypes": [
+        "plate",
+        "light"
+      ],
+      "description": "Charcoal-grilled chicken skewers with rich peanut sauce.",
+      "descriptionZh": "炭烤鸡肉串配浓香花生酱。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 18,
+      "cell": 11,
+      "imageSha256": "fea75d25360be65c135231146a12e1bbae43b1d3069e3dcf127830858212b0f4",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "indonesian-martabak",
+      "name": "Martabak telur",
+      "localName": "印尼鸡蛋馅饼",
+      "foodTypes": [
+        "bread",
+        "plate"
+      ],
+      "description": "Crisp folded pastry packed with egg, scallion and seasoned meat.",
+      "descriptionZh": "香脆薄皮包入鸡蛋、青葱和调味肉馅。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 18,
+      "cell": 12,
+      "imageSha256": "537de538ca89c44d27508e6579c07d2bc705524ed65cd84ac6a0487d1d2e9e20",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "soto-betawi",
+      "name": "Soto Betawi",
+      "localName": "雅加达椰奶牛肉汤",
+      "foodTypes": [
+        "soup"
+      ],
+      "description": "Jakarta beef soup enriched with coconut milk and warm spices.",
+      "descriptionZh": "雅加达牛肉汤加入椰奶和温暖香料，浓郁顺口。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 19,
+      "cell": 1,
+      "imageSha256": "fa58088ad511449224220cd6fea19371d0c3124bbed1f84d2e7c7a7816d6298b",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "ayam-bakar-indonesia",
+      "name": "Indonesian ayam bakar",
+      "localName": "印尼烤鸡饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Spiced grilled chicken glazed with kecap manis and served with rice.",
+      "descriptionZh": "香料烤鸡刷上甜酱油，配白饭和参巴。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 19,
+      "cell": 2,
+      "imageSha256": "a0258ba18ddd47f82e148ca960a9f5ddbb397a526bfb493b12eaecfc17193f6e",
+      "display": "withheld",
+      "imageDecision": "Chicken and vegetables shown without the described rice meal."
+    },
+    {
+      "mealId": "bun-bo-hue",
+      "name": "Bún bò Huế",
+      "localName": "越南顺化牛肉米线",
+      "foodTypes": [
+        "noodles",
+        "soup"
+      ],
+      "description": "Spicy lemongrass beef noodle soup from central Vietnam.",
+      "descriptionZh": "越南中部香茅辣牛肉米线汤，汤味浓厚。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 19,
+      "cell": 3,
+      "imageSha256": "673e0c27da70ac5489203ddc4b63a20ff0491d7238f3a92c777f9832120de671",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "com-tam",
+      "name": "Cơm tấm",
+      "localName": "越南碎米饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Broken rice with grilled meat, pickles and fish-sauce dressing.",
+      "descriptionZh": "碎米饭配烤肉、腌菜和鱼露酱汁。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 19,
+      "cell": 4,
+      "imageSha256": "377a3a1aa44644777fec9113681d3517312e37b9ffffc3e4bd4042dcd0e200cc",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "banh-xeo",
+      "name": "Bánh xèo",
+      "localName": "越南煎饼",
+      "foodTypes": [
+        "bread",
+        "plate"
+      ],
+      "description": "Crisp turmeric crepe filled with bean sprouts, pork and prawns.",
+      "descriptionZh": "香脆姜黄煎饼包豆芽、猪肉和鲜虾。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 19,
+      "cell": 5,
+      "imageSha256": "df3ee3fabee1429b139f1f0009c62eb0a281bd0327ee2b3f93b4be2e95763ced",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "cao-lau",
+      "name": "Cao lầu",
+      "localName": "会安高楼面",
+      "foodTypes": [
+        "noodles"
+      ],
+      "description": "Hoi An noodles with sliced pork, herbs and crisp wonton pieces.",
+      "descriptionZh": "会安粗面配猪肉片、香草和脆云吞片。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 19,
+      "cell": 6,
+      "imageSha256": "7a1d56e0962e9e881faf2f91d9f679b937f90405f4f1472b9f83079f1a4d2efd",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "vietnamese-chicken-rice",
+      "name": "Vietnamese chicken rice",
+      "localName": "越南鸡饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Fragrant rice with tender chicken, herbs, pickles and chilli sauce.",
+      "descriptionZh": "香饭配嫩鸡、香草、腌菜和辣椒酱。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 19,
+      "cell": 7,
+      "imageSha256": "70ae9069674f5ac2d53593f6fdcd19851fc1375acd6ed78a9a2b9afdac0866ba",
+      "display": "withheld",
+      "imageDecision": "Source describes Egyptian koshary."
+    },
+    {
+      "mealId": "bo-kho",
+      "name": "Bò kho",
+      "localName": "越南红烧牛肉",
+      "foodTypes": [
+        "soup",
+        "plate"
+      ],
+      "description": "Aromatic Vietnamese beef stew served with bread or noodles.",
+      "descriptionZh": "越南香料炖牛肉，可配法包或面条。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 19,
+      "cell": 8,
+      "imageSha256": "36ada77d5b01b2c4fce66b056b98c5304ea09cadb0b2f14f1770b7bce8928669",
+      "display": "withheld",
+      "imageDecision": "Source describes generic kho; beef stew unconfirmed."
+    },
+    {
+      "mealId": "chicken-burger",
+      "name": "Chicken burger",
+      "localName": "鸡肉汉堡",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "A grilled or crisp chicken burger with salad and sauce.",
+      "descriptionZh": "烤或炸鸡肉汉堡配生菜和酱汁，方便直接。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 19,
+      "cell": 9,
+      "imageSha256": "f6326ba78966be678c03bc686298901007e07d7a0127853f2cdeef04fa61d180",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "grilled-steak",
+      "name": "Grilled steak",
+      "localName": "烤牛排",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Beef steak with sauce and sides for a more substantial meal.",
+      "descriptionZh": "烤牛排配酱汁和配菜，适合想吃丰盛主餐时。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 19,
+      "cell": 10,
+      "imageSha256": "f986c74ecf8ac4b701c6d996bc6524162391717bdd55bb0d254657732024361e",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "mac-and-cheese",
+      "name": "Mac and cheese",
+      "localName": "芝士通心粉",
+      "foodTypes": [
+        "noodles",
+        "plate"
+      ],
+      "description": "Baked or stovetop macaroni coated in a creamy cheese sauce.",
+      "descriptionZh": "通心粉裹上浓滑芝士酱，可烤制或直接烹煮。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 19,
+      "cell": 11,
+      "imageSha256": "6de8dc11d38a62d5cb608109b0cf9ac97ba0876e65f6f593f695a0bf3eef4a5d",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "big-breakfast",
+      "name": "Big breakfast",
+      "localName": "英式大早餐",
+      "foodTypes": [
+        "plate",
+        "bread"
+      ],
+      "description": "Eggs, toast, sausage, mushrooms and beans on one generous plate.",
+      "descriptionZh": "鸡蛋、吐司、香肠、蘑菇和豆类组成丰盛早餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 19,
+      "cell": 12,
+      "imageSha256": "8c7fe7e59f8b81ac7846b2a141fdaa007c883e6b1499e4ecfe0b9958e2152a7a",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "eggs-benedict",
+      "name": "Eggs Benedict",
+      "localName": "班尼迪克蛋",
+      "foodTypes": [
+        "bread",
+        "plate"
+      ],
+      "description": "Poached eggs and hollandaise on toasted English muffins.",
+      "descriptionZh": "水波蛋和荷兰酱放在烤英式松饼上。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 20,
+      "cell": 1,
+      "imageSha256": "0d01af6f0b420db0419fc34e03184de7074f68362949620639d0a190d364fb2d",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "pancakes",
+      "name": "Pancakes",
+      "localName": "松饼",
+      "foodTypes": [
+        "bread",
+        "light"
+      ],
+      "description": "Soft stacked pancakes with butter, syrup, fruit or savoury sides.",
+      "descriptionZh": "柔软叠层松饼可配牛油、糖浆、水果或咸食。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 20,
+      "cell": 2,
+      "imageSha256": "a16c0fa0ac6deb16d210f8384a39f224793778b6e6c20eebade7a0452c8ac6a3",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "waffles",
+      "name": "Waffles",
+      "localName": "华夫饼",
+      "foodTypes": [
+        "bread",
+        "light"
+      ],
+      "description": "Crisp-edged waffles served sweet or with a savoury café topping.",
+      "descriptionZh": "外脆内软华夫饼，可配甜品或咸味咖啡馆配料。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 20,
+      "cell": 3,
+      "imageSha256": "29d791ef29b5a46ad9637cd84ee0fbaaad13da6b850199bf3d847e5ecd055692",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "roast-chicken",
+      "name": "Roast chicken",
+      "localName": "西式烤鸡",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Oven-roasted chicken with gravy, vegetables and potatoes.",
+      "descriptionZh": "烤鸡配肉汁、蔬菜和马铃薯，是稳妥西式主餐。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 20,
+      "cell": 4,
+      "imageSha256": "65579dd757a3b1d49c2dd4ec1108bd5268ea62c3709e40eca21d1f90393f67ea",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "lamb-chop",
+      "name": "Lamb chop",
+      "localName": "烤羊扒",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Grilled lamb chops with sauce and classic Western sides.",
+      "descriptionZh": "烤羊扒配酱汁和经典西式配菜。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 20,
+      "cell": 5,
+      "imageSha256": "222a3c0a91c9f07bdb6eabdd05b51a813e2692d07605be6e969c0a345024ebff",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "chicken-pie",
+      "name": "Chicken pie",
+      "localName": "鸡肉派",
+      "foodTypes": [
+        "bread",
+        "plate"
+      ],
+      "description": "Buttery pastry filled with creamy chicken and vegetables.",
+      "descriptionZh": "牛油酥皮包入奶香鸡肉和蔬菜馅。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 20,
+      "cell": 6,
+      "imageSha256": "ea9ce70952277d817ac402844c840e1896b4aa377d4f2bfe25456d592318619e",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "chicken-shawarma",
+      "name": "Chicken shawarma",
+      "localName": "中东烤鸡卷",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "Spiced rotisserie chicken wrapped with vegetables and garlic sauce.",
+      "descriptionZh": "香料旋转烤鸡配蔬菜和蒜酱卷入面饼。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 20,
+      "cell": 7,
+      "imageSha256": "8856e9dee5923999138cb879fed88a7ca3a6c207c0e642870ca848fd72aeef54",
+      "display": "withheld",
+      "imageDecision": "Source describes a generic MyPlate graphic, not a dish photo."
+    },
+    {
+      "mealId": "beef-shawarma",
+      "name": "Beef shawarma",
+      "localName": "中东烤牛肉卷",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "Thin spiced beef wrapped in flatbread with pickles and tahini.",
+      "descriptionZh": "薄切香料牛肉配腌菜和芝麻酱卷入面饼。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 20,
+      "cell": 8,
+      "imageSha256": "b834bad9a064e76f6c6572abaab3823250c0ab6cf98deb0a7486bc86b86db597",
+      "display": "withheld",
+      "imageDecision": "Meat and dips in separate trays; the described filled flatbread is not shown."
+    },
+    {
+      "mealId": "falafel-wrap",
+      "name": "Falafel wrap",
+      "localName": "炸鹰嘴豆丸子卷",
+      "foodTypes": [
+        "bread"
+      ],
+      "description": "Crisp chickpea patties, salad and tahini rolled in flatbread.",
+      "descriptionZh": "香脆鹰嘴豆丸、沙拉和芝麻酱卷入面饼。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 20,
+      "cell": 9,
+      "imageSha256": "8d28fa2fbf877f46d03139cb5638af8bdd6f8d1bcbaa3a723aba82e603c69032",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "chicken-mandi",
+      "name": "Chicken mandi",
+      "localName": "阿拉伯香料鸡饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Smoky roasted chicken served over fragrant Yemeni spiced rice.",
+      "descriptionZh": "带烟香的烤鸡铺在也门香料饭上。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 20,
+      "cell": 10,
+      "imageSha256": "9babd897a4186ecfd15e16d77771dee9b6a390c92911fe4cc58b1ce2803acc7d",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "lamb-mandi",
+      "name": "Lamb mandi",
+      "localName": "阿拉伯香料羊肉饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Tender slow-cooked lamb over fragrant spiced rice.",
+      "descriptionZh": "慢煮软嫩羊肉配香料饭，份量扎实。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 20,
+      "cell": 11,
+      "imageSha256": "9430af886738dda057dda3cae291a05089d0b52d21fe869e43ce86c564e28a89",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "kabsa",
+      "name": "Kabsa",
+      "localName": "沙特香料饭",
+      "foodTypes": [
+        "rice"
+      ],
+      "description": "Saudi spiced rice with roasted chicken or lamb and toasted nuts.",
+      "descriptionZh": "沙特香料饭配烤鸡或羊肉及烘香坚果。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 20,
+      "cell": 12,
+      "imageSha256": "026215e4a4b0c3724968d3cdc1ae16c3efac14eaeb7a9a153de80d95668b73fb",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "shish-kebab",
+      "name": "Shish kebab",
+      "localName": "中东烤肉串",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "Charcoal-grilled meat and vegetables on skewers with bread or rice.",
+      "descriptionZh": "炭烤肉类和蔬菜串配面饼或香饭。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 21,
+      "cell": 1,
+      "imageSha256": "d6743e973870c20f556ddeaa9109efc3d2dd34977920ebaee31340274fe9010d",
+      "display": "withheld",
+      "imageDecision": "Source describes shrimp skewers, not the catalog meat dish."
+    },
+    {
+      "mealId": "hummus-pita",
+      "name": "Hummus with pita",
+      "localName": "鹰嘴豆泥配口袋饼",
+      "foodTypes": [
+        "bread",
+        "light"
+      ],
+      "description": "Creamy chickpea dip with warm pita, vegetables and olive oil.",
+      "descriptionZh": "细滑鹰嘴豆泥配热口袋饼、蔬菜和橄榄油。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 21,
+      "cell": 2,
+      "imageSha256": "f14d7c1de8291dc8843130e84d4cf74083a8cea2f802c099e9722369e5324438",
+      "display": "original-placeholder",
+      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+    },
+    {
+      "mealId": "shakshuka",
+      "name": "Shakshuka",
+      "localName": "番茄炖蛋",
+      "foodTypes": [
+        "plate",
+        "bread"
+      ],
+      "description": "Eggs gently cooked in a spiced tomato and pepper sauce.",
+      "descriptionZh": "鸡蛋在香料番茄甜椒酱中慢煮，适合配面包。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 21,
+      "cell": 3,
+      "imageSha256": "80c855ecb5b22d0f9f3c3d05ecf37e94926dfbd92bf0e7bfe4b415e71aead6d6",
+      "display": "photo",
+      "imageDecision": "No obvious dish conflict in the local contact-sheet crop; exact source-to-file provenance has not been independently verified."
+    },
+    {
+      "mealId": "middle-eastern-mixed-grill",
+      "name": "Middle Eastern mixed grill",
+      "localName": "中东烤肉拼盘",
+      "foodTypes": [
+        "plate"
+      ],
+      "description": "A sharing plate of kebabs, grilled chicken, lamb and vegetables.",
+      "descriptionZh": "烤肉串、鸡肉、羊肉和蔬菜组成的分享拼盘。",
+      "categoryDecision": "Retained explicit categories after description review; see category convention.",
+      "sheet": 21,
+      "cell": 4,
+      "imageSha256": "5920cd9e112726f8907fc2bd901299149dedbbb7e21c81b9e989134c2d5efbeb",
+      "display": "withheld",
+      "imageDecision": "Source describes American skewers; mixed grill unconfirmed."
+    }
+  ]
+}

@@ -40,7 +40,7 @@ export const legacyFoodTypes: Record<string, FoodType[]> = {
   'tandoori-chicken': ['plate'],
   'chapati-dhal': ['bread'],
   'chicken-biryani': ['rice'],
-  'idli-sambar': ['bread', 'soup'],
+  'idli-sambar': ['light', 'soup'],
   'banana-leaf-rice': ['rice'],
   'masala-thosai': ['bread'],
   appam: ['bread'],

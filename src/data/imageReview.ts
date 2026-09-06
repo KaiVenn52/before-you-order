@@ -1,6 +1,25 @@
-// Source-title conflicts found during V1.8 stabilization. Preserve original assets
+// Source-title and local-pixel conflicts found during V1.8 review. Preserve original assets
 // and attribution for review, but do not display these photographs as the dish.
 export const imageReview: Record<string, string> = {
+  "lontong": "Only plain sliced rice cakes are visible; coconut vegetable gravy is absent. Source authorship is also assumed, not confirmed.",
+  "laksa-johor": "Foon Yew laksa image does not establish the spaghetti and thick fish gravy described for Laksa Johor.",
+  "bubur-lambuk": "Event and serving scene; the porridge cannot be inspected clearly in the card crop.",
+  "curry-mee": "Current local crop does not clearly show curry noodles; corrected metadata alone is insufficient.",
+  "claypot-chicken-rice": "Current local image shows a rice plate without a claypot; source title alone does not verify the bytes.",
+  "lei-cha": "Current local image shows takeaway noodles rather than rice, chopped greens and herb broth.",
+  "roast-duck-rice": "Tight roast-duck crop does not show the rice meal described.",
+  "bulgogi": "Uncooked beef on a griddle rather than the finished grilled dish.",
+  "hakka-mee": "Current image resembles dark fried flat noodles; dry Hakka noodles with mince are not established.",
+  "char-siu-rice": "Only hanging roast pork is visible, rather than the plated rice meal.",
+  "siu-yuk-rice": "Visible glazed char siu does not establish the requested crispy roast pork belly.",
+  "ginger-scallion-fish": "Whole fish shown; catalog describes stir-fried fish slices.",
+  "linopot-set": "Closed leaf parcels hide the rice; the described Sabah meal sides are not shown.",
+  "budae-jjigae": "Prepared raw hotpot ingredients rather than a cooked spicy stew.",
+  "beef-shawarma": "Meat and dips in separate trays; the described filled flatbread is not shown.",
+  "pecel-lele": "Close crop of fried fish does not establish the described sambal, vegetables and rice meal.",
+  "ayam-bakar-indonesia": "Chicken and vegetables shown without the described rice meal.",
+  "thai-chicken-rice": "Source and visible topping describe peanut sauce; the catalog specifies fermented-bean sauce.",
+
   'nasi-campur-malay': 'Source is Indonesian nasi campur; Malaysian dish needs confirmation.',
   'ikan-patin-tempoyak': 'Source title describes an exhibition replica.',
   'sambal-sotong': 'Source title describes nasi lemak rather than squid.',

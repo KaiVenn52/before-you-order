@@ -2,6 +2,11 @@ import type { Language } from './domain/types';
 
 export const copy = {
   en: {
+    linkError: 'Could not open this link',
+    linkErrorBody: 'Please check that a browser is available, then try again.',
+    imageCrop: 'Cropped', imageResize: 'Resized', imageWebp: 'Converted to WebP',
+    cardCrop: 'The card may crop the image further.',
+    assumedAuthor: 'The source page marks this author as assumed; the photo is withheld.',
     storageLocked: 'Saved hidden foods could not be loaded',
     storageLockedBody: 'Dish picks are paused to respect your hidden list. Restart to try again, or choose a place type.',
     chooseHint: 'Save this choice and gradually improve future suggestions.',
@@ -63,6 +68,11 @@ export const copy = {
     chosenConfirmation: 'Saved to your recent choices.', vegetarianVersion: 'Vegetarian version',
   },
   zh: {
+    linkError: '无法打开此链接',
+    linkErrorBody: '请确认手机上有可用的浏览器，然后重试。',
+    imageCrop: '已裁剪', imageResize: '已调整尺寸', imageWebp: '已转换为 WebP',
+    cardCrop: '卡片显示时可能进一步裁剪。',
+    assumedAuthor: '来源页面将作者标为推定，尚未确认；此照片暂不展示。',
     storageLocked: '无法读取已隐藏的食物',
     storageLockedBody: '为避免推荐已隐藏的食物，暂时停止菜品推荐。请重启重试，或先选择一种店。',
     chooseHint: '保存这次选择，并逐渐改善以后推荐。',

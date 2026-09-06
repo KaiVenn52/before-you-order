@@ -12,7 +12,7 @@
 - Export metadata SHA-256: `6e3ea27e80d710bc74c96f51e6a7ae574e10dcbd93da9d2a46156785bb1a2ade`.
 - Raw command evidence: `artifacts/v1.8-final-20260906/results.jsonl` and corresponding logs. Baseline git identity/check logs: `artifacts/v1.8-baseline-20260905/`.
 - Catalog: 244 meals, 133 Malaysian-core dishes, 12 cuisines; all food types structurally valid, five named category regressions tested.
-- Photos: 244 original WebP files unchanged (191 source photos + 53 original placeholders). 36 questionable source mappings are withheld via runtime neutral views; effective display 155 photos / 89 neutral displays. Three duplicate-source groups and five uncertain author entries remain in the manual review report.
+- Photos: 244 original WebP files unchanged (191 source photos + 53 original placeholders). 54 questionable source or local-image mappings are withheld via runtime neutral views; effective display 137 photos / 107 neutral displays. Three duplicate-source groups remain recorded; four generic author entries were resolved and one assumed author remains explicitly qualified and withheld.
 - Color checks: eight representative text/background pairs all >=4.76:1; YOUR PICK ink/gold 5.33:1.
 - No phone, emulator, TalkBack, native persistence, actual Maps handoff or system-large-font verification was performed. React App interaction tests substitute native modules; Node SQLite tests verify the SQL and disk reopen behavior.
 - No push, EAS build, AAB, Play upload or store submission. Earlier release entries below are preserved historical records and are not evidence of a V1.8 native build.
@@ -197,3 +197,17 @@ This is a private test build, not a Google Play submission. V1.1 replaces the ve
 - EAS build page: https://expo.dev/accounts/kaivenns-team/projects/before-you-order/builds/d6dbec78-dc35-4113-9896-5b34b7c2bb1c
 
 This was the original V1 test build and has been superseded by V1.1.
+
+
+## V1.8 additional local acceptance — 7 September 2026
+
+- Continues local commit `e8372810ce9b473d518bfca19f2ae4369cddd97f` on `codex/v1.8-core-stabilization`; no push or cloud build.
+- All 244 current local assets and bilingual category descriptions reviewed. The hash-bound ledger is `docs/V1.8_CATALOG_REVIEW.json`; full decisions and source evidence are in `docs/V1.8_IMAGE_REVIEW.md`.
+- 18 additional suspect photos withheld, 54 total. Effective display is 137 photos / 107 native translated placeholders. All 244 bundled original WebP files remain unchanged.
+- Per-image processing records added to all 244 credits and image-generation metadata helpers. Five generic author entries investigated: three source-page author checks, one uploader/self-publication attribution, and one explicitly assumed author whose photo remains withheld. Other source-photo authors remain imported metadata.
+- Idli with sambar moves from bread/soup to light/soup. Carbonara uses the broader Pasta carbonara name. Source-link errors and retry are localized separately from Maps errors. Original placeholders now use localized native content.
+- `npm.cmd run typecheck`: exit 0; `npm.cmd test`: 35 passed, 0 failed; `npm.cmd run validate:catalog`: exit 0; `npx.cmd expo-doctor`: 21/21, exit 0.
+- `npx.cmd expo export --platform android --output-dir artifacts/v1.8-final-local/android-export`: exit 0, with 4096 MB Node heap. Bundle `index-30e2b13ae987479c311289c0b46ddcd4.hbc`: 8,242,083 bytes; SHA-256 `cee49df789f658f71469e84c54d7e1b3188c7dad8c0f954f399fe62c5a615d41`.
+- Twenty-one contact sheets regenerated from the hash-bound ledger with `py -3 scripts/render_catalog_contact_sheets.py`. Both Python image helpers pass `py_compile`; Git asset diff is empty.
+- No dependency versions changed. `npm.cmd audit --omit=dev` reports 10 moderate, 0 high and 0 critical advisories in the Expo tooling chain. The offered automatic fix downgrades Expo to 46, so no unsafe forced fix was applied.
+- This is a JavaScript/Hermes export, not an APK/AAB. Native screen sizes, system fonts, TalkBack, Expo SQLite restarts and real OS handoffs still require device acceptance. No release or remote version-code claim.

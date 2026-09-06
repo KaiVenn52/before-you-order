@@ -103,7 +103,7 @@ const legacyMeals: Meal[] = [
   seed('club-sandwich', 'Club sandwich', 'western', 'A layered, portable meal that works well for takeaway or a quick café lunch.', 'sandwich|portable', 'ep', 'standard', 'Usually RM14–28', 'none'),
   seed('aglio-olio', 'Aglio olio', 'western', 'Pasta with garlic, olive oil and chilli for a lighter, direct flavour.', 'pasta|garlic', 'v', 'standard', 'Usually RM14–28', 'mild'),
   seed('pizza', 'Pizza', 'western', 'Flexible toppings, easy sharing and widely available vegetarian combinations.', 'sharing|baked', 'V', 'standard', 'Usually RM18–45', 'none'),
-  seed('carbonara', 'Spaghetti carbonara', 'western', 'Creamy, savoury pasta for days when you want a richer café meal.', 'pasta|creamy', 'ep', 'standard', 'Usually RM16–32', 'none'),
+  seed('carbonara', 'Pasta carbonara', 'western', 'Creamy, savoury pasta for days when you want a richer café meal.', 'pasta|creamy', 'ep', 'standard', 'Usually RM16–32', 'none'),
   seed('lasagna', 'Lasagna', 'western', 'Baked pasta layered with sauce, cheese and meat for a substantial sit-down meal.', 'baked|pasta', 'b', 'standard', 'Usually RM18–35', 'none'),
 
   seed('sushi-set', 'Sushi set', 'japanese', 'A varied set of rice and seafood bites when you want variety without a heavy sauce.', 'seafood|variety', 'es', 'flexible', 'Usually RM18–50', 'none'),

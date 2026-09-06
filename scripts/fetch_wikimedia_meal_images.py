@@ -201,6 +201,8 @@ def clean_metadata(info: dict, meal: dict) -> dict:
         "mealId": meal["id"],
         "sourceTitle": meal["title"],
         "artist": value("Artist", "Wikimedia contributor"),
+        "modifications": ["crop", "resize", "webp-conversion"],
+        "attributionStatus": "imported",
         "license": value("LicenseShortName", "See source"),
         "licenseUrl": value("LicenseUrl"),
         "sourceUrl": info.get("descriptionurl") or info.get("descriptionshorturl") or info.get("url"),
@@ -215,7 +217,7 @@ def make_placeholder(destination: Path, meal: dict) -> dict:
     draw.text((450, 245), "?", anchor="mm", fill="white", font=ImageFont.load_default(size=112))
     draw.text((450, 430), meal["title"][:48], anchor="mm", fill="#103f29", font=ImageFont.load_default(size=30))
     image.save(destination, "WEBP", quality=86, method=6)
-    return {"mealId": meal["id"], "sourceTitle": meal["title"], "artist": "Before You Order", "license": "Original artwork", "licenseUrl": "", "sourceUrl": "", "isPlaceholder": True}
+    return {"mealId": meal["id"], "sourceTitle": meal["title"], "artist": "Before You Order", "license": "Original artwork", "licenseUrl": "", "sourceUrl": "", "isPlaceholder": True, "modifications": ["original-artwork"], "attributionStatus": "original"}
 
 
 def download_and_fit(url: str, destination: Path) -> None:

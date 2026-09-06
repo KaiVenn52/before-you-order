@@ -37,6 +37,8 @@ const modeOptions: Array<{ id: EatingMode; labelKey: 'dineOut' | 'takeaway' | 'd
 ];
 const cuisines = Object.keys(cuisineLabels) as CuisineId[];
 const foodTypes = Object.keys(foodTypeLabels) as FoodType[];
+const originalImageIds = new Set(imageCredits.filter(credit => credit.license === 'Original artwork').map(credit => credit.mealId));
+const mealById = new Map(meals.map(meal => [meal.id, meal]));
 type ShopTarget = { kind: 'meal'; id: string } | { kind: 'venue'; id: VenueTypeId } | null;
 
 export default function App() {
@@ -400,7 +402,7 @@ function AppContent() {
 function MealPhoto({ meal, language, small = false }: { meal: Meal; language: Language; small?: boolean }) {
   const [failed, setFailed] = useState(false);
   useEffect(() => setFailed(false), [meal.imageKey]);
-  if (failed || needsNeutralImage(meal.id) || !mealImages[meal.imageKey]) return <View accessibilityLabel={tr(language, 'originalImage')} style={[small ? styles.historyImage : styles.heroImage, { backgroundColor: C.greenSoft, alignItems: 'center', justifyContent: 'center', padding: 12 }]}><ForkKnife size={small ? 20 : 48} color={C.green} />{!small && <Text style={styles.reasonText}>{tr(language, 'photoUnavailable')}</Text>}</View>;
+  if (failed || originalImageIds.has(meal.id) || needsNeutralImage(meal.id) || !mealImages[meal.imageKey]) return <View accessibilityLabel={tr(language, 'originalImage')} style={[small ? styles.historyImage : styles.heroImage, { backgroundColor: C.greenSoft, alignItems: 'center', justifyContent: 'center', padding: 12 }]}><ForkKnife size={small ? 20 : 48} color={C.green} />{!small && <Text style={styles.reasonText}>{tr(language, 'photoUnavailable')}</Text>}</View>;
   return <Image accessibilityLabel={language === 'zh' ? meal.localName : meal.name} source={mealImages[meal.imageKey]} style={small ? styles.historyImage : styles.heroImage} contentFit="cover" transition={180} onError={() => setFailed(true)} />;
 }
 
@@ -455,16 +457,19 @@ function ShopStrategy({ icon, title, description, onPress }: { icon: React.React
 }
 
 function CreditsModal({ language, visible, onClose }: { language: Language; visible: boolean; onClose: () => void }) {
-  const openCredit = (url: string) => { void openExternalUrl(url, Linking.openURL, () => Alert.alert(tr(language, 'mapsError'), tr(language, 'mapsErrorBody'), [{ text: tr(language, 'cancel') }, { text: tr(language, 'retry'), onPress: () => openCredit(url) }])); };
+  const openCredit = (url: string) => { void openExternalUrl(url, Linking.openURL, () => Alert.alert(tr(language, 'linkError'), tr(language, 'linkErrorBody'), [{ text: tr(language, 'cancel') }, { text: tr(language, 'retry'), onPress: () => openCredit(url) }])); };
   return <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose}>
     <View style={styles.backdrop}><Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'close')} style={{ flex: 1 }} onPress={onClose} />
       <View style={[styles.sheet, { maxHeight: '78%' }]}>
         <View style={styles.sheetHeader}><View style={{ flex: 1 }}><Text style={styles.sheetTitle}>{tr(language, 'photoCredits')}</Text><Text style={styles.sheetHint}>{tr(language, 'creditsHint')}</Text></View><Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'close')} onPress={onClose} style={styles.closeButton}><X size={25} color={C.ink} /></Pressable></View>
         <ScrollView>{imageCredits.map(credit => <View key={credit.mealId} style={styles.creditRow}>
-          <Text style={styles.creditMeal}>{credit.sourceTitle}</Text>
+          <Text style={styles.creditMeal}>{language === 'zh' ? mealById.get(credit.mealId)?.localName : mealById.get(credit.mealId)?.name}</Text>
+          <Text style={styles.creditMeta}>{credit.sourceTitle}</Text>
           {needsNeutralImage(credit.mealId) && <Text style={styles.creditMeta}>{tr(language, 'imageWithheld')}</Text>}
           <Text style={styles.creditMeta}>{credit.artist} · {credit.license}</Text>
-          <Text style={styles.creditMeta}>{tr(language, credit.license.startsWith('Original') ? 'originalImage' : 'photoChanges')}</Text>
+          <Text style={styles.creditMeta}>{credit.modifications.map(change => tr(language, change === 'original-artwork' ? 'originalImage' : change === 'crop' ? 'imageCrop' : change === 'resize' ? 'imageResize' : 'imageWebp')).join(' · ')}</Text>
+          {credit.license !== 'Original artwork' && <Text style={styles.creditMeta}>{tr(language, 'cardCrop')}</Text>}
+          {credit.attributionStatus === 'source-assumed' && <Text style={styles.creditMeta}>{tr(language, 'assumedAuthor')}</Text>}
           {!!credit.sourceUrl && <Pressable accessibilityRole="link" accessibilityLabel={`${credit.sourceTitle}: ${tr(language, 'source')}`} onPress={() => openCredit(credit.sourceUrl)} style={styles.creditButton}><Text style={styles.creditButtonText}>{tr(language, 'source')}</Text></Pressable>}
           {!!credit.licenseUrl && <Pressable accessibilityRole="link" accessibilityLabel={`${credit.sourceTitle}: ${tr(language, 'licenseLink')}`} onPress={() => openCredit(credit.licenseUrl)} style={styles.creditButton}><Text style={styles.creditButtonText}>{tr(language, 'licenseLink')}</Text></Pressable>}
         </View>)}</ScrollView>

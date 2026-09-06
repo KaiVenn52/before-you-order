@@ -13,7 +13,7 @@
 - Dedicated Nyonya and East Malaysian groups, plus separate Thai, Indonesian, Vietnamese, and Middle Eastern collections.
 - A catalog validator that rejects duplicate IDs or names, missing bilingual metadata, missing assets, and unsupported image licenses.
 - Optimized local meal photos with Wikimedia licensing and in-app attribution.
-- Structural attribution audit plus a conservative quarantine for source-title conflicts; see docs/V1.8_IMAGE_REVIEW.md. This is not a complete legal or visual audit.
+- All 244 local images and bilingual category descriptions reviewed; 54 suspect photos withheld, 137 photos and 107 translated neutral displays. Per-image processing records and a hash-bound review ledger are in docs/V1.8_IMAGE_REVIEW.md. Source provenance and native-device crops are not fully verified.
 - Direct Google Maps nearby search for each recommendation.
 - Full-catalog “Another” action instead of cycling only three cards.
 - “Not today” and “I chose this” feedback that changes later sampling weights.

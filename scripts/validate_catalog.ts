@@ -1,5 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
+import review from '../docs/V1.8_CATALOG_REVIEW.json';
 import { auditCredits } from '../src/domain/catalogAudit';
 import { imageReview } from '../src/data/imageReview';
 import { foodTypeLabels, meals } from '../src/data/meals';
@@ -14,6 +16,8 @@ const requiredLocal = new Set(['malay', 'chinese', 'indian', 'nyonya', 'east-mal
 const ids = meals.map((meal) => meal.id);
 const images = meals.map((meal) => meal.imageKey);
 const creditById = new Map(credits.map((credit) => [credit.mealId, credit]));
+const reviewById = new Map(review.items.map(item => [item.mealId, item]));
+if (review.items.length !== meals.length || reviewById.size !== meals.length) errors.push('Review ledger coverage is incomplete or duplicated.');
 
 if (meals.length < 220 || meals.length > 250) errors.push(`Catalog size ${meals.length} is outside 220-250.`);
 for (const id of duplicateValues(ids)) errors.push(`Duplicate meal id: ${id}`);
@@ -23,6 +27,16 @@ for (const name of duplicateValues(meals.map((meal) => (meal.localName ?? '').tr
 if (meals.filter((meal) => requiredLocal.has(meal.cuisine)).length <= meals.length / 2) errors.push('Malaysian core cuisines are not a majority.');
 
 for (const meal of meals) {
+  const reviewed = reviewById.get(meal.id);
+  const imagePath = path.join(root, 'assets', 'meals', `${meal.imageKey}.webp`);
+  if (!reviewed) errors.push(`${meal.id}: visual/semantic review missing.`);
+  else {
+    if (JSON.stringify(reviewed.foodTypes) !== JSON.stringify(meal.foodTypes) || reviewed.name !== meal.name || reviewed.localName !== meal.localName || reviewed.description !== meal.description || reviewed.descriptionZh !== meal.descriptionZh) errors.push(`${meal.id}: semantic review is stale.`);
+    if (fs.existsSync(imagePath) && createHash('sha256').update(fs.readFileSync(imagePath)).digest('hex') !== reviewed.imageSha256) errors.push(`${meal.id}: image changed after visual review.`);
+    const expectedDisplay = creditById.get(meal.id)?.license === 'Original artwork' ? 'original-placeholder' : imageReview[meal.id] ? 'withheld' : 'photo';
+    if (reviewed.display !== expectedDisplay) errors.push(`${meal.id}: display review is stale.`);
+    if (imageReview[meal.id] && reviewed.imageDecision !== imageReview[meal.id]) errors.push(`${meal.id}: withholding reason changed after review.`);
+  }
   if (!meal.name.trim() || !meal.localName?.trim()) errors.push(`${meal.id}: missing bilingual name.`);
   if (!meal.description.trim() || !meal.descriptionZh.trim()) errors.push(`${meal.id}: missing bilingual description.`);
   if (!meal.searchQuery.includes('Malaysia')) errors.push(`${meal.id}: Maps query lacks Malaysia context.`);
