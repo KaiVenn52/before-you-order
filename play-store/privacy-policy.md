@@ -1,6 +1,6 @@
 # Privacy Policy for Before You Order
 
-Effective date: 27 August 2026
+Draft update: 6 September 2026 (not published)
 
 Before You Order is designed to help users choose a meal before placing an order.
 
@@ -10,7 +10,7 @@ Before You Order does not collect, transmit, sell, or share personal data with t
 
 ## Information stored on your device
 
-Your meal choices, preference settings, feedback, and blacklist are stored locally on your device so the app can improve future suggestions. This information is not uploaded to a developer-operated server.
+Your meal choices, preference settings, feedback, and blacklist are stored locally on your device so the app can improve future suggestions. This information is not uploaded to a developer-operated server. If device storage fails, changes may be held only in memory for the current session; the app displays a notice.
 
 You can remove the app's locally stored information by uninstalling the app. Blacklisted meals can also be restored from within the app.
 
@@ -30,5 +30,5 @@ If the app's data practices change, this policy and the Google Play Data safety 
 
 ## Contact
 
-Questions about this policy can be sent to: [developer contact email]
+Questions about this policy can be sent to: kangming0810@gmail.com
 

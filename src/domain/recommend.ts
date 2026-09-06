@@ -15,18 +15,6 @@ export function recommendMeals(
 ): Meal[] {
   const maxBudget = budgetWeight[preferences.budget];
   const blacklist = new Set(blacklistedMealIds);
-  const chosenCount = new Map<string, number>();
-  const cuisineAffinity = new Map<CuisineId, number>();
-  const latestFeedback = new Map<string, MealFeedback>();
-
-  feedback.forEach((item) => {
-    if (!latestFeedback.has(item.mealId)) latestFeedback.set(item.mealId, item);
-    if (item.action !== 'chosen') return;
-    chosenCount.set(item.mealId, (chosenCount.get(item.mealId) ?? 0) + 1);
-    const picked = catalog.find((meal) => meal.id === item.mealId);
-    if (picked) cuisineAffinity.set(picked.cuisine, (cuisineAffinity.get(picked.cuisine) ?? 0) + 1);
-  });
-
   return catalog
     .filter((meal) => !blacklist.has(meal.id))
     .filter((meal) => meal.modes.includes(mode) && (!cuisine || meal.cuisine === cuisine))
@@ -37,32 +25,45 @@ export function recommendMeals(
     .filter((meal) => !preferences.beefFree || !meal.containsBeef)
     .filter((meal) => !preferences.seafoodFree || !meal.containsSeafood)
     .filter((meal) => budgetWeight[meal.budget] <= maxBudget)
-    .map((meal) => {
-      const historyBoost = Math.min(36, (chosenCount.get(meal.id) ?? 0) * 6);
-      const cuisineBoost = Math.min(12, (cuisineAffinity.get(meal.cuisine) ?? 0) * 2);
-      const latest = latestFeedback.get(meal.id);
-      const age = latest ? now - Date.parse(latest.createdAt) : Number.POSITIVE_INFINITY;
-      const justChosenPenalty = latest?.action === 'chosen' && age < 20 * HOUR ? 45 : 0;
-      const notTodayPenalty = latest?.action === 'not-today' && age < 72 * HOUR ? 60 : 0;
-      return { meal, score: meal.rank + historyBoost + cuisineBoost - justChosenPenalty - notTodayPenalty };
-    })
-    .sort((a, b) => b.score - a.score)
-    .map(({ meal }) => meal);
+    ;
+}
+
+// 20% baseline exploration; choice affinity saturates at 3x. Legacy rank is ignored.
+export function mealWeight(mealId: string, feedback: readonly MealFeedback[], now: number): number {
+  const choices = feedback.filter(item => item.mealId === mealId && item.action === 'chosen').length;
+  const rejected = feedback.some(item => item.mealId === mealId && item.action === 'not-today'
+    && now - Date.parse(item.createdAt) >= 0 && now - Date.parse(item.createdAt) < 72 * HOUR);
+  return (0.2 + 0.8 * Math.min(3, 1 + choices * 0.25)) * (rejected ? 0.1 : 1);
+}
+
+export function sampleWeighted<T>(items: readonly T[], weight: (item: T) => number, rng: () => number): T | null {
+  const weighted = items.map(item => ({ item, weight: weight(item) })).filter(x => Number.isFinite(x.weight) && x.weight > 0);
+  const total = weighted.reduce((sum, x) => sum + x.weight, 0);
+  if (!weighted.length) return null;
+  const value = rng();
+  if (!Number.isFinite(value) || value < 0 || value >= 1) throw new RangeError('rng must return a number in [0, 1)');
+  let cursor = value * total;
+  for (const entry of weighted) {
+    if (cursor < entry.weight) return entry.item;
+    cursor -= entry.weight;
+  }
+  return weighted[weighted.length - 1].item;
+}
+
+export function pickMeal(candidates: readonly Meal[], feedback: readonly MealFeedback[], blacklistedIds: readonly string[],
+  currentId: string | null, now: number, rng: () => number): Meal | null {
+  const allowed = candidates.filter(meal => !blacklistedIds.includes(meal.id));
+  const pool = allowed.length > 1 ? allowed.filter(meal => meal.id !== currentId) : allowed;
+  return sampleWeighted(pool, meal => mealWeight(meal.id, feedback, now), rng);
 }
 
 export function pickRefreshedPosition(length: number, previousPosition = -1, random = Math.random): number {
-  if (length <= 1) return 0;
-  let next = Math.floor(random() ** 2 * length);
-  if (next === previousPosition % length) next = (next + 1) % length;
-  return next;
+  return pickDifferentItem(Array.from({ length }, (_, index) => index), previousPosition, random) ?? 0;
 }
 
 export function pickDifferentItem<T>(items: readonly T[], current: T | null, random = Math.random): T | null {
-  if (items.length === 0) return null;
-  if (items.length === 1) return items[0];
-  let nextIndex = Math.floor(random() * items.length);
-  if (items[nextIndex] === current) nextIndex = (nextIndex + 1) % items.length;
-  return items[nextIndex];
+  const pool = items.length > 1 ? items.filter(item => item !== current) : items;
+  return sampleWeighted(pool, () => 1, random);
 }
 
 export function recommendationReason(meal: Meal, cuisine: CuisineId | null, preferences: Preferences, chosenTimes = 0, language: Language = 'en'): string {
@@ -75,7 +76,7 @@ export function recommendationReason(meal: Meal, cuisine: CuisineId | null, pref
     if (meal.budget === 'value') return '容易找到，也符合你目前的预算。';
     return '口味和份量都比较灵活，适合现在选择。';
   }
-  if (chosenTimes > 1) return `You have chosen this ${chosenTimes} times, so it is becoming one of your favourites.`;
+  if (chosenTimes > 1) return `You have chosen this ${chosenTimes} times before.`;
   if (preferences.diet === 'vegetarian') return meal.vegetarian
     ? 'Naturally vegetarian and within your current budget.'
     : 'Vegetarian restaurants commonly offer a meat-free version of this dish.';

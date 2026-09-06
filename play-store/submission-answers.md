@@ -1,6 +1,6 @@
 # Google Play submission answers
 
-These answers are based on the V1.7 source and release bundle.
+Draft answers based on local V1.8.0 source. No V1.8 release bundle has been built or submitted.
 
 - Privacy policy: publish `play-store/privacy/index.html` to a public HTTPS URL.
 - App access: all functionality is available without login, membership, location restriction, or authentication.
@@ -22,5 +22,7 @@ These answers are based on the V1.7 source and release bundle.
 ## Required visual assets
 
 - App icon: `assets/play-store-icon.png`.
-- Feature graphic: 1024 x 500 PNG or JPEG, still to export.
-- Phone screenshots: at least two real screenshots from the installed V1.7 app, still required.
+- Feature graphic: existing `play-store/assets/feature-graphic-1024x500.png`; review again before submission.
+- Phone screenshots: at least two real screenshots from the installed V1.8 app (after separately approved build), still required.
+
+- Android versioning: EAS remote autoIncrement; no local versionCode. Verify the assigned code is new and greater than the previously recorded Play code 12 before any approved upload. Current remote counter is unverified.

@@ -13,11 +13,11 @@
 - Dedicated Nyonya and East Malaysian groups, plus separate Thai, Indonesian, Vietnamese, and Middle Eastern collections.
 - A catalog validator that rejects duplicate IDs or names, missing bilingual metadata, missing assets, and unsupported image licenses.
 - Optimized local meal photos with Wikimedia licensing and in-app attribution.
-- Full visual and attribution re-audit with direct Commons file mappings for corrected images.
+- Structural attribution audit plus a conservative quarantine for source-title conflicts; see docs/V1.8_IMAGE_REVIEW.md. This is not a complete legal or visual audit.
 - Direct Google Maps nearby search for each recommendation.
 - Full-catalog “Another” action instead of cycling only three cards.
-- “Not today” and “I chose this” feedback that changes later ranking.
-- Long-term favourite weighting with a 20-hour recently-chosen cooldown and 72-hour “Not today” cooldown.
+- “Not today” and “I chose this” feedback that changes later sampling weights.
+- Bounded long-term choice weighting, explicit exploration, and a 72-hour “Not today” reduction. Sampling is independent of catalog rank and order.
 - Permanent meal blacklist with in-app restore controls.
 - Randomized cuisine refresh that avoids showing the same meal twice in a row.
 - Bilingual English/Chinese names and map search terms for Malaysian Chinese dishes.
@@ -27,7 +27,7 @@
 - Actionable recent-choice history with one-tap nearby search.
 - Removed the low-signal dietary/budget settings panel and its always-visible header icon; it affected too few meals, was invisible in venue mode, and risked implying unreliable outlet-level guarantees.
 - Kept vegetarian restaurants as an explicit venue type and kept permanent meal hiding as the only preference-like control.
-- Hidden-food management appears contextually at the bottom only when the user has blacklisted at least one meal.
+- Hidden-food management is always available near the main action; hiding supports undo, individual restore and restore all.
 - SQLite persistence with WAL mode; no login or cloud account required.
 - Explicit outlet-level warning for prices, ingredients, allergens, and halal certification.
 - Unused payment dependencies removed until there is a credible paid feature and real demand.
@@ -46,3 +46,13 @@
 - V1.7.0 (version code 12) remains the Google Play internal-testing build. V1.8.0 is local source work only until a separately approved store build and upload.
 - No public production release or subscription setup.
 - No location permission or precise location collection; nearby discovery is delegated to Google Maps.
+
+## V1.8 core stabilization (local source)
+
+The home screen offers Pick for me, collapsed optional cuisine/food filters, and a persistent saved-choice state with Find a nearby place and Pick again. Another samples a different eligible dish without writing preferences. Not today reduces a dish weight to 10% for exactly 72 hours. Choice affinity caps at 3; the blended weight is 0.2 + 0.8 × affinity (1–2.6 before cooldown). New dishes retain a positive baseline.
+
+SQLite is opened lazily with guarded reads/writes and session memory fallback. If the persisted blacklist cannot be read at startup, dish picks pause and venue selection remains available; restart retries storage. Failures after a successful load retain the cached blacklist and disclose temporary storage. Optional haptics never block an action. External links report errors with retry.
+
+EAS uses remote version management with autoIncrement for preview/production. No local versionCode is set. The prior recorded Play version is 12; the next build must obtain a new remote code greater than all previously used codes. The current remote counter was not fetched or changed during stabilization; do not assume it is 13.
+
+See docs/V1.8_STABILIZATION.md for current verification, device QA limits and V1.9 backlog. V1.8 is not an AAB, EAS build, Play upload or store submission.

@@ -20,13 +20,13 @@ Choose a cuisine, food type, and eating mode—or leave everything open and let 
 
 Make it yours over time:
 
-- Tap “I choose this” and the app remembers what you genuinely enjoy.
-- Tap “Not today” to temporarily reduce repeats without deleting a meal forever.
-- Blacklist food you never want suggested, and restore it whenever you change your mind.
+- Tap “I chose this” to save the choice, keep it on screen and gradually improve future suggestions.
+- Tap “Not today” to reduce that dish in suggestions for the next three days.
+- Hide food you do not want suggested, undo the action or restore it in Manage hidden foods.
 - Refresh for a different suggestion instead of seeing the same first result every time.
 - Search Google Maps for nearby, well-rated, or budget-friendly places once you know what you want.
 
-English and Chinese dish names make local restaurant searches more useful for Malaysian users. You can switch the interface between English and 中文. For vegetarian users, familiar dishes such as fried rice, curry mee, and char kway teow remain easy to recognise, while the restaurant action searches nearby vegetarian places instead of pretending one exact dish is available everywhere. Your preferences and choice history stay on your device. No account, ads, or subscription is required.
+English and Chinese dish names make local restaurant searches more useful for Malaysian users. You can switch the interface between English and 中文. You can choose a vegetarian-restaurant place type; dish ingredients are not guaranteed vegetarian. Your preferences and choice history stay on your device. If storage is unavailable, the app explains which actions are temporary. No account, ads, or subscription is required.
 
 Before You Order is not a calorie tracker or diet plan. It is a practical decision helper for the moment before you place an order.
 
@@ -36,20 +36,27 @@ Food & Drink
 
 ## Release name
 
-1.8.0 — 244-dish Malaysia catalogue
+1.8.0 — Clearer choices and core stability (draft, not submitted)
 
 ## Release notes
 
-Update highlights:
+### English (draft)
 
-- 244 dishes across 12 cuisine groups, including dedicated Nyonya and East Malaysian collections
-- English/中文 interface toggle with device persistence
-- Cuisine, food-type, and dine-out/takeaway/delivery controls
-- Smarter suggestions that learn from your choices
-- “Not today” cooldown and permanent blacklist
-- Bilingual dish names for better local searches
-- Vegetarian mode now searches nearby vegetarian restaurants directly
-- Nearby restaurant search through Google Maps
+- Pick for me with optional filters tucked away
+- 244 dishes across 12 cuisine groups, with strong Malaysian coverage
+- Weighted random picks, different Another results and a three-day Not today reduction
+- Save a choice and keep it visible, then find nearby places
+- Undo hidden foods or restore all
+- Clearer image credits, bilingual feedback and recoverable errors
+
+### 简体中文（草稿）
+
+- “现在帮我选”，可选筛选默认收起
+- 244 道菜、12 个菜系，以马来西亚美食为主
+- 加权随机推荐，“换一个”避开当前菜，“今天不要”降低未来三天推荐
+- 保存后保留卡片，再寻找附近餐厅
+- 隐藏后可撤销，也可恢复全部
+- 完善图片来源、双语反馈和错误恢复提示
 
 ## Data safety answers based on the current code
 

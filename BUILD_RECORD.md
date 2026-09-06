@@ -1,5 +1,23 @@
 # Android Build Record
 
+## V1.8 core stabilization — 6 September 2026 — local verification only
+
+- Status: `LOCAL SOURCE CHECKED — READY FOR AN APPROVED TEST BUILD; NO NATIVE BUILD OR UPLOAD`
+- Starting commit: `4a6b642d36c4e8f12acb2fa3eb0c59845d5829ff`; local branch `codex/v1.8-core-stabilization`.
+- App/package version: `1.8.0`. EAS uses remote version management and autoIncrement; no local versionCode was invented. The next code must be new and greater than previously used codes (recorded Play V1.7: 12); live remote counter remains unverified.
+- New local results: `npm.cmd run typecheck` exit 0; `npm.cmd test` exit 0 (33/33); `npm.cmd run validate:catalog` exit 0; `npx.cmd expo-doctor` exit 0 (21/21); `npx.cmd expo export --platform android --output-dir artifacts/v1.8-final-20260906/android-export` exit 0; `npm.cmd audit --omit=dev` exit 1 (10 moderate, 0 high, 0 critical).
+- Final typecheck and tests were repeated successfully after the contrast adjustment; logs `typecheck-final.txt` and `test-final.txt`.
+- Audit chain: uuid <11.1.1 through xcode/Expo tooling. The proposed `audit fix --force` would downgrade Expo to 46; it was not run.
+- Android Hermes export: `artifacts/v1.8-final-20260906/android-export/_expo/static/js/android/index-71f01b104ab3ef38c119290f2ee52f49.hbc`, `8234613` bytes, SHA-256 `5bba53bdff676e7c52805175750ea764df5141f1211f2e58f17f53df659db92d`.
+- Export metadata SHA-256: `6e3ea27e80d710bc74c96f51e6a7ae574e10dcbd93da9d2a46156785bb1a2ade`.
+- Raw command evidence: `artifacts/v1.8-final-20260906/results.jsonl` and corresponding logs. Baseline git identity/check logs: `artifacts/v1.8-baseline-20260905/`.
+- Catalog: 244 meals, 133 Malaysian-core dishes, 12 cuisines; all food types structurally valid, five named category regressions tested.
+- Photos: 244 original WebP files unchanged (191 source photos + 53 original placeholders). 36 questionable source mappings are withheld via runtime neutral views; effective display 155 photos / 89 neutral displays. Three duplicate-source groups and five uncertain author entries remain in the manual review report.
+- Color checks: eight representative text/background pairs all >=4.76:1; YOUR PICK ink/gold 5.33:1.
+- No phone, emulator, TalkBack, native persistence, actual Maps handoff or system-large-font verification was performed. React App interaction tests substitute native modules; Node SQLite tests verify the SQL and disk reopen behavior.
+- No push, EAS build, AAB, Play upload or store submission. Earlier release entries below are preserved historical records and are not evidence of a V1.8 native build.
+- Detailed handoff: `docs/V1.8_STABILIZATION.md`; image review: `docs/V1.8_IMAGE_REVIEW.md`.
+
 ## V1.8 catalog expansion — local validation only — 2026-09-05
 
 - Status: `LOCAL SOURCE VALIDATED — NOT BUILT OR UPLOADED TO GOOGLE PLAY`

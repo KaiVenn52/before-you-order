@@ -5,7 +5,7 @@ import imageCredits from '../src/data/imageCredits.json';
 import { copy } from '../src/i18n';
 import { venueTypes } from '../src/data/venues';
 import { buildNearbyQuery, googleMapsSearchUrl } from '../src/domain/places';
-import { pickDifferentItem, pickRefreshedPosition, recommendMeals } from '../src/domain/recommend';
+import { mealWeight, pickMeal, sampleWeighted, pickDifferentItem, pickRefreshedPosition, recommendMeals } from '../src/domain/recommend';
 import type { CuisineId, Meal, Preferences } from '../src/domain/types';
 
 const base: Omit<Meal, 'id' | 'name' | 'rank'> = {
@@ -38,22 +38,63 @@ test('food form is independent from cuisine and filters across cuisines', () => 
   assert.equal(chineseRice.every((meal) => meal.cuisine === 'chinese' && meal.foodTypes.includes('rice')), true);
 });
 
-test('a meal chosen just now cools down instead of repeating immediately', () => {
-  const now = Date.parse('2026-08-27T12:00:00Z');
-  const ranked = recommendMeals(catalog, 'dine-out', null, null, defaults, [{ mealId: 'a', action: 'chosen', createdAt: '2026-08-27T12:00:00Z' }], [], now);
-  assert.deepEqual(ranked.map((meal) => meal.id), ['b', 'c', 'a']);
+const now = Date.parse('2026-09-05T12:00:00Z');
+const chosen = (id: string, count: number) => Array.from({ length: count }, () => ({ mealId: id, action: 'chosen' as const, createdAt: '2026-01-01T00:00:00Z' }));
+
+test('weighted sampler uses exact cumulative boundaries, ignores zero weights and validates rng', () => {
+  const weights = { a: 1, b: 3, c: 0 };
+  for (const [rng, expected] of [[0, 'a'], [0.249999, 'a'], [0.25, 'b'], [0.999999, 'b']] as const) {
+    assert.equal(sampleWeighted(['a', 'b', 'c'] as const, id => weights[id], () => rng), expected);
+  }
+  assert.equal(sampleWeighted(['a'], () => 0, () => 0), null);
+  assert.equal(sampleWeighted([], () => 1, () => 0), null);
+  assert.throws(() => sampleWeighted(['a'], () => 1, () => 1), RangeError);
+  assert.throws(() => sampleWeighted(['a'], () => 1, () => NaN), RangeError);
 });
 
-test('repeated old choices increase a meal long-term', () => {
-  const feedback = Array.from({ length: 4 }, (_, index) => ({ mealId: 'c', action: 'chosen' as const, createdAt: `2026-08-${20 + index}T12:00:00Z` }));
-  const ranked = recommendMeals(catalog, 'dine-out', null, null, defaults, feedback, [], Date.parse('2026-08-27T12:00:00Z'));
-  assert.equal(ranked[0].id, 'c');
+test('long-term choice affinity is capped while new meals retain baseline weight', () => {
+  assert.equal(mealWeight('a', [], now), 1);
+  assert.ok(mealWeight('a', chosen('a', 1), now) > 1);
+  assert.ok(Math.abs(mealWeight('a', chosen('a', 100), now) - 2.6) < 1e-10);
+  assert.equal(mealWeight('a', chosen('a', 8), now), mealWeight('a', chosen('a', 100), now));
+  assert.equal(pickMeal(catalog.slice(0, 3), chosen('a', 100), [], null, now, () => 0.999)?.id, 'c');
 });
 
-test('not-today feedback strongly lowers the rejected meal', () => {
-  const now = Date.parse('2026-08-27T12:00:00Z');
-  const ranked = recommendMeals(catalog, 'dine-out', null, null, defaults, [{ mealId: 'a', action: 'not-today', createdAt: '2026-08-27T12:00:00Z' }], [], now);
-  assert.deepEqual(ranked.map((meal) => meal.id), ['b', 'c', 'a']);
+test('Not today lasts exactly 72 hours, including with later choices and unsorted history', () => {
+  const event = { mealId: 'a', action: 'not-today' as const, createdAt: new Date(now).toISOString() };
+  assert.equal(mealWeight('a', [event], now), 0.1);
+  assert.equal(mealWeight('a', [event], now + 72 * 3600000 - 1), 0.1);
+  assert.equal(mealWeight('a', [event], now + 72 * 3600000), 1);
+  assert.equal(mealWeight('a', [event], now - 1), 1);
+  assert.ok(mealWeight('a', [...chosen('a', 100), event], now) < 0.27);
+});
+
+test('selection excludes current and blacklist; single and empty pools remain safe', () => {
+  const pool = catalog.slice(0, 3);
+  for (const rng of [0, 0.5, 0.999]) {
+    assert.notEqual(pickMeal(pool, [], [], 'a', now, () => rng)?.id, 'a');
+    assert.equal(pickMeal(pool, [], ['a', 'c'], 'a', now, () => rng)?.id, 'b');
+    assert.equal(pickMeal(pool, [], ['a', 'b', 'c'], null, now, () => rng), null);
+  }
+  assert.equal(pickMeal([catalog[0]], [], [], 'a', now, () => 0)?.id, 'a');
+});
+
+test('candidate filtering and Another do not mutate preferences or feedback, independent of rank', () => {
+  const history = chosen('c', 5); const snapshot = JSON.stringify({ history, defaults, catalog });
+  const pool = recommendMeals(catalog, 'dine-out', null, null, defaults, history);
+  pickMeal(pool, history, [], 'a', now, () => 0.6);
+  assert.equal(JSON.stringify({ history, defaults, catalog }), snapshot);
+  const reversed = recommendMeals([...catalog].reverse(), 'dine-out', null, null, defaults);
+  assert.deepEqual(reversed.map(m => m.id), ['c', 'b', 'a']);
+  assert.equal(pickMeal(pool, [], [], null, now, () => 0.9)?.id, 'c');
+  assert.equal(pickMeal(reversed, [], [], null, now, () => 0)?.id, 'c');
+});
+
+test('switching eating mode samples the new candidate set rather than selecting its first entry', () => {
+  const pool = recommendMeals(meals, 'delivery', null, null, { ...defaults, budget: 'flexible' });
+  const picked = pickMeal(pool, [], [], null, now, () => 0.999);
+  assert.equal(picked?.id, pool.at(-1)?.id);
+  assert.notEqual(picked?.id, pool[0].id);
 });
 
 test('blacklisted meals never appear', () => {
@@ -137,4 +178,16 @@ test('removed preference controls are not referenced by active empty and blackli
   assert.doesNotMatch(copy.zh.neverBody, /饮食偏好/);
   assert.match(copy.en.neverBody, /Manage hidden foods/);
   assert.match(copy.zh.neverBody, /管理隐藏食物/);
+});
+
+test('all 244 explicit food types and the five named classification regressions are valid', () => {
+  for (const meal of meals) {
+    assert.ok(meal.foodTypes.length > 0);
+    for (const type of meal.foodTypes) assert.ok(type in foodTypeLabels, meal.id);
+  }
+  for (const id of ['katsudon', 'chicken-katsu-curry', 'pad-kra-pao', 'ayam-penyet']) {
+    assert.deepEqual(meals.find(meal => meal.id === id)?.foodTypes, ['rice']);
+  }
+  assert.deepEqual(meals.find(meal => meal.id === 'char-kway-teow')?.foodTypes, ['noodles']);
+  assert.doesNotMatch(meals.find(meal => meal.id === 'club-sandwich')?.localName ?? '', /公司/);
 });

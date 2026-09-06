@@ -1,10 +1,14 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { meals } from '../src/data/meals';
+import { auditCredits } from '../src/domain/catalogAudit';
+import { imageReview } from '../src/data/imageReview';
+import { foodTypeLabels, meals } from '../src/data/meals';
 import credits from '../src/data/imageCredits.json';
 
 const root = path.resolve(import.meta.dirname, '..');
-const errors: string[] = [];
+const audit = auditCredits(credits, meals.map(meal => meal.id));
+const errors: string[] = [...audit.errors];
+const imageMap = fs.readFileSync(path.join(root, 'src/data/mealImages.ts'), 'utf8');
 const duplicateValues = (values: string[]) => [...new Set(values.filter((value, index) => values.indexOf(value) !== index))];
 const requiredLocal = new Set(['malay', 'chinese', 'indian', 'nyonya', 'east-malaysian']);
 const ids = meals.map((meal) => meal.id);
@@ -22,6 +26,8 @@ for (const meal of meals) {
   if (!meal.name.trim() || !meal.localName?.trim()) errors.push(`${meal.id}: missing bilingual name.`);
   if (!meal.description.trim() || !meal.descriptionZh.trim()) errors.push(`${meal.id}: missing bilingual description.`);
   if (!meal.searchQuery.includes('Malaysia')) errors.push(`${meal.id}: Maps query lacks Malaysia context.`);
+  if (meal.foodTypes.some(type => !(type in foodTypeLabels))) errors.push(`${meal.id}: invalid food type.`);
+  if (!imageMap.includes(`'${meal.imageKey}': require(`)) errors.push(`${meal.id}: missing static image mapping.`);
   if (!meal.foodTypes.length) errors.push(`${meal.id}: no explicit food type.`);
   if (!meal.priceLabel.trim()) errors.push(`${meal.id}: missing price range.`);
   if (!fs.existsSync(path.join(root, 'assets', 'meals', `${meal.imageKey}.webp`))) errors.push(`${meal.id}: missing image file.`);
@@ -33,6 +39,13 @@ for (const meal of meals) {
 
 const counts = Object.fromEntries(Object.keys(Object.groupBy(meals, (meal) => meal.cuisine)).map((cuisine) => [cuisine, meals.filter((meal) => meal.cuisine === cuisine).length]));
 console.log(JSON.stringify({ meals: meals.length, localMeals: meals.filter((meal) => requiredLocal.has(meal.cuisine)).length, cuisines: counts, credits: credits.length }, null, 2));
+console.log(JSON.stringify({
+  sourcePhotos: credits.filter(c => c.license !== 'Original artwork').length,
+  originalPlaceholders: credits.filter(c => c.license === 'Original artwork').length,
+  withheldPhotos: Object.keys(imageReview).length,
+  duplicateExternalImages: audit.duplicates,
+  manualReview: imageReview,
+}, null, 2));
 if (errors.length) {
   console.error(`\nCatalog validation failed with ${errors.length} issue(s):\n${errors.slice(0, 80).join('\n')}`);
   process.exitCode = 1;

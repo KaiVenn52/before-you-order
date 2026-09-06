@@ -1,4 +1,8 @@
-import type { EatingMode } from './types';
+import type { EatingMode, Meal } from './types';
+
+export function buildMealSubject(meal: Meal): string {
+  return [...new Set([meal.name, meal.localName, meal.searchQuery].filter(Boolean))].join(' ');
+}
 
 export type SearchStrategy = 'nearby' | 'best' | 'budget';
 
