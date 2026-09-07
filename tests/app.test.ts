@@ -110,6 +110,22 @@ test('App: mode and filters resample, random cuisine changes, and hidden meals s
   } finally { await act(async () => app.unmount()); }
 });
 
+test('App: Narrow it down starts collapsed and resets after switching decision modes', async () => {
+  reset();
+  const app = await mount();
+  try {
+    assert.equal(button(app, 'Narrow it down').props.accessibilityState.expanded, false);
+    assert.equal(app.root.findAll(node => String(node.type) === 'Pressable' && text(node) === 'Rice').length, 0);
+    await press(app, 'Narrow it down');
+    assert.equal(button(app, 'Narrow it down').props.accessibilityState.expanded, true);
+    assert.equal(app.root.findAll(node => String(node.type) === 'Pressable' && text(node) === 'Rice').length, 1);
+    await press(app, 'A place type');
+    await press(app, 'A specific dish');
+    assert.equal(button(app, 'Narrow it down').props.accessibilityState.expanded, false);
+    assert.equal(app.root.findAll(node => String(node.type) === 'Pressable' && text(node) === 'Rice').length, 0);
+  } finally { await act(async () => app.unmount()); }
+});
+
 test('App: Chinese cold start, all hidden explanation, restore all and single-candidate behavior', async t => {
   reset(); locale = 'zh'; t.mock.method(Math, 'random', () => 0.5);
   meals.forEach(meal => storage.blacklistMeal(meal.id));
@@ -135,7 +151,9 @@ test('App: venue flow, credits links and image error fallback remain accessible'
   const app = await mount();
   try {
     const photo = app.root.findAll(node => String(node.type) === 'Image')[0];
-    await act(async () => photo.props.onError()); assert.match(text(app.root), /without a photo/);
+    await act(async () => photo.props.onError());
+    assert.match(text(app.root), /Photo coming soon/);
+    assert.ok(app.root.findAll(node => String(node.type) === 'Text' && /[🍚🍜🥙🍲🥗🍽]/u.test(text(node))).length > 0);
     await press(app, 'A place type'); await press(app, 'Pick for me'); await press(app, 'Find this nearby');
     await press(app, 'Budget-friendly search'); assert.match(decodeURIComponent(opened[0]), /affordable budget/);
     await press(app, 'Photo credits');

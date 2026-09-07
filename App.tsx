@@ -141,7 +141,7 @@ function AppContent() {
     saveUserSettings(defaultPreferences, next, cuisine);
   };
   const changeDecisionMode = (next: DecisionMode) => {
-    haptic(); setDecisionMode(next); setConfirmation(null);
+    haptic(); setDecisionMode(next); setNarrow(false); setConfirmation(null);
     if (next === 'venue' && !venueTypeId) setVenueTypeId(pickDifferentItem(venueTypes.map(venue => venue.id), null));
   };
   const changeCuisine = (next: CuisineId | null) => {
@@ -402,8 +402,33 @@ function AppContent() {
 function MealPhoto({ meal, language, small = false }: { meal: Meal; language: Language; small?: boolean }) {
   const [failed, setFailed] = useState(false);
   useEffect(() => setFailed(false), [meal.imageKey]);
-  if (failed || originalImageIds.has(meal.id) || needsNeutralImage(meal.id) || !mealImages[meal.imageKey]) return <View accessibilityLabel={tr(language, 'originalImage')} style={[small ? styles.historyImage : styles.heroImage, { backgroundColor: C.greenSoft, alignItems: 'center', justifyContent: 'center', padding: 12 }]}><ForkKnife size={small ? 20 : 48} color={C.green} />{!small && <Text style={styles.reasonText}>{tr(language, 'photoUnavailable')}</Text>}</View>;
+  if (failed || originalImageIds.has(meal.id) || needsNeutralImage(meal.id) || !mealImages[meal.imageKey]) {
+    const displayName = language === 'zh' ? meal.localName ?? meal.name : meal.name;
+    return (
+      <View
+        accessible
+        accessibilityLabel={`${displayName}. ${tr(language, 'photoUnavailable')}`}
+        style={[small ? styles.historyImage : styles.heroImage, styles.photoFallback, small && styles.photoFallbackSmall]}
+      >
+        <Text style={small ? styles.photoFallbackEmojiSmall : styles.photoFallbackEmoji}>{mealFallbackEmoji(meal)}</Text>
+        {!small && <>
+          <Text numberOfLines={2} style={styles.photoFallbackName}>{displayName}</Text>
+          <Text style={styles.photoFallbackStatus}>{tr(language, 'photoUnavailable')}</Text>
+        </>}
+      </View>
+    );
+  }
   return <Image accessibilityLabel={language === 'zh' ? meal.localName : meal.name} source={mealImages[meal.imageKey]} style={small ? styles.historyImage : styles.heroImage} contentFit="cover" transition={180} onError={() => setFailed(true)} />;
+}
+
+function mealFallbackEmoji(meal: Meal) {
+  const type = meal.foodTypes[0];
+  if (type === 'rice') return '🍚';
+  if (type === 'noodles') return '🍜';
+  if (type === 'bread') return '🥙';
+  if (type === 'soup') return '🍲';
+  if (type === 'light') return '🥗';
+  return '🍽️';
 }
 
 function ChoiceChip({ label, active, onPress }: { label: string; active: boolean; onPress: () => void }) {
@@ -502,6 +527,7 @@ const styles = StyleSheet.create({
   venueBadge: { color: C.green, fontSize: 11, fontWeight: '900', textTransform: 'uppercase', letterSpacing: 0.7 }, venueName: { color: C.ink, fontSize: 25, lineHeight: 30, fontWeight: '900', letterSpacing: -0.6, marginTop: 2 },
   venueDescription: { color: C.text, fontSize: 14, lineHeight: 20, marginTop: 14 }, venueAnother: { minHeight: 48, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 7, marginTop: 5 }, venueAnotherText: { flexShrink: 1, textAlign: 'center', color: C.green, fontSize: 13, fontWeight: '900' },
   heroCard: { borderRadius: 22, backgroundColor: C.paper, borderWidth: 1, borderColor: C.line, overflow: 'hidden' }, imageWrap: { height: 224, backgroundColor: '#EAE1D2' }, heroImage: { width: '100%', height: '100%' },
+  photoFallback: { backgroundColor: C.greenSoft, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 28, paddingVertical: 20 }, photoFallbackSmall: { padding: 0 }, photoFallbackEmoji: { fontSize: 52, lineHeight: 62 }, photoFallbackEmojiSmall: { fontSize: 24, lineHeight: 30 }, photoFallbackName: { maxWidth: '86%', color: C.ink, fontSize: 20, lineHeight: 25, fontWeight: '900', textAlign: 'center', marginTop: 5 }, photoFallbackStatus: { color: C.muted, fontSize: 12, lineHeight: 17, textAlign: 'center', marginTop: 5 },
   matchBadge: { position: 'absolute', left: 13, top: 13, flexDirection: 'row', gap: 5, alignItems: 'center', backgroundColor: C.gold, paddingHorizontal: 10, paddingVertical: 7, borderRadius: 16 }, matchText: { color: C.ink, fontSize: 11, fontWeight: '900', letterSpacing: 0.7 },
   counter: { position: 'absolute', right: 13, top: 13, backgroundColor: 'rgba(18,35,26,.78)', paddingHorizontal: 10, paddingVertical: 7, borderRadius: 16 }, counterText: { color: '#fff', fontSize: 11, fontWeight: '700' },
   heroBody: { padding: 17 }, cuisineLabel: { color: C.green, fontSize: 12, fontWeight: '900', textTransform: 'uppercase', letterSpacing: 0.8 }, mealName: { color: C.ink, fontSize: 28, lineHeight: 33, fontWeight: '900', letterSpacing: -0.8, marginTop: 4 }, localMealName: { color: C.green, fontSize: 19, lineHeight: 25, fontWeight: '800', marginTop: 1 },
