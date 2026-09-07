@@ -1,14 +1,17 @@
 # Android Build Record
 
-## V1.8 production AAB — 7 September 2026 — upload pending
+## V1.8 Google Play closed testing Alpha — 7 September 2026 — submitted for review
 
 - EAS build `25c7e580-7885-48b3-b8a2-645b860baefb` finished successfully; source commit `e7672374af9286e2e7bbd4a7700c80378d98e9a3`.
 - Package `com.kaivenn.beforeyouorder`; version `1.8.0`; remote versionCode `13`; production profile with existing remote Android keystore.
 - Build: https://expo.dev/accounts/kaivenns-team/projects/before-you-order/builds/25c7e580-7885-48b3-b8a2-645b860baefb
 - Local AAB: `artifacts/v1.8-production/Before-You-Order-v1.8.0-production-v13.aab`, 71,661,998 bytes; SHA-256 `377a75baf42e14fb479bed0f6ebe84bca98d4f39af4c2d10972f448965f8dbaf`.
 - R8 mapping: `artifacts/v1.8-production/Before-You-Order-v1.8.0-mapping-v13.txt`, 25,514,522 bytes; SHA-256 `122482187aae32339f0ab8c381a11605a61051aac4a55682b45f29a820c292d7`.
-- Submission profile `alpha` targets closed testing. EAS Submit failed before scheduling a submission because no Google Service Account key is configured. No successful Play upload or release is established.
-- Independent Chrome bootstrap failed twice: configured browser service version `26.901.51231` is missing; installed version is `26.901.31953`. Browser session reset did not resolve it. Restore the browser connector before retrying the UI upload.
+- Submission profile `alpha` targets closed testing. EAS Submit failed before scheduling because no Google Service Account key is configured, so the release was completed through Play Console instead.
+- Play Console already contained the uploaded `13 (1.8.0)` bundle in its artifact library. That exact bundle was added to the closed-testing Alpha release at 100% rollout, with English and Simplified Chinese release notes.
+- The release and the other pending first-review store/content changes were submitted together. Play Console confirmed `已将 13 项更改送审` and now lists `13 (1.8.0)` under `正在审核中的更改`. Self-managed publishing remains enabled, so submission is verified but approval/availability is not yet claimed.
+- Play release overview: https://play.google.com/console/u/0/developers/4657272712655016267/app/4972749863108430086/publishing
+- Non-blocking Play warning: estimated new-install download size is 27.6 MB, 7.07 MB larger than the previous release. Supported-device counts did not decrease.
 - No new native-device acceptance results. Local `jarsigner` was unavailable; successful EAS signing is recorded without claiming independent local signature validation.
 - Earlier local-only entries below are historical and superseded by this build record.
 

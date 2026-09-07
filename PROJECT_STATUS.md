@@ -1,6 +1,6 @@
 # Before You Order — Project Status
 
-## Implemented through V1.8 locally
+## Implemented through V1.8 and submitted to Google Play review
 
 - Expo SDK 57 / React Native Android application.
 - One-recommendation decision flow for dine-out, takeaway, or delivery.
@@ -43,7 +43,7 @@
 
 ## Distribution status and remaining boundaries
 
-- Last recorded Play build is V1.7.0 (version code 12); current Play track state has not been refreshed. V1.8.0 production AAB (code 13) finished on EAS and is downloaded with its R8 mapping. Alpha upload is pending: EAS Submit lacks a Google Service Account key, and the independent Chrome connector has a missing runtime component. See BUILD_RECORD.md for exact artifacts and recovery context.
+- V1.8.0 (version code 13) is attached to the closed-testing Alpha track at 100% rollout. On 7 September 2026, Play Console confirmed that the Alpha release plus the pending store/content changes were submitted; the current verified state is `正在审核中的更改`, not yet approved or publicly available. Self-managed publishing is enabled. See BUILD_RECORD.md for exact artifacts and evidence.
 - No public production release or subscription setup.
 - No location permission or precise location collection; nearby discovery is delegated to Google Maps.
 
@@ -55,4 +55,4 @@ SQLite is opened lazily with guarded reads/writes and session memory fallback. I
 
 EAS uses remote version management with autoIncrement for preview/production. No local versionCode is set. The V1.8 production build received code 13. Any future build must use a fresh remote code; uploading the existing code-13 artifact does not require rebuilding.
 
-See docs/V1.8_STABILIZATION.md for source verification, device QA limits and V1.9 backlog. BUILD_RECORD.md records the completed V1.8 cloud build; successful Play upload and release are still unverified.
+See docs/V1.8_STABILIZATION.md for source verification, device QA limits and V1.9 backlog. BUILD_RECORD.md records the completed V1.8 cloud build and the verified Play submission. Google approval and tester availability remain pending.
