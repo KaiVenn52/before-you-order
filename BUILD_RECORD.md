@@ -1,6 +1,6 @@
 # Android Build Record
 
-## V1.8 Google Play closed testing Alpha — 7 September 2026 — submitted for review
+## V1.8 Google Play closed testing Alpha — published 8 September 2026
 
 - EAS build `25c7e580-7885-48b3-b8a2-645b860baefb` finished successfully; source commit `e7672374af9286e2e7bbd4a7700c80378d98e9a3`.
 - Package `com.kaivenn.beforeyouorder`; version `1.8.0`; remote versionCode `13`; production profile with existing remote Android keystore.
@@ -9,7 +9,8 @@
 - R8 mapping: `artifacts/v1.8-production/Before-You-Order-v1.8.0-mapping-v13.txt`, 25,514,522 bytes; SHA-256 `122482187aae32339f0ab8c381a11605a61051aac4a55682b45f29a820c292d7`.
 - Submission profile `alpha` targets closed testing. EAS Submit failed before scheduling because no Google Service Account key is configured, so the release was completed through Play Console instead.
 - Play Console already contained the uploaded `13 (1.8.0)` bundle in its artifact library. That exact bundle was added to the closed-testing Alpha release at 100% rollout, with English and Simplified Chinese release notes.
-- The release and the other pending first-review store/content changes were submitted together. Play Console confirmed `已将 13 项更改送审` and now lists `13 (1.8.0)` under `正在审核中的更改`. Self-managed publishing remains enabled, so submission is verified but approval/availability is not yet claimed.
+- The release and the other pending first-review store/content changes were submitted together. Google approved all 13 changes, and the self-managed release was published on 8 September 2026. Play Console confirmed `更改已发布` and shows `最后发布日期：2026年9月8日`.
+- The Alpha track initially targets 7 countries/regions. All remaining Play-supported locations were selected afterward: Play records 169 additional named countries/regions plus `其他国家/地区`. Those two geographic changes were submitted and are currently under review; global availability is not yet claimed.
 - Play release overview: https://play.google.com/console/u/0/developers/4657272712655016267/app/4972749863108430086/publishing
 - Non-blocking Play warning: estimated new-install download size is 27.6 MB, 7.07 MB larger than the previous release. Supported-device counts did not decrease.
 - No new native-device acceptance results. Local `jarsigner` was unavailable; successful EAS signing is recorded without claiming independent local signature validation.

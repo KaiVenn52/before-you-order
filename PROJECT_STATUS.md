@@ -43,7 +43,7 @@
 
 ## Distribution status and remaining boundaries
 
-- V1.8.0 (version code 13) is attached to the closed-testing Alpha track at 100% rollout. On 7 September 2026, Play Console confirmed that the Alpha release plus the pending store/content changes were submitted; the current verified state is `正在审核中的更改`, not yet approved or publicly available. Self-managed publishing is enabled. See BUILD_RECORD.md for exact artifacts and evidence.
+- V1.8.0 (version code 13) was published to the closed-testing Alpha track at 100% rollout on 8 September 2026 after Google approved the initial 13 changes. The active geographic scope remains 7 countries/regions while expansion to every Play-supported location (169 additional named locations plus `其他国家/地区`) is under review. Self-managed publishing remains enabled, so the geographic expansion must be published after approval.
 - No public production release or subscription setup.
 - No location permission or precise location collection; nearby discovery is delegated to Google Maps.
 
@@ -55,4 +55,4 @@ SQLite is opened lazily with guarded reads/writes and session memory fallback. I
 
 EAS uses remote version management with autoIncrement for preview/production. No local versionCode is set. The V1.8 production build received code 13. Any future build must use a fresh remote code; uploading the existing code-13 artifact does not require rebuilding.
 
-See docs/V1.8_STABILIZATION.md for source verification, device QA limits and V1.9 backlog. BUILD_RECORD.md records the completed V1.8 cloud build and the verified Play submission. Google approval and tester availability remain pending.
+See docs/V1.8_STABILIZATION.md for source verification, device QA limits and V1.9 backlog. BUILD_RECORD.md records the completed V1.8 cloud build, Alpha publication, and pending global-scope review. Tester opt-in and the 14-day closed-test requirement remain separate.
