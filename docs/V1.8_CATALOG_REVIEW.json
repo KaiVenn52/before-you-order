@@ -163,9 +163,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 1,
       "cell": 10,
-      "imageSha256": "246698235bb1535c505f0baf6669beb5de16f8685ded06abe2bbfe9e3ef5c773",
-      "display": "withheld",
-      "imageDecision": "Only plain sliced rice cakes are visible; coconut vegetable gravy is absent. Source authorship is also assumed, not confirmed."
+      "imageSha256": "7fb52c09203f17faf85b0c5cb2aa34acbaab567f451cf5e04c60e0b2135843df",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Lontong Sayur.jpg"
     },
     {
       "mealId": "laksa-johor",
@@ -179,9 +179,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 1,
       "cell": 11,
-      "imageSha256": "c50c4f4a153788aa4723d17030d4f1d8b263528976612e56f1ffafd9b296226c",
-      "display": "withheld",
-      "imageDecision": "Foon Yew laksa image does not establish the spaghetti and thick fish gravy described for Laksa Johor."
+      "imageSha256": "820545383c66cb5d84656a0940c4657e6fd6a01cef5dc3b476f65d344503c2f7",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Johor laksa.JPG"
     },
     {
       "mealId": "ayam-goreng-berempah",
@@ -245,8 +245,8 @@
       "sheet": 2,
       "cell": 3,
       "imageSha256": "e6302b94cd2b713f65997e8985d9fa2dc7b7ed0398373a84799fbc5120b9d600",
-      "display": "withheld",
-      "imageDecision": "Event and serving scene; the porridge cannot be inspected clearly in the card crop."
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Buburlambuk.jpg"
     },
     {
       "mealId": "chicken-rice",
@@ -341,9 +341,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 2,
       "cell": 9,
-      "imageSha256": "027bfb9861356a88b865ed338ef7caa0d7a61c33787101e60ca4c2f1344c96af",
-      "display": "withheld",
-      "imageDecision": "Current local crop does not clearly show curry noodles; corrected metadata alone is insufficient."
+      "imageSha256": "39bfdf0b5fb8dc1ff7ff81785ade2fdabe1d7b1e5325f69b9281405a9477be89",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Curry Mee in Malaysia.jpg"
     },
     {
       "mealId": "pan-mee",
@@ -424,9 +424,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 3,
       "cell": 2,
-      "imageSha256": "c6286221f890498d81c6888834df6bca1ce4e412da14f47169dcdef3acb9e774",
-      "display": "withheld",
-      "imageDecision": "Current local image shows takeaway noodles rather than rice, chopped greens and herb broth."
+      "imageSha256": "9c195a8cfb763750fd0c2027404b22c0d70704c394f8f834f1cec696962a59e3",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Kenny's Mum's 擂茶饭 Lei Cha Rice (1576303537).jpg"
     },
     {
       "mealId": "chinese-fried-rice",
@@ -1204,9 +1204,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 7,
       "cell": 2,
-      "imageSha256": "95da6b11e50689793ff4c78f8e5139acbc7ad0c1f964fa9a7c859e32ec794704",
-      "display": "withheld",
-      "imageDecision": "Uncooked beef on a griddle rather than the finished grilled dish."
+      "imageSha256": "54e78b7afcf34ed61fffb7c1fc63e698e5e480712e1ecf347a28ac4348175d98",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Bulgogi cooked.jpg"
     },
     {
       "mealId": "japchae",
@@ -1657,9 +1657,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 9,
       "cell": 6,
-      "imageSha256": "fd0aa26c7181208dbc21cfad4917f3408c6670c214707c86d96a96eef628b9f4",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "0ae924bd66a7c01ee0c3abd20be39a3cd44880cce229056161d6233f1f733438",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Nasi hujan panas.jpg"
     },
     {
       "mealId": "nasi-kukus",
@@ -1721,9 +1721,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 9,
       "cell": 10,
-      "imageSha256": "130f88f1e19ac9fe13a3fc35c3c7ed48c8f9b1688b8dc80b9968df65dfd591c6",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "6ec207563bc57408dd6330279a9ac273ea1c9f7149373ee7f461b1dc8c624923",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Rendang Tok & Ketupat Palas.jpg"
     },
     {
       "mealId": "daging-masak-hitam",
@@ -1737,9 +1737,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 9,
       "cell": 11,
-      "imageSha256": "127d581c58e91ba28beb8197f0efabd1f71fcec463ef2fd5f7a4ac49898a8cd0",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "227bd6488b978d63555ad86bcdb6535ba94453d816028e1b98600f3e22ab672a",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Daging Masak Hitam.jpg"
     },
     {
       "mealId": "masak-lemak-cili-api",
@@ -1771,9 +1771,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 10,
       "cell": 1,
-      "imageSha256": "3879d8fc8253b7639bf00934474a60573cd380b4d6a6bb77c04a2225ee5c5f72",
-      "display": "withheld",
-      "imageDecision": "Source title describes an exhibition replica."
+      "imageSha256": "21dabba5e62906b33bcab28c8b7cf0cddf594d4d524f20fcb41dcebffb120ae0",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Tempoyak Ikan Patin 1.JPG"
     },
     {
       "mealId": "sambal-sotong",
@@ -1787,9 +1787,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 10,
       "cell": 2,
-      "imageSha256": "cb51ba057abfea6b2bcc8161a9b0731c98193feb5da1538b8e0ab731d315274b",
-      "display": "withheld",
-      "imageDecision": "Source title describes nasi lemak rather than squid."
+      "imageSha256": "271fd4c933839ae7c6619b628abe31979ebfddab4f23fea764f82604c6107e3c",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Sotong sambal.jpg"
     },
     {
       "mealId": "gulai-kawah",
@@ -1820,9 +1820,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 10,
       "cell": 4,
-      "imageSha256": "73627067a153bff79171c8816329d4ac8fdafd034dc3be896bc73b093f21aad7",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "263f3fa0319f956c504bac72ab0812257fa856b0579a8826f308b1a9a3f95c59",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: ROTI JALA & CHICKEN CURRY.jpg"
     },
     {
       "mealId": "sup-tulang",
@@ -1852,9 +1852,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 10,
       "cell": 6,
-      "imageSha256": "f4bce5f791623b81cc48ab78f37a33de4833f90dbb6e2971014f42bbd7589b51",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "5b33cb35cd2a711841ae295c4d3bbbbf74979744f6447ead9384f24202399118",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Nasi Ulam bersama Daging Bakar.jpg"
     },
     {
       "mealId": "penang-hokkien-mee",
@@ -1869,9 +1869,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 10,
       "cell": 7,
-      "imageSha256": "0b1a55956ddebcf45a1ca6c044850d7278f041f1216b08f917b6c3433039a011",
-      "display": "withheld",
-      "imageDecision": "Source describes shrimp and artichoke in Acre, not prawn noodles."
+      "imageSha256": "f7144fbc57e778f96109167c4f02516697e078e70d2065b182d5debf670fe1fc",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Penang-style Hokkien mee.jpg"
     },
     {
       "mealId": "wonton-noodles-soup",
@@ -1918,9 +1918,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 10,
       "cell": 10,
-      "imageSha256": "e5ba16cb2879e1a551bf2fdea6667e70cb610cb9f476aa0fb6b90ac6c106ade3",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "43006bff8b23753a71282fff1efec93c4066b016dcc645a5d126119f6317dd8b",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Fish and Fried Hor Fun Noodles in Egg Sauce and Hongkong-style Milk Tea - Pacific BBQ Cafe AUD9.50 lunch (3517240179).jpg"
     },
     {
       "mealId": "cantonese-fried-noodles",
@@ -1968,9 +1968,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 11,
       "cell": 1,
-      "imageSha256": "28115093d89ced554b7889faa1319232550b418e98fb705c9b17e10c76e15427",
-      "display": "withheld",
-      "imageDecision": "Source describes Shanghai smoked fish and lions head noodles."
+      "imageSha256": "8387636b019b7cd1d73099608233f61e8ac1b1ddc3dce55c1a086c4814b751b9",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Fish Head Noodle in Malaysia.jpg"
     },
     {
       "mealId": "mee-sua-soup",
@@ -2002,8 +2002,8 @@
       "sheet": 11,
       "cell": 3,
       "imageSha256": "026be16623eb1e11ee6b5f7243fe4f2d7da22f81f418a2227127495efa506d9c",
-      "display": "withheld",
-      "imageDecision": "Current image resembles dark fried flat noodles; dry Hakka noodles with mince are not established."
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Hakka Mee, Ipoh, Malaysia.JPG"
     },
     {
       "mealId": "hakka-yong-tau-foo",
@@ -2033,9 +2033,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 11,
       "cell": 5,
-      "imageSha256": "18b5b38c80c6cd5ea7d0f38f105ce385046b46d2e14a2dabf92e96c79d9a5621",
-      "display": "withheld",
-      "imageDecision": "Only hanging roast pork is visible, rather than the plated rice meal."
+      "imageSha256": "e077c4b949e1998e4c9ba58ce594e20d86c8e2718f673c35a0f31c74d262c90d",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Char Siu & Fried Egg with Rice.jpg"
     },
     {
       "mealId": "siu-yuk-rice",
@@ -2049,9 +2049,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 11,
       "cell": 6,
-      "imageSha256": "2cfe8344a6a7bf6acb9951366004ce12c1567f66212979f7af848dcf46182e1c",
-      "display": "withheld",
-      "imageDecision": "Visible glazed char siu does not establish the requested crispy roast pork belly."
+      "imageSha256": "1358bbd3224fdbf328570c367e97a9e9acee1357640d3505dd7da993fcce6cf7",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Crispy Roasted Pork Belly with Rice.jpg"
     },
     {
       "mealId": "dry-bak-kut-teh",
@@ -2099,9 +2099,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 11,
       "cell": 9,
-      "imageSha256": "f065fce4cb69b0b9e554e771bf044fcee242426b0aa461c2659dc03a4503cbe2",
-      "display": "withheld",
-      "imageDecision": "Source describes Thai rat na noodles."
+      "imageSha256": "692dc2440437085010d340ca3e1eb52399e4ec8d41891216b9fdc3f1176520a8",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Ipoh Hor Fun, Yinzo Kopi, Ipoh, Malaysia.jpg"
     },
     {
       "mealId": "kampar-curry-chicken-bread",
@@ -2116,9 +2116,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 11,
       "cell": 10,
-      "imageSha256": "e67231174578781ff5a6727079345ca4bc3ad936d69e3fb0708eedc2766b47fc",
-      "display": "withheld",
-      "imageDecision": "Source describes Japanese curry bun."
+      "imageSha256": "9e5391144f4ebf170254eb9b66f42c993a1ef4600647b63352792194f633351e",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Kampar curry chicken bread.JPG"
     },
     {
       "mealId": "oyster-omelette",
@@ -2149,9 +2149,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 11,
       "cell": 12,
-      "imageSha256": "47e72dc9a2a4e1562f5f243e3c59b602ba20b6cf717ed121623d3494739454a5",
-      "display": "withheld",
-      "imageDecision": "Source describes a nose-to-tail pork plate; preparation unclear."
+      "imageSha256": "251fe40bbb0abf0b23aece924058b0679cfbf7235d840177c663350da6b50adc",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Sweet and Sour Pork - RV90 - 22 August 2024.jpg"
     },
     {
       "mealId": "marmite-chicken",
@@ -2181,9 +2181,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 12,
       "cell": 2,
-      "imageSha256": "f254265deecb679bca5c7c712b4f405c2ad901ee11682bf18cfb8bee7c9bde36",
-      "display": "withheld",
-      "imageDecision": "Source describes honey chicken."
+      "imageSha256": "6874363e76d34260cfd39c2441535c9773c50ddb7f59603d537c228e09d61865",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Salted Egg Chicken from BOK Korean Fried Chicken in Talamban (2026-07-19).jpg"
     },
     {
       "mealId": "butter-prawns",
@@ -2197,9 +2197,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 12,
       "cell": 3,
-      "imageSha256": "0b1a55956ddebcf45a1ca6c044850d7278f041f1216b08f917b6c3433039a011",
-      "display": "withheld",
-      "imageDecision": "Source describes shrimp and artichoke in Acre."
+      "imageSha256": "f350f3de8fd39948df9a5a20526cb2fdfe1b7d9ae0e811b538131696d023401e",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Butter Prawns Batu Ferringhi.JPG"
     },
     {
       "mealId": "kam-heong-lala",
@@ -2213,9 +2213,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 12,
       "cell": 4,
-      "imageSha256": "450736f4327f637f32fb6dbed2de341a71a47ffab19e6b3efd09cf4530197a77",
-      "display": "withheld",
-      "imageDecision": "Source describes general Bulacan fish cuisine; clams unconfirmed."
+      "imageSha256": "0cfa2378238a016aabdee20702a2f0ac0c7e00f270d638f68b8c0432bdaf6ee3",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Kam Heong Lala.jpg"
     },
     {
       "mealId": "claypot-tofu",
@@ -2229,9 +2229,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 12,
       "cell": 5,
-      "imageSha256": "4e31d69d534d26b06f53e374787f72a6fe641471aab2979e174a3aaa1f340b88",
-      "display": "withheld",
-      "imageDecision": "Source describes olive rice."
+      "imageSha256": "228c9d5edcbd25e434cc8642bc5b7affa7cc7187c39b7465e7d13ad10e20d9ac",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: IndonesianFood SapoTauhu.JPG"
     },
     {
       "mealId": "steamed-fish",
@@ -2293,9 +2293,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 12,
       "cell": 9,
-      "imageSha256": "bc18e5d4c9fee79f957f14fee863aa6d6f4b98f55e4898bf5da3f92be381cad7",
-      "display": "withheld",
-      "imageDecision": "Source describes jackfruit biryani."
+      "imageSha256": "32a01c6ce759077394b78f5c3498cbee28c6b2c3f3a7accd6d958d074151f4d0",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Mutton biryani.JPG"
     },
     {
       "mealId": "maggi-goreng",
@@ -2439,9 +2439,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 13,
       "cell": 6,
-      "imageSha256": "ef4aa480d107eadd0cf0be7378ab8212875c4a7b9c7c4dbf2432b0688ef07111",
-      "display": "withheld",
-      "imageDecision": "Source describes Bengali kosha; intended South Indian preparation unconfirmed."
+      "imageSha256": "0286b394184c81b573d18eae40446a0a0b0c6aaa82411fe5dbb5b0ce0bdbc9ac",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: South Indian style Mutton gravy.JPG"
     },
     {
       "mealId": "fish-head-curry",
@@ -2521,9 +2521,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 13,
       "cell": 11,
-      "imageSha256": "4d73f7a88b82beb143a4f3bcc7fee62fe9e6db88d45e5b3fa12d0c66d5998885",
-      "display": "withheld",
-      "imageDecision": "Source describes lime soup."
+      "imageSha256": "936867b72e1e6075435bf05eda2d4cfd88e6f09d98e0c1b4b8eb284b1cfdb871",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Rasam Soup.JPG"
     },
     {
       "mealId": "vegetarian-thali",
@@ -2538,9 +2538,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 13,
       "cell": 12,
-      "imageSha256": "230752a09c66372826f80d8b63105884d0bdbf8420bee541c67c7a29f7d1b947",
-      "display": "withheld",
-      "imageDecision": "Source explicitly describes a non-vegetarian thali."
+      "imageSha256": "48c64fcb06aa6d94a70b9cbbab4227f0ee0894f20ca9d5a3500c8bc07e21cc93",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Vegetarian Thali 2.jpg"
     },
     {
       "mealId": "ayam-pongteh",
@@ -2603,9 +2603,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 14,
       "cell": 4,
-      "imageSha256": "4dcbdd1c4c08a1266b7c6342ad2465d91f01a1c7639ca0936134ef305c362edc",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "3ea9d91d907064aa129652fd3aaa072efc7eecff047d5cb6c149822f4c8bdc80",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Nyonya Laksa.jpg"
     },
     {
       "mealId": "nyonya-chap-chye",
@@ -2686,9 +2686,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 14,
       "cell": 9,
-      "imageSha256": "53d20637d08794e5bb0379c296deefacd5cb5a3239396784de1116f8b040859b",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "b7e54775bd334653c6638790f5ae3346c1ffd5d19d5fd07e395c29eb98a5c2a3",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Nyonya Otak-Otak.jpg"
     },
     {
       "mealId": "pie-tee",
@@ -2768,9 +2768,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 15,
       "cell": 2,
-      "imageSha256": "d085418865f2e51eda2f441aed58d4bc30bcc120244151d47f5f65ee2f8c5b91",
-      "display": "withheld",
-      "imageDecision": "Source describes fermented shrimp condiment cencalok."
+      "imageSha256": "62d25fe5b544ba2298943af5046d84da81062c2c46746270328b47e6aeede1e3",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Sambal udang dan petai.jpg"
     },
     {
       "mealId": "babi-pongteh",
@@ -2817,9 +2817,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 15,
       "cell": 5,
-      "imageSha256": "78cd82f23c9ee6f7d6280fb212e8bf6a326d2da24d5fcc9e938da7301d24bf28",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "ea87631b97b0fc150dc5aa851e53d9df1fc2941b57e18dc8efc1e35ae346ccad",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Kolo Mee khas Sarawak, Malaysia.jpg"
     },
     {
       "mealId": "kampua-mee",
@@ -2849,9 +2849,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 15,
       "cell": 7,
-      "imageSha256": "2d5a6920cdc88f6615585b4f4e18e5e14684ca0809087c733b0f2859836912f6",
-      "display": "withheld",
-      "imageDecision": "Source describes tomato and egg noodles; Sarawak crispy form unconfirmed."
+      "imageSha256": "494aa0ba2e981a55e8a0948168e8807d6478ce65d2c6421b5c1af2116238a27d",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Tomato mee.jpg"
     },
     {
       "mealId": "manok-pansoh",
@@ -2897,9 +2897,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 15,
       "cell": 10,
-      "imageSha256": "a99a143c31fb0f2346a5a1f448ae94b27485f4548d88fa8137ef87d9626faf97",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "1889919ff20d18c0b22e7098b6367dae96862d74449fd24cab01a76b66e857d6",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Umei.JPG"
     },
     {
       "mealId": "mee-sapi",
@@ -2995,9 +2995,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 16,
       "cell": 4,
-      "imageSha256": "20734509c28f36dca3a41adbd6b780437536785f86aa273b8fdad80749985f95",
-      "display": "withheld",
-      "imageDecision": "Source describes tripe in satay sauce with rice, not Sabah soup."
+      "imageSha256": "96bb54c238b8528967d20dc8d157b45b4acc9b2165ef14bf37ac270215368d55",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Ngiu Chap.jpg"
     },
     {
       "mealId": "beaufort-mee",
@@ -3059,9 +3059,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 16,
       "cell": 8,
-      "imageSha256": "9eba849342878f3cb5d3352db853554ea66d1400c2042e2c6010c863dfcf5a17",
-      "display": "withheld",
-      "imageDecision": "Source includes beef and grilled chicken, not the described simmered chicken bowl."
+      "imageSha256": "ab7962ef633cfc8505e0579aa5050d99851cbb8193f27fb82550b2b26000b5de",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Oyakodon 003.jpg"
     },
     {
       "mealId": "tempura-set",
@@ -3076,9 +3076,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 16,
       "cell": 9,
-      "imageSha256": "7f60ee5119712f55043169eeda2e890d334ec5fbdfad062ef95cfeae8ab04da8",
-      "display": "withheld",
-      "imageDecision": "Source describes tempura udon and oden, not rice set."
+      "imageSha256": "5d6dc3bbecd349db9f00d7a17ee30c41782813064e2509f3cced975871067167",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Ebinoya Tempura set meal.jpg"
     },
     {
       "mealId": "sashimi-set",
@@ -3109,9 +3109,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 16,
       "cell": 11,
-      "imageSha256": "61237509a2a0b269f85a367c698d90271adeab781c15ab770d638c842281fccc",
-      "display": "withheld",
-      "imageDecision": "Source describes Hiroshima preparation; Chinese name specifies Osaka."
+      "imageSha256": "64b9441c2804470466f0cf1ec328466b3ec6230b31b5758302d40e6294177aee",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Okonomiyaki 001.jpg"
     },
     {
       "mealId": "omurice",
@@ -3125,9 +3125,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 16,
       "cell": 12,
-      "imageSha256": "555d03bd7673bea073e3100ccec4293aa01594e28eb3334fa044d7f1b6a5158c",
-      "display": "withheld",
-      "imageDecision": "Source title describes cheese decoration; egg-wrapped rice unconfirmed."
+      "imageSha256": "d2a4b73bda273d50baa0dae516808599636b3194b6c75c17f6a73f1e81d46cd4",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Omurice 1.jpg"
     },
     {
       "mealId": "teriyaki-chicken",
@@ -3224,9 +3224,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 17,
       "cell": 6,
-      "imageSha256": "daebb216d63d0d7c4300bccf1805cf73145d22d187c93cc791f78fc411f565b3",
-      "display": "withheld",
-      "imageDecision": "Prepared raw hotpot ingredients rather than a cooked spicy stew."
+      "imageSha256": "c072eb7561eb34d34bb066e525a97628f582ef49e720c305fee7a0efb69dc47b",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Korean stew-Budae jjigae-01.jpg"
     },
     {
       "mealId": "thai-red-curry",
@@ -3241,9 +3241,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 17,
       "cell": 7,
-      "imageSha256": "d379dc6042ad6d848794931dadf4c15aeb93144b4c385fb558996c127b2a6625",
-      "display": "withheld",
-      "imageDecision": "Source describes dry prik khing stir fry, not coconut curry."
+      "imageSha256": "e1aa62089b056b16693523001a69f742c62deb897e22b295d06261b24b701dcf",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Thai Red Curry with Rice.jpg"
     },
     {
       "mealId": "massaman-curry",
@@ -3307,9 +3307,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 17,
       "cell": 11,
-      "imageSha256": "b9fa17bf4dbf200880819671ba2c32f0359fc292fe36f757056ebc5ea3f39eba",
-      "display": "withheld",
-      "imageDecision": "Source and visible topping describe peanut sauce; the catalog specifies fermented-bean sauce."
+      "imageSha256": "e5a49b277a09bd75fc7aa81f49a29ff5ec6ae6d1614d94b669264e24996cd955",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: 2013 Khao man kai Chiang Mai.jpg"
     },
     {
       "mealId": "moo-ping",
@@ -3341,9 +3341,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 18,
       "cell": 1,
-      "imageSha256": "430cffd2d8d7da0b95389480304547d0433df0055ac21e25b70d7b171509c4ee",
-      "display": "withheld",
-      "imageDecision": "Source describes hot and spicy leftovers."
+      "imageSha256": "3a970e7648115bf643696b3df0e0ed1dcec31945a244fb767b455ca924f6f107",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Tom Yum Goong Noodle Soup - Nok Nok Kitchen at The Cow 2024-03-28.jpg"
     },
     {
       "mealId": "khao-soi",
@@ -3391,9 +3391,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 18,
       "cell": 4,
-      "imageSha256": "07a3e41ba5c18d66c6f295414550433ece1157e52bc884294c2082a9e88a493c",
-      "display": "withheld",
-      "imageDecision": "Source describes penyet; geprek preparation unconfirmed."
+      "imageSha256": "82d78cde40c89c4232d46ff1db1424b2a99d5c96597b921b2ef213f24a004314",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Ayam Geprek Uyat.jpg"
     },
     {
       "mealId": "indonesian-nasi-goreng",
@@ -3488,9 +3488,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 18,
       "cell": 10,
-      "imageSha256": "b92f4c424ceb8df50a17c6b94d9b9596ed38e32d2aff0b71a4e7c7bb4d96e494",
-      "display": "withheld",
-      "imageDecision": "Close crop of fried fish does not establish the described sambal, vegetables and rice meal."
+      "imageSha256": "2f192c88ddedd177ac7ee248306f604a8a79cf554445da124ba2df32f98a5e57",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Pecel Lele 1.JPG"
     },
     {
       "mealId": "sate-ayam-indonesia",
@@ -3554,9 +3554,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 19,
       "cell": 2,
-      "imageSha256": "a0258ba18ddd47f82e148ca960a9f5ddbb397a526bfb493b12eaecfc17193f6e",
-      "display": "withheld",
-      "imageDecision": "Chicken and vegetables shown without the described rice meal."
+      "imageSha256": "393f1fc4e0ec37990f44e2ea441926703b0adc74dcf4ae772d39008c10c763b1",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Set menu Ayam Bakar Tempe Tahu.jpg"
     },
     {
       "mealId": "bun-bo-hue",
@@ -3636,9 +3636,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 19,
       "cell": 7,
-      "imageSha256": "70ae9069674f5ac2d53593f6fdcd19851fc1375acd6ed78a9a2b9afdac0866ba",
-      "display": "withheld",
-      "imageDecision": "Source describes Egyptian koshary."
+      "imageSha256": "3c3b9630d303b866d5a41c971b98f31638b8d6fdb36412840c65032c7ca17fe7",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Cơm gà Tam Kỳ, Quảng Nam.JPG"
     },
     {
       "mealId": "bo-kho",
@@ -3653,9 +3653,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 19,
       "cell": 8,
-      "imageSha256": "36ada77d5b01b2c4fce66b056b98c5304ea09cadb0b2f14f1770b7bce8928669",
-      "display": "withheld",
-      "imageDecision": "Source describes generic kho; beef stew unconfirmed."
+      "imageSha256": "4415a5a33dd05237bece678507388b933f762f6ac272f57a049bb790278cb835",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Bo Kho.jpg"
     },
     {
       "mealId": "chicken-burger",
@@ -3835,9 +3835,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 20,
       "cell": 7,
-      "imageSha256": "8856e9dee5923999138cb879fed88a7ca3a6c207c0e642870ca848fd72aeef54",
-      "display": "withheld",
-      "imageDecision": "Source describes a generic MyPlate graphic, not a dish photo."
+      "imageSha256": "df7e6565f9dda5db86505429e2e1e13736418dc0c8fd1c6a6c31405c81450a1b",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Chicken Shawarma Wrap - Lavash 2024-09-11.jpg"
     },
     {
       "mealId": "beef-shawarma",
@@ -3851,9 +3851,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 20,
       "cell": 8,
-      "imageSha256": "b834bad9a064e76f6c6572abaab3823250c0ab6cf98deb0a7486bc86b86db597",
-      "display": "withheld",
-      "imageDecision": "Meat and dips in separate trays; the described filled flatbread is not shown."
+      "imageSha256": "264a0df59f97cfd88d2a642181232ab0bd2abe137381d776a9f672a043bf3833",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Beef Shawarma.jpg"
     },
     {
       "mealId": "falafel-wrap",
@@ -3931,9 +3931,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 21,
       "cell": 1,
-      "imageSha256": "d6743e973870c20f556ddeaa9109efc3d2dd34977920ebaee31340274fe9010d",
-      "display": "withheld",
-      "imageDecision": "Source describes shrimp skewers, not the catalog meat dish."
+      "imageSha256": "968e7b1e13808eca627986b007c437dc4ffdb7af71bc78759f468b5eaa784004",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Lamb shish kebab - Ankara.jpg"
     },
     {
       "mealId": "hummus-pita",

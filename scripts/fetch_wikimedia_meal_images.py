@@ -197,14 +197,20 @@ def commons_image(query: str) -> tuple[str, dict]:
 def clean_metadata(info: dict, meal: dict) -> dict:
     metadata = info.get("extmetadata", {})
     value = lambda key, fallback="": plain_text(metadata.get(key, {}).get("value", fallback))
+    license_name = value("LicenseShortName", "See source")
+    license_url = value("LicenseUrl")
+    if license_url.startswith("http://"):
+        license_url = "https://" + license_url.removeprefix("http://")
+    if license_name.lower() == "public domain" and not license_url:
+        license_url = "https://commons.wikimedia.org/wiki/Commons:Licensing#Material_in_the_public_domain"
     return {
         "mealId": meal["id"],
         "sourceTitle": meal["title"],
         "artist": value("Artist", "Wikimedia contributor"),
         "modifications": ["crop", "resize", "webp-conversion"],
         "attributionStatus": "imported",
-        "license": value("LicenseShortName", "See source"),
-        "licenseUrl": value("LicenseUrl"),
+        "license": license_name,
+        "licenseUrl": license_url,
         "sourceUrl": info.get("descriptionurl") or info.get("descriptionshorturl") or info.get("url"),
     }
 

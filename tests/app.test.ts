@@ -165,14 +165,13 @@ test('App: venue flow, credits links and image error fallback remain accessible'
   } finally { await act(async () => app.unmount()); }
 });
 
-test('App: attribution failures have a translated link error and a working retry', async () => {
+test('App: attribution links have translated errors and a working retry', async () => {
   for (const language of ['en', 'zh']) {
     reset(); locale = language;
     const app = await mount();
     try {
       await press(app, language === 'en' ? 'Photo credits' : '图片来源');
       assert.match(text(app.root), language === 'en' ? /Converted to WebP/ : /已转换为 WebP/);
-      assert.match(text(app.root), language === 'en' ? /author as assumed/ : /作者标为推定/);
       const link = app.root.findAll(node => String(node.type) === 'Pressable' && node.props.accessibilityRole === 'link')[0];
       mapsFail = true;
       await act(async () => link.props.onPress());

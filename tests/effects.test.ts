@@ -44,7 +44,7 @@ test('244 credits have clean authors and valid source/license URLs, with origina
   for (const id of Object.keys(imageReview)) {
     assert.ok(meals.some(meal => meal.id === id)); assert.equal(needsNeutralImage(id), true);
   }
-  assert.equal(needsNeutralImage('curry-mee'), true, 'local pixels must agree with the credited dish');
+  assert.equal(needsNeutralImage('chilli-pan-mee'), true, 'local pixels must agree with the credited dish');
   const bad = [{ ...credits[0], artist: '<b>author</b>', licenseUrl: '' }];
   assert.equal(auditCredits(bad, [bad[0].mealId]).errors.length, 2);
   const missingChanges = [{ ...credits[0], modifications: [] }];
