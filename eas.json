@@ -26,5 +26,13 @@
         ]
       }
     }
+  },
+  "submit": {
+    "alpha": {
+      "android": {
+        "track": "alpha",
+        "releaseStatus": "completed"
+      }
+    }
   }
 }

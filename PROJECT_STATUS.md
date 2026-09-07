@@ -43,7 +43,7 @@
 
 ## Distribution status and remaining boundaries
 
-- V1.7.0 (version code 12) remains the Google Play internal-testing build. V1.8.0 is local source work only until a separately approved store build and upload.
+- Last recorded Play build is V1.7.0 (version code 12); current Play track state has not been refreshed. V1.8.0 production AAB (code 13) finished on EAS and is downloaded with its R8 mapping. Alpha upload is pending: EAS Submit lacks a Google Service Account key, and the independent Chrome connector has a missing runtime component. See BUILD_RECORD.md for exact artifacts and recovery context.
 - No public production release or subscription setup.
 - No location permission or precise location collection; nearby discovery is delegated to Google Maps.
 
@@ -53,6 +53,6 @@ The home screen offers Pick for me, collapsed optional cuisine/food filters, and
 
 SQLite is opened lazily with guarded reads/writes and session memory fallback. If the persisted blacklist cannot be read at startup, dish picks pause and venue selection remains available; restart retries storage. Failures after a successful load retain the cached blacklist and disclose temporary storage. Optional haptics never block an action. External links report errors with retry.
 
-EAS uses remote version management with autoIncrement for preview/production. No local versionCode is set. The prior recorded Play version is 12; the next build must obtain a new remote code greater than all previously used codes. The current remote counter was not fetched or changed during stabilization; do not assume it is 13.
+EAS uses remote version management with autoIncrement for preview/production. No local versionCode is set. The V1.8 production build received code 13. Any future build must use a fresh remote code; uploading the existing code-13 artifact does not require rebuilding.
 
-See docs/V1.8_STABILIZATION.md for current verification, device QA limits and V1.9 backlog. V1.8 is not an AAB, EAS build, Play upload or store submission.
+See docs/V1.8_STABILIZATION.md for source verification, device QA limits and V1.9 backlog. BUILD_RECORD.md records the completed V1.8 cloud build; successful Play upload and release are still unverified.

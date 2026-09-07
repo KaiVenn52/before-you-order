@@ -1,5 +1,17 @@
 # Android Build Record
 
+## V1.8 production AAB — 7 September 2026 — upload pending
+
+- EAS build `25c7e580-7885-48b3-b8a2-645b860baefb` finished successfully; source commit `e7672374af9286e2e7bbd4a7700c80378d98e9a3`.
+- Package `com.kaivenn.beforeyouorder`; version `1.8.0`; remote versionCode `13`; production profile with existing remote Android keystore.
+- Build: https://expo.dev/accounts/kaivenns-team/projects/before-you-order/builds/25c7e580-7885-48b3-b8a2-645b860baefb
+- Local AAB: `artifacts/v1.8-production/Before-You-Order-v1.8.0-production-v13.aab`, 71,661,998 bytes; SHA-256 `377a75baf42e14fb479bed0f6ebe84bca98d4f39af4c2d10972f448965f8dbaf`.
+- R8 mapping: `artifacts/v1.8-production/Before-You-Order-v1.8.0-mapping-v13.txt`, 25,514,522 bytes; SHA-256 `122482187aae32339f0ab8c381a11605a61051aac4a55682b45f29a820c292d7`.
+- Submission profile `alpha` targets closed testing. EAS Submit failed before scheduling a submission because no Google Service Account key is configured. No successful Play upload or release is established.
+- Independent Chrome bootstrap failed twice: configured browser service version `26.901.51231` is missing; installed version is `26.901.31953`. Browser session reset did not resolve it. Restore the browser connector before retrying the UI upload.
+- No new native-device acceptance results. Local `jarsigner` was unavailable; successful EAS signing is recorded without claiming independent local signature validation.
+- Earlier local-only entries below are historical and superseded by this build record.
+
 ## V1.8 core stabilization — 6 September 2026 — local verification only
 
 - Status: `LOCAL SOURCE CHECKED — READY FOR AN APPROVED TEST BUILD; NO NATIVE BUILD OR UPLOAD`
