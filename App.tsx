@@ -16,8 +16,8 @@ import { cuisineLabels, foodTypeLabels, meals } from './src/data/meals';
 import { needsNeutralImage } from './src/data/imageReview';
 import { mealImages } from './src/data/mealImages';
 import { venueTypes } from './src/data/venues';
-import { ignoreFailure, openExternalUrl } from './src/domain/effects';
-import { buildMealSubject, buildNearbyQuery, googleMapsSearchUrl, type SearchStrategy } from './src/domain/places';
+import { ignoreFailure, openExternalUrl, openFirstExternalUrl } from './src/domain/effects';
+import { androidMapsSearchUrl, buildMealSubject, buildNearbyQuery, googleMapsSearchUrl, type SearchStrategy } from './src/domain/places';
 import { pickDifferentItem, pickMeal, recommendationReason, recommendMeals } from './src/domain/recommend';
 import type { CuisineId, DecisionMode, EatingMode, FoodType, Language, Meal, MealFeedback, VenueTypeId } from './src/domain/types';
 import { priceLabel, tr, type CopyKey } from './src/i18n';
@@ -202,8 +202,11 @@ function AppContent() {
     setConfirmation('restored'); setHiddenFoodsVisible(false);
   };
   const openMapSearch = async (subject: string, strategy: SearchStrategy, vegetarian = false) => {
-    const url = googleMapsSearchUrl(buildNearbyQuery(subject, strategy, mode, vegetarian));
-    await openExternalUrl(url, Linking.openURL, () => Alert.alert(tr(language, 'mapsError'), tr(language, 'mapsErrorBody'), [{ text: tr(language, 'cancel') }, { text: tr(language, 'retry'), onPress: () => { void openMapSearch(subject, strategy, vegetarian); } }]));
+    const query = buildNearbyQuery(subject, strategy, mode, vegetarian);
+    const urls = Platform.OS === 'android'
+      ? [androidMapsSearchUrl(query), googleMapsSearchUrl(query)]
+      : [googleMapsSearchUrl(query)];
+    await openFirstExternalUrl(urls, Linking.openURL, () => Alert.alert(tr(language, 'mapsError'), tr(language, 'mapsErrorBody'), [{ text: tr(language, 'cancel') }, { text: tr(language, 'retry'), onPress: () => { void openMapSearch(subject, strategy, vegetarian); } }]));
   };
   const findMeal = async (meal: Meal, strategy: SearchStrategy) => {
     await openMapSearch(buildMealSubject(meal), strategy);

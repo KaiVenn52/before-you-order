@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { ignoreFailure, openExternalUrl } from '../src/domain/effects';
-import { buildMealSubject, buildNearbyQuery, googleMapsSearchUrl } from '../src/domain/places';
+import { ignoreFailure, openExternalUrl, openFirstExternalUrl } from '../src/domain/effects';
+import { androidMapsSearchUrl, buildMealSubject, buildNearbyQuery, googleMapsSearchUrl } from '../src/domain/places';
 import { meals } from '../src/data/meals';
 import credits from '../src/data/imageCredits.json';
 import { auditCredits } from '../src/domain/catalogAudit';
@@ -51,4 +51,16 @@ test('244 credits have clean authors and valid source/license URLs, with origina
   assert.match(auditCredits(missingChanges, [credits[0].mealId]).errors.join(), /processing record/);
   const assumed = [{ ...credits[0], attributionStatus: 'source-assumed' }];
   assert.match(auditCredits(assumed, [credits[0].mealId]).errors.join(), /qualification missing/);
+});
+
+test('Android Maps falls back to the browser when no app handles the geo URL', async () => {
+  const query = 'chicken rice 鸡饭 Malaysia near me';
+  const attempted: string[] = [];
+  const success = await openFirstExternalUrl(
+    [androidMapsSearchUrl(query), googleMapsSearchUrl(query)],
+    async url => { attempted.push(url); if (url.startsWith('geo:')) throw new Error('No maps app'); },
+    () => assert.fail('the HTTPS fallback should open'),
+  );
+  assert.equal(success, true);
+  assert.deepEqual(attempted, [androidMapsSearchUrl(query), googleMapsSearchUrl(query)]);
 });

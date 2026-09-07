@@ -22,3 +22,7 @@ export function buildNearbyQuery(
 export function googleMapsSearchUrl(query: string): string {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 }
+
+export function androidMapsSearchUrl(query: string): string {
+  return `geo:0,0?q=${encodeURIComponent(query)}`;
+}

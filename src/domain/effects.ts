@@ -4,12 +4,17 @@ export async function ignoreFailure(effect: () => Promise<unknown>): Promise<voi
 }
 
 export async function openExternalUrl(url: string, open: (url: string) => Promise<unknown>, onError: () => void): Promise<boolean> {
-  try {
-    if (!/^https:\/\//i.test(url)) throw new Error('Unsupported external URL');
-    await open(url);
-    return true;
-  } catch {
-    onError();
-    return false;
+  return openFirstExternalUrl([url], open, onError);
+}
+
+export async function openFirstExternalUrl(urls: string[], open: (url: string) => Promise<unknown>, onError: () => void): Promise<boolean> {
+  const safeUrls = urls.filter(url => /^(https:\/\/|geo:)/i.test(url));
+  for (const url of safeUrls) {
+    try {
+      await open(url);
+      return true;
+    } catch { /* Try the next safe target before showing an error. */ }
   }
+  try { onError(); } catch { /* Error UI is best-effort too. */ }
+  return false;
 }
