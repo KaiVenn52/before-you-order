@@ -186,7 +186,7 @@ test('App: attribution failures have a translated link error and a working retry
 
 test('App: original placeholders use translated native content rather than baked English labels', async () => {
   reset(); locale = 'zh';
-  meals.filter(meal => meal.id !== 'roti-canai').forEach(meal => storage.blacklistMeal(meal.id));
+  meals.filter(meal => meal.id !== 'roti-bawang').forEach(meal => storage.blacklistMeal(meal.id));
   const app = await mount();
   try {
     assert.equal(app.root.findAll(node => String(node.type) === 'Image').length, 0);

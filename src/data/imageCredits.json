@@ -437,15 +437,16 @@
   {
     "mealId": "roti-canai",
     "sourceTitle": "Roti canai",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "ZhengZhou",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malaysian_Roti_Canai.jpg"
   },
   {
     "mealId": "thosai",
@@ -534,15 +535,16 @@
   {
     "mealId": "idli-sambar",
     "sourceTitle": "Idli",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Sudhan Ram",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Idli_with_sambar_and_chutney_05.jpg"
   },
   {
     "mealId": "banana-leaf-rice",
@@ -729,15 +731,16 @@
   {
     "mealId": "mushroom-soup",
     "sourceTitle": "Cream of mushroom soup",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Ceeseven",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bowl_of_Cream_of_Mushroom_Soup.JPG"
   },
   {
     "mealId": "club-sandwich",
@@ -798,15 +801,16 @@
   {
     "mealId": "lasagna",
     "sourceTitle": "Lasagna",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Marife.altabano",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lasagna_02.jpg"
   },
   {
     "mealId": "sushi-set",
@@ -1654,15 +1658,16 @@
   {
     "mealId": "loh-mee",
     "sourceTitle": "Loh mee",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Orderinchaos",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Penang_loh_mee_Uncle_Eddies_Perth_2022-02.jpg"
   },
   {
     "mealId": "fish-head-noodles",
@@ -1750,15 +1755,16 @@
   {
     "mealId": "dry-bak-kut-teh",
     "sourceTitle": "Bak kut teh",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "CherylGarnet",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dry_bah_kut_teh.jpg"
   },
   {
     "mealId": "penang-chee-cheong-fun",
@@ -1972,15 +1978,16 @@
   {
     "mealId": "roti-telur",
     "sourceTitle": "Roti telur",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "AssFeder",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Traditional_roti_telur_(egg_flatbread).jpg"
   },
   {
     "mealId": "roti-bawang",
@@ -2025,15 +2032,16 @@
   {
     "mealId": "rava-thosai",
     "sourceTitle": "Rava thosai",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "SamarthBhandavale",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rava_Dosa_with_Coconut_Chutney.jpg"
   },
   {
     "mealId": "poori",
@@ -2080,28 +2088,30 @@
   {
     "mealId": "fish-head-curry",
     "sourceTitle": "Fish head curry",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Mdsheth1986",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kari_Kepala_Ikan_Merah.jpg"
   },
   {
     "mealId": "palak-paneer",
     "sourceTitle": "Palak paneer",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Daniel Zemans",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palak_Paneer_curry_on_plate.jpg"
   },
   {
     "mealId": "paneer-tikka",
@@ -2570,15 +2580,16 @@
   {
     "mealId": "gyudon",
     "sourceTitle": "Gyudon",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Wide Awake!",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gyudon_from_Marugame_Udon_(2025-01-12).jpg"
   },
   {
     "mealId": "oyakodon",
@@ -2653,15 +2664,16 @@
   {
     "mealId": "teriyaki-chicken",
     "sourceTitle": "Teriyaki chicken rice",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Wide Awake!",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teriyaki_Chicken_Rice_Bowl_from_Botejyu_(2024-12-21).jpg"
   },
   {
     "mealId": "samgyeopsal",
@@ -2764,15 +2776,16 @@
   {
     "mealId": "pad-see-ew",
     "sourceTitle": "Pad see ew",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "T.Tseng",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pad_See_Ew_%E0%B8%9C%E0%B8%B1%E0%B8%94%E0%B8%8B%E0%B8%B5%E0%B8%AD%E0%B8%B4%E0%B9%8A%E0%B8%A7-_rice_noodles_cooked_in_a_wok_with_chicken,_chinese_broccoli,_egg,_black_soy_sauce.jpg"
   },
   {
     "mealId": "boat-noodles",
@@ -2833,15 +2846,16 @@
   {
     "mealId": "khao-soi",
     "sourceTitle": "Khao soi",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Chainwit.",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Khao_Soi_Northern_Thai_food_%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%8B%E0%B8%AD%E0%B8%A2_%E0%B8%9C%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B8%AD%E0%B8%87.jpg"
   },
   {
     "mealId": "larb",
@@ -2916,15 +2930,16 @@
   {
     "mealId": "rawon",
     "sourceTitle": "Rawon",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "christian r from Jakarta",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rawon_Setan.jpg"
   },
   {
     "mealId": "gado-gado",
@@ -2957,15 +2972,16 @@
   {
     "mealId": "sate-ayam-indonesia",
     "sourceTitle": "Satay",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Ardfeb",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sate_Ayam_Al-Huda_Jember.jpg"
   },
   {
     "mealId": "indonesian-martabak",
@@ -3025,15 +3041,16 @@
   {
     "mealId": "com-tam",
     "sourceTitle": "Cơm tấm",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Christopher Crouzet",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:C%C6%A1m_T%E1%BA%A5m,_Da_Nang,_Vietnam.jpg"
   },
   {
     "mealId": "banh-xeo",
@@ -3150,54 +3167,58 @@
   {
     "mealId": "eggs-benedict",
     "sourceTitle": "Eggs Benedict",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "cyclonebill from Copenhagen, Denmark",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eggs_Benedict_(6933880370).jpg"
   },
   {
     "mealId": "pancakes",
     "sourceTitle": "Pancakes",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "naviniea",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pancakes_at_Commander%27s_Palace_restaurant,_New_Orleans.jpg"
   },
   {
     "mealId": "waffles",
     "sourceTitle": "Waffles",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Infrogmation of New Orleans",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waffles_on_Maple_Counter.jpg"
   },
   {
     "mealId": "roast-chicken",
     "sourceTitle": "Roast chicken",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Michael J. Bennett",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roasted_Chicken_Dinner_Plate,_Broccoli,_Stuffing,_Potatoes,_Demi_Glace.jpg"
   },
   {
     "mealId": "lamb-chop",
@@ -3216,15 +3237,16 @@
   {
     "mealId": "chicken-pie",
     "sourceTitle": "Chicken pie",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "MonicaVereanaWilliams",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Pot_Pie,_cut_open.jpg"
   },
   {
     "mealId": "chicken-shawarma",
@@ -3285,15 +3307,16 @@
   {
     "mealId": "lamb-mandi",
     "sourceTitle": "Lamb mandi",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Moheen Reeyad",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mandi_Lamb_Shank,_Lepak_@_Sultan,_62_Bussorah_St,_Singapore_(01).jpg"
   },
   {
     "mealId": "kabsa",
@@ -3326,15 +3349,16 @@
   {
     "mealId": "hummus-pita",
     "sourceTitle": "Hummus with pita",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Indian-photographer",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pita_bread_and_Hummus.jpg"
   },
   {
     "mealId": "shakshuka",

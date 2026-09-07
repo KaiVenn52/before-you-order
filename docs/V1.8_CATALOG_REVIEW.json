@@ -409,8 +409,8 @@
       "sheet": 3,
       "cell": 1,
       "imageSha256": "513922bb49cadeefe7a9839ef04dbf9d7a28e720fa47983233dbd752106e6a0c",
-      "display": "withheld",
-      "imageDecision": "Current local image shows a rice plate without a claypot; source title alone does not verify the bytes."
+      "display": "photo",
+      "imageDecision": "Verified exact-dish Wikimedia photograph: Claypot Chicken Rice, Singapore.JPG."
     },
     {
       "mealId": "lei-cha",
@@ -490,8 +490,8 @@
       "sheet": 3,
       "cell": 6,
       "imageSha256": "211f6304623394d16ebc1bf9a0d7dec2c1e5959adbe1ce82d6243576c5687108",
-      "display": "withheld",
-      "imageDecision": "Tight roast-duck crop does not show the rice meal described."
+      "display": "photo",
+      "imageDecision": "Verified exact-dish Wikimedia photograph: Roast duck rice in Singapore.jpg."
     },
     {
       "mealId": "fish-ball-noodles",
@@ -522,9 +522,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 3,
       "cell": 8,
-      "imageSha256": "3ea4d8048b990018c6e10d99369ed29e5af584ec6a12ba282778d88a4500b668",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "3e85831ef3fc009740f565821f59107f22ae4394c26c90491696abb0fc78ed65",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Malaysian Roti Canai.jpg"
     },
     {
       "mealId": "thosai",
@@ -635,9 +635,9 @@
       "categoryDecision": "Corrected bread to light: steamed rice cakes with lentil soup.",
       "sheet": 4,
       "cell": 3,
-      "imageSha256": "18fb997620dae176c897cb90c1a49805b1b8add085d0950eae78ea46ec4b835f",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "4f08254009ea79af748a455179b65448077fbb7c758123a60948aaef430bae79",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Idli with sambar and chutney 05.jpg"
     },
     {
       "mealId": "banana-leaf-rice",
@@ -860,9 +860,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 5,
       "cell": 5,
-      "imageSha256": "f4c01fac6a09adee91dd507fb2b503af58ad1928f76f4d3d179950fffccbc1d1",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "b5dfea183dc71910910d01c27bf63add0d3b743e6dc7a3f8c19d7e673bf402e6",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Bowl of Cream of Mushroom Soup.JPG"
     },
     {
       "mealId": "club-sandwich",
@@ -942,9 +942,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 5,
       "cell": 10,
-      "imageSha256": "417d76ef8cf0cf308eb33fa8b4545d94367069560bba87cb0af550f9d14367dd",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "1c2781be1df2fc2dbf0bdf28aa3e555184d6bce6d2111cbe8c02737d8acffb0a",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Lasagna 02.jpg"
     },
     {
       "mealId": "sushi-set",
@@ -1951,9 +1951,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 10,
       "cell": 12,
-      "imageSha256": "ee0cf19b1aa277d32a76b1888924aef066c2acace34751886ab594a48b5a5340",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "63a2f0eb7762a283a466a52a7d32b229529e949d113cfcd64ea09dcf454bf395",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Penang loh mee Uncle Eddies Perth 2022-02.jpg"
     },
     {
       "mealId": "fish-head-noodles",
@@ -2065,9 +2065,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 11,
       "cell": 7,
-      "imageSha256": "2ed31d6185c1f18ba11e7b5ada4a82fcf2f05dfb8a3a798331fcac78ec45bc2c",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "af0ec1f408b5528c7f05c57e0d9ad0c4961ebf9c041b6d3b9b263adc1dfe0c50",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Dry bah kut teh.jpg"
     },
     {
       "mealId": "penang-chee-cheong-fun",
@@ -2325,9 +2325,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 12,
       "cell": 11,
-      "imageSha256": "cc8d889c1d118f59cc74f98c97ec4b6ccc2289e1b42090a946b486ff4f07a987",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "b4dee1764311df2db8ac85dd07a713af554ad8abddecbed4103b6a3ada71fd52",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Traditional roti telur (egg flatbread).jpg"
     },
     {
       "mealId": "roti-bawang",
@@ -2390,9 +2390,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 13,
       "cell": 3,
-      "imageSha256": "0176f65e8ab5ff34032399ba2a4f51bcb499d2d9ac48c5543e32da99bc24d33c",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "c3db903cb2ea7d1626d4a0af56233a20ce347eeb84f71220db888599a4878c17",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Rava Dosa with Coconut Chutney.jpg"
     },
     {
       "mealId": "poori",
@@ -2456,9 +2456,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 13,
       "cell": 7,
-      "imageSha256": "acf8c76be03b25a51b538ec2c7fc65539fa7258133ee83cf01862789c45d8b5a",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "98e1ca9aeaa863fb41dbfa2d2e8b11d8808b51ebbd0dc857a3dc89f0e17f21d1",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Kari Kepala Ikan Merah.jpg"
     },
     {
       "mealId": "palak-paneer",
@@ -2472,9 +2472,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 13,
       "cell": 8,
-      "imageSha256": "52258c34e186a1f3f626f7f35e9b224dac258e9c7b01b17edc9015d73c7c4187",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "18e1fe81a5870c9ed95659f0f4e3b1c7188ad734d0b9e27c8396659998391220",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Palak Paneer curry on plate.jpg"
     },
     {
       "mealId": "paneer-tikka",
@@ -3043,9 +3043,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 16,
       "cell": 7,
-      "imageSha256": "b66387dda239da4a63cdc52246a33447bf3afc90b40fb10eae79eacdbb0480ca",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "5e3d67e0c6dea5d4c0874ba9a60ff8efd25c87af0bb205a594e4df58dbca8739",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Gyudon from Marugame Udon (2025-01-12).jpg"
     },
     {
       "mealId": "oyakodon",
@@ -3141,9 +3141,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 17,
       "cell": 1,
-      "imageSha256": "e6add2d8176913ab50d56fc34fa35790f4e35def418c4a1831c04219eb4aa20f",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "cd0ed173d2e7da3c19c515b73700ad3895e8f436751511e00fc141406f14f28f",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Teriyaki Chicken Rice Bowl from Botejyu (2024-12-21).jpg"
     },
     {
       "mealId": "samgyeopsal",
@@ -3274,9 +3274,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 17,
       "cell": 9,
-      "imageSha256": "05fd50ecff664fe468b69c0546b3e9fcbf12eafa13c611baa6cdf9a0e4aa726d",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "1de61d5eee3e1d9593a54fe5795b066d8b8f276d9f616a3483f19230ca728075",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Pad See Ew ผัดซีอิ๊ว- rice noodles cooked in a wok with chicken, chinese broccoli, egg, black soy sauce.jpg"
     },
     {
       "mealId": "boat-noodles",
@@ -3358,9 +3358,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 18,
       "cell": 2,
-      "imageSha256": "aed7e7f4db4009b0a180b9884fd9e6f786abcc57cdba714a990e196ae2640512",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "f3df04f71a9bc5544627567d583d504ba0f26cf2bcb0e22a36f4ddf90171498b",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Khao Soi Northern Thai food ข้าวซอย ผักดอง.jpg"
     },
     {
       "mealId": "larb",
@@ -3456,9 +3456,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 18,
       "cell": 8,
-      "imageSha256": "902750bbaecac67c3744850ac7401ff81a7332392d2ab56a720bb683439870be",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "2becf5c906f9a00713643a7e540d1c592a38aff8326a96aebb13193bf5154863",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Rawon Setan.jpg"
     },
     {
       "mealId": "gado-gado",
@@ -3505,9 +3505,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 18,
       "cell": 11,
-      "imageSha256": "fea75d25360be65c135231146a12e1bbae43b1d3069e3dcf127830858212b0f4",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "c26cd0925031bf9fdc06398e996291bec1e4022447458e9f8ef045905dbdb57c",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Sate Ayam Al-Huda Jember.jpg"
     },
     {
       "mealId": "indonesian-martabak",
@@ -3587,9 +3587,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 19,
       "cell": 4,
-      "imageSha256": "377a3a1aa44644777fec9113681d3517312e37b9ffffc3e4bd4042dcd0e200cc",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "4e9fb9261cfd09198e38689159c3646468b4fc83a27ac367967baca37185364e",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Cơm Tấm, Da Nang, Vietnam.jpg"
     },
     {
       "mealId": "banh-xeo",
@@ -3736,9 +3736,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 20,
       "cell": 1,
-      "imageSha256": "0d01af6f0b420db0419fc34e03184de7074f68362949620639d0a190d364fb2d",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "8ca2fd6909dba10fb2a15898c41e44ff53f20fa6e74180bde2166da5cae9b89e",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Eggs Benedict (6933880370).jpg"
     },
     {
       "mealId": "pancakes",
@@ -3753,9 +3753,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 20,
       "cell": 2,
-      "imageSha256": "a16c0fa0ac6deb16d210f8384a39f224793778b6e6c20eebade7a0452c8ac6a3",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "41af87aed28867962b82b256b76445d577be225707b811c2a31b0d32f7f01b71",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Pancakes at Commander's Palace restaurant, New Orleans.jpg"
     },
     {
       "mealId": "waffles",
@@ -3770,9 +3770,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 20,
       "cell": 3,
-      "imageSha256": "29d791ef29b5a46ad9637cd84ee0fbaaad13da6b850199bf3d847e5ecd055692",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "01c2600f5a0e9f38831e0ffad6d2e61236da4c1170a63abf9cb0720de912175b",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Waffles on Maple Counter.jpg"
     },
     {
       "mealId": "roast-chicken",
@@ -3786,9 +3786,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 20,
       "cell": 4,
-      "imageSha256": "65579dd757a3b1d49c2dd4ec1108bd5268ea62c3709e40eca21d1f90393f67ea",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "a1d98c3213ac838cc6cc14b27dc4f8cc63d7e6ac52bff257fa46b5e1a3589268",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Roasted Chicken Dinner Plate, Broccoli, Stuffing, Potatoes, Demi Glace.jpg"
     },
     {
       "mealId": "lamb-chop",
@@ -3819,9 +3819,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 20,
       "cell": 6,
-      "imageSha256": "ea9ce70952277d817ac402844c840e1896b4aa377d4f2bfe25456d592318619e",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "4964879a6c939f2f8b04c52d657f7cbca0e469139f2539df8826ec832aa59126",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Chicken Pot Pie, cut open.jpg"
     },
     {
       "mealId": "chicken-shawarma",
@@ -3899,9 +3899,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 20,
       "cell": 11,
-      "imageSha256": "9430af886738dda057dda3cae291a05089d0b52d21fe869e43ce86c564e28a89",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "143181dac9fa8901381541b4061896211d312082efc4eb36c536da229f0feecd",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Mandi Lamb Shank, Lepak @ Sultan, 62 Bussorah St, Singapore (01).jpg"
     },
     {
       "mealId": "kabsa",
@@ -3948,9 +3948,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 21,
       "cell": 2,
-      "imageSha256": "f14d7c1de8291dc8843130e84d4cf74083a8cea2f802c099e9722369e5324438",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "854793d772becb6871ce316d94700037ece519ee53cc95bad412873bbbc7ddd4",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Pita bread and Hummus.jpg"
     },
     {
       "mealId": "shakshuka",
