@@ -80,7 +80,7 @@ test('App: Another preserves preferences, saving retains card, haptics failures 
   reset(); t.mock.method(Math, 'random', () => 0.95);
   const app = await mount();
   try {
-    assert.equal(app.root.findAll(node => String(node.type) === 'Pressable' && text(node) === 'Rice').length, 0);
+    assert.equal(app.root.findAll(node => String(node.type) === 'Pressable' && text(node) === 'Rice').length, 1);
     const previous = currentName(app); const settings = storage.getUserSettings();
     await press(app, 'Another'); assert.notEqual(currentName(app), previous);
     assert.deepEqual(storage.getFeedback(), []); assert.deepEqual(storage.getUserSettings(), settings);
@@ -102,7 +102,7 @@ test('App: mode and filters resample, random cuisine changes, and hidden meals s
   const app = await mount();
   try {
     await press(app, 'Delivery'); assert.notEqual(currentName(app), meals[0].name);
-    await press(app, 'Narrow it down'); await press(app, 'Rice');
+    await press(app, 'Rice');
     assert.ok(meals.find(m => m.name === currentName(app))?.foodTypes.includes('rice'));
     const surprise = app.root.findAll(node => String(node.type) === 'Pressable' && text(node).includes('Surprise me with a cuisine'))[0];
     await act(async () => surprise.props.onPress()); const cuisine = storage.getUserSettings().lastCuisine;
@@ -115,20 +115,20 @@ test('App: mode and filters resample, random cuisine changes, and hidden meals s
   } finally { await act(async () => app.unmount()); }
 });
 
-test('App: Narrow it down starts collapsed and resets after switching decision modes', async () => {
+test('App: Narrow it down starts expanded and resets expanded after switching decision modes', async () => {
   reset();
   const app = await mount();
   try {
-    assert.equal(button(app, 'Narrow it down').props.accessibilityState.expanded, false);
-    assert.equal(app.root.findAll(node => String(node.type) === 'Pressable' && text(node) === 'Rice').length, 0);
-    assert.match(text(app.root), /Version 1\.11\.0/);
-    await press(app, 'Narrow it down');
     assert.equal(button(app, 'Narrow it down').props.accessibilityState.expanded, true);
     assert.equal(app.root.findAll(node => String(node.type) === 'Pressable' && text(node) === 'Rice').length, 1);
-    await press(app, 'A place type');
-    await press(app, 'A specific dish');
+    assert.match(text(app.root), /Version 1\.11\.0/);
+    await press(app, 'Narrow it down');
     assert.equal(button(app, 'Narrow it down').props.accessibilityState.expanded, false);
     assert.equal(app.root.findAll(node => String(node.type) === 'Pressable' && text(node) === 'Rice').length, 0);
+    await press(app, 'A place type');
+    await press(app, 'A specific dish');
+    assert.equal(button(app, 'Narrow it down').props.accessibilityState.expanded, true);
+    assert.equal(app.root.findAll(node => String(node.type) === 'Pressable' && text(node) === 'Rice').length, 1);
   } finally { await act(async () => app.unmount()); }
 });
 
@@ -235,7 +235,7 @@ test('App: impossible filters are disabled and language switching translates sav
   reset(); t.mock.method(Math, 'random', () => 0.5);
   const app = await mount();
   try {
-    await press(app, 'Narrow it down'); await press(app, 'Korean');
+    await press(app, 'Korean');
     assert.equal(button(app, 'Bread & wraps').props.disabled, true);
     assert.equal(button(app, 'Noodles').props.disabled, false);
     await press(app, 'I chose this');

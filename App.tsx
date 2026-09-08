@@ -52,7 +52,7 @@ function AppContent() {
   const [language, setLanguage] = useState<Language>(() => getLocales()[0]?.languageCode?.startsWith('zh') ? 'zh' : 'en');
   const [canRecommend, setCanRecommend] = useState(false);
   const [ready, setReady] = useState(false);
-  const [narrow, setNarrow] = useState(false);
+  const [narrow, setNarrow] = useState(true);
   const feedbackGuard = useRef<string | null>(null);
   const [savedId, setSavedId] = useState<string | null>(null);
   const [undoId, setUndoId] = useState<string | null>(null);
@@ -153,7 +153,7 @@ function AppContent() {
     saveUserSettings(defaultPreferences, next, nextCuisine);
   };
   const changeDecisionMode = (next: DecisionMode) => {
-    haptic(); setDecisionMode(next); setNarrow(false); setConfirmation(null);
+    haptic(); setDecisionMode(next); setNarrow(true); setConfirmation(null);
     if (next === 'venue' && !venueTypeId) setVenueTypeId(pickDifferentItem(venueTypes.map(venue => venue.id), null));
   };
   const changeCuisine = (next: CuisineId | null) => {
