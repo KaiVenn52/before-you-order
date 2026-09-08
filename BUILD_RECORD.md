@@ -7,7 +7,8 @@
 - Maps now tries the Android geo intent first, then an Expo in-app browser, ordinary HTTPS Maps, and finally a generic Google search before reporting failure.
 - Local validation passed: TypeScript, 40/40 tests, catalog validation, Expo Doctor 21/21, diff check, and Android Hermes export to `artifacts/v1.11-release-candidate/android-export`.
 - Expo was aligned to SDK patch `57.0.21`; `expo-constants` and `expo-web-browser` use SDK-compatible versions.
-- Production build `bc81bf4c-6bbd-48c0-98e4-74c8a4067a08` completed as versionCode `16`, but is superseded before upload because it used the opposite collapsed-filter default. Do not upload code 16. The corrected replacement build will use a newer versionCode.
+- Production build `bc81bf4c-6bbd-48c0-98e4-74c8a4067a08` completed as versionCode `16`, but is superseded before upload because it used the opposite collapsed-filter default. Do not upload code 16.
+- Corrected production build `6d0e090a-a80e-4dd2-8fac-27d997e5ba06` was submitted from commit `e2e947011d6b05383c896f8e96b016260abb6f16` as versionCode `17`; its AAB remains pending while EAS builds it.
 
 ## V1.10 product-quality pass — 8 September 2026 — local validation complete
 
