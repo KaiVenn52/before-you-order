@@ -1,6 +1,6 @@
 # Before You Order — Project Status
 
-## Implemented through V1.8 and submitted to Google Play review
+## Implemented through V1.9; V1.8 is the current Google Play Alpha release
 
 - Expo SDK 57 / React Native Android application.
 - One-recommendation decision flow for dine-out, takeaway, or delivery.
@@ -13,7 +13,7 @@
 - Dedicated Nyonya and East Malaysian groups, plus separate Thai, Indonesian, Vietnamese, and Middle Eastern collections.
 - A catalog validator that rejects duplicate IDs or names, missing bilingual metadata, missing assets, and unsupported image licenses.
 - Optimized local meal photos with Wikimedia licensing and in-app attribution.
-- All 244 local images and bilingual category descriptions reviewed; 54 suspect photos withheld, 137 photos and 107 translated neutral displays. Per-image processing records and a hash-bound review ledger are in docs/V1.8_IMAGE_REVIEW.md. Source provenance and native-device crops are not fully verified.
+- All 244 meal image mappings and bilingual category descriptions reviewed. The current catalog displays 216 verified reusable photos and 28 translated neutral cards: 19 original placeholders plus 9 withheld mismatches. Per-image processing records and a hash-bound review ledger are in docs/V1.8_IMAGE_REVIEW.md. Native-device crops are not fully verified.
 - Direct Google Maps nearby search for each recommendation.
 - Full-catalog “Another” action instead of cycling only three cards.
 - “Not today” and “I chose this” feedback that changes later sampling weights.
@@ -32,6 +32,7 @@
 - Explicit outlet-level warning for prices, ingredients, allergens, and halal certification.
 - Unused payment dependencies removed until there is a credible paid feature and real demand.
 - Production Android builds now use R8 code minification and resource shrinking, with retrace mappings retained for readable crash diagnostics.
+- V1.9 disables cuisine/food-type combinations that cannot return a meal, normalizes invalid filters when the eating mode changes, prevents duplicate rapid feedback, and lets users reset recommendation history without restoring hidden foods.
 
 ## Still requires device validation
 
@@ -43,7 +44,7 @@
 
 ## Distribution status and remaining boundaries
 
-- V1.8.0 (version code 13) was published to the closed-testing Alpha track at 100% rollout on 8 September 2026 after Google approved the initial 13 changes. The active geographic scope remains 7 countries/regions while expansion to every Play-supported location (169 additional named locations plus `其他国家/地区`) is under review. Self-managed publishing remains enabled, so the geographic expansion must be published after approval.
+- V1.8.0 (version code 13) was published to the closed-testing Alpha track at 100% rollout on 8 September 2026 after Google approved the initial 13 changes. V1.9.0 source is newer and requires a fresh production AAB/versionCode before testers receive it. The active geographic scope remains 7 countries/regions while expansion to every Play-supported location (169 additional named locations plus `其他国家/地区`) is under review. Self-managed publishing remains enabled, so the geographic expansion must be published after approval.
 - No public production release or subscription setup.
 - No location permission or precise location collection; nearby discovery is delegated to Google Maps.
 

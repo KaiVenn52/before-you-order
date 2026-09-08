@@ -1,5 +1,12 @@
 # Android Build Record
 
+## V1.9 local release candidate — 8 September 2026
+
+- App version `1.9.0`; production versionCode will be assigned by EAS remote auto-increment and must be greater than 13.
+- Scope: disable impossible cuisine/food-form combinations, normalize filters across eating modes, prevent duplicate rapid feedback records, add a bilingual recommendation-history reset, and include the completed verified-photo pass.
+- Catalog at source: 244 meals; 216 displayed reusable photos; 19 original placeholders; 9 withheld mismatches.
+- Local validation passed: TypeScript, 38/38 tests, catalog audit, Expo Doctor 21/21, and Android Hermes export to `artifacts/v1.9-release-candidate/android-export`. This entry does not yet claim an AAB or Google Play publication.
+
 ## V1.8 Google Play closed testing Alpha — published 8 September 2026
 
 - EAS build `25c7e580-7885-48b3-b8a2-645b860baefb` finished successfully; source commit `e7672374af9286e2e7bbd4a7700c80378d98e9a3`.

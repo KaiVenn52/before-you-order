@@ -116,6 +116,11 @@ export function createChoiceStorage(open: () => ChoiceDatabase) {
     return memoryFeedback.slice(0, limit);
   }
 
+  function clearFeedbackHistory() {
+    memoryFeedback = [];
+    safely(() => db.runSync('DELETE FROM meal_feedback'), undefined);
+  }
+
   function blacklistMeal(mealId: string, createdAt = new Date().toISOString()) {
     memoryHidden = [mealId, ...memoryHidden.filter(id => id !== mealId)];
     safely(() => db.runSync('INSERT OR REPLACE INTO meal_blacklist (meal_id, created_at) VALUES (?, ?)', mealId, createdAt), undefined);
@@ -140,5 +145,5 @@ export function createChoiceStorage(open: () => ChoiceDatabase) {
     safely(() => db.runSync('DELETE FROM meal_blacklist'), undefined);
   }
   return { initializeStorage, getLanguage, saveLanguage, getUserSettings, saveUserSettings,
-    recordFeedback, getFeedback, blacklistMeal, restoreMeal, restoreAllMeals, getBlacklistedMealIds, isStorageDegraded, hasLoadedBlacklist };
+    recordFeedback, getFeedback, clearFeedbackHistory, blacklistMeal, restoreMeal, restoreAllMeals, getBlacklistedMealIds, isStorageDegraded, hasLoadedBlacklist };
 }

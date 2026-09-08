@@ -22,7 +22,7 @@ import { pickDifferentItem, pickMeal, recommendationReason, recommendMeals } fro
 import type { CuisineId, DecisionMode, EatingMode, FoodType, Language, Meal, MealFeedback, VenueTypeId } from './src/domain/types';
 import { priceLabel, tr, type CopyKey } from './src/i18n';
 import {
-  blacklistMeal, defaultPreferences, getBlacklistedMealIds, getFeedback, getLanguage, getUserSettings, hasLoadedBlacklist,
+  blacklistMeal, clearFeedbackHistory, defaultPreferences, getBlacklistedMealIds, getFeedback, getLanguage, getUserSettings, hasLoadedBlacklist,
   initializeStorage, isStorageDegraded, recordFeedback, restoreAllMeals, restoreMeal, saveLanguage, saveUserSettings,
 } from './src/storage/choices';
 
@@ -50,7 +50,7 @@ function AppContent() {
   const [canRecommend, setCanRecommend] = useState(false);
   const [ready, setReady] = useState(false);
   const [narrow, setNarrow] = useState(false);
-  const chosenGuard = useRef<string | null>(null);
+  const feedbackGuard = useRef<string | null>(null);
   const [savedId, setSavedId] = useState<string | null>(null);
   const [undoId, setUndoId] = useState<string | null>(null);
   const scroll = useRef<ScrollView>(null);
@@ -87,6 +87,8 @@ function AppContent() {
     setReady(true);
   }, []);
 
+  useEffect(() => { feedbackGuard.current = null; }, [currentId]);
+
   useEffect(() => {
     if (!scrollRequest) return;
     const timer = setTimeout(() => scroll.current?.scrollTo({ y: Math.max(0, resultY.current - 12), animated: true }), 120);
@@ -97,6 +99,8 @@ function AppContent() {
     () => canRecommend ? recommendMeals(meals, mode, cuisine, foodType, defaultPreferences, feedback, blacklistedIds) : [],
     [mode, cuisine, foodType, feedback, blacklistedIds, canRecommend],
   );
+  const cuisineIsAvailable = (candidate: CuisineId) => recommendMeals(meals, mode, candidate, foodType, defaultPreferences).length > 0;
+  const foodTypeIsAvailable = (candidate: FoodType) => recommendMeals(meals, mode, cuisine, candidate, defaultPreferences).length > 0;
   const current = recommendations.find(meal => meal.id === currentId);
   const allHidden = canRecommend && recommendations.length === 0 && recommendMeals(meals, mode, cuisine, foodType, defaultPreferences).length > 0;
   const currentVenue = venueTypeId ? venueTypes.find((venue) => venue.id === venueTypeId) ?? null : null;
@@ -128,7 +132,7 @@ function AppContent() {
     if (!canRecommend) return;
     const pool = recommendMeals(meals, nextMode, nextCuisine, nextFood, defaultPreferences, nextFeedback, hidden);
     const nextId = pickMeal(pool, nextFeedback, hidden, currentId, Date.now(), Math.random)?.id ?? null;
-    setCurrentId(nextId); chosenGuard.current = null;
+    setCurrentId(nextId);
     setSavedId(null); setConfirmation(null);
     if (nextId !== currentId) requestScroll(value => value + 1);
   };
@@ -137,8 +141,13 @@ function AppContent() {
     setLanguage(next); saveLanguage(next);
   };
   const changeMode = (next: EatingMode) => {
-    haptic(); setMode(next); refresh(next);
-    saveUserSettings(defaultPreferences, next, cuisine);
+    haptic();
+    const exactMatch = recommendMeals(meals, next, cuisine, foodType, defaultPreferences).length > 0;
+    const cuisineMatch = recommendMeals(meals, next, cuisine, null, defaultPreferences).length > 0;
+    const nextCuisine = cuisineMatch ? cuisine : null;
+    const nextFoodType = exactMatch ? foodType : null;
+    setMode(next); setCuisine(nextCuisine); setFoodType(nextFoodType); refresh(next, nextCuisine, nextFoodType);
+    saveUserSettings(defaultPreferences, next, nextCuisine);
   };
   const changeDecisionMode = (next: DecisionMode) => {
     haptic(); setDecisionMode(next); setNarrow(false); setConfirmation(null);
@@ -172,8 +181,8 @@ function AppContent() {
     setConfirmation(recommendations.length > 1 ? 'anotherConfirmation' : 'onlyOne');
   };
   const reactToMeal = (action: 'chosen' | 'not-today') => {
-    if (!current || (action === 'chosen' && chosenGuard.current === current.id)) return;
-    if (action === 'chosen') chosenGuard.current = current.id;
+    if (!current || feedbackGuard.current === `${current.id}:${action}`) return;
+    feedbackGuard.current = `${current.id}:${action}`;
     recordFeedback(current.id, action);
     const nextFeedback = getFeedback(); setFeedback(nextFeedback);
     if (action === 'chosen') {
@@ -207,6 +216,15 @@ function AppContent() {
       ? [androidMapsSearchUrl(query), googleMapsSearchUrl(query)]
       : [googleMapsSearchUrl(query)];
     await openFirstExternalUrl(urls, Linking.openURL, () => Alert.alert(tr(language, 'mapsError'), tr(language, 'mapsErrorBody'), [{ text: tr(language, 'cancel') }, { text: tr(language, 'retry'), onPress: () => { void openMapSearch(subject, strategy, vegetarian); } }]));
+  };
+  const resetRecommendationHistory = () => {
+    Alert.alert(tr(language, 'clearHistoryTitle'), tr(language, 'clearHistoryBody'), [
+      { text: tr(language, 'cancel') },
+      { text: tr(language, 'clearHistory'), onPress: () => {
+        clearFeedbackHistory(); setFeedback([]); setSavedId(null); refresh(mode, cuisine, foodType, []);
+        setConfirmation('historyCleared'); setHiddenFoodsVisible(false);
+      } },
+    ]);
   };
   const findMeal = async (meal: Meal, strategy: SearchStrategy) => {
     await openMapSearch(buildMealSubject(meal), strategy);
@@ -282,7 +300,7 @@ function AppContent() {
           </Pressable>
           <View style={styles.cuisineRow}>
             <ChoiceChip label={tr(language, 'anything')} active={cuisine === null} onPress={() => changeCuisine(null)} />
-            {cuisines.map((id) => <ChoiceChip key={id} label={cuisineLabels[id][language]} active={cuisine === id} onPress={() => changeCuisine(id)} />)}
+            {cuisines.map((id) => <ChoiceChip key={id} label={cuisineLabels[id][language]} active={cuisine === id} disabled={!cuisineIsAvailable(id)} onPress={() => changeCuisine(id)} />)}
           </View>
 
           <View style={styles.questionRow}>
@@ -290,7 +308,7 @@ function AppContent() {
           </View>
           <View style={styles.foodTypeRow}>
             <ChoiceChip label={tr(language, 'anything')} active={foodType === null} onPress={() => changeFoodType(null)} />
-            {foodTypes.map((id) => <ChoiceChip key={id} label={foodTypeLabels[id][language]} active={foodType === id} onPress={() => changeFoodType(id)} />)}
+            {foodTypes.map((id) => <ChoiceChip key={id} label={foodTypeLabels[id][language]} active={foodType === id} disabled={!foodTypeIsAvailable(id)} onPress={() => changeFoodType(id)} />)}
           </View>
 
           </>}
@@ -385,7 +403,7 @@ function AppContent() {
         <Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'photoCredits')} onPress={() => setCreditsVisible(true)} style={styles.creditButton}><Text style={styles.creditButtonText}>{tr(language, 'photoCredits')}</Text></Pressable>
       </ScrollView>
 
-      <HiddenFoodsModal language={language} visible={hiddenFoodsVisible} blacklistedMeals={blacklistedMeals} onRestoreAll={restoreAll} onRestore={restoreBlacklistedMeal} onClose={() => setHiddenFoodsVisible(false)} />
+      <HiddenFoodsModal language={language} visible={hiddenFoodsVisible} blacklistedMeals={blacklistedMeals} hasFeedback={feedback.length > 0} onClearHistory={resetRecommendationHistory} onRestoreAll={restoreAll} onRestore={restoreBlacklistedMeal} onClose={() => setHiddenFoodsVisible(false)} />
       <CreditsModal language={language} visible={creditsVisible} onClose={() => setCreditsVisible(false)} />
       <ShopPickerModal
         language={language}
@@ -434,17 +452,18 @@ function mealFallbackEmoji(meal: Meal) {
   return '🍽️';
 }
 
-function ChoiceChip({ label, active, onPress }: { label: string; active: boolean; onPress: () => void }) {
-  return <Pressable accessibilityRole="button" onPress={onPress} accessibilityLabel={label} accessibilityState={{ selected: active }} style={[styles.chip, active && styles.chipActive]}><Text style={[styles.chipText, active && styles.chipTextActive]}>{label}</Text></Pressable>;
+function ChoiceChip({ label, active, disabled = false, onPress }: { label: string; active: boolean; disabled?: boolean; onPress: () => void }) {
+  return <Pressable accessibilityRole="button" disabled={disabled} onPress={onPress} accessibilityLabel={label} accessibilityState={{ selected: active, disabled }} style={[styles.chip, active && styles.chipActive, disabled && styles.chipDisabled]}><Text style={[styles.chipText, active && styles.chipTextActive, disabled && styles.chipTextDisabled]}>{label}</Text></Pressable>;
 }
 
-function HiddenFoodsModal({ language, visible, blacklistedMeals, onRestoreAll, onRestore, onClose }: { language: Language; visible: boolean; blacklistedMeals: Meal[]; onRestoreAll: () => void; onRestore: (mealId: string) => void; onClose: () => void }) {
+function HiddenFoodsModal({ language, visible, blacklistedMeals, hasFeedback, onClearHistory, onRestoreAll, onRestore, onClose }: { language: Language; visible: boolean; blacklistedMeals: Meal[]; hasFeedback: boolean; onClearHistory: () => void; onRestoreAll: () => void; onRestore: (mealId: string) => void; onClose: () => void }) {
   return (
     <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose}>
       <View style={styles.backdrop}><Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'close')} style={{ flex: 1 }} onPress={onClose} />
         <View style={styles.sheet}>
           <View style={styles.sheetHeader}><View style={{ flex: 1 }}><Text style={styles.sheetTitle}>{tr(language, 'manageHiddenFoods')}</Text><Text style={styles.sheetHint}>{tr(language, 'restoreHelp')}</Text></View><Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'close')} onPress={onClose} style={styles.closeButton}><X size={25} color={C.ink} /></Pressable></View>
           <Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'restoreAll')} accessibilityState={{ disabled: !blacklistedMeals.length }} disabled={!blacklistedMeals.length} onPress={onRestoreAll} style={styles.creditButton}><Text style={styles.creditButtonText}>{tr(language, 'restoreAll')}</Text></Pressable>
+          <Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'clearHistory')} accessibilityState={{ disabled: !hasFeedback }} disabled={!hasFeedback} onPress={onClearHistory} style={[styles.creditButton, !hasFeedback && styles.disabledButton]}><Text style={styles.creditButtonText}>{tr(language, 'clearHistory')}</Text></Pressable>
           <ScrollView showsVerticalScrollIndicator={false}>
             {blacklistedMeals.map((meal) => (
               <View key={meal.id} style={styles.blacklistRow}>
@@ -519,7 +538,7 @@ const styles = StyleSheet.create({
   question: { color: C.ink, fontSize: 17, fontWeight: '800', marginBottom: 10 }, questionRow: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'baseline', gap: 7, marginTop: 21 }, optional: { color: C.muted, fontSize: 12 },
   modeRow: { flexDirection: 'row', gap: 8 }, mode: { flex: 1, padding: 8, minHeight: 69, borderWidth: 1, borderColor: C.line, borderRadius: 14, backgroundColor: C.paper, alignItems: 'center', justifyContent: 'center', gap: 5 },
   modeActive: { backgroundColor: C.green, borderColor: C.green }, modeText: { textAlign: 'center', flexShrink: 1, color: C.ink, fontSize: 12, fontWeight: '700' }, modeTextActive: { color: '#fff' },
-  cuisineRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 }, foodTypeRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, paddingRight: 12, paddingBottom: 18 }, chip: { maxWidth: '100%', paddingVertical: 9, minHeight: 44, paddingHorizontal: 15, borderRadius: 22, borderWidth: 1, borderColor: '#DCCEB8', backgroundColor: C.paper, justifyContent: 'center' },
+  cuisineRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 }, foodTypeRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, paddingRight: 12, paddingBottom: 18 }, chip: { maxWidth: '100%', paddingVertical: 9, minHeight: 44, paddingHorizontal: 15, borderRadius: 22, borderWidth: 1, borderColor: '#DCCEB8', backgroundColor: C.paper, justifyContent: 'center' }, chipDisabled: { opacity: 0.42, backgroundColor: '#F2EEE5' }, chipTextDisabled: { color: C.muted }, disabledButton: { opacity: 0.45 },
   chipActive: { backgroundColor: C.ink, borderColor: C.ink }, chipText: { color: C.text, fontSize: 12, fontWeight: '700' }, chipTextActive: { color: '#fff' },
   randomAction: { minHeight: 66, flexDirection: 'row', alignItems: 'center', gap: 11, borderRadius: 15, borderWidth: 1, borderColor: C.line, backgroundColor: C.paper, paddingHorizontal: 13, marginBottom: 11 },
   randomIcon: { width: 39, height: 39, borderRadius: 20, backgroundColor: C.greenSoft, alignItems: 'center', justifyContent: 'center' },

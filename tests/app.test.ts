@@ -139,7 +139,9 @@ test('App: Chinese cold start, all hidden explanation, restore all and single-ca
   app = await mount();
   try {
     assert.equal(currentName(app), meals[0].name); await press(app, 'Another'); assert.equal(currentName(app), meals[0].name);
-    await press(app, 'Not today'); assert.equal(storage.getFeedback()[0].action, 'not-today');
+    const reject = button(app, 'Not today').props.onPress;
+    await act(async () => { reject(); reject(); }); assert.equal(storage.getFeedback().length, 1);
+    assert.equal(storage.getFeedback()[0].action, 'not-today');
     assert.match(text(app.root), /Less often for the next three days/);
     await press(app, 'Never recommend this food'); assert.equal(currentName(app), null);
     await press(app, 'Undo hide'); assert.equal(currentName(app), meals[0].name);
@@ -206,16 +208,33 @@ test('App: unreadable blacklist pauses dish recommendations while venue mode rem
   } finally { await act(async () => app.unmount()); }
 });
 
-test('App: empty filters are distinct from hidden meals and language switching translates saved confirmation', async t => {
+test('App: impossible filters are disabled and language switching translates saved confirmation', async t => {
   reset(); t.mock.method(Math, 'random', () => 0.5);
   const app = await mount();
   try {
-    await press(app, 'Narrow it down'); await press(app, 'Korean'); await press(app, 'Bread & wraps');
-    assert.equal(currentName(app), null); assert.match(text(app.root), /No meal matches every filter/);
-    assert.doesNotMatch(text(app.root), /All matching meals are hidden/);
-    await press(app, 'Clear dish filters'); await press(app, 'I chose this');
+    await press(app, 'Narrow it down'); await press(app, 'Korean');
+    assert.equal(button(app, 'Bread & wraps').props.disabled, true);
+    assert.equal(button(app, 'Noodles').props.disabled, false);
+    await press(app, 'I chose this');
     await press(app, 'Switch to Chinese'); assert.match(text(app.root), /已加入你的选择记录/);
     assert.doesNotMatch(text(app.root), /Saved to your recent choices/);
     assert.equal(storage.getLanguage(), 'zh');
+  } finally { await act(async () => app.unmount()); }
+});
+
+test('App: recommendation history can be reset without restoring hidden foods', async () => {
+  reset();
+  const app = await mount();
+  try {
+    await press(app, 'I chose this');
+    await press(app, 'Never recommend this food');
+    assert.equal(storage.getFeedback().length, 1);
+    assert.equal(storage.getBlacklistedMealIds().length, 1);
+    await press(app, 'Manage hidden foods');
+    await press(app, 'Reset recommendation history');
+    assert.match(alerts[0][0], /Reset recommendation history/);
+    await act(async () => alerts[0][2][1].onPress());
+    assert.deepEqual(storage.getFeedback(), []);
+    assert.equal(storage.getBlacklistedMealIds().length, 1);
   } finally { await act(async () => app.unmount()); }
 });

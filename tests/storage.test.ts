@@ -30,10 +30,11 @@ test('SQLite survives close/reopen: hide, undo, restore all, feedback and langua
     assert.equal(store.getFeedback()[0].mealId, 'a');
     assert.equal(store.getUserSettings().lastCuisine, 'nyonya');
     assert.equal(store.getUserSettings().lastMode, 'delivery');
-    store.blacklistMeal('b'); store.restoreAllMeals();
+    store.blacklistMeal('b'); store.restoreAllMeals(); store.clearFeedbackHistory();
     db.close(); db = new DatabaseSync(join(dir, 'choices.db'));
     store = createChoiceStorage(() => adapter(db)); store.initializeStorage();
     assert.deepEqual(store.getBlacklistedMealIds(), []);
+    assert.deepEqual(store.getFeedback(), []);
   } finally { db.close(); rmSync(dir, { recursive: true }); }
 });
 
@@ -57,6 +58,7 @@ test('open and schema failure use a usable, explicitly temporary memory store', 
     assert.deepEqual(store.getBlacklistedMealIds(), ['a']);
     store.restoreAllMeals(); assert.deepEqual(store.getBlacklistedMealIds(), []);
     store.recordFeedback('a', 'chosen'); assert.equal(store.getFeedback().length, 1);
+    store.clearFeedbackHistory(); assert.deepEqual(store.getFeedback(), []);
     store.saveLanguage('zh'); assert.equal(store.getLanguage(), 'zh');
   }
 });
