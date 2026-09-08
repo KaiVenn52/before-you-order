@@ -60,6 +60,14 @@ test('long-term choice affinity is capped while new meals retain baseline weight
   assert.equal(pickMeal(catalog.slice(0, 3), chosen('a', 100), [], null, now, () => 0.999)?.id, 'c');
 });
 
+test('previous choices receive a visible familiar-pick lane while exploration remains available', () => {
+  const history = chosen('a', 1);
+  const familiarRolls = [0.1, 0];
+  assert.equal(pickMeal(catalog.slice(0, 3), history, [], null, now, () => familiarRolls.shift() ?? 0)?.id, 'a');
+  const exploreRolls = [0.9, 0.999];
+  assert.equal(pickMeal(catalog.slice(0, 3), history, [], null, now, () => exploreRolls.shift() ?? 0)?.id, 'c');
+});
+
 test('Not today lasts exactly 72 hours, including with later choices and unsorted history', () => {
   const event = { mealId: 'a', action: 'not-today' as const, createdAt: new Date(now).toISOString() };
   assert.equal(mealWeight('a', [event], now), 0.1);

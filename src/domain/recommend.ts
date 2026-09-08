@@ -54,6 +54,10 @@ export function pickMeal(candidates: readonly Meal[], feedback: readonly MealFee
   currentId: string | null, now: number, rng: () => number): Meal | null {
   const allowed = candidates.filter(meal => !blacklistedIds.includes(meal.id));
   const pool = allowed.length > 1 ? allowed.filter(meal => meal.id !== currentId) : allowed;
+  const chosenIds = new Set(feedback.filter(item => item.action === 'chosen').map(item => item.mealId));
+  const familiar = pool.filter(meal => chosenIds.has(meal.id));
+  // Make learning visible without trapping the user: 30% familiar picks, 70% full-pool exploration.
+  if (familiar.length && rng() < 0.3) return sampleWeighted(familiar, meal => mealWeight(meal.id, feedback, now), rng);
   return sampleWeighted(pool, meal => mealWeight(meal.id, feedback, now), rng);
 }
 

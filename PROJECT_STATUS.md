@@ -1,6 +1,6 @@
 # Before You Order — Project Status
 
-## Implemented through V1.9; V1.8 is the current Google Play Alpha release
+## Implemented through V1.10; V1.8 is the current Google Play Alpha release
 
 - Expo SDK 57 / React Native Android application.
 - One-recommendation decision flow for dine-out, takeaway, or delivery.
@@ -33,6 +33,7 @@
 - Unused payment dependencies removed until there is a credible paid feature and real demand.
 - Production Android builds now use R8 code minification and resource shrinking, with retrace mappings retained for readable crash diagnostics.
 - V1.9 disables cuisine/food-type combinations that cannot return a meal, normalizes invalid filters when the eating mode changes, prevents duplicate rapid feedback, and lets users reset recommendation history without restoring hidden foods.
+- V1.10 makes learned choices visible through a bounded familiar-pick lane while preserving exploration, virtualizes and searches the 244-entry photo-credit list, adds a public in-app issue-report link, improves modal accessibility isolation, and reduces the visual weight of eating-mode controls.
 
 ## Still requires device validation
 
@@ -44,7 +45,7 @@
 
 ## Distribution status and remaining boundaries
 
-- V1.8.0 (version code 13) was published to the closed-testing Alpha track at 100% rollout on 8 September 2026 after Google approved the initial 13 changes. V1.9.0 source is newer and requires a fresh production AAB/versionCode before testers receive it. The active geographic scope remains 7 countries/regions while expansion to every Play-supported location (169 additional named locations plus `其他国家/地区`) is under review. Self-managed publishing remains enabled, so the geographic expansion must be published after approval.
+- V1.8.0 (version code 13) was published to the closed-testing Alpha track at 100% rollout on 8 September 2026 after Google approved the initial 13 changes. V1.9.0 code 14 was built but not uploaded to Play and is superseded by the V1.10 source before release. The active geographic scope remains 7 countries/regions while expansion to every Play-supported location (169 additional named locations plus `其他国家/地区`) is under review. Self-managed publishing remains enabled, so the geographic expansion must be published after approval.
 - No public production release or subscription setup.
 - No location permission or precise location collection; nearby discovery is delegated to Google Maps.
 

@@ -70,6 +70,8 @@ export const copy = {
     neverTitle: 'Never recommend', neverBody: 'It will stay hidden until you restore it from Manage hidden foods on this screen.',
     mapsError: 'Could not open maps', mapsErrorBody: 'Please check that a browser or maps app is available.',
     chosenConfirmation: 'Saved to your recent choices.', vegetarianVersion: 'Vegetarian version',
+    searchCredits: 'Search dishes or sources', noCredits: 'No photo credits match this search.',
+    sendFeedback: 'Report a problem or suggestion', feedbackLinkBody: 'Opens the public GitHub feedback form. Do not include personal information.',
   },
   zh: {
     linkError: '无法打开此链接',
@@ -140,6 +142,8 @@ export const copy = {
     neverTitle: '永远不推荐', neverBody: '它会一直隐藏，直到你在本页的“管理隐藏食物”中恢复。',
     mapsError: '无法打开地图', mapsErrorBody: '请确认手机上有可用的浏览器或地图应用。',
     chosenConfirmation: '已加入你的选择记录。', vegetarianVersion: '素食版本',
+    searchCredits: '搜索菜名或图片来源', noCredits: '没有符合搜索内容的图片来源。',
+    sendFeedback: '报告问题或提出建议', feedbackLinkBody: '将打开公开的 GitHub 反馈表单，请不要填写个人隐私。',
   },
 } as const;
 

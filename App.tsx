@@ -3,12 +3,12 @@ import * as Haptics from 'expo-haptics';
 import { Image } from 'expo-image';
 import { getLocales } from 'expo-localization';
 import {
-  ArrowClockwise, Check, EyeSlash, ForkKnife, Handbag, MapPin, Moped, NavigationArrow,
+  ArrowClockwise, ChatCircleDots, Check, EyeSlash, ForkKnife, Handbag, MapPin, Moped, NavigationArrow,
   Sparkle, Star, Storefront, ThumbsDown, Wallet, X,
 } from 'phosphor-react-native';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
-  ActivityIndicator, Alert, Linking, Modal, Platform, Pressable, ScrollView, StyleSheet, Text, View,
+  ActivityIndicator, Alert, FlatList, Linking, Modal, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View,
 } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import imageCredits from './src/data/imageCredits.json';
@@ -217,6 +217,10 @@ function AppContent() {
       : [googleMapsSearchUrl(query)];
     await openFirstExternalUrl(urls, Linking.openURL, () => Alert.alert(tr(language, 'mapsError'), tr(language, 'mapsErrorBody'), [{ text: tr(language, 'cancel') }, { text: tr(language, 'retry'), onPress: () => { void openMapSearch(subject, strategy, vegetarian); } }]));
   };
+  const openFeedback = () => {
+    const url = 'https://github.com/KaiVenn52/before-you-order/issues/new?title=App%20feedback&body=What%20happened%3F%0A%0AWhat%20did%20you%20expect%3F%0A%0ADevice%20and%20Android%20version%3A';
+    void openExternalUrl(url, Linking.openURL, () => Alert.alert(tr(language, 'linkError'), tr(language, 'linkErrorBody'), [{ text: tr(language, 'cancel') }, { text: tr(language, 'retry'), onPress: openFeedback }]));
+  };
   const resetRecommendationHistory = () => {
     Alert.alert(tr(language, 'clearHistoryTitle'), tr(language, 'clearHistoryBody'), [
       { text: tr(language, 'cancel') },
@@ -401,6 +405,7 @@ function AppContent() {
         <Text style={styles.disclaimer}>{tr(language, 'disclaimer')}</Text>
         {blacklistedMeals.length > 0 && <Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'manageHiddenFoods')} onPress={() => setHiddenFoodsVisible(true)} style={styles.creditButton}><Text style={styles.creditButtonText}>{tr(language, 'manageHiddenFoods')} ({blacklistedMeals.length})</Text></Pressable>}
         <Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'photoCredits')} onPress={() => setCreditsVisible(true)} style={styles.creditButton}><Text style={styles.creditButtonText}>{tr(language, 'photoCredits')}</Text></Pressable>
+        <Pressable accessibilityRole="link" accessibilityLabel={tr(language, 'sendFeedback')} accessibilityHint={tr(language, 'feedbackLinkBody')} onPress={openFeedback} style={styles.feedbackLink}><ChatCircleDots size={18} color={C.green} /><Text style={styles.creditButtonText}>{tr(language, 'sendFeedback')}</Text></Pressable>
       </ScrollView>
 
       <HiddenFoodsModal language={language} visible={hiddenFoodsVisible} blacklistedMeals={blacklistedMeals} hasFeedback={feedback.length > 0} onClearHistory={resetRecommendationHistory} onRestoreAll={restoreAll} onRestore={restoreBlacklistedMeal} onClose={() => setHiddenFoodsVisible(false)} />
@@ -460,7 +465,7 @@ function HiddenFoodsModal({ language, visible, blacklistedMeals, hasFeedback, on
   return (
     <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose}>
       <View style={styles.backdrop}><Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'close')} style={{ flex: 1 }} onPress={onClose} />
-        <View style={styles.sheet}>
+        <View accessibilityViewIsModal style={styles.sheet}>
           <View style={styles.sheetHeader}><View style={{ flex: 1 }}><Text style={styles.sheetTitle}>{tr(language, 'manageHiddenFoods')}</Text><Text style={styles.sheetHint}>{tr(language, 'restoreHelp')}</Text></View><Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'close')} onPress={onClose} style={styles.closeButton}><X size={25} color={C.ink} /></Pressable></View>
           <Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'restoreAll')} accessibilityState={{ disabled: !blacklistedMeals.length }} disabled={!blacklistedMeals.length} onPress={onRestoreAll} style={styles.creditButton}><Text style={styles.creditButtonText}>{tr(language, 'restoreAll')}</Text></Pressable>
           <Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'clearHistory')} accessibilityState={{ disabled: !hasFeedback }} disabled={!hasFeedback} onPress={onClearHistory} style={[styles.creditButton, !hasFeedback && styles.disabledButton]}><Text style={styles.creditButtonText}>{tr(language, 'clearHistory')}</Text></Pressable>
@@ -483,7 +488,7 @@ function ShopPickerModal({ language, visible, venueMode, subject, onClose, onSel
   return (
     <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose}>
       <View style={styles.backdrop}><Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'close')} style={{ flex: 1 }} onPress={onClose} />
-        <View style={styles.sheet}>
+        <View accessibilityViewIsModal style={styles.sheet}>
           <View style={styles.sheetHeader}>
             <View style={{ flex: 1 }}><Text style={styles.sheetTitle}>{venueMode ? tr(language, 'findVenue') : tr(language, 'chooseWhere')}</Text><Text style={styles.sheetHint}>{subject}</Text></View>
             <Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'close')} onPress={onClose} style={styles.closeButton}><X size={25} color={C.ink} /></Pressable>
@@ -504,12 +509,23 @@ function ShopStrategy({ icon, title, description, onPress }: { icon: React.React
 }
 
 function CreditsModal({ language, visible, onClose }: { language: Language; visible: boolean; onClose: () => void }) {
+  const [query, setQuery] = useState('');
+  useEffect(() => { if (!visible) setQuery(''); }, [visible]);
+  const filteredCredits = useMemo(() => {
+    const needle = query.trim().toLocaleLowerCase();
+    if (!needle) return imageCredits;
+    return imageCredits.filter(credit => {
+      const meal = mealById.get(credit.mealId);
+      return [meal?.name, meal?.localName, credit.sourceTitle, credit.artist].some(value => value?.toLocaleLowerCase().includes(needle));
+    });
+  }, [query]);
   const openCredit = (url: string) => { void openExternalUrl(url, Linking.openURL, () => Alert.alert(tr(language, 'linkError'), tr(language, 'linkErrorBody'), [{ text: tr(language, 'cancel') }, { text: tr(language, 'retry'), onPress: () => openCredit(url) }])); };
   return <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose}>
     <View style={styles.backdrop}><Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'close')} style={{ flex: 1 }} onPress={onClose} />
-      <View style={[styles.sheet, { maxHeight: '78%' }]}>
+      <View accessibilityViewIsModal style={[styles.sheet, { maxHeight: '78%' }]}>
         <View style={styles.sheetHeader}><View style={{ flex: 1 }}><Text style={styles.sheetTitle}>{tr(language, 'photoCredits')}</Text><Text style={styles.sheetHint}>{tr(language, 'creditsHint')}</Text></View><Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'close')} onPress={onClose} style={styles.closeButton}><X size={25} color={C.ink} /></Pressable></View>
-        <ScrollView>{imageCredits.map(credit => <View key={credit.mealId} style={styles.creditRow}>
+        <TextInput accessibilityLabel={tr(language, 'searchCredits')} placeholder={tr(language, 'searchCredits')} placeholderTextColor={C.muted} value={query} onChangeText={setQuery} style={styles.creditSearch} />
+        <FlatList data={filteredCredits} keyExtractor={credit => credit.mealId} initialNumToRender={12} maxToRenderPerBatch={12} windowSize={7} keyboardShouldPersistTaps="handled" ListEmptyComponent={<Text style={styles.emptyBody}>{tr(language, 'noCredits')}</Text>} renderItem={({ item: credit }) => <View style={styles.creditRow}>
           <Text style={styles.creditMeal}>{language === 'zh' ? mealById.get(credit.mealId)?.localName : mealById.get(credit.mealId)?.name}</Text>
           <Text style={styles.creditMeta}>{credit.sourceTitle}</Text>
           {needsNeutralImage(credit.mealId) && <Text style={styles.creditMeta}>{tr(language, 'imageWithheld')}</Text>}
@@ -519,7 +535,7 @@ function CreditsModal({ language, visible, onClose }: { language: Language; visi
           {credit.attributionStatus === 'source-assumed' && <Text style={styles.creditMeta}>{tr(language, 'assumedAuthor')}</Text>}
           {!!credit.sourceUrl && <Pressable accessibilityRole="link" accessibilityLabel={`${credit.sourceTitle}: ${tr(language, 'source')}`} onPress={() => openCredit(credit.sourceUrl)} style={styles.creditButton}><Text style={styles.creditButtonText}>{tr(language, 'source')}</Text></Pressable>}
           {!!credit.licenseUrl && <Pressable accessibilityRole="link" accessibilityLabel={`${credit.sourceTitle}: ${tr(language, 'licenseLink')}`} onPress={() => openCredit(credit.licenseUrl)} style={styles.creditButton}><Text style={styles.creditButtonText}>{tr(language, 'licenseLink')}</Text></Pressable>}
-        </View>)}</ScrollView>
+        </View>} />
       </View>
     </View>
   </Modal>;
@@ -536,7 +552,7 @@ const styles = StyleSheet.create({
   decisionTabActive: { backgroundColor: C.paper, borderWidth: 1, borderColor: C.line },
   decisionTabText: { flexShrink: 1, color: C.muted, fontSize: 12, fontWeight: '800' }, decisionTabTextActive: { color: C.green },
   question: { color: C.ink, fontSize: 17, fontWeight: '800', marginBottom: 10 }, questionRow: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'baseline', gap: 7, marginTop: 21 }, optional: { color: C.muted, fontSize: 12 },
-  modeRow: { flexDirection: 'row', gap: 8 }, mode: { flex: 1, padding: 8, minHeight: 69, borderWidth: 1, borderColor: C.line, borderRadius: 14, backgroundColor: C.paper, alignItems: 'center', justifyContent: 'center', gap: 5 },
+  modeRow: { flexDirection: 'row', gap: 8 }, mode: { flex: 1, padding: 7, minHeight: 60, borderWidth: 1, borderColor: C.line, borderRadius: 14, backgroundColor: C.paper, alignItems: 'center', justifyContent: 'center', gap: 3 },
   modeActive: { backgroundColor: C.green, borderColor: C.green }, modeText: { textAlign: 'center', flexShrink: 1, color: C.ink, fontSize: 12, fontWeight: '700' }, modeTextActive: { color: '#fff' },
   cuisineRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 }, foodTypeRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, paddingRight: 12, paddingBottom: 18 }, chip: { maxWidth: '100%', paddingVertical: 9, minHeight: 44, paddingHorizontal: 15, borderRadius: 22, borderWidth: 1, borderColor: '#DCCEB8', backgroundColor: C.paper, justifyContent: 'center' }, chipDisabled: { opacity: 0.42, backgroundColor: '#F2EEE5' }, chipTextDisabled: { color: C.muted }, disabledButton: { opacity: 0.45 },
   chipActive: { backgroundColor: C.ink, borderColor: C.ink }, chipText: { color: C.text, fontSize: 12, fontWeight: '700' }, chipTextActive: { color: '#fff' },
@@ -561,10 +577,10 @@ const styles = StyleSheet.create({
   outlineButton: { minHeight: 46, borderWidth: 1, borderColor: C.green, borderRadius: 13, justifyContent: 'center', paddingHorizontal: 18, marginTop: 15 }, outlineText: { color: C.green, fontWeight: '800' },
   confirmation: { flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 12, backgroundColor: C.greenSoft, borderRadius: 12, padding: 12 }, confirmationText: { flexShrink: 1, color: C.green, fontSize: 12, fontWeight: '700' },
   history: { marginTop: 26 }, historyTitle: { color: C.ink, fontSize: 18, fontWeight: '900' }, historyHint: { color: C.muted, fontSize: 12, marginTop: 2, marginBottom: 8 }, historyRow: { minHeight: 66, flexDirection: 'row', alignItems: 'center', gap: 11, borderBottomWidth: 1, borderBottomColor: C.line, paddingVertical: 8 }, historyImage: { width: 57, height: 48, borderRadius: 10 }, historyName: { color: C.ink, fontSize: 13, fontWeight: '800' }, historyCuisine: { color: C.muted, fontSize: 11, marginTop: 3 },
-  disclaimer: { color: C.muted, fontSize: 11, lineHeight: 16, textAlign: 'center', marginTop: 25 }, creditButton: { minHeight: 44, alignItems: 'center', justifyContent: 'center' }, creditButtonText: { color: C.green, fontSize: 12, fontWeight: '800', textDecorationLine: 'underline' },
+  disclaimer: { color: C.muted, fontSize: 11, lineHeight: 16, textAlign: 'center', marginTop: 25 }, creditButton: { minHeight: 44, alignItems: 'center', justifyContent: 'center' }, creditButtonText: { color: C.green, fontSize: 12, fontWeight: '800', textDecorationLine: 'underline' }, feedbackLink: { minHeight: 48, flexDirection: 'row', gap: 7, alignItems: 'center', justifyContent: 'center' },
   backdrop: { flex: 1, justifyContent: 'flex-end', backgroundColor: 'rgba(8,25,16,.35)' }, sheet: { maxHeight: '88%', backgroundColor: C.paper, borderTopLeftRadius: 25, borderTopRightRadius: 25, padding: 20, paddingBottom: 30 },
   sheetHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 12 }, sheetTitle: { color: C.ink, fontSize: 22, fontWeight: '900' }, sheetHint: { color: C.muted, fontSize: 11, marginTop: 3 },
   blacklistRow: { minHeight: 48, flexDirection: 'row', alignItems: 'center', gap: 10, borderBottomWidth: 1, borderBottomColor: C.line }, blacklistMeal: { flex: 1, color: C.text, fontSize: 12, fontWeight: '700' }, restoreButton: { minHeight: 44, justifyContent: 'center', paddingHorizontal: 10 }, restoreText: { color: C.green, fontSize: 12, fontWeight: '900' },
   shopIntro: { color: C.text, fontSize: 13, lineHeight: 19, marginBottom: 10 }, shopStrategy: { minHeight: 72, flexDirection: 'row', alignItems: 'center', gap: 12, borderBottomWidth: 1, borderBottomColor: C.line, paddingVertical: 10 }, shopTitle: { color: C.ink, fontSize: 14, fontWeight: '900' }, shopDescription: { color: C.muted, fontSize: 11, lineHeight: 16, marginTop: 2 }, shopNote: { color: C.muted, fontSize: 10, lineHeight: 15, marginTop: 14 },
-  creditRow: { paddingVertical: 10, borderBottomWidth: 1, borderBottomColor: C.line }, creditMeal: { color: C.ink, fontSize: 13, fontWeight: '800' }, creditMeta: { color: C.muted, fontSize: 11, lineHeight: 16, marginTop: 3 },
+  creditSearch: { minHeight: 48, borderWidth: 1, borderColor: C.line, borderRadius: 13, color: C.text, backgroundColor: C.paper, paddingHorizontal: 14, marginBottom: 8 }, creditRow: { paddingVertical: 10, borderBottomWidth: 1, borderBottomColor: C.line }, creditMeal: { color: C.ink, fontSize: 13, fontWeight: '800' }, creditMeta: { color: C.muted, fontSize: 11, lineHeight: 16, marginTop: 3 },
 });

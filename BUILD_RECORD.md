@@ -1,5 +1,13 @@
 # Android Build Record
 
+## V1.10 product-quality pass — 8 September 2026 — local validation complete
+
+- App version `1.10.0`; V1.9 code 14 remains a successful but unsubmitted artifact and should not be uploaded after V1.10 supersedes it.
+- Scope: visible bounded personalization, searchable virtualized photo credits, public tester-feedback entry, modal accessibility isolation, and more compact eating-mode controls.
+- Google Places integration remains intentionally absent: real restaurant ratings, distance, and opening state require a billed API project, location/privacy design, and credentials. Existing Google Maps results remain the truthful source of those facts.
+- Local validation passed: TypeScript, 39/39 tests, catalog validation, Expo Doctor 21/21, diff check, and Android Hermes export to `artifacts/v1.10-release-candidate/android-export`.
+- GitHub Issues is enabled on the public repository, so the in-app feedback destination is live. No V1.10 AAB or Google Play upload is claimed by this checkpoint.
+
 ## V1.9 local release candidate — 8 September 2026
 
 - App version `1.9.0`; EAS assigned remote versionCode `14`.

@@ -27,6 +27,8 @@ const loadingLabels: string[] = [];
 const native = {
   Text: 'Text', View: 'View', Pressable: 'Pressable',
   ScrollView: React.forwardRef((props: any, ref) => React.createElement('ScrollView', { ...props, ref })),
+  FlatList: ({ data, renderItem, keyExtractor, ListEmptyComponent, ...props }: any) => React.createElement('FlatList', props, data.length ? data.map((item: any, index: number) => React.createElement(React.Fragment, { key: keyExtractor(item, index) }, renderItem({ item, index }))) : ListEmptyComponent),
+  TextInput: 'TextInput',
   Modal: ({ visible, children }: any) => visible ? React.createElement('Modal', {}, children) : null,
   ActivityIndicator: (props: any) => { loadingLabels.push(props.accessibilityLabel); return React.createElement('ActivityIndicator', props); },
   Platform: { OS: 'android' }, StyleSheet: { create: (styles: any) => styles },
@@ -159,10 +161,15 @@ test('App: venue flow, credits links and image error fallback remain accessible'
     await press(app, 'A place type'); await press(app, 'Pick for me'); await press(app, 'Find this nearby');
     await press(app, 'Budget-friendly search'); assert.match(decodeURIComponent(opened[0]), /affordable budget/);
     await press(app, 'Photo credits');
+    const search = app.root.findAll(node => String(node.type) === 'TextInput' && node.props.accessibilityLabel === 'Search dishes or sources')[0];
+    await act(async () => search.props.onChangeText('no-credit-can-match-this'));
+    assert.match(text(app.root), /No photo credits match this search/);
+    await act(async () => search.props.onChangeText(''));
     const links = app.root.findAll(node => String(node.type) === 'Pressable' && node.props.accessibilityRole === 'link');
     assert.ok(links.some(node => text(node) === 'License'));
     for (const node of app.root.findAll(node => String(node.type) === 'Pressable')) { assert.ok(node.props.accessibilityRole); assert.ok(node.props.accessibilityLabel); }
     await act(async () => links[0].props.onPress()); assert.equal(opened.length, 2);
+    await press(app, 'Report a problem or suggestion'); assert.match(opened.at(-1) ?? '', /github\.com\/KaiVenn52\/before-you-order\/issues\/new/);
     assert.ok(recommendMeals(meals, 'dine-out', null, null, defaultPreferences).length === 244);
   } finally { await act(async () => app.unmount()); }
 });
