@@ -2,10 +2,13 @@
 
 ## V1.9 local release candidate — 8 September 2026
 
-- App version `1.9.0`; production versionCode will be assigned by EAS remote auto-increment and must be greater than 13.
+- App version `1.9.0`; EAS assigned remote versionCode `14`.
 - Scope: disable impossible cuisine/food-form combinations, normalize filters across eating modes, prevent duplicate rapid feedback records, add a bilingual recommendation-history reset, and include the completed verified-photo pass.
 - Catalog at source: 244 meals; 216 displayed reusable photos; 19 original placeholders; 9 withheld mismatches.
-- Local validation passed: TypeScript, 38/38 tests, catalog audit, Expo Doctor 21/21, and Android Hermes export to `artifacts/v1.9-release-candidate/android-export`. This entry does not yet claim an AAB or Google Play publication.
+- Local validation passed: TypeScript, 38/38 tests, catalog audit, Expo Doctor 21/21, and Android Hermes export to `artifacts/v1.9-release-candidate/android-export`.
+- Production AAB build `3d12203a-0285-49b6-8e01-434319582581` finished successfully from commit `298ea396a08a1feeee2e33025865b2bc2f9a6d97`: https://expo.dev/accounts/kaivenns-team/projects/before-you-order/builds/3d12203a-0285-49b6-8e01-434319582581
+- Local AAB: `artifacts/v1.9-production/Before-You-Order-v1.9.0-production-v14.aab`, 73,923,306 bytes; SHA-256 `2fec6d5f47aa5f9eee718a8181916b2effc8ba6b7bb3f8d3ea18ddeda9a3d459`.
+- Automated EAS submission uploaded the archive to EAS Submit but stopped before Google Play because no Google Service Account key is configured. The Alpha release creation page is open in Play Console; the AAB has not yet been selected or submitted there, so Google Play publication is not claimed.
 
 ## V1.8 Google Play closed testing Alpha — published 8 September 2026
 
