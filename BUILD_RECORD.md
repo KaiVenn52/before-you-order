@@ -8,7 +8,9 @@
 - Local validation passed: TypeScript, 40/40 tests, catalog validation, Expo Doctor 21/21, diff check, and Android Hermes export to `artifacts/v1.11-release-candidate/android-export`.
 - Expo was aligned to SDK patch `57.0.21`; `expo-constants` and `expo-web-browser` use SDK-compatible versions.
 - Production build `bc81bf4c-6bbd-48c0-98e4-74c8a4067a08` completed as versionCode `16`, but is superseded before upload because it used the opposite collapsed-filter default. Do not upload code 16.
-- Corrected production build `6d0e090a-a80e-4dd2-8fac-27d997e5ba06` was submitted from commit `e2e947011d6b05383c896f8e96b016260abb6f16` as versionCode `17`; its AAB remains pending while EAS builds it.
+- Corrected production build `6d0e090a-a80e-4dd2-8fac-27d997e5ba06` finished successfully from commit `e2e947011d6b05383c896f8e96b016260abb6f16` as versionCode `17`: https://expo.dev/accounts/kaivenns-team/projects/before-you-order/builds/6d0e090a-a80e-4dd2-8fac-27d997e5ba06
+- Local AAB: `artifacts/v1.11-production/Before-You-Order-v1.11.0-production-v17.aab`, 73,961,525 bytes; SHA-256 `cbb912a1382d5cb009dc74c7c82a51fb0640ef142e1c7c679cb7a4c0551a9b11`.
+- EAS Submit accepted the archive upload but stopped before Google Play because this project still has no Google Service Account key configured. Google Play upload is not claimed; the code-17 AAB must be selected once in the Alpha release page, or a service-account key must be configured for future automated submissions.
 
 ## V1.10 product-quality pass — 8 September 2026 — local validation complete
 
