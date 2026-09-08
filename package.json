@@ -1,10 +1,11 @@
 {
   "name": "before-you-order-mobile",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "main": "index.ts",
   "dependencies": {
-    "expo": "~57.0.20",
+    "expo": "~57.0.21",
     "expo-build-properties": "~57.0.17",
+    "expo-constants": "~57.0.17",
     "expo-dev-client": "~57.0.18",
     "expo-haptics": "~57.0.2",
     "expo-image": "~57.0.4",
@@ -12,6 +13,7 @@
     "expo-sqlite": "~57.0.2",
     "expo-status-bar": "~57.0.1",
     "expo-system-ui": "~57.0.3",
+    "expo-web-browser": "~57.0.2",
     "phosphor-react-native": "^3.0.6",
     "react": "19.2.3",
     "react-native": "0.86.3",

@@ -72,6 +72,7 @@ export const copy = {
     chosenConfirmation: 'Saved to your recent choices.', vegetarianVersion: 'Vegetarian version',
     searchCredits: 'Search dishes or sources', noCredits: 'No photo credits match this search.',
     sendFeedback: 'Report a problem or suggestion', feedbackLinkBody: 'Opens the public GitHub feedback form. Do not include personal information.',
+    version: 'Version', mapsFallback: 'If Maps is unavailable, a browser search will open automatically.',
   },
   zh: {
     linkError: '无法打开此链接',
@@ -144,6 +145,7 @@ export const copy = {
     chosenConfirmation: '已加入你的选择记录。', vegetarianVersion: '素食版本',
     searchCredits: '搜索菜名或图片来源', noCredits: '没有符合搜索内容的图片来源。',
     sendFeedback: '报告问题或提出建议', feedbackLinkBody: '将打开公开的 GitHub 反馈表单，请不要填写个人隐私。',
+    version: '版本', mapsFallback: '如果地图应用不可用，将自动改用浏览器搜索。',
   },
 } as const;
 

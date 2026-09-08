@@ -1,5 +1,14 @@
 # Android Build Record
 
+## V1.11 Maps compatibility release — 9 September 2026 — local validation complete
+
+- App version `1.11.0`; no Google Play upload is claimed yet.
+- Scope: robust Android Maps fallback, a visible in-app version label, and regression coverage proving that “Narrow it down” starts and resets collapsed.
+- Maps now tries the Android geo intent first, then an Expo in-app browser, ordinary HTTPS Maps, and finally a generic Google search before reporting failure.
+- Local validation passed: TypeScript, 40/40 tests, catalog validation, Expo Doctor 21/21, diff check, and Android Hermes export to `artifacts/v1.11-release-candidate/android-export`.
+- Expo was aligned to SDK patch `57.0.21`; `expo-constants` and `expo-web-browser` use SDK-compatible versions.
+- A production AAB and versionCode will be recorded here after the cloud build succeeds.
+
 ## V1.10 product-quality pass — 8 September 2026 — local validation complete
 
 - App version `1.10.0`; V1.9 code 14 remains a successful but unsubmitted artifact and should not be uploaded after V1.10 supersedes it.

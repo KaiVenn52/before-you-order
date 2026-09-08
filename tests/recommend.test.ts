@@ -4,7 +4,7 @@ import { cuisineLabels, foodTypeLabels, meals } from '../src/data/meals';
 import imageCredits from '../src/data/imageCredits.json';
 import { copy } from '../src/i18n';
 import { venueTypes } from '../src/data/venues';
-import { buildNearbyQuery, googleMapsSearchUrl } from '../src/domain/places';
+import { buildNearbyQuery, googleMapsSearchUrl, googleSearchUrl } from '../src/domain/places';
 import { mealWeight, pickMeal, sampleWeighted, pickDifferentItem, pickRefreshedPosition, recommendMeals } from '../src/domain/recommend';
 import type { CuisineId, Meal, Preferences } from '../src/domain/types';
 
@@ -134,6 +134,8 @@ test('place searches respect strategy, eating mode and vegetarian preference', (
   assert.match(query, /delivery near me$/);
   assert.match(googleMapsSearchUrl(query), /^https:\/\/www\.google\.com\/maps\/search\/\?api=1&query=/);
   assert.match(googleMapsSearchUrl(query), /%E7%B4%A0%E9%A3%9F/);
+  assert.match(googleSearchUrl(query), /^https:\/\/www\.google\.com\/search\?q=/);
+  assert.match(googleSearchUrl(query), /Google%20Maps/);
 });
 
 test('dietary and budget settings are hard filters', () => {

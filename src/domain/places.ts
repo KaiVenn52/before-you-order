@@ -26,3 +26,7 @@ export function googleMapsSearchUrl(query: string): string {
 export function androidMapsSearchUrl(query: string): string {
   return `geo:0,0?q=${encodeURIComponent(query)}`;
 }
+
+export function googleSearchUrl(query: string): string {
+  return `https://www.google.com/search?q=${encodeURIComponent(`${query} Google Maps`)}`;
+}

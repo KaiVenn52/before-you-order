@@ -1,6 +1,6 @@
 # Before You Order — Project Status
 
-## Implemented through V1.10; V1.8 is the current Google Play Alpha release
+## Implemented through V1.11; V1.11 is being prepared for Google Play Alpha
 
 - Expo SDK 57 / React Native Android application.
 - One-recommendation decision flow for dine-out, takeaway, or delivery.
@@ -34,11 +34,12 @@
 - Production Android builds now use R8 code minification and resource shrinking, with retrace mappings retained for readable crash diagnostics.
 - V1.9 disables cuisine/food-type combinations that cannot return a meal, normalizes invalid filters when the eating mode changes, prevents duplicate rapid feedback, and lets users reset recommendation history without restoring hidden foods.
 - V1.10 makes learned choices visible through a bounded familiar-pick lane while preserving exploration, virtualizes and searches the 244-entry photo-credit list, adds a public in-app issue-report link, improves modal accessibility isolation, and reduces the visual weight of eating-mode controls.
+- V1.11 keeps “Narrow it down” collapsed on launch and after changing decision modes, displays the running app version in the footer, and uses a layered Maps handoff: Android geo intent, an in-app browser, ordinary HTTPS Maps, then a Google web search.
 
 ## Still requires device validation
 
 - Confirm image crops and text wrapping across common Android screen sizes, including Chinese text.
-- Confirm Google Maps/browser handoff on the user's phone.
+- Confirm the V1.11 layered Google Maps/browser handoff on the user's phone.
 - Gather feedback from at least 5–10 Malaysian users on recommendation relevance.
 - Tune dish metadata and rankings based on observed choices rather than assumptions.
 - Review any neutral image placeholders and replace them only when an exact, reusable photo is available.

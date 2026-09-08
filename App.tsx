@@ -1,7 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import * as Haptics from 'expo-haptics';
 import { Image } from 'expo-image';
+import Constants from 'expo-constants';
 import { getLocales } from 'expo-localization';
+import * as WebBrowser from 'expo-web-browser';
 import {
   ArrowClockwise, ChatCircleDots, Check, EyeSlash, ForkKnife, Handbag, MapPin, Moped, NavigationArrow,
   Sparkle, Star, Storefront, ThumbsDown, Wallet, X,
@@ -17,7 +19,7 @@ import { needsNeutralImage } from './src/data/imageReview';
 import { mealImages } from './src/data/mealImages';
 import { venueTypes } from './src/data/venues';
 import { ignoreFailure, openExternalUrl, openFirstExternalUrl } from './src/domain/effects';
-import { androidMapsSearchUrl, buildMealSubject, buildNearbyQuery, googleMapsSearchUrl, type SearchStrategy } from './src/domain/places';
+import { androidMapsSearchUrl, buildMealSubject, buildNearbyQuery, googleMapsSearchUrl, googleSearchUrl, type SearchStrategy } from './src/domain/places';
 import { pickDifferentItem, pickMeal, recommendationReason, recommendMeals } from './src/domain/recommend';
 import type { CuisineId, DecisionMode, EatingMode, FoodType, Language, Meal, MealFeedback, VenueTypeId } from './src/domain/types';
 import { priceLabel, tr, type CopyKey } from './src/i18n';
@@ -39,6 +41,7 @@ const cuisines = Object.keys(cuisineLabels) as CuisineId[];
 const foodTypes = Object.keys(foodTypeLabels) as FoodType[];
 const originalImageIds = new Set(imageCredits.filter(credit => credit.license === 'Original artwork').map(credit => credit.mealId));
 const mealById = new Map(meals.map(meal => [meal.id, meal]));
+const appVersion = Constants.expoConfig?.version ?? 'unknown';
 type ShopTarget = { kind: 'meal'; id: string } | { kind: 'venue'; id: VenueTypeId } | null;
 
 export default function App() {
@@ -212,10 +215,16 @@ function AppContent() {
   };
   const openMapSearch = async (subject: string, strategy: SearchStrategy, vegetarian = false) => {
     const query = buildNearbyQuery(subject, strategy, mode, vegetarian);
-    const urls = Platform.OS === 'android'
-      ? [androidMapsSearchUrl(query), googleMapsSearchUrl(query)]
-      : [googleMapsSearchUrl(query)];
-    await openFirstExternalUrl(urls, Linking.openURL, () => Alert.alert(tr(language, 'mapsError'), tr(language, 'mapsErrorBody'), [{ text: tr(language, 'cancel') }, { text: tr(language, 'retry'), onPress: () => { void openMapSearch(subject, strategy, vegetarian); } }]));
+    const webMapsUrl = googleMapsSearchUrl(query);
+    if (Platform.OS === 'android') {
+      const nativeOpened = await openFirstExternalUrl([androidMapsSearchUrl(query)], Linking.openURL, () => {});
+      if (nativeOpened) return;
+    }
+    try {
+      await WebBrowser.openBrowserAsync(webMapsUrl);
+      return;
+    } catch { /* Try ordinary HTTPS handlers and a generic browser search below. */ }
+    await openFirstExternalUrl([webMapsUrl, googleSearchUrl(query)], Linking.openURL, () => Alert.alert(tr(language, 'mapsError'), `${tr(language, 'mapsErrorBody')} ${tr(language, 'mapsFallback')}`, [{ text: tr(language, 'cancel') }, { text: tr(language, 'retry'), onPress: () => { void openMapSearch(subject, strategy, vegetarian); } }]));
   };
   const openFeedback = () => {
     const url = 'https://github.com/KaiVenn52/before-you-order/issues/new?title=App%20feedback&body=What%20happened%3F%0A%0AWhat%20did%20you%20expect%3F%0A%0ADevice%20and%20Android%20version%3A';
@@ -406,6 +415,7 @@ function AppContent() {
         {blacklistedMeals.length > 0 && <Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'manageHiddenFoods')} onPress={() => setHiddenFoodsVisible(true)} style={styles.creditButton}><Text style={styles.creditButtonText}>{tr(language, 'manageHiddenFoods')} ({blacklistedMeals.length})</Text></Pressable>}
         <Pressable accessibilityRole="button" accessibilityLabel={tr(language, 'photoCredits')} onPress={() => setCreditsVisible(true)} style={styles.creditButton}><Text style={styles.creditButtonText}>{tr(language, 'photoCredits')}</Text></Pressable>
         <Pressable accessibilityRole="link" accessibilityLabel={tr(language, 'sendFeedback')} accessibilityHint={tr(language, 'feedbackLinkBody')} onPress={openFeedback} style={styles.feedbackLink}><ChatCircleDots size={18} color={C.green} /><Text style={styles.creditButtonText}>{tr(language, 'sendFeedback')}</Text></Pressable>
+        <Text style={styles.versionText}>{tr(language, 'version')} {appVersion}</Text>
       </ScrollView>
 
       <HiddenFoodsModal language={language} visible={hiddenFoodsVisible} blacklistedMeals={blacklistedMeals} hasFeedback={feedback.length > 0} onClearHistory={resetRecommendationHistory} onRestoreAll={restoreAll} onRestore={restoreBlacklistedMeal} onClose={() => setHiddenFoodsVisible(false)} />
@@ -577,7 +587,7 @@ const styles = StyleSheet.create({
   outlineButton: { minHeight: 46, borderWidth: 1, borderColor: C.green, borderRadius: 13, justifyContent: 'center', paddingHorizontal: 18, marginTop: 15 }, outlineText: { color: C.green, fontWeight: '800' },
   confirmation: { flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 12, backgroundColor: C.greenSoft, borderRadius: 12, padding: 12 }, confirmationText: { flexShrink: 1, color: C.green, fontSize: 12, fontWeight: '700' },
   history: { marginTop: 26 }, historyTitle: { color: C.ink, fontSize: 18, fontWeight: '900' }, historyHint: { color: C.muted, fontSize: 12, marginTop: 2, marginBottom: 8 }, historyRow: { minHeight: 66, flexDirection: 'row', alignItems: 'center', gap: 11, borderBottomWidth: 1, borderBottomColor: C.line, paddingVertical: 8 }, historyImage: { width: 57, height: 48, borderRadius: 10 }, historyName: { color: C.ink, fontSize: 13, fontWeight: '800' }, historyCuisine: { color: C.muted, fontSize: 11, marginTop: 3 },
-  disclaimer: { color: C.muted, fontSize: 11, lineHeight: 16, textAlign: 'center', marginTop: 25 }, creditButton: { minHeight: 44, alignItems: 'center', justifyContent: 'center' }, creditButtonText: { color: C.green, fontSize: 12, fontWeight: '800', textDecorationLine: 'underline' }, feedbackLink: { minHeight: 48, flexDirection: 'row', gap: 7, alignItems: 'center', justifyContent: 'center' },
+  disclaimer: { color: C.muted, fontSize: 11, lineHeight: 16, textAlign: 'center', marginTop: 25 }, creditButton: { minHeight: 44, alignItems: 'center', justifyContent: 'center' }, creditButtonText: { color: C.green, fontSize: 12, fontWeight: '800', textDecorationLine: 'underline' }, feedbackLink: { minHeight: 48, flexDirection: 'row', gap: 7, alignItems: 'center', justifyContent: 'center' }, versionText: { color: C.muted, fontSize: 10, textAlign: 'center', marginTop: 4 },
   backdrop: { flex: 1, justifyContent: 'flex-end', backgroundColor: 'rgba(8,25,16,.35)' }, sheet: { maxHeight: '88%', backgroundColor: C.paper, borderTopLeftRadius: 25, borderTopRightRadius: 25, padding: 20, paddingBottom: 30 },
   sheetHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 12 }, sheetTitle: { color: C.ink, fontSize: 22, fontWeight: '900' }, sheetHint: { color: C.muted, fontSize: 11, marginTop: 3 },
   blacklistRow: { minHeight: 48, flexDirection: 'row', alignItems: 'center', gap: 10, borderBottomWidth: 1, borderBottomColor: C.line }, blacklistMeal: { flex: 1, color: C.text, fontSize: 12, fontWeight: '700' }, restoreButton: { minHeight: 44, justifyContent: 'center', paddingHorizontal: 10 }, restoreText: { color: C.green, fontSize: 12, fontWeight: '900' },

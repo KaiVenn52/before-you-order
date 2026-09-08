@@ -21,6 +21,7 @@ let db: DatabaseSync | undefined;
 after(() => db?.close());
 let locale = 'en';
 let mapsFail = false;
+let browserFail = false;
 const opened: string[] = [];
 const alerts: any[][] = [];
 const loadingLabels: string[] = [];
@@ -40,6 +41,8 @@ Module._load = function (id: string, ...args: any[]) {
   if (id === 'expo-status-bar') return { StatusBar: 'StatusBar' };
   if (id === 'expo-image') return { Image: 'Image' };
   if (id === 'expo-localization') return { getLocales: () => [{ languageCode: locale }] };
+  if (id === 'expo-constants') return { __esModule: true, default: { expoConfig: { version: '1.11.0' } } };
+  if (id === 'expo-web-browser') return { openBrowserAsync: async (url: string) => { if (browserFail) throw new Error('No browser'); opened.push(url); return { type: 'opened' }; } };
   if (id === 'expo-haptics') return { selectionAsync: async () => { throw new Error('haptics unavailable'); }, notificationAsync: async () => { throw new Error('haptics unavailable'); }, NotificationFeedbackType: { Success: 'success' } };
   if (id === 'react-native-safe-area-context') return { SafeAreaProvider: 'SafeAreaProvider', SafeAreaView: 'SafeAreaView' };
   if (id === 'phosphor-react-native') return new Proxy({}, { get: (_, name) => typeof name === 'string' ? `Icon${name}` : undefined });
@@ -70,7 +73,7 @@ function reset() {
     getAllSync: <T>(sql: string, ...params: (string | number | null)[]) => db!.prepare(sql).all(...params) as T[],
   };
   storage = createChoiceStorage(() => nativeDb); storage.initializeStorage();
-  locale = 'en'; mapsFail = false; opened.length = 0; alerts.length = 0; loadingLabels.length = 0;
+  locale = 'en'; mapsFail = false; browserFail = false; opened.length = 0; alerts.length = 0; loadingLabels.length = 0;
 }
 
 test('App: Another preserves preferences, saving retains card, haptics failures do not block, and Maps can retry', async t => {
@@ -87,8 +90,8 @@ test('App: Another preserves preferences, saving retains card, haptics failures 
     assert.equal(storage.getFeedback().length, 1); button(app, 'Find a nearby place'); button(app, 'Pick again');
     assert.match(text(app.root), /Saved to your recent choices/);
     await press(app, 'Find a nearby place');
-    mapsFail = true; await press(app, 'Nearby search'); assert.equal(alerts.length, 1);
-    mapsFail = false; await act(async () => { alerts[0][2][1].onPress(); }); assert.equal(opened.length, 1);
+    mapsFail = true; browserFail = true; await press(app, 'Nearby search'); assert.equal(alerts.length, 1);
+    mapsFail = false; browserFail = false; await act(async () => { alerts[0][2][1].onPress(); }); assert.equal(opened.length, 1);
     await press(app, 'Pick again'); assert.notEqual(currentName(app), picked);
     assert.equal(storage.getFeedback().length, 1);
   } finally { await act(async () => app.unmount()); }
@@ -118,6 +121,7 @@ test('App: Narrow it down starts collapsed and resets after switching decision m
   try {
     assert.equal(button(app, 'Narrow it down').props.accessibilityState.expanded, false);
     assert.equal(app.root.findAll(node => String(node.type) === 'Pressable' && text(node) === 'Rice').length, 0);
+    assert.match(text(app.root), /Version 1\.11\.0/);
     await press(app, 'Narrow it down');
     assert.equal(button(app, 'Narrow it down').props.accessibilityState.expanded, true);
     assert.equal(app.root.findAll(node => String(node.type) === 'Pressable' && text(node) === 'Rice').length, 1);
@@ -125,6 +129,18 @@ test('App: Narrow it down starts collapsed and resets after switching decision m
     await press(app, 'A specific dish');
     assert.equal(button(app, 'Narrow it down').props.accessibilityState.expanded, false);
     assert.equal(app.root.findAll(node => String(node.type) === 'Pressable' && text(node) === 'Rice').length, 0);
+  } finally { await act(async () => app.unmount()); }
+});
+
+test('App: Maps falls back to an in-app browser when the Android geo intent is unavailable', async () => {
+  reset(); mapsFail = true;
+  const app = await mount();
+  try {
+    await press(app, 'I chose this');
+    await press(app, 'Find a nearby place');
+    await press(app, 'Nearby search');
+    assert.equal(alerts.length, 0);
+    assert.match(opened[0], /^https:\/\/www\.google\.com\/maps\/search\//);
   } finally { await act(async () => app.unmount()); }
 });
 
