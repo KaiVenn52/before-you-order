@@ -6,7 +6,10 @@
 - Scope: visible bounded personalization, searchable virtualized photo credits, public tester-feedback entry, modal accessibility isolation, and more compact eating-mode controls.
 - Google Places integration remains intentionally absent: real restaurant ratings, distance, and opening state require a billed API project, location/privacy design, and credentials. Existing Google Maps results remain the truthful source of those facts.
 - Local validation passed: TypeScript, 39/39 tests, catalog validation, Expo Doctor 21/21, diff check, and Android Hermes export to `artifacts/v1.10-release-candidate/android-export`.
-- GitHub Issues is enabled on the public repository, so the in-app feedback destination is live. No V1.10 AAB or Google Play upload is claimed by this checkpoint.
+- GitHub Issues is enabled on the public repository, so the in-app feedback destination is live.
+- Production AAB build `6534af3b-184b-456e-bdaa-fb4b7dd0fbc5` finished successfully from commit `b7f5e80de91f86aa747f1400c51862ffb2a2c303`; EAS assigned versionCode `15`: https://expo.dev/accounts/kaivenns-team/projects/before-you-order/builds/6534af3b-184b-456e-bdaa-fb4b7dd0fbc5
+- Local AAB: `artifacts/v1.10-production/Before-You-Order-v1.10.0-production-v15.aab`, 73,924,854 bytes; SHA-256 `0449a33c540e889de3e1e64d1bcf33fc7f8a5c555687732426e2ebc2b23ce89a`.
+- Google Play upload is not yet claimed. The Play Console Alpha draft still requires the local AAB to be selected because this account has no Google Service Account key configured for EAS Submit.
 
 ## V1.9 local release candidate — 8 September 2026
 
