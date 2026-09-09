@@ -4,7 +4,7 @@ export const copy = {
   en: {
     linkError: 'Could not open this link',
     linkErrorBody: 'Please check that a browser is available, then try again.',
-    imageCrop: 'Cropped', imageResize: 'Resized', imageWebp: 'Converted to WebP',
+    imageCrop: 'Cropped', imageResize: 'Resized', imageWebp: 'Converted to WebP', aiGeneratedImage: 'AI-assisted original food image',
     cardCrop: 'The card may crop the image further.',
     assumedAuthor: 'The source page marks this author as assumed; the photo is withheld.',
     storageLocked: 'Saved hidden foods could not be loaded',
@@ -77,7 +77,7 @@ export const copy = {
   zh: {
     linkError: '无法打开此链接',
     linkErrorBody: '请确认手机上有可用的浏览器，然后重试。',
-    imageCrop: '已裁剪', imageResize: '已调整尺寸', imageWebp: '已转换为 WebP',
+    imageCrop: '已裁剪', imageResize: '已调整尺寸', imageWebp: '已转换为 WebP', aiGeneratedImage: 'AI 辅助制作的原创食物图',
     cardCrop: '卡片显示时可能进一步裁剪。',
     assumedAuthor: '来源页面将作者标为推定，尚未确认；此照片暂不展示。',
     storageLocked: '无法读取已隐藏的食物',

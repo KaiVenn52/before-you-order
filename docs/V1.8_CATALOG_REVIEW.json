@@ -1576,9 +1576,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 9,
       "cell": 1,
-      "imageSha256": "dbbaf830953f8c892d67f9d687d3f4d90fefbb32bd96c07de2fc9def40243705",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "6f8a89925cc393f0e6cf4820125b8cc1316e8d2e850320fca5f21e262a70b3f5",
+      "display": "photo",
+      "imageDecision": "Curated exact-dish Wikimedia file: Sautéed Tempeh cropped.jpg"
     },
     {
       "mealId": "acai-bowl",
@@ -1641,9 +1641,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 9,
       "cell": 5,
-      "imageSha256": "e8c7ab761b6a717cd17d7c657e9f234f705c3004493c800547b74b8bfb0065f4",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "ad94cbbb88a55d5a1a5d12d3d387a3ce5d7b5afb73b01b3c2f743f674c6f10ce",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "nasi-hujan-panas",
@@ -1673,9 +1673,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 9,
       "cell": 7,
-      "imageSha256": "a0638268b065a83d21ea88df8e824e3ba4ba4410d43b93b82cd4f62c8c6ad303",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "9a634f23cda555ba99190572db0e3910cd363f7b9fbf562f6e63e634fa29ed9c",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "nasi-campur-malay",
@@ -1689,9 +1689,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 9,
       "cell": 8,
-      "imageSha256": "f0be1327d5f78fb28a65d9633fb7c1a7845f2f9768dae78a6bfa0becc13ad359",
-      "display": "withheld",
-      "imageDecision": "Source is Indonesian nasi campur; Malaysian dish needs confirmation."
+      "imageSha256": "eabe6f2c474e37a84fb9ebb15bf6eaf76a2e34f0f0a326ae7d540aea18aced67",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "ayam-masak-merah",
@@ -1804,9 +1804,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 10,
       "cell": 3,
-      "imageSha256": "ca8d0cb44b269d1d8f0b92d97abcce1b914146f4efc18f53217f8af30bb79cc7",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "1f355a2669d6873a5f80b5a310403f785e35812343deb229ea79a32cf7af65c8",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "roti-jala-curry",
@@ -1902,9 +1902,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 10,
       "cell": 9,
-      "imageSha256": "db180f7a096ff81e2109bb62cbd9de9a9c802d8635d4c530d402254fed6a911d",
-      "display": "withheld",
-      "imageDecision": "Source describes mushroom lo mein."
+      "imageSha256": "29a6e3b84e06f9d9b46fbc878648ad85167afa9cee27857fcec419e24de7cac0",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "wat-tan-hor",
@@ -1934,9 +1934,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 10,
       "cell": 11,
-      "imageSha256": "c0b862e5311f893ce2c55fdf1f2a348b07a14115efe41d9c7040af11f1c24a32",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "ebb51415a7297f860baae0e805e5c94f812f3adb070793083fa828bb1ac2963d",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "loh-mee",
@@ -1985,9 +1985,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 11,
       "cell": 2,
-      "imageSha256": "a503249fc8d48d62c2c12d1939cd6af3832cb93324d5bddc1db6bf20f41d1017",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "4ac2c799df51d237ac8f264aae5e9b46dcc3794b74bf8e105c4d3c1f4b506739",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "hakka-mee",
@@ -2082,9 +2082,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 11,
       "cell": 8,
-      "imageSha256": "8b101db571a80aca0dd7ff8259931d021c7cddf8f6f5d3321469cfd744cdb668",
-      "display": "withheld",
-      "imageDecision": "Shared Chaoshan rice roll image does not establish Penang preparation."
+      "imageSha256": "01df001482738f1ec28923a47d943b70941bbf620096099169dd13b409f55621",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "ipoh-hor-fun",
@@ -2165,9 +2165,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 12,
       "cell": 1,
-      "imageSha256": "2da7dd46cba27e314e70af95bcbbde620ccf3cbecd85ce3233d42065e0131980",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "95b46467df8032f51c6e2853ed727a5b93c14c1ff1e9193258d75c7af14a76b9",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "salted-egg-chicken",
@@ -2261,9 +2261,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 12,
       "cell": 7,
-      "imageSha256": "b31325b55e5cf27306d3f3be61ede3e81159fdc7c5af4f70f9d6bd5308464dec",
-      "display": "withheld",
-      "imageDecision": "Whole fish shown; catalog describes stir-fried fish slices."
+      "imageSha256": "49fe4945adce8361b41a57c23185463843ee3e6a9c867dfaa778c2e7293cbac6",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "kung-pao-chicken",
@@ -2341,9 +2341,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 12,
       "cell": 12,
-      "imageSha256": "983d327f8ca0650117af90a153497b645fdbfdcba18f92db669ce568e6ec6471",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "6a61b903478473d91a736ea2ea3280dc763ec3b1de741568566bc827db44af4e",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "roti-tissue",
@@ -2374,9 +2374,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 13,
       "cell": 2,
-      "imageSha256": "829a4b283dd4fba3080734991fb866fc8f43031de6370888fc3eaf2c3d3285f2",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "9fc06fee18b4b34ddce09df1cb6d017fa70390c40ff20c3a16fc942c25e5d2bf",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "rava-thosai",
@@ -2586,9 +2586,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 14,
       "cell": 3,
-      "imageSha256": "2d8e8f47350b52ae89656d4ea5c20b4dcd4eb231f383a6a46cfef6977d6ea3f6",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "333dd0281d1ca767444519e96300f28f896a70d914ed11592773dbb0e4c2c494",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "nyonya-laksa",
@@ -2619,9 +2619,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 14,
       "cell": 5,
-      "imageSha256": "af116e00cd334af8d7f7ec97b50d0e265e257b9c66aa91f250c8f8e79dfee375",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "e76e7deb0aae95c240b625a97552420eb8dbe40a62cc47e0c994006a02bd169f",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "jiu-hu-char",
@@ -2636,9 +2636,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 14,
       "cell": 6,
-      "imageSha256": "355f7cb79b930f6ab2ef0e4f03ea69bcfa0ba764aad62c0c634592851f289f71",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "a8c8cec95c4a4ef449c6aff83476ea5fadc7e2a57b693b3170fc209c53ad2308",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "inchi-kabin",
@@ -2652,9 +2652,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 14,
       "cell": 7,
-      "imageSha256": "565274a31691e7569905221db6bed5b5c74b69219a0eee94a9c8ec69b8659c74",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "9c6909a8c3d2e652a6f9197ba58e49bfb2edffaded68380e05c0a9c1737426b1",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "udang-lemak-nenas",
@@ -2669,9 +2669,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 14,
       "cell": 8,
-      "imageSha256": "164fa89fa8802253871ae6de3d25316421247ea18ac368f375ec0d27106852c7",
-      "display": "withheld",
-      "imageDecision": "Source describes Bengali prawn malai curry; pineapple unconfirmed."
+      "imageSha256": "b0032a4c26c685ebe42e3cebfeb2677a6ca228ca2ef46c4cd7e59c85f1c76923",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "nyonya-otak-otak",
@@ -2735,9 +2735,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 14,
       "cell": 12,
-      "imageSha256": "f4bce5f791623b81cc48ab78f37a33de4833f90dbb6e2971014f42bbd7589b51",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "ec6dc9c3f0b3012eb34f3b98b85a13e207d32baabf2a6c2f5383ec71bf74df9b",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "nyonya-asam-fish",
@@ -2784,9 +2784,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 15,
       "cell": 3,
-      "imageSha256": "9e36d95c24c35cb8e8d00266df2346625957fbec1add23322975852a9a13e3a6",
-      "display": "withheld",
-      "imageDecision": "Shared source describes chicken, not pork."
+      "imageSha256": "ca475662655143c74a954e20aee48dfb95177b554f4a1d86821245c000dd17fd",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "sarawak-laksa",
@@ -2914,9 +2914,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 15,
       "cell": 11,
-      "imageSha256": "29f42b9243f4e2be200986ed27f6713913e47639a3815d36880a3f55a29890a7",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "2c01b4c70d1d33517492cbcc2ffe07b00079c1415df66ba6f67a320e734dbf22",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "nasi-lalap",
@@ -2930,9 +2930,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 15,
       "cell": 12,
-      "imageSha256": "14c049561b98a1c89cd8c8f540478c8fc18d5b3d2bfe62e159edfe132e567c37",
-      "display": "withheld",
-      "imageDecision": "Source describes general Sundanese food."
+      "imageSha256": "e92fd937c1be55ea4d96b7a54b0fdb1275aad23fe440981f4e2c73a6149bf82d",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "hinava",
@@ -2962,9 +2962,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 16,
       "cell": 2,
-      "imageSha256": "19662b8f463d29f8e3b2fb798af0746d7e34d81747c0ca9142e942935764c260",
-      "display": "withheld",
-      "imageDecision": "Closed leaf parcels hide the rice; the described Sabah meal sides are not shown."
+      "imageSha256": "76ea702c056ac7634ab1912417949ce5be92886af4290a425a334d22bccb1699",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "pinasakan-sada",
@@ -2978,9 +2978,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 16,
       "cell": 3,
-      "imageSha256": "443b6e5cce70ef055d51bcef0f49f0cd6cfab7a26c324227e054f616e367c93b",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "b9d2853dd691c326a716c50adb55e5989ede882931cedeebb35fab0d3e82ba83",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "ngiu-chap",
@@ -3027,9 +3027,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 16,
       "cell": 6,
-      "imageSha256": "cd759023120413f7e416e5142388d42b0fdce3278665f285f37bad6837ea21ba",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "075dc26e20581f867b49de6ac15cf2a3ccd726f8ab9449aad385ef0fc1501000",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "gyudon",
@@ -3324,9 +3324,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 17,
       "cell": 12,
-      "imageSha256": "34cdc54fde8c34869ed2509a9cc6209ad5233ae4dd6eec0274b27e525dba93e9",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "11e790aecce8cc0196e026f56489f37863aee82d0478e624d0a12cb1633bb506",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "tom-yum-noodles",
@@ -3522,9 +3522,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 18,
       "cell": 12,
-      "imageSha256": "537de538ca89c44d27508e6579c07d2bc705524ed65cd84ac6a0487d1d2e9e20",
-      "display": "original-placeholder",
-      "imageDecision": "Original neutral artwork; native translated placeholder is displayed."
+      "imageSha256": "9e087d1d7683458b6c381e4fc66f8b90ec0e7adca19ed10d007f8a8006a4a37a",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     },
     {
       "mealId": "soto-betawi",
@@ -3981,9 +3981,9 @@
       "categoryDecision": "Retained explicit categories after description review; see category convention.",
       "sheet": 21,
       "cell": 4,
-      "imageSha256": "5920cd9e112726f8907fc2bd901299149dedbbb7e21c81b9e989134c2d5efbeb",
-      "display": "withheld",
-      "imageDecision": "Source describes American skewers; mixed grill unconfirmed."
+      "imageSha256": "fb5337d154415f2e3ad1551e5632a09672c1285b66e5d302556549b9e885bfa6",
+      "display": "photo",
+      "imageDecision": "AI-assisted original made for this exact catalog dish and visually checked against its description."
     }
   ]
 }

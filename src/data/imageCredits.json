@@ -1346,15 +1346,16 @@
   {
     "mealId": "tempeh-bowl",
     "sourceTitle": "Tempeh",
-    "artist": "Before You Order",
-    "license": "Original artwork",
-    "licenseUrl": "",
-    "sourceUrl": "",
-    "isPlaceholder": true,
+    "artist": "Sautéed_Tempeh.jpg : mattjlc derivative work: Sentausa ( talk )",
     "modifications": [
-      "original-artwork"
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
-    "attributionStatus": "original"
+    "attributionStatus": "imported",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saut%C3%A9ed_Tempeh_cropped.jpg"
   },
   {
     "mealId": "acai-bowl",
@@ -1401,13 +1402,16 @@
   {
     "mealId": "nasi-tomato",
     "sourceTitle": "Nasi tomato",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
@@ -1428,29 +1432,34 @@
   {
     "mealId": "nasi-kukus",
     "sourceTitle": "Nasi kukus",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
   {
     "mealId": "nasi-campur-malay",
     "sourceTitle": "Malay nasi campur",
-    "artist": "Vyacheslav Argenberg",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nasi_campur_as_art,_Ubud,_Indonesia.jpg",
+    "artist": "Before You Order (AI-assisted original)",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": false,
     "modifications": [
+      "ai-generated",
       "crop",
       "resize",
       "webp-conversion"
     ],
-    "attributionStatus": "imported"
+    "attributionStatus": "original"
   },
   {
     "mealId": "ayam-masak-merah",
@@ -1539,13 +1548,16 @@
   {
     "mealId": "gulai-kawah",
     "sourceTitle": "Gulai kawah",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
@@ -1622,16 +1634,18 @@
   {
     "mealId": "chilli-pan-mee",
     "sourceTitle": "Banmian",
-    "artist": "Andy Li",
-    "license": "CC0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Braised_Mushroom_Lo_Mein_with_Soup_-_CK_Bistro.jpg",
+    "artist": "Before You Order (AI-assisted original)",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": false,
     "modifications": [
+      "ai-generated",
       "crop",
       "resize",
       "webp-conversion"
     ],
-    "attributionStatus": "imported"
+    "attributionStatus": "original"
   },
   {
     "mealId": "wat-tan-hor",
@@ -1650,15 +1664,18 @@
   {
     "mealId": "cantonese-fried-noodles",
     "sourceTitle": "Cantonese fried noodles",
-    "artist": "Before You Order",
-    "modifications": [
-      "original-artwork"
-    ],
-    "attributionStatus": "original",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true
+    "isPlaceholder": false,
+    "modifications": [
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
+    ],
+    "attributionStatus": "original"
   },
   {
     "mealId": "loh-mee",
@@ -1691,13 +1708,16 @@
   {
     "mealId": "mee-sua-soup",
     "sourceTitle": "Misua",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
@@ -1774,16 +1794,18 @@
   {
     "mealId": "penang-chee-cheong-fun",
     "sourceTitle": "Chee cheong fun",
-    "artist": "Asamboi",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chaoshan_rice_noodle_roll.jpg",
+    "artist": "Before You Order (AI-assisted original)",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": false,
     "modifications": [
+      "ai-generated",
       "crop",
       "resize",
       "webp-conversion"
     ],
-    "attributionStatus": "imported"
+    "attributionStatus": "original"
   },
   {
     "mealId": "ipoh-hor-fun",
@@ -1844,13 +1866,16 @@
   {
     "mealId": "marmite-chicken",
     "sourceTitle": "Marmite chicken",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
@@ -1927,16 +1952,18 @@
   {
     "mealId": "ginger-scallion-fish",
     "sourceTitle": "Ginger scallion fish",
-    "artist": "Tim Sackton from Somerville, MA",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ginger_Scallion_Red_Perch_(50-366)_(25058329532).jpg",
+    "artist": "Before You Order (AI-assisted original)",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": false,
     "modifications": [
+      "ai-generated",
       "crop",
       "resize",
       "webp-conversion"
     ],
-    "attributionStatus": "imported"
+    "attributionStatus": "original"
   },
   {
     "mealId": "kung-pao-chicken",
@@ -1997,13 +2024,16 @@
   {
     "mealId": "roti-bawang",
     "sourceTitle": "Roti bawang",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
@@ -2024,13 +2054,16 @@
   {
     "mealId": "roti-bom",
     "sourceTitle": "Roti bom",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
@@ -2205,13 +2238,16 @@
   {
     "mealId": "kari-kapitan",
     "sourceTitle": "Kari kapitan",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
@@ -2232,55 +2268,66 @@
   {
     "mealId": "nyonya-chap-chye",
     "sourceTitle": "Cap cai",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
   {
     "mealId": "jiu-hu-char",
     "sourceTitle": "Jiu hu char",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
   {
     "mealId": "inchi-kabin",
     "sourceTitle": "Inchi kabin",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
   {
     "mealId": "udang-lemak-nenas",
     "sourceTitle": "Prawn curry",
-    "artist": "Riya Chattopadhyay",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chingri_Macher_Malai_Curry.jpg",
+    "artist": "Before You Order (AI-assisted original)",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": false,
     "modifications": [
+      "ai-generated",
       "crop",
       "resize",
       "webp-conversion"
     ],
-    "attributionStatus": "imported"
+    "attributionStatus": "original"
   },
   {
     "mealId": "nyonya-otak-otak",
@@ -2327,13 +2374,16 @@
   {
     "mealId": "nyonya-nasi-ulam",
     "sourceTitle": "Nasi ulam",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
@@ -2368,16 +2418,18 @@
   {
     "mealId": "babi-pongteh",
     "sourceTitle": "Pongteh",
-    "artist": "Shaun@KL",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayam_pongteh.jpg",
+    "artist": "Before You Order (AI-assisted original)",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": false,
     "modifications": [
+      "ai-generated",
       "crop",
       "resize",
       "webp-conversion"
     ],
-    "attributionStatus": "imported"
+    "attributionStatus": "original"
   },
   {
     "mealId": "sarawak-laksa",
@@ -2480,29 +2532,34 @@
   {
     "mealId": "mee-sapi",
     "sourceTitle": "Mee sapi",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
   {
     "mealId": "nasi-lalap",
     "sourceTitle": "Nasi lalap",
-    "artist": "M Toegiono from Tokyo, Japan",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Masakan_Sunda.jpg",
+    "artist": "Before You Order (AI-assisted original)",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": false,
     "modifications": [
+      "ai-generated",
       "crop",
       "resize",
       "webp-conversion"
     ],
-    "attributionStatus": "imported"
+    "attributionStatus": "original"
   },
   {
     "mealId": "hinava",
@@ -2521,27 +2578,32 @@
   {
     "mealId": "linopot-set",
     "sourceTitle": "Linopot",
-    "artist": "Nelynnnnn",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Linopot_01.jpg",
+    "artist": "Before You Order (AI-assisted original)",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": false,
     "modifications": [
+      "ai-generated",
       "crop",
       "resize",
       "webp-conversion"
     ],
-    "attributionStatus": "imported"
+    "attributionStatus": "original"
   },
   {
     "mealId": "pinasakan-sada",
     "sourceTitle": "Pinasakan",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
@@ -2576,13 +2638,16 @@
   {
     "mealId": "dabai-fried-rice",
     "sourceTitle": "Canarium odontophyllum",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
@@ -2828,13 +2893,16 @@
   {
     "mealId": "moo-ping",
     "sourceTitle": "Mu ping",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
@@ -2995,13 +3063,16 @@
   {
     "mealId": "indonesian-martabak",
     "sourceTitle": "Martabak",
-    "artist": "Before You Order",
+    "artist": "Before You Order (AI-assisted original)",
     "license": "Original artwork",
     "licenseUrl": "",
     "sourceUrl": "",
-    "isPlaceholder": true,
+    "isPlaceholder": false,
     "modifications": [
-      "original-artwork"
+      "ai-generated",
+      "crop",
+      "resize",
+      "webp-conversion"
     ],
     "attributionStatus": "original"
   },
@@ -3386,15 +3457,17 @@
   {
     "mealId": "middle-eastern-mixed-grill",
     "sourceTitle": "Mixed grill",
-    "artist": "Elisart from Caracas, Venezuela",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PinchosAmericanos.jpg",
+    "artist": "Before You Order (AI-assisted original)",
+    "license": "Original artwork",
+    "licenseUrl": "",
+    "sourceUrl": "",
+    "isPlaceholder": false,
     "modifications": [
+      "ai-generated",
       "crop",
       "resize",
       "webp-conversion"
     ],
-    "attributionStatus": "imported"
+    "attributionStatus": "original"
   }
 ]

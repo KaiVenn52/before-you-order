@@ -208,13 +208,13 @@ test('App: attribution links have translated errors and a working retry', async 
   }
 });
 
-test('App: original placeholders use translated native content rather than baked English labels', async () => {
+test('App: completed original meal art renders as an image instead of a placeholder', async () => {
   reset(); locale = 'zh';
   meals.filter(meal => meal.id !== 'roti-bawang').forEach(meal => storage.blacklistMeal(meal.id));
   const app = await mount();
   try {
-    assert.equal(app.root.findAll(node => String(node.type) === 'Image').length, 0);
-    assert.match(text(app.root), /照片/);
+    assert.equal(app.root.findAll(node => String(node.type) === 'Image').length, 1);
+    assert.doesNotMatch(text(app.root), /照片即将补充/);
   } finally { await act(async () => app.unmount()); }
 });
 

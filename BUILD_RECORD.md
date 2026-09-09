@@ -1,5 +1,13 @@
 # Android Build Record
 
+## V1.12 complete-image catalog — 10 September 2026 — local validation complete
+
+- App version `1.12.0`; no Google Play upload is claimed yet.
+- Replaced all 19 remaining original placeholders and all 9 quarantined mismatches. Tempeh bowl now uses an exact reusable Wikimedia photo; the other 27 entries use dish-specific AI-assisted original food images that were visually checked against their catalog descriptions.
+- Current catalog display: 244/244 meal images, comprising 217 reusable source photos and 27 disclosed AI-assisted originals; zero placeholders and zero withheld images.
+- Image credits identify generated originals as `Before You Order (AI-assisted original)` and describe them in English and Chinese. Original assets have no external attribution links; reusable photos retain their source and license links.
+- Local validation passed: TypeScript, 40/40 tests, catalog validation, and diff check. Android export, EAS production build, GitHub push, and Google Play submission remain to be recorded separately.
+
 ## V1.11 Maps compatibility release — 9 September 2026 — local validation complete
 
 - App version `1.11.0`; no Google Play upload is claimed yet.

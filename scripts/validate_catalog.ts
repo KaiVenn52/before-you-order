@@ -33,7 +33,7 @@ for (const meal of meals) {
   else {
     if (JSON.stringify(reviewed.foodTypes) !== JSON.stringify(meal.foodTypes) || reviewed.name !== meal.name || reviewed.localName !== meal.localName || reviewed.description !== meal.description || reviewed.descriptionZh !== meal.descriptionZh) errors.push(`${meal.id}: semantic review is stale.`);
     if (fs.existsSync(imagePath) && createHash('sha256').update(fs.readFileSync(imagePath)).digest('hex') !== reviewed.imageSha256) errors.push(`${meal.id}: image changed after visual review.`);
-    const expectedDisplay = creditById.get(meal.id)?.license === 'Original artwork' ? 'original-placeholder' : imageReview[meal.id] ? 'withheld' : 'photo';
+    const expectedDisplay = creditById.get(meal.id)?.isPlaceholder ? 'original-placeholder' : imageReview[meal.id] ? 'withheld' : 'photo';
     if (reviewed.display !== expectedDisplay) errors.push(`${meal.id}: display review is stale.`);
     if (imageReview[meal.id] && reviewed.imageDecision !== imageReview[meal.id]) errors.push(`${meal.id}: withholding reason changed after review.`);
   }
@@ -55,7 +55,8 @@ const counts = Object.fromEntries(Object.keys(Object.groupBy(meals, (meal) => me
 console.log(JSON.stringify({ meals: meals.length, localMeals: meals.filter((meal) => requiredLocal.has(meal.cuisine)).length, cuisines: counts, credits: credits.length }, null, 2));
 console.log(JSON.stringify({
   sourcePhotos: credits.filter(c => c.license !== 'Original artwork').length,
-  originalPlaceholders: credits.filter(c => c.license === 'Original artwork').length,
+  generatedOriginals: credits.filter(c => c.license === 'Original artwork' && !c.isPlaceholder).length,
+  originalPlaceholders: credits.filter(c => c.isPlaceholder).length,
   withheldPhotos: Object.keys(imageReview).length,
   duplicateExternalImages: audit.duplicates,
   manualReview: imageReview,

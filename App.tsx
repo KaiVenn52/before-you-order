@@ -39,7 +39,7 @@ const modeOptions: Array<{ id: EatingMode; labelKey: 'dineOut' | 'takeaway' | 'd
 ];
 const cuisines = Object.keys(cuisineLabels) as CuisineId[];
 const foodTypes = Object.keys(foodTypeLabels) as FoodType[];
-const originalImageIds = new Set(imageCredits.filter(credit => credit.license === 'Original artwork').map(credit => credit.mealId));
+const placeholderImageIds = new Set(imageCredits.filter(credit => credit.isPlaceholder === true).map(credit => credit.mealId));
 const mealById = new Map(meals.map(meal => [meal.id, meal]));
 const appVersion = Constants.expoConfig?.version ?? 'unknown';
 type ShopTarget = { kind: 'meal'; id: string } | { kind: 'venue'; id: VenueTypeId } | null;
@@ -438,7 +438,7 @@ function AppContent() {
 function MealPhoto({ meal, language, small = false }: { meal: Meal; language: Language; small?: boolean }) {
   const [failed, setFailed] = useState(false);
   useEffect(() => setFailed(false), [meal.imageKey]);
-  if (failed || originalImageIds.has(meal.id) || needsNeutralImage(meal.id) || !mealImages[meal.imageKey]) {
+  if (failed || placeholderImageIds.has(meal.id) || needsNeutralImage(meal.id) || !mealImages[meal.imageKey]) {
     const displayName = language === 'zh' ? meal.localName ?? meal.name : meal.name;
     return (
       <View
@@ -540,7 +540,7 @@ function CreditsModal({ language, visible, onClose }: { language: Language; visi
           <Text style={styles.creditMeta}>{credit.sourceTitle}</Text>
           {needsNeutralImage(credit.mealId) && <Text style={styles.creditMeta}>{tr(language, 'imageWithheld')}</Text>}
           <Text style={styles.creditMeta}>{credit.artist} · {credit.license}</Text>
-          <Text style={styles.creditMeta}>{credit.modifications.map(change => tr(language, change === 'original-artwork' ? 'originalImage' : change === 'crop' ? 'imageCrop' : change === 'resize' ? 'imageResize' : 'imageWebp')).join(' · ')}</Text>
+          <Text style={styles.creditMeta}>{credit.modifications.map(change => tr(language, change === 'original-artwork' ? 'originalImage' : change === 'ai-generated' ? 'aiGeneratedImage' : change === 'crop' ? 'imageCrop' : change === 'resize' ? 'imageResize' : 'imageWebp')).join(' · ')}</Text>
           {credit.license !== 'Original artwork' && <Text style={styles.creditMeta}>{tr(language, 'cardCrop')}</Text>}
           {credit.attributionStatus === 'source-assumed' && <Text style={styles.creditMeta}>{tr(language, 'assumedAuthor')}</Text>}
           {!!credit.sourceUrl && <Pressable accessibilityRole="link" accessibilityLabel={`${credit.sourceTitle}: ${tr(language, 'source')}`} onPress={() => openCredit(credit.sourceUrl)} style={styles.creditButton}><Text style={styles.creditButtonText}>{tr(language, 'source')}</Text></Pressable>}

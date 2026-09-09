@@ -1,6 +1,6 @@
 # Before You Order — Project Status
 
-## Implemented through V1.11; V1.11 is being prepared for Google Play Alpha
+## Implemented through V1.12; V1.11 is published to Google Play Alpha
 
 - Expo SDK 57 / React Native Android application.
 - One-recommendation decision flow for dine-out, takeaway, or delivery.
@@ -13,7 +13,7 @@
 - Dedicated Nyonya and East Malaysian groups, plus separate Thai, Indonesian, Vietnamese, and Middle Eastern collections.
 - A catalog validator that rejects duplicate IDs or names, missing bilingual metadata, missing assets, and unsupported image licenses.
 - Optimized local meal photos with Wikimedia licensing and in-app attribution.
-- All 244 meal image mappings and bilingual category descriptions reviewed. The current catalog displays 216 verified reusable photos and 28 translated neutral cards: 19 original placeholders plus 9 withheld mismatches. Per-image processing records and a hash-bound review ledger are in docs/V1.8_IMAGE_REVIEW.md. Native-device crops are not fully verified.
+- All 244 meal image mappings and bilingual category descriptions reviewed. The current catalog displays a dish image for every meal: 217 reusable source photos plus 27 disclosed AI-assisted original food images, with zero placeholders and zero quarantined mismatches. Per-image processing records and a hash-bound review ledger are in docs/V1.8_CATALOG_REVIEW.json. Native-device crops are not fully verified.
 - Direct Google Maps nearby search for each recommendation.
 - Full-catalog “Another” action instead of cycling only three cards.
 - “Not today” and “I chose this” feedback that changes later sampling weights.
@@ -35,6 +35,7 @@
 - V1.9 disables cuisine/food-type combinations that cannot return a meal, normalizes invalid filters when the eating mode changes, prevents duplicate rapid feedback, and lets users reset recommendation history without restoring hidden foods.
 - V1.10 makes learned choices visible through a bounded familiar-pick lane while preserving exploration, virtualizes and searches the 244-entry photo-credit list, adds a public in-app issue-report link, improves modal accessibility isolation, and reduces the visual weight of eating-mode controls.
 - V1.11 keeps “Narrow it down” expanded on launch and restores it expanded after changing decision modes, displays the running app version in the footer, and uses a layered Maps handoff: Android geo intent, an in-app browser, ordinary HTTPS Maps, then a Google web search.
+- V1.12 replaces all remaining blank/neutral meal cards. One exact reusable Tempeh photo and 27 visually checked, dish-specific AI-assisted originals complete the 244-image catalog; credits disclose generated originals in both languages.
 
 ## Still requires device validation
 
@@ -42,11 +43,11 @@
 - Confirm the V1.11 layered Google Maps/browser handoff on the user's phone.
 - Gather feedback from at least 5–10 Malaysian users on recommendation relevance.
 - Tune dish metadata and rankings based on observed choices rather than assumptions.
-- Review any neutral image placeholders and replace them only when an exact, reusable photo is available.
+- Review the 27 generated originals on several physical devices and replace any weak depiction only with a demonstrably more accurate image.
 
 ## Distribution status and remaining boundaries
 
-- V1.8.0 (version code 13) was published to the closed-testing Alpha track at 100% rollout on 8 September 2026 after Google approved the initial 13 changes. V1.9.0 code 14 was built but not uploaded to Play and is superseded by the V1.10 source before release. The active geographic scope remains 7 countries/regions while expansion to every Play-supported location (169 additional named locations plus `其他国家/地区`) is under review. Self-managed publishing remains enabled, so the geographic expansion must be published after approval.
+- V1.11.0 (version code 17) is published to the closed-testing Alpha track. V1.12 is the current local source and is not yet claimed as built or uploaded. V1.9.0 code 14 and V1.11.0 code 16 were superseded and must not be uploaded.
 - No public production release or subscription setup.
 - No location permission or precise location collection; nearby discovery is delegated to Google Maps.
 

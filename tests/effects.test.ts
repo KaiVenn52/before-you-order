@@ -36,7 +36,7 @@ test('English and Chinese Maps searches retain both dish names and Malaysian ali
   }
 });
 
-test('244 credits have clean authors and valid source/license URLs, with original placeholders exempt', () => {
+test('244 credits have clean authors and valid attribution, with no quarantined images', () => {
   assert.equal(credits.length, 244);
   const audit = auditCredits(credits, meals.map(meal => meal.id));
   assert.deepEqual(audit.errors, []);
@@ -44,7 +44,8 @@ test('244 credits have clean authors and valid source/license URLs, with origina
   for (const id of Object.keys(imageReview)) {
     assert.ok(meals.some(meal => meal.id === id)); assert.equal(needsNeutralImage(id), true);
   }
-  assert.equal(needsNeutralImage('chilli-pan-mee'), true, 'local pixels must agree with the credited dish');
+  assert.equal(Object.keys(imageReview).length, 0);
+  assert.equal(needsNeutralImage('chilli-pan-mee'), false, 'the corrected dish image should be displayed');
   const bad = [{ ...credits[0], artist: '<b>author</b>', licenseUrl: '' }];
   assert.equal(auditCredits(bad, [bad[0].mealId]).errors.length, 2);
   const missingChanges = [{ ...credits[0], modifications: [] }];
