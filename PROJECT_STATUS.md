@@ -47,7 +47,7 @@
 
 ## Distribution status and remaining boundaries
 
-- V1.11.0 (version code 17) is published to the closed-testing Alpha track. V1.12 is the current local source and is not yet claimed as built or uploaded. V1.9.0 code 14 and V1.11.0 code 16 were superseded and must not be uploaded.
+- V1.11.0 (version code 17) is published to the closed-testing Alpha track. V1.12.0 (version code 18) was built and submitted successfully and is currently in Google Play review; it is not yet claimed as tester-available. V1.9.0 code 14 and V1.11.0 code 16 were superseded and must not be uploaded.
 - No public production release or subscription setup.
 - No location permission or precise location collection; nearby discovery is delegated to Google Maps.
 

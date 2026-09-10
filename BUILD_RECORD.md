@@ -1,12 +1,17 @@
 # Android Build Record
 
-## V1.12 complete-image catalog — 10 September 2026 — local validation complete
+## V1.12 complete-image catalog — 10 September 2026 — submitted to Alpha review
 
-- App version `1.12.0`; no Google Play upload is claimed yet.
+- App version `1.12.0`; EAS assigned Android versionCode `18`.
 - Replaced all 19 remaining original placeholders and all 9 quarantined mismatches. Tempeh bowl now uses an exact reusable Wikimedia photo; the other 27 entries use dish-specific AI-assisted original food images that were visually checked against their catalog descriptions.
 - Current catalog display: 244/244 meal images, comprising 217 reusable source photos and 27 disclosed AI-assisted originals; zero placeholders and zero withheld images.
 - Image credits identify generated originals as `Before You Order (AI-assisted original)` and describe them in English and Chinese. Original assets have no external attribution links; reusable photos retain their source and license links.
-- Local validation passed: TypeScript, 40/40 tests, catalog validation, and diff check. Android export, EAS production build, GitHub push, and Google Play submission remain to be recorded separately.
+- Local validation passed: TypeScript, 40/40 tests, catalog validation, Expo Doctor 21/21, diff check, and Android export to `artifacts/v1.12-release-candidate/android-export`.
+- GitHub commit `ad893f553f828ba209761cc39e8b802d082e76b1` was pushed to `main`.
+- EAS production build `b411d954-9b18-4d37-a63b-17c8d75e510e` finished successfully: https://expo.dev/accounts/kaivenns-team/projects/before-you-order/builds/b411d954-9b18-4d37-a63b-17c8d75e510e
+- Local AAB: `artifacts/v1.12-production/Before-You-Order-v1.12.0-production-v18.aab`, 75,997,240 bytes; SHA-256 `df2cd6f02a1d3bac409e64bbd08d233872742b6185f8f899028ef9a38bae8683`.
+- EAS Submit `18029320-76cb-40d1-b753-5d627774a6c7` finished and delivered code 18 to the Google Play `alpha` track: https://expo.dev/accounts/kaivenns-team/projects/before-you-order/submissions/18029320-76cb-40d1-b753-5d627774a6c7
+- Direct Android Publisher API verification reports code 18 as `RELEASE_LIFECYCLE_STATE_IN_REVIEW`; code 17 remains published. Managed publishing may require a separate publish action after approval, so V1.12 is not yet claimed as tester-available.
 
 ## V1.11 Maps compatibility release — 9 September 2026 — local validation complete
 
